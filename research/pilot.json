@@ -1,0 +1,78 @@
+{
+  "researchedOn": "2026-10-27",
+  "sources": [
+    {"key":"hampi-asi","title":"Vittala temple complex and its surrounding","publisher":"Archaeological Survey of India, Hampi Circle","url":"https://www.asihampicircle.in/vittala-temple-complex-and-its-surrounding/"},
+    {"key":"hampi-unesco","title":"Group of Monuments at Hampi","publisher":"UNESCO World Heritage Centre","url":"https://whc.unesco.org/en/list/241/"},
+    {"key":"hoysala","title":"Sacred Ensembles of the Hoysalas","publisher":"UNESCO World Heritage Centre","url":"https://whc.unesco.org/en/list/1670/"},
+    {"key":"pattadakal","title":"Group of Monuments at Pattadakal","publisher":"UNESCO World Heritage Centre","url":"https://whc.unesco.org/en/list/239/"},
+    {"key":"pattadakal-district","title":"Pattadakal","publisher":"Bagalkote District, Government of Karnataka","url":"https://bagalkot.nic.in/en/tourist-place/pattadakal/"},
+    {"key":"badami","title":"Badami Caves","publisher":"Bagalkote District, Government of Karnataka","url":"https://bagalkot.nic.in/en/tourist-place/badami-caves/"},
+    {"key":"badami-tourism","title":"Badami","publisher":"Karnataka Tourism","url":"https://karnatakatourism.org/en/destinations/badami/"},
+    {"key":"durga","title":"The Great Durga Temple","publisher":"Archaeological Survey of India, Dharwad Circle","url":"https://www.asidharwadcircle.in/monument/the-great-durga-temple/"},
+    {"key":"aihole","title":"Aihole","publisher":"Karnataka Tourism","url":"https://karnatakatourism.org/en/destinations/aihole/"}
+  ],
+  "sites": [
+    {"name":"Hampi","slug":"hampi","locality":"Hampi","district":"Vijayanagara","overview":"A landscape of sacred and royal monuments associated with the Vijayanagara capital."},
+    {"name":"Belur","slug":"belur","locality":"Belur","district":"Hassan","overview":"A focus of Hoysala temple art and the setting of the Chennakeshava complex."},
+    {"name":"Pattadakal","slug":"pattadakal","locality":"Pattadakal","district":"Bagalkote","overview":"A temple ensemble offering contrasting approaches to early medieval temple design."},
+    {"name":"Badami","slug":"badami","locality":"Badami","district":"Bagalkote","overview":"Rock-cut shrines and structural temples set among sandstone cliffs."},
+    {"name":"Aihole","slug":"aihole","locality":"Aihole","district":"Bagalkote","overview":"A rich collection of monuments revealing experiments in temple form."}
+  ],
+  "buildings": [
+    {
+      "name":"Vitthala Temple","slug":"vitthala-temple-hampi","site":"hampi","type":"Temple","aliases":["Vittala Temple","Vijaya Vittala Temple"],
+      "summary":"A temple complex where carved granite halls frame the celebrated chariot-shaped Garuda shrine.",
+      "history":"Developed under Vijayanagara patronage, the complex forms part of Hampi's sacred landscape. Its buildings reflect successive phases rather than a single construction event.",
+      "layout_notes":"An enclosure brings together the main shrine, pillared halls and the chariot-shaped shrine. Architectural details reward close inspection of individual pillars and pavilions.",
+      "year_from":1400,"year_to":1599,"date_label":"15th–16th centuries CE","date_precision":"range",
+      "styles":[{"name":"Vijayanagara","notes":"Temple architecture within the Vijayanagara capital.","source":"hampi-unesco","locator":"Outstanding Universal Value"}],
+      "materials":[{"name":"Granite","notes":"Carved structural pillars and the Garuda shrine; not a claim that every component is granite.","source":"hampi-asi","locator":"Vittala temple and stone chariot descriptions"},{"name":"Brick","notes":"Documented in the shrine superstructure.","source":"hampi-asi","locator":"Superstructure description"}],
+      "elements":[{"name":"Mandapa","description":"A pillared hall or pavilion used as an architectural and ceremonial space.","notes":"Ornate halls within the complex.","source":"hampi-asi","locator":"Mahamandapa and kalyanamandapa descriptions"},{"name":"Stone chariot shrine","description":"A shrine composed in the form of a processional chariot.","notes":"Garuda shrine in front of the main hall.","source":"hampi-asi","locator":"Stone chariot description"}],
+      "citations":[{"source":"hampi-unesco","topic":"History and broad period","locator":"Brief synthesis; Vijayanagara context","note":"Broad period describes the ensemble; no single completion year is asserted."},{"source":"hampi-asi","topic":"Layout and construction","locator":"Vittala temple description"}]
+    },
+    {
+      "name":"Chennakeshava Temple","slug":"chennakeshava-temple-belur","site":"belur","type":"Temple","aliases":["Chennakesava Temple","Channakeshava Temple","Kesava Temple Belur"],
+      "summary":"A Hoysala temple whose platform and sculpted surfaces create a close encounter with stone craftsmanship.",
+      "history":"Worship at the Belur temple is documented from 1117 CE. It belongs to the UNESCO-listed Sacred Ensembles of the Hoysalas and remains an active religious place.",
+      "layout_notes":"The circumambulatory platform allows the exterior to be experienced as a sequence of carved surfaces. The present form also reflects changes and losses over time.",
+      "year_from":1117,"year_to":1117,"date_label":"1117 CE inception; later alterations","date_precision":"year",
+      "styles":[{"name":"Hoysala","notes":"One of the three ensembles identified by UNESCO.","source":"hoysala","locator":"Brief synthesis"}],
+      "materials":[{"name":"Chloritic schist","notes":"Documented building stone; commonly discussed under the broader term soapstone.","source":"hoysala","locator":"Authenticity"}],
+      "elements":[{"name":"Circumambulatory platform","description":"A raised platform supporting movement around a shrine.","notes":"Platform associated with the temple's shaped plan.","source":"hoysala","locator":"Brief synthesis and Authenticity"},{"name":"Sculptural frieze","description":"A horizontal band of sculptural decoration.","notes":"Carved bands form part of the exterior treatment.","source":"hoysala","locator":"Brief synthesis"}],
+      "citations":[{"source":"hoysala","topic":"History, inception and present use","locator":"Integrity and Authenticity","note":"1117 CE records inception and continuity of worship, not the completion date of every component."},{"source":"hoysala","topic":"Layout and later changes","locator":"Brief synthesis; Integrity"}]
+    },
+    {
+      "name":"Virupaksha Temple","slug":"virupaksha-temple-pattadakal","site":"pattadakal","type":"Temple","aliases":["Lokeshwara Temple","Lokesvara Temple"],
+      "summary":"A Dravida temple at Pattadakal, commissioned by Queen Lokamahadevi around 740 CE.",
+      "history":"The temple commemorates the military success of Lokamahadevi's husband. Its location within the Pattadakal ensemble makes it a useful point of comparison with neighbouring temple forms.",
+      "layout_notes":"The southern architectural tradition is expressed in the temple's shrine and superstructure. Sculpture is integral to its architectural treatment.",
+      "year_from":740,"year_to":740,"date_label":"Circa 740 CE","date_precision":"approximate",
+      "styles":[{"name":"Dravida","notes":"Southern temple form identified in the district description.","source":"pattadakal-district","locator":"Virupaksha Temple"}],
+      "materials":[],
+      "elements":[{"name":"Sculptural relief","description":"Figures and narratives carved in relief on an architectural surface.","notes":"The district source identifies several sculptural subjects.","source":"pattadakal-district","locator":"Virupaksha Temple"}],
+      "citations":[{"source":"pattadakal","topic":"Commission and approximate date","locator":"Property description"},{"source":"pattadakal-district","topic":"Name, style and sculpture","locator":"Virupaksha Temple"}]
+    },
+    {
+      "name":"Badami Cave 3","slug":"badami-cave-3","site":"badami","type":"Cave temple","aliases":["Cave Temple 3 Badami","Badami Third Cave"],
+      "summary":"A rock-cut shrine with a dated inscription and a richly carved pillared verandah.",
+      "history":"An inscription records the creation of the shrine by Mangalesha in 578 CE. The cave is part of Badami's group of four principal cave temples.",
+      "layout_notes":"A pillared entrance space leads into the excavated interior. Large relief panels and carved bracket figures are important parts of the architectural experience.",
+      "year_from":578,"year_to":578,"date_label":"578 CE inscription","date_precision":"year",
+      "styles":[{"name":"Rock-cut","notes":"Excavated temple architecture rather than assembled masonry.","source":"badami","locator":"Introduction and Cave III"}],
+      "materials":[{"name":"Sandstone","notes":"The cave is excavated into Badami's sandstone cliff.","source":"badami-tourism","locator":"Cave temple description"}],
+      "elements":[{"name":"Sculptural relief","description":"Figures and narratives carved in relief on an architectural surface.","notes":"Large panels within Cave III.","source":"badami","locator":"Cave III"},{"name":"Carved pillar","description":"A support enriched with carved ornament or figures.","notes":"Pillars with bracket figures.","source":"badami","locator":"Cave III"}],
+      "citations":[{"source":"badami","topic":"Inscription and historical context","locator":"Cave III"}]
+    },
+    {
+      "name":"Durga Temple","slug":"durga-temple-aihole","site":"aihole","type":"Temple","aliases":["Great Durga Temple","Durg Temple Aihole"],
+      "summary":"An apsidal temple with an open colonnade, a columned hall and finely worked stone screens.",
+      "history":"ASI assigns the monument broadly to the seventh–eighth centuries CE. Its name should not be used by itself to infer the temple's original religious dedication.",
+      "layout_notes":"A rounded shrine end and surrounding passage distinguish the plan. An open colonnade, hall and porch establish a sequence between the exterior and the shrine.",
+      "year_from":600,"year_to":799,"date_label":"7th–8th centuries CE","date_precision":"range",
+      "styles":[],
+      "materials":[],
+      "elements":[{"name":"Apsidal plan","description":"A plan with a rounded or semicircular end.","notes":"Rounded shrine end.","source":"durga","locator":"Architectural description, first paragraph"},{"name":"Mandapa","description":"A pillared hall or pavilion used as an architectural and ceremonial space.","notes":"Columned hall and porch.","source":"durga","locator":"Architectural description, first paragraph"},{"name":"Pierced stone window","description":"A stone screen with openings that admit light and air.","notes":"Screens in the outer colonnade.","source":"durga","locator":"Architectural description, second paragraph"}],
+      "citations":[{"source":"durga","topic":"Period and layout","locator":"Architectural description"}]
+    }
+  ]
+}

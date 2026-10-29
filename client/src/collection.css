@@ -1,0 +1,5 @@
+/* Discovery links grow with the published heritage clusters. */
+.place-links{grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}
+.place-links h3{font-size:24px}
+.place-links a{padding-left:10px;padding-right:10px}
+@media(max-width:700px){.place-links{grid-template-columns:1fr}.place-links a{padding-left:0;padding-right:0}}

@@ -1,0 +1,424 @@
+[
+  {
+    "key": "hampi-exterior",
+    "building": "vitthala-temple-hampi",
+    "file": "Vittala Temple - Hampi - Karnataka.jpg",
+    "caption": "Vitthala Temple complex at Hampi",
+    "cover": true
+  },
+  {
+    "key": "hampi-entrance",
+    "building": "vitthala-temple-hampi",
+    "file": "Vittala Temple Entrance.jpg",
+    "caption": "Entrance to the Vitthala Temple complex",
+    "cover": false
+  },
+  {
+    "key": "belur-exterior",
+    "building": "chennakeshava-temple-belur",
+    "file": "A profile of the Chennakesava temple at Belur.jpg",
+    "caption": "Rear profile of the main Chennakeshava Temple",
+    "cover": true
+  },
+  {
+    "key": "belur-reliefs",
+    "building": "chennakeshava-temple-belur",
+    "file": "Reliefs, Sculptures at Outer Wall of Chennakesava temple Belur Karnataka DSCN6754 10.jpg",
+    "caption": "Relief carving on the outer wall at Belur",
+    "cover": false
+  },
+  {
+    "key": "pattadakal-pillar",
+    "building": "virupaksha-temple-pattadakal",
+    "file": "Virupaksha Temple-Pattadakal-Karnataka-04.jpg",
+    "caption": "Carved pillar at Virupaksha Temple, Pattadakal",
+    "element": "Sculptural relief",
+    "cover": false
+  },
+  {
+    "key": "pattadakal-exterior",
+    "building": "virupaksha-temple-pattadakal",
+    "file": "Virupaksha Temple-Pattadakal-Karnataka-01.jpg",
+    "caption": "Virupaksha Temple at Pattadakal",
+    "cover": true
+  },
+  {
+    "key": "badami-verandah",
+    "building": "badami-cave-3",
+    "file": "Cave Temple 3, Badami.JPG",
+    "caption": "Pillared verandah of Badami Cave 3",
+    "element": "Carved pillar",
+    "cover": true
+  },
+  {
+    "key": "badami-pillars",
+    "building": "badami-cave-3",
+    "file": "578 CE rock cut pillars and mural fragments, Badami Cave 3.jpg",
+    "caption": "Pillars and surviving mural fragments in Cave 3",
+    "element": "Carved pillar",
+    "cover": false
+  },
+  {
+    "key": "aihole-alternate",
+    "building": "durga-temple-aihole",
+    "file": "Aihole - Durga Temple 1.jpg",
+    "caption": "Durga Temple at Aihole, showing its rounded end and colonnade",
+    "cover": true
+  },
+  {
+    "key": "virupaksha-temple-hampi-overview",
+    "building": "virupaksha-temple-hampi",
+    "file": "Hampi virupaksha temple,Hampi ,karnataka 01.jpg",
+    "caption": "Virupaksha Temple, Hampi: Temple gateway and stepped tank",
+    "cover": true
+  },
+  {
+    "key": "virupaksha-temple-hampi-detail",
+    "building": "virupaksha-temple-hampi",
+    "file": "Inner Courtyard of Virupaksha Temple at Hampi.jpg",
+    "caption": "Virupaksha Temple, Hampi: Gateway towers seen from the inner courtyard",
+    "cover": false,
+    "element": "Gopuram"
+  },
+  {
+    "key": "achyutaraya-temple-hampi-overview",
+    "building": "achyutaraya-temple-hampi",
+    "file": "Achyutaraya (Triuvengalantha) Temple -Hampi -Karnataka -20181016143900.jpg",
+    "caption": "Achyutaraya Temple, Hampi: Gateway and pillared court",
+    "cover": true
+  },
+  {
+    "key": "achyutaraya-temple-hampi-detail",
+    "building": "achyutaraya-temple-hampi",
+    "file": "Achyutaraya (Triuvengalantha) Temple -Hampi -Karnataka -20181016130231.jpg",
+    "caption": "Achyutaraya Temple, Hampi: Temple precinct viewed from the surrounding hillside",
+    "cover": false
+  },
+  {
+    "key": "krishna-temple-hampi-overview",
+    "building": "krishna-temple-hampi",
+    "file": "Frontal view of the Krishna temple in Hampi.JPG",
+    "caption": "Krishna Temple, Hampi: Gateway and pillared temple entrance",
+    "cover": true
+  },
+  {
+    "key": "krishna-temple-hampi-detail",
+    "building": "krishna-temple-hampi",
+    "file": "Krishna temple, south eastern mandapa. Vijayanagar c. 1515.JPG",
+    "caption": "Krishna Temple, Hampi: The carved south-eastern mandapa",
+    "cover": false
+  },
+  {
+    "key": "hazara-rama-temple-hampi-overview",
+    "building": "hazara-rama-temple-hampi",
+    "file": "Hazara rama.jpg",
+    "caption": "Hazara Rama Temple, Hampi: Temple entrance and enclosure wall",
+    "cover": true
+  },
+  {
+    "key": "hazara-rama-temple-hampi-detail",
+    "building": "hazara-rama-temple-hampi",
+    "file": "HAZARA RAMA TEMPLE OUTER WALL 1.JPG",
+    "caption": "Hazara Rama Temple, Hampi: Sculptural bands on the enclosure wall",
+    "cover": false,
+    "element": "Sculptural relief"
+  },
+  {
+    "key": "lotus-mahal-hampi-overview",
+    "building": "lotus-mahal-hampi",
+    "file": "Hampi, India, Lotus Mahal.jpg",
+    "caption": "Lotus Mahal, Hampi: Pavilion in its garden setting",
+    "cover": true
+  },
+  {
+    "key": "lotus-mahal-hampi-detail",
+    "building": "lotus-mahal-hampi",
+    "file": "Lotus Mahal, Hampi 09.09.2018.jpg",
+    "caption": "Lotus Mahal, Hampi: Alternate view of the arched pavilion and tiered roof",
+    "cover": false
+  },
+  {
+    "key": "elephant-stables-hampi-overview",
+    "building": "elephant-stables-hampi",
+    "file": "The Elephant Stable in Hamp 02.jpg",
+    "caption": "Elephant Stables, Hampi: Domed stable range and surrounding grounds",
+    "cover": true
+  },
+  {
+    "key": "elephant-stables-hampi-detail",
+    "building": "elephant-stables-hampi",
+    "file": "Elephants stables.jpg",
+    "caption": "Elephant Stables, Hampi: Arched entrances and varied domed roofs",
+    "cover": false
+  },
+  {
+    "key": "queens-bath-hampi-overview",
+    "building": "queens-bath-hampi",
+    "file": "Queens bath Hampi.jpg",
+    "caption": "Queen’s Bath, Hampi: Arched corridor inside the bathhouse",
+    "cover": true
+  },
+  {
+    "key": "queens-bath-hampi-detail",
+    "building": "queens-bath-hampi",
+    "file": "Inside Queens bath complex.jpg",
+    "caption": "Queen’s Bath, Hampi: Ornamented arches opening toward the bathing court",
+    "cover": false,
+    "element": "Arch"
+  },
+  {
+    "key": "mallikarjuna-temple-pattadakal-overview",
+    "building": "mallikarjuna-temple-pattadakal",
+    "file": "8th century Mallikarjuna temple, Pattadakal monuments Karnataka.jpg",
+    "caption": "Mallikarjuna Temple, Pattadakal: Temple exterior and tiered tower",
+    "cover": true
+  },
+  {
+    "key": "mallikarjuna-temple-pattadakal-detail",
+    "building": "mallikarjuna-temple-pattadakal",
+    "file": "8th century defaced Shiva at Mallikarjuna temple, Pattadakal Hindu monuments Karnataka.jpg",
+    "caption": "Mallikarjuna Temple, Pattadakal: Carved figural panel on the temple",
+    "cover": false,
+    "element": "Sculptural relief"
+  },
+  {
+    "key": "sangameshvara-temple-pattadakal-overview",
+    "building": "sangameshvara-temple-pattadakal",
+    "file": "Sangameshvara temple at Pattadakal.jpg",
+    "caption": "Sangameshvara Temple, Pattadakal: Hall and tower seen from the entrance side",
+    "cover": true
+  },
+  {
+    "key": "sangameshvara-temple-pattadakal-detail",
+    "building": "sangameshvara-temple-pattadakal",
+    "file": "Pattadakal, Sangamesvara Temple (9842865856) cropped.jpg",
+    "caption": "Sangameshvara Temple, Pattadakal: Rear exterior and tiered superstructure",
+    "cover": false
+  },
+  {
+    "key": "papanatha-temple-pattadakal-overview",
+    "building": "papanatha-temple-pattadakal",
+    "file": "Papanatha Temple in Pattadakkal.jpg",
+    "caption": "Papanatha Temple, Pattadakal: Temple exterior and curving tower",
+    "cover": true
+  },
+  {
+    "key": "papanatha-temple-pattadakal-detail",
+    "building": "papanatha-temple-pattadakal",
+    "file": "Papanatha temple at Pattadakal.jpg",
+    "caption": "Papanatha Temple, Pattadakal: Long side elevation with carved wall panels",
+    "cover": false
+  },
+  {
+    "key": "galaganatha-temple-pattadakal-overview",
+    "building": "galaganatha-temple-pattadakal",
+    "file": "Galaganatha temple Pattadakal.jpg",
+    "caption": "Galaganatha Temple, Pattadakal: Approach to the shrine and curving tower",
+    "cover": true
+  },
+  {
+    "key": "galaganatha-temple-pattadakal-detail",
+    "building": "galaganatha-temple-pattadakal",
+    "file": "Pattadakal, Galaganatha Temple (9842719255).jpg",
+    "caption": "Galaganatha Temple, Pattadakal: Alternate exterior view of the shrine superstructure",
+    "cover": false
+  },
+  {
+    "key": "kadasiddheshvara-temple-pattadakal-overview",
+    "building": "kadasiddheshvara-temple-pattadakal",
+    "file": "Kadasiddheshvara Temple, Pattadakal, Karnataka, India.jpg",
+    "caption": "Kadasiddheshvara Temple, Pattadakal: Temple in its landscaped setting",
+    "cover": true
+  },
+  {
+    "key": "kadasiddheshvara-temple-pattadakal-detail",
+    "building": "kadasiddheshvara-temple-pattadakal",
+    "file": "7th century Kadasiddheswara temple, Pattadakal monuments Karnataka.jpg",
+    "caption": "Kadasiddheshvara Temple, Pattadakal: Closer exterior view of the tower and shrine wall",
+    "cover": false
+  },
+  {
+    "key": "jambulinga-temple-pattadakal-overview",
+    "building": "jambulinga-temple-pattadakal",
+    "file": "JAMBULINGA TEMPLE AT PATTADAKAL IN KARNATAKA.jpg",
+    "caption": "Jambulinga Temple, Pattadakal: Shrine, tower and foreground platforms",
+    "cover": true
+  },
+  {
+    "key": "jambulinga-temple-pattadakal-detail",
+    "building": "jambulinga-temple-pattadakal",
+    "file": "Pattadakal, Jambulinga Temple (9842904425).jpg",
+    "caption": "Jambulinga Temple, Pattadakal: Closer view of the shrine walls and tower",
+    "cover": false
+  },
+  {
+    "key": "badami-cave-1-exterior",
+    "building": "badami-cave-1",
+    "file": "Badami Cave Temples (1).JPG",
+    "caption": "Badami Cave 1, Badami: Entrance cut into the sandstone cliff",
+    "cover": true
+  },
+  {
+    "key": "badami-cave-1-detail",
+    "building": "badami-cave-1",
+    "file": "Rock Cut Cave 1, Badami.jpg",
+    "caption": "Badami Cave 1, Badami: Pillared verandah and decorated ceiling",
+    "cover": false
+  },
+  {
+    "key": "badami-cave-2-overview",
+    "building": "badami-cave-2",
+    "file": "Badami cave 2 view.jpg",
+    "caption": "Badami Cave 2, Badami: Verandah with carved ceiling and wall panels",
+    "cover": true
+  },
+  {
+    "key": "badami-cave-2-relief",
+    "building": "badami-cave-2",
+    "file": "7th century Trivikrama, Vishnu avatar Vamana legend in Cave 2, Badami Hindu cave temple Karnataka.jpg",
+    "caption": "Badami Cave 2, Badami: Trivikrama relief",
+    "cover": false,
+    "element": "Sculptural relief"
+  },
+  {
+    "key": "badami-cave-4-overview",
+    "building": "badami-cave-4",
+    "file": "7th to 8th century Digambara Jain cave entrance, Badami cave 4, Karnataka.jpg",
+    "caption": "Badami Cave 4, Badami: Rock-cut entrance and pillars",
+    "cover": true
+  },
+  {
+    "key": "badami-cave-4-detail",
+    "building": "badami-cave-4",
+    "file": "Cave Temple 4, Badami.jpg",
+    "caption": "Badami Cave 4, Badami: Verandah and Jain figural panels",
+    "cover": false
+  },
+  {
+    "key": "bhutanatha-temple-badami-overview",
+    "building": "bhutanatha-temple-badami",
+    "file": "Bhutanatha Temple, Badami.jpg",
+    "caption": "Bhutanatha Temple, Badami: Principal temple and adjoining shrines beside the lake",
+    "cover": true
+  },
+  {
+    "key": "bhutanatha-temple-badami-detail",
+    "building": "bhutanatha-temple-badami",
+    "file": "Bhutanatha group of temples on the east margin of the tank, Badami (1).JPG",
+    "caption": "Bhutanatha Temple, Badami: Temple porch and its lakeside setting",
+    "cover": false
+  },
+  {
+    "key": "malegitti-shivalaya-badami-overview",
+    "building": "malegitti-shivalaya-badami",
+    "file": "Malegitti Temple Badami.jpg",
+    "caption": "Malegitti Shivalaya, Badami: Temple viewed from the rocky hillside",
+    "cover": true
+  },
+  {
+    "key": "malegitti-shivalaya-badami-detail",
+    "building": "malegitti-shivalaya-badami",
+    "file": "Badami, Malegitti-Shivalaya-Tempel (1999).jpg",
+    "caption": "Malegitti Shivalaya, Badami: Frontal view of the porch and tower",
+    "cover": false
+  },
+  {
+    "key": "lad-khan-temple-aihole-exterior",
+    "building": "lad-khan-temple-aihole",
+    "file": "Lad Khan Temple Aihole.jpg",
+    "caption": "Lad Khan Temple, Aihole: Entrance porch and upper shrine",
+    "cover": true
+  },
+  {
+    "key": "lad-khan-temple-aihole-detail",
+    "building": "lad-khan-temple-aihole",
+    "file": "Aihole Lad Khan temple interior.JPG",
+    "caption": "Lad Khan Temple, Aihole: Interior pillars and pierced stone window",
+    "cover": false
+  },
+  {
+    "key": "meguti-jain-temple-aihole-overview",
+    "building": "meguti-jain-temple-aihole",
+    "file": "Meguti Jain temple Aihole.jpg",
+    "caption": "Meguti Jain Temple, Aihole: Temple on Meguti hill",
+    "cover": true
+  },
+  {
+    "key": "meguti-jain-temple-aihole-detail",
+    "building": "meguti-jain-temple-aihole",
+    "file": "Meguti Jain Temple, Aihole (1).JPG",
+    "caption": "Meguti Jain Temple, Aihole: Pillared entrance porch and shrine",
+    "cover": false
+  },
+  {
+    "key": "ravana-phadi-cave-aihole-overview",
+    "building": "ravana-phadi-cave-aihole",
+    "file": "Ravana Phadi Cave Temple, Aihole (2).JPG",
+    "caption": "Ravana Phadi Cave, Aihole: Rock-cut entrance and forecourt",
+    "cover": true
+  },
+  {
+    "key": "ravana-phadi-cave-aihole-detail",
+    "building": "ravana-phadi-cave-aihole",
+    "file": "Ravana Phadi cave (inside view) at Aihole.jpg",
+    "caption": "Ravana Phadi Cave, Aihole: Dancing Shiva relief inside the cave",
+    "cover": false,
+    "element": "Sculptural relief"
+  },
+  {
+    "key": "hucchimalli-temple-aihole-overview",
+    "building": "hucchimalli-temple-aihole",
+    "file": "Hucchimalli temple Aihole.jpg",
+    "caption": "Hucchimalli Temple, Aihole: Porch, shrine and curving tower",
+    "cover": true
+  },
+  {
+    "key": "hucchimalli-temple-aihole-detail",
+    "building": "hucchimalli-temple-aihole",
+    "file": "6th - 8th century Hucchimalli Gudi Temple in Rekhanagara style, Kartikeya on peacock, Aihole Hindu monuments Karnataka.jpg",
+    "caption": "Hucchimalli Temple, Aihole: Figural ceiling relief",
+    "cover": false
+  },
+  {
+    "key": "huchappayya-matha-aihole-overview",
+    "building": "huchappayya-matha-aihole",
+    "file": "7th - 8th century Huchappaya matha temple, exterior view, Aihole Hindu monuments.jpg",
+    "caption": "Huchappayya Matha, Aihole: Exterior entrance and hall",
+    "cover": true
+  },
+  {
+    "key": "huchappayya-matha-aihole-detail",
+    "building": "huchappayya-matha-aihole",
+    "file": "7th - 8th century Huchappaya matha temple, Brahma seated on Hamsa ceiling artwork, Aihole Hindu monuments.jpg",
+    "caption": "Huchappayya Matha, Aihole: Carved ceiling panel",
+    "cover": false
+  },
+  {
+    "key": "hoysaleswara-temple-halebidu-overview",
+    "building": "hoysaleswara-temple-halebidu",
+    "file": "Hoysaleswara Temple at Halebidu.jpg",
+    "caption": "Hoysaleswara Temple, Halebidu: Temple entrance and sculpted platform",
+    "cover": true
+  },
+  {
+    "key": "hoysaleswara-temple-halebidu-detail",
+    "building": "hoysaleswara-temple-halebidu",
+    "file": "Reliefs, Sculptures, and Interior of Hoysaleswara Temple Halebidu DSCN6284 8.jpg",
+    "caption": "Hoysaleswara Temple, Halebidu: Pierced stone screens and carved exterior",
+    "cover": false
+  },
+  {
+    "key": "keshava-temple-somanathapura-overview",
+    "building": "keshava-temple-somanathapura",
+    "file": "Keshava Temple at Somanathapura.JPG",
+    "caption": "Keshava Temple, Somanathapura: Temple towers and raised platform",
+    "cover": true
+  },
+  {
+    "key": "keshava-temple-somanathapura-detail",
+    "building": "keshava-temple-somanathapura",
+    "file": "A sculpture at the Keshava temple in Somanathapura.jpg",
+    "caption": "Keshava Temple, Somanathapura: Sculpted figure on the outer wall",
+    "cover": false
+  }
+]

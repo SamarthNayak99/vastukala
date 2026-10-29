@@ -1,0 +1,10 @@
+node_modules/
+client/dist/
+.env
+.env.*
+!.env.example
+.local/
+media/originals/
+media/display/
+*.log
+coverage/
