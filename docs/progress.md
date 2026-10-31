@@ -60,3 +60,11 @@ Verification: twelve integration tests passed in an isolated PostgreSQL database
 ## First repository release — 29 October 2026
 
 Version 1.0.0 documents the final local feature set, setup, API, validation, rights and known limitations. See CHANGELOG.md and docs/v1-verification.md. No further monuments were added. Runtime data and secrets remain outside version control.
+
+## India expansion — 1 November 2026
+
+Completed locally: preserve 30 Karnataka records and add 30 national records, state/UT filtering, India-centered clustered map, national statistics and branding, licensed photographs, cited anatomy and life events, and BCE chronology. Current totals: 60 monuments, 36 sites, 17 represented states/UTs, 92 photographs, 67 hotspots and 57 events. Validation: 24 integration tests, successful production build, exact preservation of original database rows and verified 18-table backup restore. See [India expansion notes](india-expansion.md) for scope and remaining improvements. Earlier sections describe historical milestones.
+
+## Optional DBMS Lab — 1 November 2026
+
+Implemented a separate learning route with 13 concept lessons, live guided PostgreSQL queries, interactive actual-schema exploration, normalization examples, four challenges, isolated constraint/transaction exercises and a measured synthetic index experiment. No permanent catalogue rows or schema were changed. The full 29-test integration suite passes. See [DBMS Lab guide](dbms-lab.md).

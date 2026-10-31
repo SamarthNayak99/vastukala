@@ -1,0 +1,272 @@
+[
+  {
+    "building": "taj-mahal-agra",
+    "storage_key": "india-taj-mahal-agra-overview",
+    "element": "Dome",
+    "x": 51,
+    "y": 38,
+    "label": "Central marble dome",
+    "note": "Reviewed position on the uncropped source photograph; follow the cited element record for context."
+  },
+  {
+    "building": "agra-fort",
+    "storage_key": "india-agra-fort-detail",
+    "element": "Gateway",
+    "x": 59,
+    "y": 60,
+    "label": "Jahangiri Mahal entrance",
+    "note": "Reviewed position on the uncropped source photograph; follow the cited element record for context."
+  },
+  {
+    "building": "fatehpur-sikri",
+    "storage_key": "india-fatehpur-sikri-overview",
+    "element": "Gateway",
+    "x": 50,
+    "y": 63,
+    "label": "Ceremonial gateway",
+    "note": "Reviewed position on the uncropped source photograph; follow the cited element record for context."
+  },
+  {
+    "building": "qutb-minar-delhi",
+    "storage_key": "india-qutb-minar-delhi-overview",
+    "element": "Minaret",
+    "x": 55,
+    "y": 84,
+    "label": "Fluted minaret shaft",
+    "note": "Reviewed position on the uncropped source photograph; follow the cited element record for context."
+  },
+  {
+    "building": "humayuns-tomb-delhi",
+    "storage_key": "india-humayuns-tomb-delhi-verified-overview",
+    "element": "Arch",
+    "x": 76,
+    "y": 29,
+    "label": "Repeated plinth arches",
+    "note": "Reviewed position on the uncropped source photograph; follow the cited element record for context."
+  },
+  {
+    "building": "red-fort-delhi",
+    "storage_key": "india-red-fort-delhi-overview",
+    "element": "Arch",
+    "x": 50,
+    "y": 40,
+    "label": "Vaulted gateway passage",
+    "note": "Reviewed position on the uncropped source photograph; follow the cited element record for context."
+  },
+  {
+    "building": "great-stupa-sanchi",
+    "storage_key": "india-great-stupa-sanchi-overview",
+    "element": "Stupa",
+    "x": 54,
+    "y": 43,
+    "label": "Hemispherical stupa mound",
+    "note": "Reviewed position on the uncropped source photograph; follow the cited element record for context."
+  },
+  {
+    "building": "kandariya-mahadeva-khajuraho",
+    "storage_key": "india-kandariya-mahadeva-khajuraho-overview",
+    "element": "Curvilinear shikhara",
+    "x": 41,
+    "y": 31,
+    "label": "Clustered sanctuary towers",
+    "note": "Reviewed position on the uncropped source photograph; follow the cited element record for context."
+  },
+  {
+    "building": "ajanta-cave-1",
+    "storage_key": "india-ajanta-cave-1-verified-overview",
+    "element": "Carved pillar",
+    "x": 55,
+    "y": 60,
+    "label": "Rock-cut column",
+    "note": "Reviewed position on the uncropped photograph. The marker identifies surviving fabric, not a reconstruction of lost components."
+  },
+  {
+    "building": "kailasa-temple-ellora",
+    "storage_key": "india-kailasa-temple-ellora-overview",
+    "element": "Courtyard",
+    "x": 50,
+    "y": 90,
+    "label": "Excavated temple court",
+    "note": "Reviewed position on the uncropped photograph. The marker identifies surviving fabric, not a reconstruction of lost components."
+  },
+  {
+    "building": "elephanta-cave-1",
+    "storage_key": "india-elephanta-cave-1-overview",
+    "element": "Carved pillar",
+    "x": 40,
+    "y": 55,
+    "label": "Column in the great cave",
+    "note": "Reviewed position on the uncropped photograph. The marker identifies surviving fabric, not a reconstruction of lost components."
+  },
+  {
+    "building": "sun-temple-konark",
+    "storage_key": "india-sun-temple-konark-overview",
+    "element": "Mandapa",
+    "x": 52,
+    "y": 65,
+    "label": "Surviving temple hall",
+    "note": "Reviewed position on the uncropped photograph. The marker identifies surviving fabric, not a reconstruction of lost components."
+  },
+  {
+    "building": "brihadisvara-temple-thanjavur",
+    "storage_key": "india-brihadisvara-temple-thanjavur-overview",
+    "element": "Vimana",
+    "x": 29,
+    "y": 40,
+    "label": "Pyramidal sanctuary tower",
+    "note": "Reviewed on the uncropped photograph; lighting and festival decoration are modern, while the marker identifies the architectural component."
+  },
+  {
+    "building": "airavatesvara-temple-darasuram",
+    "storage_key": "india-airavatesvara-temple-darasuram-overview",
+    "element": "Mandapa",
+    "x": 49,
+    "y": 43,
+    "label": "Chariot-like pillared mandapa",
+    "note": "Reviewed on the uncropped photograph; lighting and festival decoration are modern, while the marker identifies the architectural component."
+  },
+  {
+    "building": "shore-temple-mahabalipuram",
+    "storage_key": "india-shore-temple-mahabalipuram-flickr-overview",
+    "element": "Vimana",
+    "x": 42,
+    "y": 35,
+    "label": "Tiered coastal temple tower",
+    "note": "Reviewed position on the original licensed photograph. The source attribution is retained with the image."
+  },
+  {
+    "building": "meenakshi-temple-madurai",
+    "storage_key": "india-meenakshi-temple-madurai-flickr-overview",
+    "element": "Gopuram",
+    "x": 43,
+    "y": 26,
+    "label": "Sculpted gateway tower",
+    "note": "Reviewed position on the original licensed photograph. The source attribution is retained with the image."
+  },
+  {
+    "building": "rani-ki-vav-patan",
+    "storage_key": "india-rani-ki-vav-patan-flickr-overview",
+    "element": "Carved pillar",
+    "x": 20,
+    "y": 58,
+    "label": "Pillared stepwell level",
+    "note": "Reviewed position on the original licensed photograph. The source attribution is retained with the image."
+  },
+  {
+    "building": "sun-temple-modhera",
+    "storage_key": "india-sun-temple-modhera-flickr-overview",
+    "element": "Stepped tank",
+    "x": 50,
+    "y": 85,
+    "label": "Stepped reservoir approach",
+    "note": "Reviewed position on the original licensed photograph. The source attribution is retained with the image."
+  },
+  {
+    "building": "amber-fort-jaipur",
+    "storage_key": "india-amber-fort-jaipur-flickr-overview",
+    "element": "Gateway",
+    "x": 57,
+    "y": 30,
+    "label": "Entrance in the palace fa\u00e7ade",
+    "note": "Reviewed location on the uncropped, licensed photograph; citations describe the corresponding architectural record."
+  },
+  {
+    "building": "hawa-mahal-jaipur",
+    "storage_key": "india-hawa-mahal-jaipur-flickr-overview",
+    "element": "Jharokha",
+    "x": 50,
+    "y": 48,
+    "label": "Projecting screened window",
+    "note": "Reviewed location on the uncropped, licensed photograph; citations describe the corresponding architectural record."
+  },
+  {
+    "building": "jaisalmer-fort",
+    "storage_key": "india-jaisalmer-fort-flickr-overview",
+    "element": "Bastion",
+    "x": 85,
+    "y": 80,
+    "label": "Rounded defensive bastion",
+    "note": "Reviewed location on the uncropped, licensed photograph; citations describe the corresponding architectural record."
+  },
+  {
+    "building": "mahabodhi-temple-bodh-gaya",
+    "storage_key": "india-mahabodhi-temple-bodh-gaya-flickr-exterior",
+    "element": "Pyramidal tower",
+    "x": 50,
+    "y": 43,
+    "label": "Tapering sanctuary tower",
+    "note": "Reviewed location on the uncropped, licensed photograph; citations describe the corresponding architectural record."
+  },
+  {
+    "building": "nalanda-mahavihara",
+    "storage_key": "india-nalanda-mahavihara-flickr-overview",
+    "element": "Stupa",
+    "x": 56,
+    "y": 30,
+    "label": "Surviving stupa mass",
+    "note": "Reviewed location on the uncropped, licensed photograph; citations describe the corresponding architectural record."
+  },
+  {
+    "building": "charminar-hyderabad",
+    "storage_key": "india-charminar-hyderabad-flickr-overview",
+    "element": "Minaret",
+    "x": 72,
+    "y": 25,
+    "label": "Corner minaret",
+    "note": "Reviewed location on the uncropped, licensed photograph; citations describe the corresponding architectural record."
+  },
+  {
+    "building": "basilica-bom-jesus-goa",
+    "storage_key": "india-basilica-bom-jesus-goa-flickr-overview",
+    "element": "Classical orders",
+    "x": 35,
+    "y": 55,
+    "label": "Articulated fa\u00e7ade pilasters",
+    "note": "Reviewed location on the uncropped, licensed photograph; citations describe the corresponding architectural record."
+  },
+  {
+    "building": "victoria-memorial-kolkata",
+    "storage_key": "india-victoria-memorial-kolkata-flickr-overview",
+    "element": "Dome",
+    "x": 52,
+    "y": 25,
+    "label": "Central memorial dome",
+    "note": "Reviewed location on the uncropped, licensed photograph; citations describe the corresponding architectural record."
+  },
+  {
+    "building": "martand-sun-temple",
+    "storage_key": "india-martand-sun-temple-flickr-overview",
+    "element": "Gateway",
+    "x": 46,
+    "y": 53,
+    "label": "Surviving shrine entrance",
+    "note": "Reviewed location on the uncropped, licensed photograph; citations describe the corresponding architectural record."
+  },
+  {
+    "building": "harmandir-sahib-amritsar",
+    "storage_key": "india-harmandir-sahib-amritsar-flickr-exterior",
+    "element": "Dome",
+    "x": 52,
+    "y": 29,
+    "label": "Central gilded dome",
+    "note": "Reviewed location on the uncropped source photograph. Visible later finishes and modern surroundings are not assigned the foundation date."
+  },
+  {
+    "building": "shiva-dol-sivasagar",
+    "storage_key": "india-shiva-dol-sivasagar-flickr-exterior",
+    "element": "Curvilinear shikhara",
+    "x": 47,
+    "y": 28,
+    "label": "Rising sanctuary tower",
+    "note": "Reviewed location on the uncropped source photograph. Visible later finishes and modern surroundings are not assigned the foundation date."
+  },
+  {
+    "building": "padmanabhaswamy-temple",
+    "storage_key": "india-padmanabhaswamy-temple-flickr-overview",
+    "element": "Gopuram",
+    "x": 35,
+    "y": 31,
+    "label": "Gateway tower above the precinct",
+    "note": "Reviewed location on the uncropped source photograph. Visible later finishes and modern surroundings are not assigned the foundation date."
+  }
+]

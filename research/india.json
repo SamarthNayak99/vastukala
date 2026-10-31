@@ -1,0 +1,2482 @@
+{
+  "researchedOn": "2026-10-31",
+  "sources": [
+    {
+      "key": "india-taj-mahal-agra",
+      "title": "Taj Mahal — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/252/"
+    },
+    {
+      "key": "india-agra-fort",
+      "title": "Agra Fort — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/251/"
+    },
+    {
+      "key": "india-fatehpur-sikri",
+      "title": "Fatehpur Sikri — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/255/"
+    },
+    {
+      "key": "india-qutb-minar-delhi",
+      "title": "Qutb Minar — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/233/"
+    },
+    {
+      "key": "india-humayuns-tomb-delhi",
+      "title": "Humayun’s Tomb — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/232/"
+    },
+    {
+      "key": "india-red-fort-delhi",
+      "title": "Red Fort — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/231/"
+    },
+    {
+      "key": "india-great-stupa-sanchi",
+      "title": "Great Stupa at Sanchi — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/524/"
+    },
+    {
+      "key": "india-kandariya-mahadeva-khajuraho",
+      "title": "Kandariya Mahadeva Temple — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/240/"
+    },
+    {
+      "key": "india-ajanta-cave-1",
+      "title": "Ajanta Cave 1 — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/242/"
+    },
+    {
+      "key": "india-kailasa-temple-ellora",
+      "title": "Kailasa Temple, Ellora — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/243/"
+    },
+    {
+      "key": "india-elephanta-cave-1",
+      "title": "Elephanta Cave 1 — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/244/"
+    },
+    {
+      "key": "india-sun-temple-konark",
+      "title": "Sun Temple, Konark — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/246/"
+    },
+    {
+      "key": "india-brihadisvara-temple-thanjavur",
+      "title": "Brihadisvara Temple — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/250/"
+    },
+    {
+      "key": "india-airavatesvara-temple-darasuram",
+      "title": "Airavatesvara Temple — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/250/"
+    },
+    {
+      "key": "india-shore-temple-mahabalipuram",
+      "title": "Shore Temple — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/249/"
+    },
+    {
+      "key": "india-meenakshi-temple-madurai",
+      "title": "Meenakshi Sundareswarar Temple — historical and architectural reference",
+      "publisher": "Official heritage, tourism or monument-management authority",
+      "url": "https://madurai.nic.in/tourist-place/sri-meenakshi-sundareswarar-temple/"
+    },
+    {
+      "key": "india-rani-ki-vav-patan",
+      "title": "Rani-ki-Vav — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/922/"
+    },
+    {
+      "key": "india-sun-temple-modhera",
+      "title": "Sun Temple, Modhera — historical and architectural reference",
+      "publisher": "Official heritage, tourism or monument-management authority",
+      "url": "https://gujarattourism.com/north-zone/mehsana/sun-temple-modhera.html"
+    },
+    {
+      "key": "india-amber-fort-jaipur",
+      "title": "Amber Fort — historical and architectural reference",
+      "publisher": "Official heritage, tourism or monument-management authority",
+      "url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/amber-palace.html"
+    },
+    {
+      "key": "india-hawa-mahal-jaipur",
+      "title": "Hawa Mahal — historical and architectural reference",
+      "publisher": "Official heritage, tourism or monument-management authority",
+      "url": "https://www.tourism.rajasthan.gov.in/jaipur.html"
+    },
+    {
+      "key": "india-jaisalmer-fort",
+      "title": "Jaisalmer Fort — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/247/"
+    },
+    {
+      "key": "india-mahabodhi-temple-bodh-gaya",
+      "title": "Mahabodhi Temple — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1056/"
+    },
+    {
+      "key": "india-nalanda-mahavihara",
+      "title": "Nalanda Mahavihara — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1502/"
+    },
+    {
+      "key": "india-charminar-hyderabad",
+      "title": "Charminar — historical and architectural reference",
+      "publisher": "Official heritage, tourism or monument-management authority",
+      "url": "https://hyderabad.telangana.gov.in/tourist-place/charminar/"
+    },
+    {
+      "key": "india-basilica-bom-jesus-goa",
+      "title": "Basilica of Bom Jesus — historical and architectural reference",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/234/"
+    },
+    {
+      "key": "india-harmandir-sahib-amritsar",
+      "title": "Harmandir Sahib — historical and architectural reference",
+      "publisher": "Official heritage, tourism or monument-management authority",
+      "url": "https://sgpc.net/sri-harmandir-sahib/"
+    },
+    {
+      "key": "india-victoria-memorial-kolkata",
+      "title": "Victoria Memorial — historical and architectural reference",
+      "publisher": "Official heritage, tourism or monument-management authority",
+      "url": "https://victoriamemorial-cal.org/history/"
+    },
+    {
+      "key": "india-shiva-dol-sivasagar",
+      "title": "Shiva Dol — historical and architectural reference",
+      "publisher": "Official heritage, tourism or monument-management authority",
+      "url": "https://sivasagar.assam.gov.in/about-district/district-glance"
+    },
+    {
+      "key": "india-martand-sun-temple",
+      "title": "Martand Sun Temple — historical and architectural reference",
+      "publisher": "Official heritage, tourism or monument-management authority",
+      "url": "https://anantnag.nic.in/tourist-place/martand-sun-temple/"
+    },
+    {
+      "key": "india-padmanabhaswamy-temple",
+      "title": "Sree Padmanabhaswamy Temple — historical and architectural reference",
+      "publisher": "Official heritage, tourism or monument-management authority",
+      "url": "https://www.keralatourism.org/temples/thiruvananthapuram/sree-padmanabhaswamy"
+    },
+    {
+      "key": "martand-archaeology",
+      "title": "Martand Sun Temple: archaeological inventory",
+      "publisher": "IGNCA institutional archaeological inventory",
+      "url": "https://ignca.gov.in/Asi_data/83540.pdf"
+    },
+    {
+      "key": "padmanabhaswamy-district",
+      "title": "Sree Padmanabhaswamy Temple: historical account",
+      "publisher": "Thiruvananthapuram District, Government of Kerala",
+      "url": "https://trivandrum.nic.in/en/tourist-place/sree-padmanabha-swamy-temple/"
+    },
+    {
+      "key": "victoria-history",
+      "title": "Victoria Memorial Hall: institutional history",
+      "publisher": "Victoria Memorial Hall",
+      "url": "https://victoriamemorial-cal.org/history/"
+    },
+    {
+      "key": "sivadol-asi",
+      "title": "Sivadol, Sivasagar: architectural description",
+      "publisher": "Archaeological Survey of India, Guwahati Circle",
+      "url": "https://asiguwahaticircle.gov.in/Sivadol%20sivasagar.html"
+    },
+    {
+      "key": "padma-renovation",
+      "title": "Padmanabhaswamy Temple: Arattu and architectural history",
+      "publisher": "Kerala Tourism",
+      "url": "https://www.keralatourism.org/index.php/video-gallery/padmanabhaswamy-temple-arattu/152/"
+    },
+    {
+      "key": "jaisalmer-fort-history",
+      "title": "Jaisalmer Fort: heritage description",
+      "publisher": "Government of Rajasthan",
+      "url": "https://lsg.urban.rajasthan.gov.in/content/dam/raj/udh/organizations/ruidp/SafeguardPolicies/Jaisalmer%20Subproject%20%E2%80%93%20Inside%20Fort%20%2806.12.2012%29.pdf"
+    },
+    {
+      "key": "bom-jesus-goa-history",
+      "title": "Basilica of Bom Jesus: historical dates",
+      "publisher": "Government of Goa",
+      "url": "https://www.goa.gov.in/places/basilica-church-for-churches/"
+    },
+    {
+      "key": "agra-fort-asi",
+      "title": "Agra Fort: architectural and historical account",
+      "publisher": "Archaeological Survey of India, Agra Circle",
+      "url": "https://www.asiagracircle.in/agra-fort.html"
+    }
+  ],
+  "sites": [
+    {
+      "name": "Agra",
+      "slug": "india-agra",
+      "locality": "Agra",
+      "district": "Agra",
+      "state": "Uttar Pradesh",
+      "overview": "Historic architecture in Agra, Uttar Pradesh.",
+      "latitude": 27.1751,
+      "longitude": 78.0421,
+      "map_source_url": "https://whc.unesco.org/en/list/252/"
+    },
+    {
+      "name": "Fatehpur Sikri",
+      "slug": "india-fatehpur-sikri",
+      "locality": "Fatehpur Sikri",
+      "district": "Agra",
+      "state": "Uttar Pradesh",
+      "overview": "Historic architecture in Fatehpur Sikri, Uttar Pradesh.",
+      "latitude": 27.094,
+      "longitude": 77.6688,
+      "map_source_url": "https://whc.unesco.org/en/list/255/"
+    },
+    {
+      "name": "Mehrauli",
+      "slug": "india-mehrauli",
+      "locality": "Mehrauli",
+      "district": "South Delhi",
+      "state": "Delhi",
+      "overview": "Historic architecture in Mehrauli, Delhi.",
+      "latitude": 28.5244,
+      "longitude": 77.1855,
+      "map_source_url": "https://whc.unesco.org/en/list/233/"
+    },
+    {
+      "name": "Nizamuddin",
+      "slug": "india-nizamuddin",
+      "locality": "Nizamuddin",
+      "district": "South East Delhi",
+      "state": "Delhi",
+      "overview": "Historic architecture in Nizamuddin, Delhi.",
+      "latitude": 28.5933,
+      "longitude": 77.2507,
+      "map_source_url": "https://whc.unesco.org/en/list/232/"
+    },
+    {
+      "name": "Shahjahanabad",
+      "slug": "india-shahjahanabad",
+      "locality": "Shahjahanabad",
+      "district": "Central Delhi",
+      "state": "Delhi",
+      "overview": "Historic architecture in Shahjahanabad, Delhi.",
+      "latitude": 28.6562,
+      "longitude": 77.241,
+      "map_source_url": "https://whc.unesco.org/en/list/231/"
+    },
+    {
+      "name": "Sanchi",
+      "slug": "india-sanchi",
+      "locality": "Sanchi",
+      "district": "Raisen",
+      "state": "Madhya Pradesh",
+      "overview": "Historic architecture in Sanchi, Madhya Pradesh.",
+      "latitude": 23.4793,
+      "longitude": 77.7397,
+      "map_source_url": "https://whc.unesco.org/en/list/524/"
+    },
+    {
+      "name": "Khajuraho",
+      "slug": "india-khajuraho",
+      "locality": "Khajuraho",
+      "district": "Chhatarpur",
+      "state": "Madhya Pradesh",
+      "overview": "Historic architecture in Khajuraho, Madhya Pradesh.",
+      "latitude": 24.853,
+      "longitude": 79.9195,
+      "map_source_url": "https://whc.unesco.org/en/list/240/"
+    },
+    {
+      "name": "Ajanta",
+      "slug": "india-ajanta",
+      "locality": "Ajanta",
+      "district": "Chhatrapati Sambhajinagar",
+      "state": "Maharashtra",
+      "overview": "Historic architecture in Ajanta, Maharashtra.",
+      "latitude": 20.5515,
+      "longitude": 75.7033,
+      "map_source_url": "https://whc.unesco.org/en/list/242/"
+    },
+    {
+      "name": "Ellora",
+      "slug": "india-ellora",
+      "locality": "Ellora",
+      "district": "Chhatrapati Sambhajinagar",
+      "state": "Maharashtra",
+      "overview": "Historic architecture in Ellora, Maharashtra.",
+      "latitude": 20.0239,
+      "longitude": 75.1793,
+      "map_source_url": "https://whc.unesco.org/en/list/243/"
+    },
+    {
+      "name": "Elephanta Island",
+      "slug": "india-elephanta-island",
+      "locality": "Elephanta Island",
+      "district": "Raigad",
+      "state": "Maharashtra",
+      "overview": "Historic architecture in Elephanta Island, Maharashtra.",
+      "latitude": 18.9633,
+      "longitude": 72.9315,
+      "map_source_url": "https://whc.unesco.org/en/list/244/"
+    },
+    {
+      "name": "Konark",
+      "slug": "india-konark",
+      "locality": "Konark",
+      "district": "Puri",
+      "state": "Odisha",
+      "overview": "Historic architecture in Konark, Odisha.",
+      "latitude": 19.8876,
+      "longitude": 86.0945,
+      "map_source_url": "https://whc.unesco.org/en/list/246/"
+    },
+    {
+      "name": "Thanjavur",
+      "slug": "india-thanjavur",
+      "locality": "Thanjavur",
+      "district": "Thanjavur",
+      "state": "Tamil Nadu",
+      "overview": "Historic architecture in Thanjavur, Tamil Nadu.",
+      "latitude": 10.7828,
+      "longitude": 79.1318,
+      "map_source_url": "https://whc.unesco.org/en/list/250/"
+    },
+    {
+      "name": "Darasuram",
+      "slug": "india-darasuram",
+      "locality": "Darasuram",
+      "district": "Thanjavur",
+      "state": "Tamil Nadu",
+      "overview": "Historic architecture in Darasuram, Tamil Nadu.",
+      "latitude": 10.948,
+      "longitude": 79.3568,
+      "map_source_url": "https://whc.unesco.org/en/list/250/"
+    },
+    {
+      "name": "Mahabalipuram",
+      "slug": "india-mahabalipuram",
+      "locality": "Mahabalipuram",
+      "district": "Chengalpattu",
+      "state": "Tamil Nadu",
+      "overview": "Historic architecture in Mahabalipuram, Tamil Nadu.",
+      "latitude": 12.6165,
+      "longitude": 80.1993,
+      "map_source_url": "https://whc.unesco.org/en/list/249/"
+    },
+    {
+      "name": "Madurai",
+      "slug": "india-madurai",
+      "locality": "Madurai",
+      "district": "Madurai",
+      "state": "Tamil Nadu",
+      "overview": "Historic architecture in Madurai, Tamil Nadu.",
+      "latitude": 9.9195,
+      "longitude": 78.1193,
+      "map_source_url": "https://madurai.nic.in/tourist-place/sri-meenakshi-sundareswarar-temple/"
+    },
+    {
+      "name": "Patan",
+      "slug": "india-patan",
+      "locality": "Patan",
+      "district": "Patan",
+      "state": "Gujarat",
+      "overview": "Historic architecture in Patan, Gujarat.",
+      "latitude": 23.8589,
+      "longitude": 72.1019,
+      "map_source_url": "https://whc.unesco.org/en/list/922/"
+    },
+    {
+      "name": "Modhera",
+      "slug": "india-modhera",
+      "locality": "Modhera",
+      "district": "Mehsana",
+      "state": "Gujarat",
+      "overview": "Historic architecture in Modhera, Gujarat.",
+      "latitude": 23.5835,
+      "longitude": 72.1409,
+      "map_source_url": "https://gujarattourism.com/north-zone/mehsana/sun-temple-modhera.html"
+    },
+    {
+      "name": "Amer",
+      "slug": "india-amer",
+      "locality": "Amer",
+      "district": "Jaipur",
+      "state": "Rajasthan",
+      "overview": "Historic architecture in Amer, Rajasthan.",
+      "latitude": 26.9855,
+      "longitude": 75.8513,
+      "map_source_url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/amber-palace.html"
+    },
+    {
+      "name": "Jaipur",
+      "slug": "india-jaipur",
+      "locality": "Jaipur",
+      "district": "Jaipur",
+      "state": "Rajasthan",
+      "overview": "Historic architecture in Jaipur, Rajasthan.",
+      "latitude": 26.9239,
+      "longitude": 75.8267,
+      "map_source_url": "https://www.tourism.rajasthan.gov.in/jaipur.html"
+    },
+    {
+      "name": "Jaisalmer",
+      "slug": "india-jaisalmer",
+      "locality": "Jaisalmer",
+      "district": "Jaisalmer",
+      "state": "Rajasthan",
+      "overview": "Historic architecture in Jaisalmer, Rajasthan.",
+      "latitude": 26.9124,
+      "longitude": 70.912,
+      "map_source_url": "https://whc.unesco.org/en/list/247/"
+    },
+    {
+      "name": "Bodh Gaya",
+      "slug": "india-bodh-gaya",
+      "locality": "Bodh Gaya",
+      "district": "Gaya",
+      "state": "Bihar",
+      "overview": "Historic architecture in Bodh Gaya, Bihar.",
+      "latitude": 24.6951,
+      "longitude": 84.9913,
+      "map_source_url": "https://whc.unesco.org/en/list/1056/"
+    },
+    {
+      "name": "Nalanda",
+      "slug": "india-nalanda",
+      "locality": "Nalanda",
+      "district": "Nalanda",
+      "state": "Bihar",
+      "overview": "Historic architecture in Nalanda, Bihar.",
+      "latitude": 25.1367,
+      "longitude": 85.4438,
+      "map_source_url": "https://whc.unesco.org/en/list/1502/"
+    },
+    {
+      "name": "Hyderabad",
+      "slug": "india-hyderabad",
+      "locality": "Hyderabad",
+      "district": "Hyderabad",
+      "state": "Telangana",
+      "overview": "Historic architecture in Hyderabad, Telangana.",
+      "latitude": 17.3616,
+      "longitude": 78.4747,
+      "map_source_url": "https://hyderabad.telangana.gov.in/tourist-place/charminar/"
+    },
+    {
+      "name": "Old Goa",
+      "slug": "india-old-goa",
+      "locality": "Old Goa",
+      "district": "North Goa",
+      "state": "Goa",
+      "overview": "Historic architecture in Old Goa, Goa.",
+      "latitude": 15.5009,
+      "longitude": 73.9116,
+      "map_source_url": "https://whc.unesco.org/en/list/234/"
+    },
+    {
+      "name": "Amritsar",
+      "slug": "india-amritsar",
+      "locality": "Amritsar",
+      "district": "Amritsar",
+      "state": "Punjab",
+      "overview": "Historic architecture in Amritsar, Punjab.",
+      "latitude": 31.62,
+      "longitude": 74.8765,
+      "map_source_url": "https://sgpc.net/sri-harmandir-sahib/"
+    },
+    {
+      "name": "Kolkata",
+      "slug": "india-kolkata",
+      "locality": "Kolkata",
+      "district": "Kolkata",
+      "state": "West Bengal",
+      "overview": "Historic architecture in Kolkata, West Bengal.",
+      "latitude": 22.5448,
+      "longitude": 88.3426,
+      "map_source_url": "https://www.victoriamemorial-cal.org/home"
+    },
+    {
+      "name": "Sivasagar",
+      "slug": "india-sivasagar",
+      "locality": "Sivasagar",
+      "district": "Sivasagar",
+      "state": "Assam",
+      "overview": "Historic architecture in Sivasagar, Assam.",
+      "latitude": 26.9841,
+      "longitude": 94.6336,
+      "map_source_url": "https://sivasagar.assam.gov.in/about-district/district-glance"
+    },
+    {
+      "name": "Mattan",
+      "slug": "india-mattan",
+      "locality": "Mattan",
+      "district": "Anantnag",
+      "state": "Jammu and Kashmir",
+      "overview": "Historic architecture in Mattan, Jammu and Kashmir.",
+      "latitude": 33.7456,
+      "longitude": 75.2203,
+      "map_source_url": "https://anantnag.nic.in/tourist-place/martand-sun-temple/"
+    },
+    {
+      "name": "Thiruvananthapuram",
+      "slug": "india-thiruvananthapuram",
+      "locality": "Thiruvananthapuram",
+      "district": "Thiruvananthapuram",
+      "state": "Kerala",
+      "overview": "Historic architecture in Thiruvananthapuram, Kerala.",
+      "latitude": 8.4828,
+      "longitude": 76.9436,
+      "map_source_url": "https://www.keralatourism.org/temples/thiruvananthapuram/sree-padmanabhaswamy"
+    }
+  ],
+  "buildings": [
+    {
+      "slug": "taj-mahal-agra",
+      "name": "Taj Mahal",
+      "site": "india-agra",
+      "type": "Mausoleum",
+      "summary": "A marble mausoleum whose central dome, four minarets and formal garden create a carefully ordered riverfront ensemble.",
+      "history": "Shah Jahan commissioned the mausoleum for Mumtaz Mahal beside the Yamuna. UNESCO distinguishes the main tomb’s completion in 1648 from later ancillary works completed in 1653; its descriptions also use different starting years, so this record retains that uncertainty.",
+      "layout_notes": "The tomb stands on a raised terrace beyond a formally divided garden. Four minarets frame the central domed building, while subsidiary structures and a monumental entrance organize the approach.",
+      "year_from": 1631,
+      "year_to": 1648,
+      "date_label": "1631–1648 CE; ancillary works continued",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Mughal",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-taj-mahal-agra",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Marble",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-taj-mahal-agra",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Dome",
+          "description": "A curved roof spanning an interior space.",
+          "notes": "Documented element within the Taj Mahal architectural ensemble.",
+          "source": "india-taj-mahal-agra",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Minaret",
+          "description": "A tall tower associated with a mosque or monumental Islamic precinct.",
+          "notes": "Documented element within the Taj Mahal architectural ensemble.",
+          "source": "india-taj-mahal-agra",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Garden",
+          "description": "An intentionally arranged planted landscape associated with a monument.",
+          "notes": "Documented element within the Taj Mahal architectural ensemble.",
+          "source": "india-taj-mahal-agra",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-taj-mahal-agra",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 27.1751,
+      "longitude": 78.0421
+    },
+    {
+      "slug": "agra-fort",
+      "name": "Agra Fort",
+      "site": "india-agra",
+      "type": "Fort",
+      "summary": "A fortified imperial precinct containing successive palaces, audience halls and courts above the Yamuna.",
+      "history": "The Mughal imperial fortress preserves buildings from several reigns rather than one construction campaign. Its sandstone enclosure contains palace buildings, audience halls and mosques, illustrating changes in courtly requirements and architectural treatment.",
+      "layout_notes": "Fortified gates lead into successive courts and palace precincts. The Jahangiri Mahal, Khas Mahal and audience halls should be read as distinct components within the larger enclosure.",
+      "year_from": 1565,
+      "year_to": 1700,
+      "date_label": "16th–17th-century Mughal phases",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Mughal",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-agra-fort",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Sandstone",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-agra-fort",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Gateway",
+          "description": "An architectural entrance marking access to a precinct.",
+          "notes": "Documented element within the Agra Fort architectural ensemble.",
+          "source": "india-agra-fort",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Courtyard",
+          "description": "An open space enclosed or bordered by buildings and walls.",
+          "notes": "Documented element within the Agra Fort architectural ensemble.",
+          "source": "india-agra-fort",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Arch",
+          "description": "A curved or pointed structural opening.",
+          "notes": "Documented element within the Agra Fort architectural ensemble.",
+          "source": "india-agra-fort",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-agra-fort",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        },
+        {
+          "source": "agra-fort-asi",
+          "topic": "Akbar-period construction",
+          "locator": "Construction campaign 1565–1573",
+          "note": "Separate evidence for the dated historical phase."
+        }
+      ],
+      "latitude": 27.1795,
+      "longitude": 78.0211
+    },
+    {
+      "slug": "fatehpur-sikri",
+      "name": "Fatehpur Sikri",
+      "site": "india-fatehpur-sikri",
+      "type": "Palace complex",
+      "summary": "Akbar’s former capital brings ceremonial courts, columned pavilions and religious buildings into a planned sandstone city.",
+      "history": "Akbar established a planned imperial capital here in the 1570s. Administrative, residential and religious buildings were arranged around courts; the court moved to Lahore in 1585, but the surviving city retains its ceremonial organization.",
+      "layout_notes": "The complex includes palaces, public audience spaces, columned pavilions and a mosque precinct. Levels and courtyards separate public circulation from more restricted royal spaces.",
+      "year_from": 1571,
+      "year_to": 1585,
+      "date_label": "Principal imperial-city phase, 1571–1585 CE",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Mughal",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-fatehpur-sikri",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Sandstone",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-fatehpur-sikri",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Courtyard",
+          "description": "An open space enclosed or bordered by buildings and walls.",
+          "notes": "Documented element within the Fatehpur Sikri architectural ensemble.",
+          "source": "india-fatehpur-sikri",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Gateway",
+          "description": "An architectural entrance marking access to a precinct.",
+          "notes": "Documented element within the Fatehpur Sikri architectural ensemble.",
+          "source": "india-fatehpur-sikri",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Carved pillar",
+          "description": "A support enriched with carved ornament or figures.",
+          "notes": "Documented element within the Fatehpur Sikri architectural ensemble.",
+          "source": "india-fatehpur-sikri",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-fatehpur-sikri",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 27.094,
+      "longitude": 77.6688
+    },
+    {
+      "slug": "qutb-minar-delhi",
+      "name": "Qutb Minar",
+      "site": "india-mehrauli",
+      "type": "Minaret",
+      "summary": "A tapering masonry minaret articulated by fluting, projecting balconies and carved inscription bands.",
+      "history": "The minaret forms part of a larger early Sultanate ensemble at Mehrauli. Successive construction and repair phases shaped the tower now visible; nearby mosques, tombs and gateways belong to the complex but are not interchangeable with the minaret itself.",
+      "layout_notes": "The circular tower narrows upward through successive storeys. Alternating fluted surfaces, inscription bands and projecting balconies articulate the elevation.",
+      "year_from": 1199,
+      "year_to": 1368,
+      "date_label": "Late 12th century onward; successive storeys and repairs",
+      "date_precision": "range",
+      "aliases": [
+        "Qutub Minar",
+        "Qutab Minar"
+      ],
+      "styles": [
+        {
+          "name": "Delhi Sultanate",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-qutb-minar-delhi",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Sandstone",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-qutb-minar-delhi",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Balcony",
+          "description": "A projecting platform or gallery attached to a building.",
+          "notes": "Documented element within the Qutb Minar architectural ensemble.",
+          "source": "india-qutb-minar-delhi",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Inscription",
+          "description": "Lettering or a written record on an architectural surface.",
+          "notes": "Documented element within the Qutb Minar architectural ensemble.",
+          "source": "india-qutb-minar-delhi",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Minaret",
+          "description": "A tall tower associated with a mosque or monumental Islamic precinct.",
+          "notes": "Documented element within the Qutb Minar architectural ensemble.",
+          "source": "india-qutb-minar-delhi",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-qutb-minar-delhi",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 28.5244,
+      "longitude": 77.1855
+    },
+    {
+      "slug": "humayuns-tomb-delhi",
+      "name": "Humayun’s Tomb",
+      "site": "india-nizamuddin",
+      "type": "Mausoleum",
+      "summary": "A monumental garden tomb combining a raised platform, symmetrical arched elevations and a double dome.",
+      "history": "The monument is a major early Mughal garden tomb, dated by UNESCO to 1570. Its raised composition, symmetrical garden and dressed-stone structure clad in sandstone and marble form a carefully integrated funerary landscape.",
+      "layout_notes": "Paths and water channels divide the garden around the elevated tomb. Repeated arched openings and the central double dome establish the building’s symmetrical external composition.",
+      "year_from": 1565,
+      "year_to": 1572,
+      "date_label": "Circa 1570 CE; construction range varies by account",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Mughal",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-humayuns-tomb-delhi",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Sandstone",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-humayuns-tomb-delhi",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Marble",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-humayuns-tomb-delhi",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Dome",
+          "description": "A curved roof spanning an interior space.",
+          "notes": "Documented element within the Humayun’s Tomb architectural ensemble.",
+          "source": "india-humayuns-tomb-delhi",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Arch",
+          "description": "A curved or pointed structural opening.",
+          "notes": "Documented element within the Humayun’s Tomb architectural ensemble.",
+          "source": "india-humayuns-tomb-delhi",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Garden",
+          "description": "An intentionally arranged planted landscape associated with a monument.",
+          "notes": "Documented element within the Humayun’s Tomb architectural ensemble.",
+          "source": "india-humayuns-tomb-delhi",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-humayuns-tomb-delhi",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 28.5933,
+      "longitude": 77.2507
+    },
+    {
+      "slug": "red-fort-delhi",
+      "name": "Red Fort",
+      "site": "india-shahjahanabad",
+      "type": "Fort",
+      "summary": "Shah Jahan’s palace-fort organizes pavilions and ceremonial spaces within an imposing red sandstone enclosure.",
+      "history": "Shah Jahan built the palace-fort for his new capital, Shahjahanabad. Its private pavilions were connected by the Nahr-i-Behisht water channel; later interventions mean the surviving complex should not be treated as an unchanged seventeenth-century plan.",
+      "layout_notes": "Strong enclosure walls and monumental entrances frame more delicate courts and pavilions. Public ceremonial spaces and private apartments form different sequences within the palace precinct.",
+      "year_from": 1639,
+      "year_to": 1648,
+      "date_label": "1639–1648 CE; later alterations",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Mughal",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-red-fort-delhi",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Sandstone",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-red-fort-delhi",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Gateway",
+          "description": "An architectural entrance marking access to a precinct.",
+          "notes": "Documented element within the Red Fort architectural ensemble.",
+          "source": "india-red-fort-delhi",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Courtyard",
+          "description": "An open space enclosed or bordered by buildings and walls.",
+          "notes": "Documented element within the Red Fort architectural ensemble.",
+          "source": "india-red-fort-delhi",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Arch",
+          "description": "A curved or pointed structural opening.",
+          "notes": "Documented element within the Red Fort architectural ensemble.",
+          "source": "india-red-fort-delhi",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-red-fort-delhi",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 28.6562,
+      "longitude": 77.241
+    },
+    {
+      "slug": "great-stupa-sanchi",
+      "name": "Great Stupa at Sanchi",
+      "site": "india-sanchi",
+      "type": "Stupa",
+      "summary": "A hemispherical Buddhist reliquary mound encircled by a stone railing and richly carved directional gateways.",
+      "history": "The Great Stupa developed from an early Buddhist foundation through later enlargement and the addition of stone railings and carved gateways. The wider Sanchi complex includes monuments from many centuries; this record’s broad range describes principal early phases of Stupa 1.",
+      "layout_notes": "A hemispherical mound encloses the reliquary core. Circumambulatory routes, railings and four directional toranas structure ritual movement and offer surfaces for narrative carving.",
+      "year_from": -300,
+      "year_to": 100,
+      "date_label": "3rd century BCE core; enlargements and gateways followed",
+      "date_precision": "range",
+      "aliases": [
+        "Sanchi Stupa 1"
+      ],
+      "styles": [
+        {
+          "name": "Buddhist",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-great-stupa-sanchi",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Stone",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-great-stupa-sanchi",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Stupa",
+          "description": "A Buddhist reliquary monument, commonly a solid mound with a circumambulatory route.",
+          "notes": "Documented element within the Great Stupa at Sanchi architectural ensemble.",
+          "source": "india-great-stupa-sanchi",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Torana",
+          "description": "A ceremonial gateway, often composed of posts and horizontal crossbars.",
+          "notes": "Documented element within the Great Stupa at Sanchi architectural ensemble.",
+          "source": "india-great-stupa-sanchi",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Circumambulatory passage",
+          "description": "A route permitting ritual movement around a shrine or monument.",
+          "notes": "Documented element within the Great Stupa at Sanchi architectural ensemble.",
+          "source": "india-great-stupa-sanchi",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-great-stupa-sanchi",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 23.4793,
+      "longitude": 77.7397
+    },
+    {
+      "slug": "kandariya-mahadeva-khajuraho",
+      "name": "Kandariya Mahadeva Temple",
+      "site": "india-khajuraho",
+      "type": "Temple",
+      "summary": "A Chandella temple whose clustered towers rise above an elevated platform and densely carved wall surfaces.",
+      "history": "The temple belongs to the Chandella architectural flowering at Khajuraho. Its sculptural program is integral to the architecture, while the clustered sanctuary towers create a rising composition rather than a single isolated vertical mass.",
+      "layout_notes": "An elevated platform supports a sequence of halls leading toward the sanctuary. Curved towers and smaller associated spires emphasize the inner sacred space.",
+      "year_from": 1000,
+      "year_to": 1050,
+      "date_label": "Early 11th century CE",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Nagara",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-kandariya-mahadeva-khajuraho",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Sandstone",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-kandariya-mahadeva-khajuraho",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Curvilinear shikhara",
+          "description": "A curved-profile sanctuary tower in northern Indian temple architecture.",
+          "notes": "Documented element within the Kandariya Mahadeva Temple architectural ensemble.",
+          "source": "india-kandariya-mahadeva-khajuraho",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Sculptural relief",
+          "description": "Figures and ornament projecting from an architectural surface.",
+          "notes": "Documented element within the Kandariya Mahadeva Temple architectural ensemble.",
+          "source": "india-kandariya-mahadeva-khajuraho",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Mandapa",
+          "description": "A pillared hall or pavilion.",
+          "notes": "Documented element within the Kandariya Mahadeva Temple architectural ensemble.",
+          "source": "india-kandariya-mahadeva-khajuraho",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-kandariya-mahadeva-khajuraho",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 24.853,
+      "longitude": 79.9195
+    },
+    {
+      "slug": "ajanta-cave-1",
+      "name": "Ajanta Cave 1",
+      "site": "india-ajanta",
+      "type": "Cave monastery",
+      "summary": "A rock-cut Buddhist monastery with a pillared hall, shrine and celebrated painted interiors.",
+      "history": "Cave 1 belongs to Ajanta’s later Buddhist phase, distinct from the earlier caves of the group. Its paintings and sculpture combine a devotional setting with a monastic interior; the source dates the wider later group to the fifth and sixth centuries.",
+      "layout_notes": "A verandah leads into a pillared hall and a rear shrine. Painted wall surfaces and sculpted supports are architectural evidence that should be examined separately from the cave’s broader historical date.",
+      "year_from": 450,
+      "year_to": 600,
+      "date_label": "5th–6th-century later Ajanta phase; Cave 1 attribution approximate",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Buddhist",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-ajanta-cave-1",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Carved pillar",
+          "description": "A support enriched with carved ornament or figures.",
+          "notes": "Documented element within the Ajanta Cave 1 architectural ensemble.",
+          "source": "india-ajanta-cave-1",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Sculptural relief",
+          "description": "Figures and ornament projecting from an architectural surface.",
+          "notes": "Documented element within the Ajanta Cave 1 architectural ensemble.",
+          "source": "india-ajanta-cave-1",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Mural",
+          "description": "A painting executed on an architectural wall or ceiling.",
+          "notes": "Documented element within the Ajanta Cave 1 architectural ensemble.",
+          "source": "india-ajanta-cave-1",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-ajanta-cave-1",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 20.5515,
+      "longitude": 75.7033
+    },
+    {
+      "slug": "kailasa-temple-ellora",
+      "name": "Kailasa Temple, Ellora",
+      "site": "india-ellora",
+      "type": "Rock-cut temple",
+      "summary": "A freestanding-looking temple excavated from living rock, with a deep court, sculpted walls and subsidiary structures.",
+      "history": "Kailasa is the major monolithic Hindu temple within Ellora’s multi-religious cave complex. Excavation removed surrounding basalt to create courts, built-looking forms and sculptural surfaces from the parent rock.",
+      "layout_notes": "A deep open court surrounds the main temple mass. Gateways, subsidiary spaces and relief-covered walls create a sequence that differs from a cave simply cut into a cliff face.",
+      "year_from": 750,
+      "year_to": 800,
+      "date_label": "8th century CE; broadly Rashtrakuta period",
+      "date_precision": "range",
+      "aliases": [
+        "Ellora Cave 16",
+        "Kailasanatha Temple"
+      ],
+      "styles": [
+        {
+          "name": "Rashtrakuta",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-kailasa-temple-ellora",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Basalt",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-kailasa-temple-ellora",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Courtyard",
+          "description": "An open space enclosed or bordered by buildings and walls.",
+          "notes": "Documented element within the Kailasa Temple, Ellora architectural ensemble.",
+          "source": "india-kailasa-temple-ellora",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Sculptural relief",
+          "description": "Figures and ornament projecting from an architectural surface.",
+          "notes": "Documented element within the Kailasa Temple, Ellora architectural ensemble.",
+          "source": "india-kailasa-temple-ellora",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Mandapa",
+          "description": "A pillared hall or pavilion.",
+          "notes": "Documented element within the Kailasa Temple, Ellora architectural ensemble.",
+          "source": "india-kailasa-temple-ellora",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-kailasa-temple-ellora",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 20.0239,
+      "longitude": 75.1793
+    },
+    {
+      "slug": "elephanta-cave-1",
+      "name": "Elephanta Cave 1",
+      "site": "india-elephanta-island",
+      "type": "Cave temple",
+      "summary": "A columned Shaiva cave sanctuary with monumental relief panels arranged around a rock-cut sacred interior.",
+      "history": "UNESCO dates the principal Shaiva cave architecture to approximately the mid-fifth to sixth centuries. The great Cave 1 combines a square columned interior with monumental reliefs, including the celebrated three-headed form of Shiva.",
+      "layout_notes": "Rows of columns organize the main hall; porticos open on multiple sides. The shrine and sculptural panels establish distinct focal points within the excavated interior.",
+      "year_from": 450,
+      "year_to": 600,
+      "date_label": "Mid-5th–6th century CE attribution varies",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Rock-cut",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-elephanta-cave-1",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Carved pillar",
+          "description": "A support enriched with carved ornament or figures.",
+          "notes": "Documented element within the Elephanta Cave 1 architectural ensemble.",
+          "source": "india-elephanta-cave-1",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Sculptural relief",
+          "description": "Figures and ornament projecting from an architectural surface.",
+          "notes": "Documented element within the Elephanta Cave 1 architectural ensemble.",
+          "source": "india-elephanta-cave-1",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Mandapa",
+          "description": "A pillared hall or pavilion.",
+          "notes": "Documented element within the Elephanta Cave 1 architectural ensemble.",
+          "source": "india-elephanta-cave-1",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-elephanta-cave-1",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 18.9633,
+      "longitude": 72.9315
+    },
+    {
+      "slug": "sun-temple-konark",
+      "name": "Sun Temple, Konark",
+      "site": "india-konark",
+      "type": "Temple",
+      "summary": "A temple conceived as Surya’s monumental chariot, distinguished by carved wheels and extensive architectural sculpture.",
+      "history": "The temple expresses the solar deity Surya’s chariot through architectural scale, carved wheels and sculptural programs. The thirteenth-century ensemble survives incompletely, so remaining halls and sculptures should not be mistaken for the original complete temple.",
+      "layout_notes": "Carved chariot wheels articulate the raised base. Monumental surviving masses, subsidiary remains and sculptural bands reveal the original ceremonial composition.",
+      "year_from": 1238,
+      "year_to": 1264,
+      "date_label": "13th century CE; reign of Narasimhadeva I",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Kalinga",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-sun-temple-konark",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Stone",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-sun-temple-konark",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Stone wheel",
+          "description": "A carved wheel forming part of a chariot-shaped architectural composition.",
+          "notes": "Documented element within the Sun Temple, Konark architectural ensemble.",
+          "source": "india-sun-temple-konark",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Sculptural relief",
+          "description": "Figures and ornament projecting from an architectural surface.",
+          "notes": "Documented element within the Sun Temple, Konark architectural ensemble.",
+          "source": "india-sun-temple-konark",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Mandapa",
+          "description": "A pillared hall or pavilion.",
+          "notes": "Documented element within the Sun Temple, Konark architectural ensemble.",
+          "source": "india-sun-temple-konark",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-sun-temple-konark",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 19.8876,
+      "longitude": 86.0945
+    },
+    {
+      "slug": "brihadisvara-temple-thanjavur",
+      "name": "Brihadisvara Temple",
+      "site": "india-thanjavur",
+      "type": "Temple",
+      "summary": "Rajaraja I’s monumental temple places a tall pyramidal sanctuary tower within a large enclosed precinct.",
+      "history": "The temple is associated with Rajaraja I and the early eleventh-century Chola state. It remains part of a living religious tradition; painting, sculpture and stone construction complement the monumental sanctuary tower.",
+      "layout_notes": "The tall pyramidal vimana dominates a broad enclosed court. Gateways and subsidiary structures establish an axial approach to the sanctuary.",
+      "year_from": 1003,
+      "year_to": 1010,
+      "date_label": "Completed circa 1010 CE",
+      "date_precision": "range",
+      "aliases": [
+        "Brihadeeswarar Temple",
+        "Peruvudaiyar Kovil",
+        "Big Temple"
+      ],
+      "styles": [
+        {
+          "name": "Chola",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-brihadisvara-temple-thanjavur",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Stone",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-brihadisvara-temple-thanjavur",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Vimana",
+          "description": "The sanctuary superstructure in a southern Indian temple.",
+          "notes": "Documented element within the Brihadisvara Temple architectural ensemble.",
+          "source": "india-brihadisvara-temple-thanjavur",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Courtyard",
+          "description": "An open space enclosed or bordered by buildings and walls.",
+          "notes": "Documented element within the Brihadisvara Temple architectural ensemble.",
+          "source": "india-brihadisvara-temple-thanjavur",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Gopuram",
+          "description": "A monumental gateway tower of a temple enclosure.",
+          "notes": "Documented element within the Brihadisvara Temple architectural ensemble.",
+          "source": "india-brihadisvara-temple-thanjavur",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-brihadisvara-temple-thanjavur",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 10.7828,
+      "longitude": 79.1318
+    },
+    {
+      "slug": "airavatesvara-temple-darasuram",
+      "name": "Airavatesvara Temple",
+      "site": "india-darasuram",
+      "type": "Temple",
+      "summary": "A compact Chola temple whose sculpted halls and chariot-like forms reward close study of its stonework.",
+      "history": "Built under Rajaraja II, the twelfth-century temple is one of UNESCO’s Great Living Chola Temples. Its smaller scale compared with Thanjavur allows attention to the refinement of its sculpture and hall architecture.",
+      "layout_notes": "The sanctuary tower and richly articulated mandapa form the main composition. Chariot-like sculptural treatment and finely worked supports distinguish its ceremonial spaces.",
+      "year_from": 1100,
+      "year_to": 1200,
+      "date_label": "12th century CE; reign of Rajaraja II",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Chola",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-airavatesvara-temple-darasuram",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Stone",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-airavatesvara-temple-darasuram",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Mandapa",
+          "description": "A pillared hall or pavilion.",
+          "notes": "Documented element within the Airavatesvara Temple architectural ensemble.",
+          "source": "india-airavatesvara-temple-darasuram",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Sculptural relief",
+          "description": "Figures and ornament projecting from an architectural surface.",
+          "notes": "Documented element within the Airavatesvara Temple architectural ensemble.",
+          "source": "india-airavatesvara-temple-darasuram",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Vimana",
+          "description": "The sanctuary superstructure in a southern Indian temple.",
+          "notes": "Documented element within the Airavatesvara Temple architectural ensemble.",
+          "source": "india-airavatesvara-temple-darasuram",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-airavatesvara-temple-darasuram",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 10.948,
+      "longitude": 79.3568
+    },
+    {
+      "slug": "shore-temple-mahabalipuram",
+      "name": "Shore Temple",
+      "site": "india-mahabalipuram",
+      "type": "Temple",
+      "summary": "A coastal structural-temple ensemble with tiered towers and an enclosure of sculpted Nandi figures.",
+      "history": "The Shore Temple belongs to the Pallava architectural landscape at Mahabalipuram. Unlike the group’s rock-cut caves and monolithic rathas, it represents structural temple building beside the sea.",
+      "layout_notes": "Two prominent tiered towers and associated shrines occupy a compact coastal precinct. Nandi figures along the enclosure reinforce the shrine ensemble’s sculptural setting.",
+      "year_from": 700,
+      "year_to": 728,
+      "date_label": "Early 8th century CE",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Pallava",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-shore-temple-mahabalipuram",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Granite",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-shore-temple-mahabalipuram",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Vimana",
+          "description": "The sanctuary superstructure in a southern Indian temple.",
+          "notes": "Documented element within the Shore Temple architectural ensemble.",
+          "source": "india-shore-temple-mahabalipuram",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Sculptural relief",
+          "description": "Figures and ornament projecting from an architectural surface.",
+          "notes": "Documented element within the Shore Temple architectural ensemble.",
+          "source": "india-shore-temple-mahabalipuram",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Courtyard",
+          "description": "An open space enclosed or bordered by buildings and walls.",
+          "notes": "Documented element within the Shore Temple architectural ensemble.",
+          "source": "india-shore-temple-mahabalipuram",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-shore-temple-mahabalipuram",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 12.6165,
+      "longitude": 80.1993
+    },
+    {
+      "slug": "meenakshi-temple-madurai",
+      "name": "Meenakshi Sundareswarar Temple",
+      "site": "india-madurai",
+      "type": "Temple complex",
+      "summary": "A living temple complex organized around twin sanctuaries, monumental gateway towers, courts and pillared halls.",
+      "history": "The Madurai complex developed around the shrines of Meenakshi and Sundareswarar and preserves important Nayak-period work. The district account emphasizes its sculptured pillars, paintings and musical stone supports; the building history cannot be reduced to one founding year.",
+      "layout_notes": "Nested precincts and gateway towers surround the twin shrines. The Thousand Pillar Hall and processional corridors provide distinct architectural experiences within the living temple.",
+      "year_from": 1500,
+      "year_to": 1700,
+      "date_label": "Major surviving Nayak-period phases, 16th–17th centuries",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Dravidian",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-meenakshi-temple-madurai",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Gopuram",
+          "description": "A monumental gateway tower of a temple enclosure.",
+          "notes": "Documented element within the Meenakshi Sundareswarar Temple architectural ensemble.",
+          "source": "india-meenakshi-temple-madurai",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Mandapa",
+          "description": "A pillared hall or pavilion.",
+          "notes": "Documented element within the Meenakshi Sundareswarar Temple architectural ensemble.",
+          "source": "india-meenakshi-temple-madurai",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Carved pillar",
+          "description": "A support enriched with carved ornament or figures.",
+          "notes": "Documented element within the Meenakshi Sundareswarar Temple architectural ensemble.",
+          "source": "india-meenakshi-temple-madurai",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-meenakshi-temple-madurai",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 9.9195,
+      "longitude": 78.1193
+    },
+    {
+      "slug": "rani-ki-vav-patan",
+      "name": "Rani-ki-Vav",
+      "site": "india-patan",
+      "type": "Stepwell",
+      "summary": "A deeply descending stepwell whose pillared levels and sculpted walls turn water infrastructure into a ceremonial architectural space.",
+      "history": "The eleventh-century stepwell was conceived as a memorial and as a carefully designed water structure. UNESCO interprets it as an inverted temple, with multiple descending levels and extensive religious, mythological and secular sculpture.",
+      "layout_notes": "Stair flights descend through pillared levels toward the well. Sculptural panels line the walls, connecting structural rhythm, water access and ceremonial movement.",
+      "year_from": 1000,
+      "year_to": 1100,
+      "date_label": "11th century CE",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Maru-Gurjara",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-rani-ki-vav-patan",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Stone",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-rani-ki-vav-patan",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Stepped descent",
+          "description": "A staircase sequence leading down to water or an underground structure.",
+          "notes": "Documented element within the Rani-ki-Vav architectural ensemble.",
+          "source": "india-rani-ki-vav-patan",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Carved pillar",
+          "description": "A support enriched with carved ornament or figures.",
+          "notes": "Documented element within the Rani-ki-Vav architectural ensemble.",
+          "source": "india-rani-ki-vav-patan",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Sculptural relief",
+          "description": "Figures and ornament projecting from an architectural surface.",
+          "notes": "Documented element within the Rani-ki-Vav architectural ensemble.",
+          "source": "india-rani-ki-vav-patan",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-rani-ki-vav-patan",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 23.8589,
+      "longitude": 72.1019
+    },
+    {
+      "slug": "sun-temple-modhera",
+      "name": "Sun Temple, Modhera",
+      "site": "india-modhera",
+      "type": "Temple",
+      "summary": "A solar-temple ensemble connecting a stepped reservoir, a richly carved assembly hall and the main shrine.",
+      "history": "Gujarat Tourism, citing ASI, places construction in 1026–1027 under Bhima I. The ensemble combines solar devotion with a highly articulated reservoir and halls, rather than presenting only an isolated sanctuary.",
+      "layout_notes": "The Suryakund reservoir precedes the Sabha Mandap. Steps and subsidiary shrines frame the water, while carved pillars mediate the approach toward the main shrine.",
+      "year_from": 1026,
+      "year_to": 1027,
+      "date_label": "Circa 1026–1027 CE",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Maru-Gurjara",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-sun-temple-modhera",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Stepped tank",
+          "description": "A reservoir approached by architecturally arranged steps.",
+          "notes": "Documented element within the Sun Temple, Modhera architectural ensemble.",
+          "source": "india-sun-temple-modhera",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Mandapa",
+          "description": "A pillared hall or pavilion.",
+          "notes": "Documented element within the Sun Temple, Modhera architectural ensemble.",
+          "source": "india-sun-temple-modhera",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Carved pillar",
+          "description": "A support enriched with carved ornament or figures.",
+          "notes": "Documented element within the Sun Temple, Modhera architectural ensemble.",
+          "source": "india-sun-temple-modhera",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-sun-temple-modhera",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 23.5835,
+      "longitude": 72.1409
+    },
+    {
+      "slug": "amber-fort-jaipur",
+      "name": "Amber Fort",
+      "site": "india-amer",
+      "type": "Fort palace",
+      "summary": "A hilltop palace-fort with successive courts, gateways and ceremonial halls overlooking the Maota Lake.",
+      "history": "The palace-fort developed through successive Kachwaha building campaigns, beginning under Man Singh I in 1592. Its external defensive character contrasts with decorated interiors and ceremonial halls in sandstone and marble.",
+      "layout_notes": "Monumental gates enter the Jaleb Chowk and subsequent palace courts. Public and private halls, mirrored spaces and views toward Maota Lake structure the visitor’s movement.",
+      "year_from": 1592,
+      "year_to": 1700,
+      "date_label": "Late 16th–17th-century palace phases",
+      "date_precision": "range",
+      "aliases": [
+        "Amer Fort",
+        "Amber Palace"
+      ],
+      "styles": [
+        {
+          "name": "Rajput",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-amber-fort-jaipur",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Sandstone",
+          "notes": "Palace materials explicitly identified by Rajasthan Tourism.",
+          "source": "india-amber-fort-jaipur",
+          "locator": "Amber Palace architectural description"
+        },
+        {
+          "name": "Marble",
+          "notes": "Palace materials explicitly identified by Rajasthan Tourism.",
+          "source": "india-amber-fort-jaipur",
+          "locator": "Amber Palace architectural description"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Courtyard",
+          "description": "An open space enclosed or bordered by buildings and walls.",
+          "notes": "Documented element within the Amber Fort architectural ensemble.",
+          "source": "india-amber-fort-jaipur",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Gateway",
+          "description": "An architectural entrance marking access to a precinct.",
+          "notes": "Documented element within the Amber Fort architectural ensemble.",
+          "source": "india-amber-fort-jaipur",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Arch",
+          "description": "A curved or pointed structural opening.",
+          "notes": "Documented element within the Amber Fort architectural ensemble.",
+          "source": "india-amber-fort-jaipur",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-amber-fort-jaipur",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 26.9855,
+      "longitude": 75.8513
+    },
+    {
+      "slug": "hawa-mahal-jaipur",
+      "name": "Hawa Mahal",
+      "site": "india-jaipur",
+      "type": "Palace façade",
+      "summary": "A tall street-facing palace screen whose many small projecting windows create a distinctive honeycomb elevation.",
+      "history": "Sawai Pratap Singh commissioned the palace façade in 1799. Its characteristic screened windows form part of Jaipur’s historic urban architecture and allowed views of street activity from within the palace.",
+      "layout_notes": "A vertically layered street elevation is articulated by many small projecting windows. The façade’s light and air-filtering openings are its primary architectural focus.",
+      "year_from": 1799,
+      "year_to": 1799,
+      "date_label": "1799 CE",
+      "date_precision": "year",
+      "aliases": [
+        "Palace of Winds"
+      ],
+      "styles": [
+        {
+          "name": "Rajput",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-hawa-mahal-jaipur",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Jharokha",
+          "description": "A projecting, often screened window or balcony in Indian architecture.",
+          "notes": "Documented element within the Hawa Mahal architectural ensemble.",
+          "source": "india-hawa-mahal-jaipur",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Pierced stone window",
+          "description": "A perforated stone screen admitting filtered light and air.",
+          "notes": "Documented element within the Hawa Mahal architectural ensemble.",
+          "source": "india-hawa-mahal-jaipur",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-hawa-mahal-jaipur",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 26.9239,
+      "longitude": 75.8267
+    },
+    {
+      "slug": "jaisalmer-fort",
+      "name": "Jaisalmer Fort",
+      "site": "india-jaisalmer",
+      "type": "Fort",
+      "summary": "A living fortified settlement of golden-coloured stone, with gates, bastions, palaces and religious buildings.",
+      "history": "The fort is a long-lived urban enclosure rather than a single palace. UNESCO’s Hill Forts of Rajasthan account emphasizes the relationship between fortifications, inhabited settlements, religious buildings and water infrastructure.",
+      "layout_notes": "Gateways and bastions protect an internally occupied hilltop settlement. Palaces, narrow passages, projecting balconies and shrines form a layered architectural landscape.",
+      "year_from": 1156,
+      "year_to": 1800,
+      "date_label": "Founded 1156 CE; buildings span later centuries",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Rajput",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-jaisalmer-fort",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Sandstone",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "jaisalmer-fort-history",
+          "locator": "Fort description: sandstone"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Gateway",
+          "description": "An architectural entrance marking access to a precinct.",
+          "notes": "Documented element within the Jaisalmer Fort architectural ensemble.",
+          "source": "india-jaisalmer-fort",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Bastion",
+          "description": "A projecting defensive part of a fortified enclosure.",
+          "notes": "Documented element within the Jaisalmer Fort architectural ensemble.",
+          "source": "india-jaisalmer-fort",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Jharokha",
+          "description": "A projecting, often screened window or balcony in Indian architecture.",
+          "notes": "Documented element within the Jaisalmer Fort architectural ensemble.",
+          "source": "india-jaisalmer-fort",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-jaisalmer-fort",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        },
+        {
+          "source": "jaisalmer-fort-history",
+          "topic": "Foundation and material",
+          "locator": "Fort description: built 1156, carved from sandstone",
+          "note": "Separate evidence for the dated historical phase."
+        }
+      ],
+      "latitude": 26.9124,
+      "longitude": 70.912
+    },
+    {
+      "slug": "mahabodhi-temple-bodh-gaya",
+      "name": "Mahabodhi Temple",
+      "site": "india-bodh-gaya",
+      "type": "Temple",
+      "summary": "A tall brick Buddhist temple marking the sacred setting associated with the Buddha’s enlightenment.",
+      "history": "The sacred site is associated with the Buddha’s enlightenment and an earlier Ashokan foundation. UNESCO dates the principal surviving brick temple to the fifth or sixth century; that building date is distinct from the age of the religious site.",
+      "layout_notes": "A tall tapering sanctuary tower anchors the sacred precinct. Surrounding votive monuments, railings and associated spaces record subsequent devotional activity.",
+      "year_from": 400,
+      "year_to": 600,
+      "date_label": "Principal surviving temple, 5th–6th centuries CE; earlier sacred site",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Buddhist",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-mahabodhi-temple-bodh-gaya",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Brick",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-mahabodhi-temple-bodh-gaya",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Pyramidal tower",
+          "description": "A tower whose successive levels narrow toward the top.",
+          "notes": "Documented element within the Mahabodhi Temple architectural ensemble.",
+          "source": "india-mahabodhi-temple-bodh-gaya",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Sculptural relief",
+          "description": "Figures and ornament projecting from an architectural surface.",
+          "notes": "Documented element within the Mahabodhi Temple architectural ensemble.",
+          "source": "india-mahabodhi-temple-bodh-gaya",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-mahabodhi-temple-bodh-gaya",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 24.6951,
+      "longitude": 84.9913
+    },
+    {
+      "slug": "nalanda-mahavihara",
+      "name": "Nalanda Mahavihara",
+      "site": "india-nalanda",
+      "type": "Monastic complex",
+      "summary": "An archaeological monastic and scholarly complex whose brick courts, cells, shrines and stupas reveal successive building phases.",
+      "history": "Nalanda preserves the remains of a major Buddhist monastic and scholarly institution with a much longer history than any single building. UNESCO describes occupation from the third century BCE to the thirteenth century CE; the surviving architectural phases are a separate question.",
+      "layout_notes": "Brick monasteries organize cells around courts. Temples, stupas and successive building levels reveal both institutional planning and later rebuilding.",
+      "year_from": 400,
+      "year_to": 1200,
+      "date_label": "5th–12th-century surviving monastic phases",
+      "date_precision": "range",
+      "aliases": [
+        "Nalanda University"
+      ],
+      "styles": [
+        {
+          "name": "Buddhist",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-nalanda-mahavihara",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Brick",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-nalanda-mahavihara",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Courtyard",
+          "description": "An open space enclosed or bordered by buildings and walls.",
+          "notes": "Documented element within the Nalanda Mahavihara architectural ensemble.",
+          "source": "india-nalanda-mahavihara",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Stupa",
+          "description": "A Buddhist reliquary monument, commonly a solid mound with a circumambulatory route.",
+          "notes": "Documented element within the Nalanda Mahavihara architectural ensemble.",
+          "source": "india-nalanda-mahavihara",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Monastic cells",
+          "description": "Rooms arranged for the residence or study of a monastic community.",
+          "notes": "Documented element within the Nalanda Mahavihara architectural ensemble.",
+          "source": "india-nalanda-mahavihara",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-nalanda-mahavihara",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 25.1367,
+      "longitude": 85.4438
+    },
+    {
+      "slug": "charminar-hyderabad",
+      "name": "Charminar",
+      "site": "india-hyderabad",
+      "type": "Gateway monument",
+      "summary": "A four-sided urban monument with monumental arched passages and corner minarets at the heart of historic Hyderabad.",
+      "history": "The Hyderabad district account dates the monument to 1591 under Muhammad Quli Qutb Shah. Several explanations for its commemoration survive; the record does not turn an uncertain founding story into an established fact.",
+      "layout_notes": "Four large arches define passages through the square structure. Corner minarets, balconies and upper-level spaces mark the monument’s relationship to the surrounding streets.",
+      "year_from": 1591,
+      "year_to": 1591,
+      "date_label": "1591 CE",
+      "date_precision": "year",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Qutb Shahi",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-charminar-hyderabad",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Minaret",
+          "description": "A tall tower associated with a mosque or monumental Islamic precinct.",
+          "notes": "Documented element within the Charminar architectural ensemble.",
+          "source": "india-charminar-hyderabad",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Arch",
+          "description": "A curved or pointed structural opening.",
+          "notes": "Documented element within the Charminar architectural ensemble.",
+          "source": "india-charminar-hyderabad",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Balcony",
+          "description": "A projecting platform or gallery attached to a building.",
+          "notes": "Documented element within the Charminar architectural ensemble.",
+          "source": "india-charminar-hyderabad",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-charminar-hyderabad",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 17.3616,
+      "longitude": 78.4747
+    },
+    {
+      "slug": "basilica-bom-jesus-goa",
+      "name": "Basilica of Bom Jesus",
+      "site": "india-old-goa",
+      "type": "Church",
+      "summary": "An early modern basilica whose articulated façade and interior preserve important evidence of Portuguese-era religious architecture.",
+      "history": "The basilica is a component of Goa’s World Heritage churches and convents and houses the tomb associated with Francis Xavier. Its early modern architecture belongs to the wider exchange of European religious forms in Portuguese Asia.",
+      "layout_notes": "An articulated façade uses Classical architectural orders. The longitudinal church interior and associated funerary setting should be distinguished from the larger Old Goa group.",
+      "year_from": 1594,
+      "year_to": 1605,
+      "date_label": "1594–1605 CE",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Portuguese Renaissance",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-basilica-bom-jesus-goa",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Classical orders",
+          "description": "Architectural systems of columns, capitals and entablatures in the Classical tradition.",
+          "notes": "Documented element within the Basilica of Bom Jesus architectural ensemble.",
+          "source": "india-basilica-bom-jesus-goa",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Pediment",
+          "description": "A triangular or shaped crowning element above an architectural front or opening.",
+          "notes": "Documented element within the Basilica of Bom Jesus architectural ensemble.",
+          "source": "india-basilica-bom-jesus-goa",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Arch",
+          "description": "A curved or pointed structural opening.",
+          "notes": "Documented element within the Basilica of Bom Jesus architectural ensemble.",
+          "source": "india-basilica-bom-jesus-goa",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-basilica-bom-jesus-goa",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        },
+        {
+          "source": "bom-jesus-goa-history",
+          "topic": "Foundation and consecration",
+          "locator": "Foundation 24 November 1594; consecration 15 May 1605",
+          "note": "Separate evidence for the dated historical phase."
+        }
+      ],
+      "latitude": 15.5009,
+      "longitude": 73.9116
+    },
+    {
+      "slug": "harmandir-sahib-amritsar",
+      "name": "Harmandir Sahib",
+      "site": "india-amritsar",
+      "type": "Gurdwara",
+      "summary": "A sacred pavilion approached across a causeway within a large pool, with entrances emphasizing access from all directions.",
+      "history": "The SGPC account associates planning and construction with successive Sikh Gurus and records the late-sixteenth-century foundation. The temple’s subsequent rebuilding and surface treatment are later phases, not evidence that the visible fabric all dates from the foundation.",
+      "layout_notes": "A causeway connects the sacred pavilion with its surrounding precinct across the Amrit Sarovar. Access from four sides and the low setting express the temple’s particular spatial conception.",
+      "year_from": 1588,
+      "year_to": 1604,
+      "date_label": "Late 16th–early 17th-century foundation; later rebuilding and gilding",
+      "date_precision": "range",
+      "aliases": [
+        "Golden Temple",
+        "Sri Darbar Sahib"
+      ],
+      "styles": [
+        {
+          "name": "Sikh",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-harmandir-sahib-amritsar",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Dome",
+          "description": "A curved roof spanning an interior space.",
+          "notes": "Documented element within the Harmandir Sahib architectural ensemble.",
+          "source": "india-harmandir-sahib-amritsar",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Causeway",
+          "description": "A raised or built approach across water or low ground.",
+          "notes": "Documented element within the Harmandir Sahib architectural ensemble.",
+          "source": "india-harmandir-sahib-amritsar",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Sacred pool",
+          "description": "A water basin forming part of a religious architectural precinct.",
+          "notes": "Documented element within the Harmandir Sahib architectural ensemble.",
+          "source": "india-harmandir-sahib-amritsar",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-harmandir-sahib-amritsar",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 31.62,
+      "longitude": 74.8765
+    },
+    {
+      "slug": "victoria-memorial-kolkata",
+      "name": "Victoria Memorial",
+      "site": "india-kolkata",
+      "type": "Memorial museum",
+      "summary": "A marble memorial and museum combining a domed monumental composition with formal gardens and European and Indian design references.",
+      "history": "The memorial belongs to the early twentieth century and now functions as a museum. Its monumental composition combines European Classical and Renaissance references with Indian architectural elements; it broadens the archive beyond ancient and medieval monuments.",
+      "layout_notes": "A central dome organizes a symmetrical memorial building. Subsidiary domed forms, colonnaded approaches and formal gardens create the larger civic composition.",
+      "year_from": 1906,
+      "year_to": 1921,
+      "date_label": "1906–1921 CE",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Indo-European",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-victoria-memorial-kolkata",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Marble",
+          "description": "",
+          "notes": "Documented architectural fabric; not a claim that every component uses the same material.",
+          "source": "india-victoria-memorial-kolkata",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Dome",
+          "description": "A curved roof spanning an interior space.",
+          "notes": "Documented element within the Victoria Memorial architectural ensemble.",
+          "source": "india-victoria-memorial-kolkata",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Classical orders",
+          "description": "Architectural systems of columns, capitals and entablatures in the Classical tradition.",
+          "notes": "Documented element within the Victoria Memorial architectural ensemble.",
+          "source": "india-victoria-memorial-kolkata",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Garden",
+          "description": "An intentionally arranged planted landscape associated with a monument.",
+          "notes": "Documented element within the Victoria Memorial architectural ensemble.",
+          "source": "india-victoria-memorial-kolkata",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-victoria-memorial-kolkata",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        },
+        {
+          "source": "victoria-history",
+          "topic": "Construction and public opening",
+          "locator": "History: foundation and 28 December 1921 opening",
+          "note": "Separates the memorial project, construction and public opening."
+        }
+      ],
+      "latitude": 22.5448,
+      "longitude": 88.3426
+    },
+    {
+      "slug": "shiva-dol-sivasagar",
+      "name": "Shiva Dol",
+      "site": "india-sivasagar",
+      "type": "Temple",
+      "summary": "An Ahom-period Shiva temple beside the Sivasagar tank, distinguished by its rising sanctuary tower.",
+      "history": "The Assam district account places the Shivadol, Vishnudol and Devidol beside the tank in 1734 under Queen Madambika. This record concerns the Shiva temple, not every structure at the larger water precinct.",
+      "layout_notes": "A rising sanctuary tower gives the temple a strong vertical profile. Its relationship to the tank and adjoining shrines is an important part of the setting.",
+      "year_from": 1734,
+      "year_to": 1734,
+      "date_label": "1734 CE",
+      "date_precision": "year",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Ahom",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-shiva-dol-sivasagar",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Brick",
+          "notes": "Brick masonry identified in the ASI architectural description.",
+          "source": "sivadol-asi",
+          "locator": "Mandapa construction"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Curvilinear shikhara",
+          "description": "A curved-profile sanctuary tower in northern Indian temple architecture.",
+          "notes": "Documented element within the Shiva Dol architectural ensemble.",
+          "source": "sivadol-asi",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Sculptural relief",
+          "description": "Figures and ornament projecting from an architectural surface.",
+          "notes": "Documented element within the Shiva Dol architectural ensemble.",
+          "source": "sivadol-asi",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-shiva-dol-sivasagar",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        }
+      ],
+      "latitude": 26.9841,
+      "longitude": 94.6336
+    },
+    {
+      "slug": "martand-sun-temple",
+      "name": "Martand Sun Temple",
+      "site": "india-mattan",
+      "type": "Temple ruins",
+      "summary": "A ruined solar temple whose monumental central shrine and surrounding colonnaded court occupy an elevated Kashmir setting.",
+      "history": "The ruined temple is attributed to Lalitaditya Muktapida in the eighth century in the institutional archaeological record. Its surviving architecture should be read as evidence of an incomplete structure rather than an intact reconstructed temple.",
+      "layout_notes": "A monumental central shrine stands within a large colonnaded enclosure. Gateways, court space and framed mountain views organize the elevated site.",
+      "year_from": 700,
+      "year_to": 800,
+      "date_label": "8th century CE; attributed to Lalitaditya Muktapida",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Kashmir",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-martand-sun-temple",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Colonnade",
+          "description": "An ordered row of columns framing or supporting an architectural space.",
+          "notes": "Documented element within the Martand Sun Temple architectural ensemble.",
+          "source": "india-martand-sun-temple",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Courtyard",
+          "description": "An open space enclosed or bordered by buildings and walls.",
+          "notes": "Documented element within the Martand Sun Temple architectural ensemble.",
+          "source": "india-martand-sun-temple",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Gateway",
+          "description": "An architectural entrance marking access to a precinct.",
+          "notes": "Documented element within the Martand Sun Temple architectural ensemble.",
+          "source": "india-martand-sun-temple",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-martand-sun-temple",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        },
+        {
+          "source": "martand-archaeology",
+          "topic": "Eighth-century attribution",
+          "locator": "Brief history: Lalitaditya Muktapida",
+          "note": "Archaeological inventory attribution."
+        }
+      ],
+      "latitude": 33.7456,
+      "longitude": 75.2203
+    },
+    {
+      "slug": "padmanabhaswamy-temple",
+      "name": "Sree Padmanabhaswamy Temple",
+      "site": "india-thiruvananthapuram",
+      "type": "Temple",
+      "summary": "A living Vishnu temple blending Kerala and Dravidian architectural traditions, with a prominent gateway tower and processional spaces.",
+      "history": "The original foundation is not securely dated, as the district account explicitly notes. Later rebuilding and the living ritual tradition produced the present ensemble, which Kerala Tourism describes as a blend of Kerala and Dravidian architecture. Kerala Tourism records renovation in 1733; this is not a founding date.",
+      "layout_notes": "The gopuram marks the entrance to the temple precinct. Processional corridors, sculpted surfaces and associated water spaces form part of the broader sacred setting.",
+      "year_from": 1733,
+      "year_to": 1733,
+      "date_label": "Renovated 1733 CE; original foundation uncertain",
+      "date_precision": "year",
+      "aliases": [
+        "Sree Padmanabha Swamy Temple"
+      ],
+      "styles": [
+        {
+          "name": "Kerala-Dravidian",
+          "description": "",
+          "notes": "Architectural tradition or principal documented historical context.",
+          "source": "india-padmanabhaswamy-temple",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Gopuram",
+          "description": "A monumental gateway tower of a temple enclosure.",
+          "notes": "Documented element within the Sree Padmanabhaswamy Temple architectural ensemble.",
+          "source": "india-padmanabhaswamy-temple",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Sculptural relief",
+          "description": "Figures and ornament projecting from an architectural surface.",
+          "notes": "Documented element within the Sree Padmanabhaswamy Temple architectural ensemble.",
+          "source": "india-padmanabhaswamy-temple",
+          "locator": "Architectural description; scope is this documented monument"
+        },
+        {
+          "name": "Circumambulatory passage",
+          "description": "A route permitting ritual movement around a shrine or monument.",
+          "notes": "Documented element within the Sree Padmanabhaswamy Temple architectural ensemble.",
+          "source": "india-padmanabhaswamy-temple",
+          "locator": "Architectural description; scope is this documented monument"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india-padmanabhaswamy-temple",
+          "topic": "History, chronology and architectural composition",
+          "locator": "Monument description and historical context",
+          "note": "Dates describe recorded phases rather than every component."
+        },
+        {
+          "source": "padmanabhaswamy-district",
+          "topic": "Uncertain original foundation",
+          "locator": "Temple history",
+          "note": "The district account states the original consecration cannot be dated precisely."
+        },
+        {
+          "source": "padma-renovation",
+          "topic": "Renovation in 1733",
+          "locator": "Architectural description accompanying the Arattu video",
+          "note": "Separate evidence for the dated historical phase."
+        }
+      ],
+      "latitude": 8.4828,
+      "longitude": 76.9436
+    }
+  ]
+}

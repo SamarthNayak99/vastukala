@@ -6,7 +6,7 @@ import HotspotFields from './HotspotFields';
 
 const empty={name:'',slug:'',site_id:0,type_id:0,summary:'',history:'',layout_notes:'',year_from:null,year_to:null,date_label:'Not documented',date_precision:'unknown',status:'draft',aliases:[],styles:[],materials:[],elements:[],citations:[],images:[]};
 export default function Admin(){const[session,setSession]=useState(null),[error,setError]=useState(''),[records,setRecords]=useState([]),[tax,setTax]=useState(null),[editing,setEditing]=useState(null),[busy,setBusy]=useState(false),[notice,setNotice]=useState('');
- const load=async()=>{const[t,r]=await Promise.all([api('/taxonomy'),api('/admin/buildings?limit=48')]);setTax(t);setRecords(r.items);};
+ const load=async()=>{const[t,r]=await Promise.all([api('/taxonomy'),api('/admin/buildings?limit=120')]);setTax(t);setRecords(r.items);};
  useEffect(()=>{api('/auth/session').then(s=>{setSession(s);if(s.authenticated)load().catch(e=>setError(e.message));}).catch(e=>setError(e.message));},[]);
  async function mutation(path,body,method='POST'){return api(path,{method,headers:{'X-CSRF-Token':session.csrf},body:JSON.stringify(body)});}
  async function login(e){e.preventDefault();setError('');setBusy(true);const form=new FormData(e.currentTarget);try{const s=await mutation('/auth/login',{email:form.get('email'),password:form.get('password')});setSession(s);await load();}catch(e){setError(e.message);}finally{setBusy(false);}}

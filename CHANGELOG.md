@@ -1,5 +1,25 @@
 # Changelog
 
+## DBMS Lab — local addition, 1 November 2026
+
+- Optional corner entry and lazily loaded educational route with 13 lessons and four guided challenges.
+- Live public-record SQL templates, separate bound parameters, result tables and execution plans.
+- Interactive actual-schema explorer for 16 content tables, keys, constraints, indexes and public samples.
+- Fictional normalization walkthrough; isolated PostgreSQL temporary-table constraint errors, transaction traces, COMMIT/ROLLBACK demonstrations and synthetic indexing measurements.
+- No permanent schema/data changes; private infrastructure excluded. Full suite: 29 tests passing.
+
+## 1.1.0 — local expansion, 1 November 2026
+
+- Add an eight-monument homepage slideshow with image crossfades, matching credits, manual controls, pause/play and reduced-motion support.
+
+- Preserve the original 30 Karnataka monuments and add 30 researched monuments across India: 60 records across 17 states/UTs and 36 sites.
+- Add the state/UT dimension and synchronized catalogue/map filtering; use a national map with all records available in selectors.
+- Add 33 reviewed licensed photographs, 30 cited anatomy hotspots and 35 sourced life events.
+- Extend timeline and event validation to documented BCE dates, rejecting year zero.
+- Update national branding, statistics, ER diagram, synopsis, SQL examples and research documentation.
+- Verification: 24 integration tests pass; production build passes; original rows preserved exactly; 18-table backup restore verified.
+- This milestone is local and has not been pushed or deployed.
+
 ## 1.0.0 — 29 October 2026
 
 First private repository version of Vastukala, a local PERN college DBMS project.

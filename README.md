@@ -1,6 +1,6 @@
-# Vastukala — v1.0.0
+# Vastukala — v1.1.0
 
-A PostgreSQL-backed architecture archive for a college DBMS project. The local collection contains 30 researched Karnataka monuments across seven locations and 59 credited, high-resolution photographs. Built with React, Express, Node.js and PostgreSQL.
+A PostgreSQL-backed architecture archive for a college DBMS project. The India-wide collection retains 30 Karnataka monuments and adds 30 researched historic monuments from 16 other states and union territories. It contains 60 monuments across 17 states/UTs. Built with React, Express, Node.js and PostgreSQL.
 
 ## Run locally
 
@@ -20,7 +20,7 @@ Stop the development command with Ctrl+C. If you separately started `npm run db:
 
 ## Try the database features
 
-The connected archive adds **[cited comparisons, photograph anatomy and feature timelines](docs/connected-archive.md)**. Open `/compare`, `/anatomy` or `/across-time`. There are 37 reviewed hotspots across the existing 30 monuments. Administrators can place and edit markers within the Photographs editor; every marker needs a cited building element.
+The connected archive adds **[cited comparisons, photograph anatomy and feature timelines](docs/connected-archive.md)**. Open `/compare`, `/anatomy` or `/across-time`. There are reviewed hotspots across the national collection. Administrators can place and edit markers within the Photographs editor; every marker needs a cited building element.
 
 1. Open **The collection**.
 2. Select **Badami**, **Cave temple**, **Sandstone**, and **Carved pillar**. Badami Cave 3 matches.
@@ -71,20 +71,22 @@ To use an installed PostgreSQL instance, copy `.env.example` to `.env` and set `
 
 For a local built version, keep PostgreSQL running, run `npm run build`, then `npm start` and open http://127.0.0.1:3001. Online deployment is a later milestone; secure cookies and a trusted proxy are enabled with `NODE_ENV=production`.
 
-## Version 1 features
+## Current features
 
-- Catalogue: 30 monuments, seven sites, combined filters and alternate-name search.
+- Catalogue: 60 monuments, state/UT and site filters, combined material/element filters and alternate-name search.
 - Cited comparison: shared and distinct materials, layouts, styles and elements.
-- Anatomy: 37 curated photograph hotspots, definitions, citations and related monuments.
+- Anatomy: curated photograph hotspots, definitions, citations and related monuments.
 - Across time: approximate building-date ranges, feature filtering and undated records.
 - Photograph study: zoom, pan, full-screen and independent two-photo comparison with attribution.
 - Life stories: separately sourced events, uncertainty, chronological display and admin event CRUD.
-- Karnataka map: clustered site reference markers, catalogue filters, map-area search and comparison selection.
+- India map: clustered site reference markers, catalogue filters, map-area search and comparison selection.
 - Administration: session login, CSRF protection, validated record editing and publishing.
 
 Map positions currently represent approximate **site reference points**, not surveyed individual buildings. Event coverage varies; missing records are not evidence that no event occurred. No online deployment is included in this release.
 
 ## Academic and implementation documentation
+
+The [India expansion notes](docs/india-expansion.md) describe national scope, state filtering, sources, BCE dates and preservation of the original Karnataka collection. Earlier phase documents are historical snapshots with their original counts.
 
 - [Version 1 release notes](CHANGELOG.md)
 - [Architecture and API](docs/architecture-and-api.md)
@@ -101,7 +103,7 @@ Map positions currently represent approximate **site reference points**, not sur
 - [Progress and verification](docs/progress.md)
 - [Research sources](research/resources.md)
 
-The collection contains Hampi (8), Pattadakal (7), Badami (6), Aihole (6), Belur (1), Halebidu (1), and Somanathapura (1). The 25 additions each have two reviewed photographs. Deeper dossiers, further element close-ups, final submission formatting, and online deployment remain later work.
+The original Karnataka collection remains Hampi (8), Pattadakal (7), Badami (6), Aihole (6), Belur (1), Halebidu (1), and Somanathapura (1). The 30 national additions are listed in `research/india.json`. The collection now has 92 approved photographs and 67 reviewed anatomy hotspots. Every national addition has at least one licensed photograph and one cited hotspot; selected records have extra detail views. Deeper dossiers, further element close-ups, final submission formatting, and online deployment remain later work.
 
 
 New local features: [photo study](http://127.0.0.1:5173/photographs), [life stories](http://127.0.0.1:5173/life-stories), and [heritage map](http://127.0.0.1:5173/map). See [implementation details](docs/image-map-life-stories.md), including source coverage and approximate site-coordinate limitations.
@@ -111,3 +113,11 @@ New local features: [photo study](http://127.0.0.1:5173/photographs), [life stor
 Local credentials, PostgreSQL data, session secrets, backups, downloaded originals, generated WebP images, dependencies and build output are excluded from Git. Recreate the catalogue through migrations, curated research data and the documented media-fetch step. Database edits made only through the administrator are local data and are not automatically exported to Git.
 
 Photograph metadata retains individual source, author and licence information in `research/media-manifest.json`; private repository visibility does not replace those licence obligations. No general open-source licence is granted for project code in this first private release. See [third-party notices](THIRD_PARTY_NOTICES.md).
+
+### Homepage photograph slideshow
+
+The homepage features eight monuments from the existing collection, advancing every 3 seconds after the next photograph is ready, with a 1.8-second crossfade, gentle photograph zoom and softly rising captions. Monument links, state/location captions and licence credits update together. Visitors can select dots, use previous/next controls or pause/play. Autoplay starts on page load and continues after manual selection, hovering or keyboard focus. Only the pause control or a hidden tab suspends it. Reduced-motion preferences remove visual transition effects. Failed image files are skipped.
+
+### Optional DBMS Lab
+
+Open `/dbms-lab` or the corner learning link. Thirteen lessons connect DBMS theory to this project, with live guided SQL, parameters, results, a 16-table interactive schema explorer, normalization steps, four challenges with hints/solutions, genuine temporary-table constraint and transaction demonstrations, and an isolated 40,000-row indexing experiment. No arbitrary SQL input or permanent practice writes are exposed. See [DBMS Lab implementation and demonstration guide](docs/dbms-lab.md). Current integration suite: 29 passing tests.

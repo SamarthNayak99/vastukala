@@ -2,3 +2,6 @@
 .image-viewer button{background:#f2ead9;color:#202b21;border:1px solid #d2c2a0;min-height:42px;padding:8px 16px}.image-viewer button:hover{background:#d8bd88}.image-viewer button:focus-visible,.image-viewer select:focus-visible{outline:3px solid #e8a750;outline-offset:3px}.header nav{flex-wrap:wrap}.map-records a{padding:12px;border-bottom:1px solid #d1c5ae}
 
 .detail-actions{display:flex;align-items:center;justify-content:space-between;gap:16px 28px;flex-wrap:wrap;padding:0 5% 28px}.detail-actions .detail-explore-link{margin:0}.detail-actions .button{font-size:12px;min-height:46px;padding:12px 20px}@media(max-width:700px){.detail-actions{align-items:flex-start;flex-direction:column;padding-bottom:22px}.detail-actions .button{max-width:100%;white-space:normal;text-align:left}}
+.filters select{width:100%;max-width:100%;font-size:12px}.map-filters select{font-size:12px}.place-links{row-gap:0}.image-label{max-width:95%;white-space:normal}
+.map-selection{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:16px;background:#e7dfcd;margin:16px 0}.map-selection button{font-size:12px}.map-selection span{font-size:12px}.filters select{min-height:44px}.place-links h3{overflow-wrap:anywhere}
+img[src*="india-qutb-minar-delhi-overview"]{object-position:center 88%}

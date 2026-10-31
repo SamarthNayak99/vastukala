@@ -420,5 +420,236 @@
     "file": "A sculpture at the Keshava temple in Somanathapura.jpg",
     "caption": "Keshava Temple, Somanathapura: Sculpted figure on the outer wall",
     "cover": false
+  },
+  {
+    "key": "india-taj-mahal-agra-overview",
+    "building": "taj-mahal-agra",
+    "file": "Taj Mahal, Agra, India edit2.jpg",
+    "caption": "Taj Mahal: mausoleum, minarets and formal garden",
+    "cover": true
+  },
+  {
+    "key": "india-taj-mahal-agra-detail",
+    "building": "taj-mahal-agra",
+    "file": "El Taj Mahal-Agra India0023.JPG",
+    "caption": "Taj Mahal: mausoleum framed by an arch",
+    "cover": false
+  },
+  {
+    "key": "india-agra-fort-overview",
+    "building": "agra-fort",
+    "file": "Agra Fort - Panoramic views (8).jpg",
+    "caption": "Agra Fort: Jahangiri Mahal façade",
+    "cover": true
+  },
+  {
+    "key": "india-agra-fort-detail",
+    "building": "agra-fort",
+    "file": "Jahangiri Mahal-Red Fort-Agra-India5356.JPG",
+    "caption": "Agra Fort: closer view of Jahangiri Mahal",
+    "cover": false
+  },
+  {
+    "key": "india-fatehpur-sikri-overview",
+    "building": "fatehpur-sikri",
+    "file": "Fatehpur-Fatehpur Sikri India0002.JPG",
+    "caption": "Fatehpur Sikri: sandstone gateway",
+    "cover": true
+  },
+  {
+    "key": "india-fatehpur-sikri-detail",
+    "building": "fatehpur-sikri",
+    "file": "Fatehpur-Fatehpur Sikri India0006.JPG",
+    "caption": "Fatehpur Sikri: Diwan-i-Khas pavilion",
+    "cover": false
+  },
+  {
+    "key": "india-qutb-minar-delhi-overview",
+    "building": "qutb-minar-delhi",
+    "file": "Qutb Minar with Neem Tree.jpg",
+    "caption": "Qutb Minar: upward view of the fluted tower",
+    "cover": true
+  },
+  {
+    "key": "india-humayuns-tomb-delhi-verified-overview",
+    "building": "humayuns-tomb-delhi",
+    "file": "Humayun’s Tomb 14.jpg",
+    "caption": "Humayun’s Tomb: sandstone plinth and repeated arches",
+    "cover": true
+  },
+  {
+    "key": "india-red-fort-delhi-overview",
+    "building": "red-fort-delhi",
+    "file": "Red Fort -Delhi -Delhi -SSI 028.jpg",
+    "caption": "Red Fort: vaulted Chhatta Chowk passage",
+    "cover": true
+  },
+  {
+    "key": "india-great-stupa-sanchi-overview",
+    "building": "great-stupa-sanchi",
+    "file": "Stupa 1, Sanchi 02.jpg",
+    "caption": "Sanchi: Great Stupa and carved gateway",
+    "cover": true
+  },
+  {
+    "key": "india-kandariya-mahadeva-khajuraho-overview",
+    "building": "kandariya-mahadeva-khajuraho",
+    "file": "A view from the southside of Kandariya temple 01.jpg",
+    "caption": "Kandariya Mahadeva: clustered sanctuary towers",
+    "cover": true
+  },
+  {
+    "key": "india-ajanta-cave-1-verified-overview",
+    "building": "ajanta-cave-1",
+    "file": "Ajanta caves - cave 1 vrvbajel0924 (31).jpg",
+    "caption": "Ajanta Cave 1: carved rock-cut column",
+    "cover": true
+  },
+  {
+    "key": "india-kailasa-temple-ellora-overview",
+    "building": "kailasa-temple-ellora",
+    "file": "Courtyard and Mahabharata Reliefs at the Kailasa Temple, Ellora 01.jpg",
+    "caption": "Kailasa, Ellora: excavated court and relief-covered walls",
+    "cover": true
+  },
+  {
+    "key": "india-elephanta-cave-1-overview",
+    "building": "elephanta-cave-1",
+    "file": "Elephanta Cave 1 4.jpg",
+    "caption": "Elephanta Cave 1: columned interior",
+    "cover": true
+  },
+  {
+    "key": "india-sun-temple-konark-overview",
+    "building": "sun-temple-konark",
+    "file": "Sun Temple Main Structure, Konark, Orissa.jpg",
+    "caption": "Konark: surviving temple hall",
+    "cover": true
+  },
+  {
+    "key": "india-brihadisvara-temple-thanjavur-overview",
+    "building": "brihadisvara-temple-thanjavur",
+    "file": "Brihadisvara Temple during Maha Shivaratri-WUS03611 (edit).jpg",
+    "caption": "Brihadisvara: illuminated sanctuary tower and precinct",
+    "cover": true
+  },
+  {
+    "key": "india-airavatesvara-temple-darasuram-overview",
+    "building": "airavatesvara-temple-darasuram",
+    "file": "Darasuram, Airavatesvara Temple, Mandapa at night 4, India.jpg",
+    "caption": "Airavatesvara: pillared mandapa at night",
+    "cover": true
+  },
+  {
+    "key": "india-shore-temple-mahabalipuram-flickr-overview",
+    "building": "shore-temple-mahabalipuram",
+    "file": "Mahabalipuram Shore Temple, Tamil Nadu (Flickr 3494580482).jpg",
+    "caption": "Shore Temple: coastal towers and Nandi enclosure",
+    "cover": true
+  },
+  {
+    "key": "india-meenakshi-temple-madurai-flickr-overview",
+    "building": "meenakshi-temple-madurai",
+    "file": "Madurai meenakshi temple (Flickr 5929195924).jpg",
+    "caption": "Meenakshi Temple: tank, colonnade and gateway towers",
+    "cover": true
+  },
+  {
+    "key": "india-rani-ki-vav-patan-flickr-overview",
+    "building": "rani-ki-vav-patan",
+    "file": "rani ki vav (Flickr 3616269086).jpg",
+    "caption": "Rani-ki-Vav: descending pillared levels",
+    "cover": true
+  },
+  {
+    "key": "india-sun-temple-modhera-flickr-overview",
+    "building": "sun-temple-modhera",
+    "file": "India - Modhera Sun Temple (Flickr 40803224962).jpg",
+    "caption": "Modhera: stepped reservoir and pillared hall",
+    "cover": true
+  },
+  {
+    "key": "india-amber-fort-jaipur-flickr-overview",
+    "building": "amber-fort-jaipur",
+    "file": "Amber Jaipur (Flickr 188139761).jpg",
+    "caption": "Amber Fort: palace façade and fortified hillside",
+    "cover": true
+  },
+  {
+    "key": "india-hawa-mahal-jaipur-flickr-overview",
+    "building": "hawa-mahal-jaipur",
+    "file": "Hawa Mahal, Jaipur (Flickr 13763437473).jpg",
+    "caption": "Hawa Mahal: screened street façade",
+    "cover": true
+  },
+  {
+    "key": "india-jaisalmer-fort-flickr-overview",
+    "building": "jaisalmer-fort",
+    "file": "Jaisalmer Fort (Flickr 4445482361).jpg",
+    "caption": "Jaisalmer Fort: palace and defensive bastion",
+    "cover": true
+  },
+  {
+    "key": "india-mahabodhi-temple-bodh-gaya-flickr-exterior",
+    "building": "mahabodhi-temple-bodh-gaya",
+    "file": "Mahabodhi Temple Detail III (Flickr 8570930682).jpg",
+    "caption": "Mahabodhi Temple: tapering sanctuary tower",
+    "cover": true
+  },
+  {
+    "key": "india-nalanda-mahavihara-flickr-overview",
+    "building": "nalanda-mahavihara",
+    "file": "Nalanda (Flickr 6511269043).jpg",
+    "caption": "Nalanda: brick stupa and surrounding remains",
+    "cover": true
+  },
+  {
+    "key": "india-charminar-hyderabad-flickr-overview",
+    "building": "charminar-hyderabad",
+    "file": "Charminar, Hyderabad (Flickr 3305853097).jpg",
+    "caption": "Charminar: arched façade and minarets",
+    "cover": true
+  },
+  {
+    "key": "india-basilica-bom-jesus-goa-flickr-overview",
+    "building": "basilica-bom-jesus-goa",
+    "file": "Basilica of Bom Jesus (Flickr 21904521203).jpg",
+    "caption": "Basilica of Bom Jesus: façade illuminated at night",
+    "cover": true
+  },
+  {
+    "key": "india-harmandir-sahib-amritsar-flickr-exterior",
+    "building": "harmandir-sahib-amritsar",
+    "file": "Amritsar, Golden Temple (Flickr 6289649711).jpg",
+    "caption": "Harmandir Sahib: gilded pavilion reflected in the pool",
+    "cover": true
+  },
+  {
+    "key": "india-victoria-memorial-kolkata-flickr-overview",
+    "building": "victoria-memorial-kolkata",
+    "file": "Admiring the monument (Flickr 52759521853).jpg",
+    "caption": "Victoria Memorial: formal garden and domed memorial",
+    "cover": true
+  },
+  {
+    "key": "india-shiva-dol-sivasagar-flickr-exterior",
+    "building": "shiva-dol-sivasagar",
+    "file": "IMG_8057.jpg (Flickr 54459804983).jpg",
+    "caption": "Shiva Dol: entrance pavilion and sanctuary tower",
+    "cover": true
+  },
+  {
+    "key": "india-martand-sun-temple-flickr-overview",
+    "building": "martand-sun-temple",
+    "file": "Martand Sun Temple (Flickr 14575560144).jpg",
+    "caption": "Martand Sun Temple: surviving central shrine",
+    "cover": true
+  },
+  {
+    "key": "india-padmanabhaswamy-temple-flickr-overview",
+    "building": "padmanabhaswamy-temple",
+    "file": "Sree Padmanabhaswamy Temple (Flickr 54346274710).jpg",
+    "caption": "Padmanabhaswamy Temple: gateway tower across the tank",
+    "cover": true
   }
 ]

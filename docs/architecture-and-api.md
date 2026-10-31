@@ -40,7 +40,7 @@ All paths below begin with `/api`. See `server/app.mjs`, `server/catalogue.mjs`,
 | --- | --- |
 | `GET /health` | Database connectivity health check |
 | `GET /taxonomy`, `/sites` | Controlled terms, sources and locations |
-| `GET /buildings` | Published results; `q`, comma-separated `sites/types/materials/elements`, `page`, `limit` (max 48), `sort` |
+| `GET /buildings` | Published results; `q`, comma-separated `states` names and `sites/types/materials/elements` IDs, `page`, `limit` (max 120), `sort` |
 | `GET /buildings/:slug` | Published detail and approved images |
 | `GET /buildings/:slug/events` | Sourced events in chronological order |
 | `GET /compare?ids=a,b` | Shared and distinct documented features with references |
@@ -55,10 +55,14 @@ All paths below begin with `/api`. See `server/app.mjs`, `server/catalogue.mjs`,
 | `PUT/DELETE /admin/buildings/:id/events/:eventId` | Modify/remove an event within that building |
 | `POST /admin/sources`, `/admin/taxonomy/:kind` | Add references or supported controlled terms |
 
-Authenticated mutations require the session cookie and `X-CSRF-Token`. A life-event payload contains `kind`, `title`, `description`, `year_from`, `year_to`, `precision`, `source_id` and `locator`. Event kinds: construction, addition, alteration, restoration, use, recognition. Precision: year, approximate, range. Dates must be ordered CE years 1–2100.
+Authenticated mutations require the session cookie and `X-CSRF-Token`. A life-event payload contains `kind`, `title`, `description`, `year_from`, `year_to`, `precision`, `source_id` and `locator`. Event kinds: construction, addition, alteration, restoration, use, recognition. Precision: year, approximate, range. Dates must be ordered years -1000–2100; negative integers denote BCE, positive integers CE, and zero is rejected.
 
 ## Integrity boundaries
 
 Parameterized SQL prevents values being interpolated into queries. Zod validates API payloads. Foreign keys/checks/unique indexes enforce relationships and dates. Building saves use a transaction; invalid associated records roll back the save. Event writes are independent single-record operations. Publishing prerequisites and hotspot evidence checks are application rules, not SQL triggers. Admin sessions are stored in PostgreSQL; secure cookies and proxy trust depend on production configuration.
 
 Map filters use the catalogue API; the area filter is applied to returned coordinates in the browser and is not a PostGIS query. Site reference positions must not be used as exact navigation coordinates. Life-event order does not imply influence or causation.
+
+## Optional DBMS Lab API
+
+See [DBMS Lab boundaries and endpoints](dbms-lab.md). `GET /api/lab/schema`, `GET /api/lab/tables/:name`, `POST /api/lab/query`, `POST /api/lab/practice` and `POST /api/lab/performance` provide allowlisted metadata, public samples, fixed read-only query templates and connection-local temporary exercises. No arbitrary SQL endpoint is provided.

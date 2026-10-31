@@ -9,6 +9,7 @@ const httpUrl=z.url().refine(x=>['http:','https:'].includes(new URL(x).protocol)
 const citation=z.object({source_id:id,claim_topic:z.string().min(1).max(500),locator:z.string().max(2000).default(''),note:z.string().max(3000).default(''),target_kind:z.enum(['style','material','element']).nullable().optional(),taxonomy_id:id.nullable().optional()}).refine(x=>Boolean(x.target_kind)===Boolean(x.taxonomy_id),'Citation target requires both kind and taxonomy ID');
 const image=z.object({storage_key:z.string().regex(/^[a-z0-9-]+$/),source_page_url:httpUrl,original_url:httpUrl,author:z.string().min(1).max(2000),licence_code:z.string().min(1).max(100),licence_url:httpUrl,caption:z.string().min(1).max(1000),alt_text:z.string().min(1).max(1000),width:id,height:id,byte_size:id,modification_note:z.string().max(1000).default(''),sort_order:z.number().int().min(0).default(0),is_cover:z.boolean(),approved:z.boolean(),element_id:id.nullable().optional(),hotspots:z.array(hotspot).max(30).optional()});
 export const buildingSchema=z.object({name:z.string().trim().min(1).max(200),slug:z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).max(200),site_id:id,type_id:id,summary:z.string().max(3000),history:z.string().max(10000),layout_notes:z.string().max(10000),year_from:z.number().int().nullable(),year_to:z.number().int().nullable(),date_label:z.string().min(1).max(200),date_precision:z.enum(['year','approximate','range','unknown']),status:z.enum(['draft','published','archived']),aliases:z.array(z.string().trim().min(1).max(200)).max(30),styles:z.array(link).max(30),materials:z.array(link).max(30),elements:z.array(link).max(50),citations:z.array(citation).max(100),images:z.array(image).max(30)}).superRefine((b,ctx)=>{
+ if(b.year_from===0||b.year_to===0)ctx.addIssue({code:'custom',message:'There is no year zero; use a negative BCE or positive CE year.'});
  if(b.year_from!==null&&b.year_to!==null&&b.year_from>b.year_to)ctx.addIssue({code:'custom',message:'Start year must not exceed end year.'});
  for(const kind of ['styles','materials','elements'])if(new Set(b[kind].map(x=>x.id)).size!==b[kind].length)ctx.addIssue({code:'custom',message:`Duplicate ${kind}.`});
  if(new Set(b.aliases).size!==b.aliases.length)ctx.addIssue({code:'custom',message:'Duplicate aliases.'});
@@ -26,10 +27,10 @@ export const buildingSchema=z.object({name:z.string().trim().min(1).max(200),slu
 export async function taxonomy() {
  const names=['sites','building_types','styles','materials','elements','sources'];
  const results=await Promise.all(names.map(name=>pool.query(`SELECT * FROM ${name} ORDER BY ${name==='sources'?'title':'name'}`)));
- return Object.fromEntries(names.map((name,index)=>[name,results[index].rows]));
+ const states=(await pool.query(`SELECT s.name AS id,s.name,s.kind,count(b.id)::int AS count FROM states s LEFT JOIN sites l ON l.state=s.name LEFT JOIN buildings b ON b.site_id=l.id AND b.status='published' GROUP BY s.name ORDER BY s.name`)).rows;return {...Object.fromEntries(names.map((name,index)=>[name,results[index].rows])),states};
 }
 export async function getBuilding(value,{admin=false,byId=false}={}) {
- const result=await pool.query(`SELECT b.*,s.name AS site,s.slug AS site_slug,s.district,s.map_latitude,s.map_longitude,s.map_source_url,t.name AS type FROM buildings b JOIN sites s ON s.id=b.site_id JOIN building_types t ON t.id=b.type_id WHERE b.${byId?'id':'slug'}=$1 ${admin?'':"AND b.status='published'"}`,[value]);
+ const result=await pool.query(`SELECT b.*,s.name AS site,s.slug AS site_slug,s.district,s.state,s.map_latitude,s.map_longitude,s.map_source_url,t.name AS type FROM buildings b JOIN sites s ON s.id=b.site_id JOIN building_types t ON t.id=b.type_id WHERE b.${byId?'id':'slug'}=$1 ${admin?'':"AND b.status='published'"}`,[value]);
  if(!result.rowCount)return null;
  const b=result.rows[0];
  const results=await Promise.all([
@@ -46,12 +47,13 @@ export async function getBuilding(value,{admin=false,byId=false}={}) {
 }
 export function listFilters(query) {
  const ids=value=>{if(!value)return [];const values=String(value).split(',');if(values.length>30||values.some(x=>!/^\d+$/.test(x)||Number(x)<1||Number(x)>2147483647))throw Object.assign(new Error('Invalid filter IDs.'),{status:400});return [...new Set(values.map(Number))];};
- return {q:String(query.q||'').slice(0,200),sites:ids(query.sites),types:ids(query.types),materials:ids(query.materials),elements:ids(query.elements),page:Math.min(100000,Math.max(1,Number.parseInt(query.page)||1)),limit:Math.min(48,Math.max(1,Number.parseInt(query.limit)||12)),sort:['name','oldest','newest'].includes(query.sort)?query.sort:'name'};
+ const states=String(query.states||query.state||'').split(',').map(x=>x.trim()).filter(Boolean);if(states.length>36||states.some(x=>x.length>80||!/^[A-Za-z ]+$/.test(x)))throw Object.assign(new Error('Invalid states.'),{status:400});return {states,q:String(query.q||'').slice(0,200),sites:ids(query.sites),types:ids(query.types),materials:ids(query.materials),elements:ids(query.elements),page:Math.min(100000,Math.max(1,Number.parseInt(query.page)||1)),limit:Math.min(120,Math.max(1,Number.parseInt(query.limit)||12)),sort:['name','oldest','newest'].includes(query.sort)?query.sort:'name'};
 }
 export async function listBuildings(query,{admin=false}={}) {
  const f=listFilters(query),params=[],where=[];
  const add=value=>{params.push(value);return `$${params.length}`;};
  if(!admin)where.push("b.status='published'");
+ if(f.states.length)where.push(`EXISTS(SELECT 1 FROM sites site WHERE site.id=b.site_id AND site.state=ANY(${add(f.states)}::text[]))`);
  if(f.q){const p=add(`%${f.q.replace(/[\\%_]/g,'\\$&')}%`);where.push(`(b.name ILIKE ${p} OR EXISTS(SELECT 1 FROM building_aliases a WHERE a.building_id=b.id AND a.alias ILIKE ${p}))`);}
  for(const [key,col]of [['sites','site_id'],['types','type_id']])if(f[key].length)where.push(`b.${col}=ANY(${add(f[key])}::int[])`);
  for(const [key,table,col]of [['materials','building_materials','material_id'],['elements','building_elements','element_id']])if(f[key].length){const p=add(f[key]);where.push(`NOT EXISTS(SELECT 1 FROM unnest(${p}::int[]) required(id) WHERE NOT EXISTS(SELECT 1 FROM ${table} rel WHERE rel.building_id=b.id AND rel.${col}=required.id))`);}
@@ -85,7 +87,7 @@ export async function saveBuilding(input,buildingId=null) {
 }
 export async function statistics() {
  const count=(await pool.query("SELECT count(*)::int AS buildings,count(DISTINCT site_id)::int AS site_count FROM buildings WHERE status='published'")).rows[0];
- const groups=[['sites',"SELECT s.name,count(b.id)::int AS count FROM sites s JOIN buildings b ON b.site_id=s.id AND b.status='published' GROUP BY s.id ORDER BY count DESC,s.name"],['types',"SELECT t.name,count(b.id)::int AS count FROM building_types t JOIN buildings b ON b.type_id=t.id AND b.status='published' GROUP BY t.id ORDER BY count DESC,t.name"],['materials',"SELECT m.name,count(DISTINCT b.id)::int AS count FROM materials m JOIN building_materials bm ON bm.material_id=m.id JOIN buildings b ON b.id=bm.building_id AND b.status='published' GROUP BY m.id ORDER BY count DESC,m.name"],['elements',"SELECT e.name,count(DISTINCT b.id)::int AS count FROM elements e JOIN building_elements be ON be.element_id=e.id JOIN buildings b ON b.id=be.building_id AND b.status='published' GROUP BY e.id ORDER BY count DESC,e.name"]];
+ const groups=[['states',"SELECT s.state AS name,count(b.id)::int AS count FROM sites s JOIN buildings b ON b.site_id=s.id AND b.status='published' GROUP BY s.state ORDER BY s.state"],['sites',"SELECT s.name,count(b.id)::int AS count FROM sites s JOIN buildings b ON b.site_id=s.id AND b.status='published' GROUP BY s.id ORDER BY count DESC,s.name"],['types',"SELECT t.name,count(b.id)::int AS count FROM building_types t JOIN buildings b ON b.type_id=t.id AND b.status='published' GROUP BY t.id ORDER BY count DESC,t.name"],['materials',"SELECT m.name,count(DISTINCT b.id)::int AS count FROM materials m JOIN building_materials bm ON bm.material_id=m.id JOIN buildings b ON b.id=bm.building_id AND b.status='published' GROUP BY m.id ORDER BY count DESC,m.name"],['elements',"SELECT e.name,count(DISTINCT b.id)::int AS count FROM elements e JOIN building_elements be ON be.element_id=e.id JOIN buildings b ON b.id=be.building_id AND b.status='published' GROUP BY e.id ORDER BY count DESC,e.name"]];
  const results=await Promise.all(groups.map(async([key,sql])=>[key,(await pool.query(sql)).rows]));
  return {...count,...Object.fromEntries(results)};
 }

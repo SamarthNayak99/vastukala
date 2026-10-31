@@ -220,3 +220,11 @@ AI chat/natural-language search, 3D reconstruction, visitor accounts, crowdsourc
 ## Photograph study, life stories and map — 29 October 2026
 
 Implemented locally: photograph zoom/pan/full-screen and two-photo comparison; sourced chronological life events with independent administrator CRUD; clustered Karnataka map using the catalogue filters and comparison selection. See [implementation and limitations](docs/image-map-life-stories.md). Existing collection remains 30 monuments. Map currently uses explicitly approximate site reference locations. Validation: 21 passing integration tests and verified 17-table backup restore.
+
+## India expansion — 1 November 2026
+
+Completed locally: preserve 30 Karnataka records and add 30 national records, state/UT filtering, India-centered clustered map, national statistics and branding, licensed photographs, cited anatomy and life events, and BCE chronology. Current totals: 60 monuments, 36 sites, 17 represented states/UTs, 92 photographs, 67 hotspots and 57 events. Validation: 24 integration tests, successful production build, exact preservation of original database rows and verified 18-table backup restore. See [India expansion notes](docs/india-expansion.md) for scope and remaining improvements. Earlier sections describe historical milestones.
+
+## Optional DBMS Lab — 1 November 2026
+
+Implemented a separate learning route with 13 concept lessons, live guided PostgreSQL queries, interactive actual-schema exploration, normalization examples, four challenges, isolated constraint/transaction exercises and a measured synthetic index experiment. No permanent catalogue rows or schema were changed. The full 29-test integration suite passes. See [DBMS Lab guide](docs/dbms-lab.md).

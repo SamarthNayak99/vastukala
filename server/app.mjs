@@ -1,4 +1,5 @@
 import {events,saveEvent} from './life-events.mjs';
+import {labSchema,labSample,labQuery,labPractice,labPerformance} from './lab.mjs';
 import express from 'express';
 import session from 'express-session';
 import connectPgSimple from 'connect-pg-simple';
@@ -24,6 +25,13 @@ export async function createApp() {
  const store=new Store({pool,tableName:'sessions'});app.locals.sessionStore=store;
  app.use(session({store,name:'vastukala.sid',secret,resave:false,saveUninitialized:false,cookie:{httpOnly:true,secure:production,sameSite:'lax',maxAge:8*60*60*1000}}));
  app.get('/api/health',async(req,res)=>{await pool.query('SELECT 1');res.json({status:'ok',database:'PostgreSQL'});});
+ app.use('/api/lab',rateLimit({windowMs:60*1000,limit:90,standardHeaders:'draft-8',legacyHeaders:false,message:{error:'Take a moment before running more lab exercises.'}}),(req,res,next)=>{res.set('Cache-Control','no-store');next();});
+ app.get('/api/lab/schema',async(req,res)=>res.json(await labSchema()));
+ app.get('/api/lab/tables/:name',async(req,res)=>res.json(await labSample(req.params.name)));
+ app.post('/api/lab/query',async(req,res)=>res.json(await labQuery(req.body)));
+ const practiceLimit=rateLimit({windowMs:60*1000,limit:15,standardHeaders:'draft-8',legacyHeaders:false,message:{error:'Practice limit reached. Try again in a minute.'}});
+ app.post('/api/lab/practice',practiceLimit,async(req,res)=>res.json(await labPractice(req.body)));
+ app.post('/api/lab/performance',practiceLimit,async(req,res)=>{z.object({}).strict().parse(req.body);res.json(await labPerformance());});
  app.get('/api/taxonomy',async(req,res)=>res.json(await taxonomy()));
  app.get('/api/sites',async(req,res)=>res.json((await taxonomy()).sites));
  app.get('/api/buildings',async(req,res)=>res.json(await listBuildings(req.query)));

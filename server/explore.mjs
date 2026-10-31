@@ -2,7 +2,7 @@ import {z} from 'zod';
 import {pool} from './db.mjs';
 import {getBuilding} from './catalogue.mjs';
 
-const spatial=new Set(['Mandapa','Courtyard','Circumambulatory passage','Circumambulatory platform','Apsidal plan','Twin-shrine plan','Triple-shrine plan']);
+const spatial=new Set(['Garden','Stepped tank','Stepped descent','Causeway','Sacred pool','Monastic cells','Colonnade','Mandapa','Courtyard','Circumambulatory passage','Circumambulatory platform','Apsidal plan','Twin-shrine plan','Triple-shrine plan']);
 export function evidenceFor(building,kind,categoryId){
  return building.citations.filter(c=>c.target_kind===kind&&c.taxonomy_id===categoryId);
 }
@@ -49,7 +49,7 @@ export async function anatomy(slug){
 }
 
 export async function acrossTime(query){
- const schema=z.object({element:z.coerce.number().int().positive().optional(),from:z.coerce.number().int().min(1).max(2100).default(500),to:z.coerce.number().int().min(1).max(2100).default(1600)}).refine(x=>x.from<=x.to,'Start year must not exceed end year.');
+ const schema=z.object({element:z.coerce.number().int().positive().optional(),from:z.coerce.number().int().min(-1000).max(2100).refine(x=>x!==0,'There is no year zero').default(-500),to:z.coerce.number().int().min(-1000).max(2100).refine(x=>x!==0,'There is no year zero').default(2000)}).refine(x=>x.from<=x.to,'Start year must not exceed end year.');
  const filters=schema.parse(query);
  const rows=(await pool.query(`SELECT b.id FROM buildings b WHERE b.status='published'
  AND ($1::int IS NULL OR EXISTS(SELECT 1 FROM building_elements be WHERE be.building_id=b.id AND be.element_id=$1))
@@ -60,6 +60,6 @@ export async function acrossTime(query){
  if(filters.element&&!element)throw Object.assign(new Error('Architectural element not found.'),{status:404});
  const records=items.map(b=>({...b,date_evidence:b.citations.filter(c=>!c.target_kind),feature_evidence:filters.element?evidenceFor(b,'element',filters.element):[]}));
  const dated=records.filter(b=>b.year_from!==null&&b.year_to!==null),undated=records.filter(b=>b.year_from===null||b.year_to===null);
- const centuries=[];for(let from=Math.floor(filters.from/100)*100;from<=filters.to;from+=100){const to=from+99;centuries.push({from,to,count:dated.filter(b=>b.year_from<=to&&b.year_to>=from).length});}
+ const centuries=[];for(let from=Math.floor(filters.from/100)*100;from<=filters.to;from+=100){const to=from+99;centuries.push({from:from===0?1:from,to,count:dated.filter(b=>b.year_from<=to&&b.year_to>=from).length});}
  return {filters,element,dated,undated,centuries,note:'Bars show recorded building-date ranges, including broad phases and approximate dates. They do not establish when an individual feature first appeared or prove influence. A building can overlap several century bands.'};
 }

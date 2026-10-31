@@ -4,6 +4,56 @@ import {readFile} from 'node:fs/promises';
 import pg from 'pg';
 import request from 'supertest';
 import bcrypt from 'bcryptjs';
+
+test('DBMS Lab exposes actual public schema and bounded samples, excluding infrastructure',async()=>{
+ const schema=(await request(app).get('/api/lab/schema').expect(200)).body;
+ assert.equal(schema.tables.length,16);assert.ok(!schema.tables.some(t=>['admins','sessions','schema_migrations','seed_tasks'].includes(t.name)));
+ const hotspots=schema.tables.find(t=>t.name==='hotspots');assert.ok(hotspots.constraints.some(c=>c.kind==='f'&&c.referenced_table==='images'));
+ for(const table of schema.tables){const r=(await request(app).get(`/api/lab/tables/${table.name}`).expect(200)).body;assert.ok(r.rows.length<=8);assert.ok(r.sql.includes('LIMIT 8'));}
+ await request(app).get('/api/lab/tables/admins').expect(400);await request(app).get('/api/lab/tables/sessions').expect(400);
+});
+test('DBMS guided queries execute joins, division, set operations, aggregates and plans',async()=>{
+ const taj=records.find(b=>b.slug==='taj-mahal-agra'),humayun=records.find(b=>b.slug==='humayuns-tomb-delhi');
+ const run=async(template,params={})=>(await request(app).post('/api/lab/query').send({template,params}).expect(200)).body;
+ const relation=await run('relationships',{building:taj.id});assert.equal(relation.relatedTables.length,3);assert.ok(relation.rows.some(r=>r.material==='Marble'));
+ const left=await run('joins',{join:'left'}),inner=await run('joins',{join:'inner'});assert.ok(left.rows.some(r=>r.monument===null));assert.ok(inner.rows.every(r=>r.monument!==null));
+ assert.ok((await run('division',{elements:['Dome','Garden']})).rows.some(r=>r.name==='Taj Mahal'));
+ assert.ok((await run('sets',{building:taj.id,other:humayun.id,operation:'shared'})).rows.some(r=>r.element==='Dome'));
+ const counts=await run('aggregation',{distinct:true}),trap=await run('aggregation',{distinct:false});assert.equal(counts.rows.reduce((a,r)=>a+r.monuments,0),60);assert.ok(trap.rows.reduce((a,r)=>a+r.joined_rows,0)>60);
+ assert.equal((await run('state',{state:'Rajasthan'})).rows.length,3);
+ assert.ok((await run('filters',{state:'Uttar Pradesh',material:'Marble',element:'Dome'})).rows.some(r=>r.name==='Taj Mahal'));
+ assert.ok((await run('temporal',{from:-500,to:-1})).rows.some(r=>r.name==='Great Stupa at Sanchi'));
+ assert.equal((await run('views')).rows.length,60);assert.equal((await run('ranking')).rows.length,60);
+ assert.ok((await run('indexes',{building:tax.sites[0].id})).plan[0].Plan);
+});
+test('DBMS Lab rejects arbitrary SQL and hides unpublished records from samples and templates',async()=>{
+ const draft=(await pool.query("INSERT INTO buildings(site_id,type_id,name,slug,status) VALUES($1,$2,'Hidden lab draft','hidden-lab-draft','draft') RETURNING id",[tax.sites[0].id,tax.building_types[0].id])).rows[0];
+ try{
+  const sample=(await request(app).get('/api/lab/tables/buildings').expect(200)).body;assert.ok(sample.rows.every(r=>r.status==='published'));
+  const result=(await request(app).post('/api/lab/query').send({template:'relationships',params:{building:draft.id}}).expect(200)).body;assert.equal(result.rows.length,0);assert.ok(result.relatedTables.every(t=>!t.rows.length));
+  await request(app).post('/api/lab/query').send({template:'views',sql:'SELECT * FROM admins'}).expect(400);
+  await request(app).post('/api/lab/query').send({template:'SELECT * FROM admins'}).expect(400);
+  await request(app).post('/api/lab/query').send({template:'views',params:{sql:'DELETE FROM buildings'}}).expect(400);
+  const injection=(await request(app).post('/api/lab/query').send({template:'state',params:{state:"' OR 1=1 --"}}).expect(200)).body;assert.equal(injection.rows.length,0);
+  await request(app).post('/api/lab/query').send({template:'temporal',params:{from:1500,to:1000}}).expect(400);
+  await request(app).post('/api/lab/query').send({template:'division',params:{elements:[]}}).expect(400);
+ }finally{await pool.query('DELETE FROM buildings WHERE id=$1',[draft.id]);}
+});
+test('DBMS practice exercises isolate real constraints and commit/rollback from the catalogue',async()=>{
+ const snapshot=async()=>JSON.stringify((await pool.query('SELECT id,name,status FROM buildings ORDER BY id')).rows);const before=await snapshot();
+ const expected={duplicate:'23505',foreign:'23503',dates:'23514','transaction-failure':'23505'};
+ for(const [scenario,code] of Object.entries(expected)){const r=(await request(app).post('/api/lab/practice').send({scenario}).expect(200)).body;assert.equal(r.error.code,code);assert.equal(r.committed,false);assert.deepEqual(r.before,r.after);}
+ const success=(await request(app).post('/api/lab/practice').send({scenario:'transaction-success'}).expect(200)).body;assert.equal(success.committed,true);assert.equal(success.error,null);assert.equal(success.after.links.length,2);assert.equal(success.after.buildings[0].name,'Edited practice monument');
+ const again=(await request(app).post('/api/lab/practice').send({scenario:'duplicate'}).expect(200)).body;assert.equal(again.before.buildings[0].name,'Practice monument');assert.equal(again.before.links.length,1);
+ await request(app).post('/api/lab/practice').send({scenario:'DELETE FROM buildings'}).expect(400);
+ assert.equal(await snapshot(),before);assert.equal((await pool.query("SELECT to_regclass('public.lab_buildings') AS relation")).rows[0].relation,null);
+});
+test('DBMS index experiment returns measured plans from synthetic temporary data only',async()=>{
+ const before=(await pool.query('SELECT count(*) FROM buildings')).rows[0].count;
+ const r=(await request(app).post('/api/lab/performance').send({}).expect(200)).body;assert.ok(r.before[0].Plan);assert.ok(r.after[0].Plan);assert.ok(r.setup.includes('40000'));assert.ok(JSON.stringify(r.after).includes('lab_scale_site_idx'));
+ assert.equal((await pool.query('SELECT count(*) FROM buildings')).rows[0].count,before);assert.equal((await pool.query("SELECT to_regclass('public.lab_scale') AS relation")).rows[0].relation,null);
+ await request(app).post('/api/lab/performance').send({sql:'SELECT * FROM admins'}).expect(400);
+});
 let pool,app,saveBuilding,tax,records,control,testName;
 before(async()=>{
  const config=JSON.parse(await readFile('.local/runtime.json','utf8'));
@@ -15,13 +65,13 @@ before(async()=>{
  ({pool}=await import('../server/db.mjs'));
  const {migrate}=await import('../scripts/migrate.mjs');await migrate();
  const {seed}=await import('../scripts/seed.mjs');await seed();
- const catalogue=await import('../server/catalogue.mjs');saveBuilding=catalogue.saveBuilding;tax=await catalogue.taxonomy();records=(await catalogue.listBuildings({limit:48},{admin:true})).items;
+ const catalogue=await import('../server/catalogue.mjs');saveBuilding=catalogue.saveBuilding;tax=await catalogue.taxonomy();records=(await catalogue.listBuildings({limit:120},{admin:true})).items;
  await pool.query('INSERT INTO admins(email,password_hash) VALUES($1,$2)',['tester@vastukala.local',await bcrypt.hash('test-password-1234',4)]);
  app=await(await import('../server/app.mjs')).createApp();
 });
 after(async()=>{app?.locals.sessionStore?.close();if(pool)await pool.end();if(control){if(testName)await control.query(`DROP DATABASE ${testName} WITH (FORCE)`);await control.end();}});
-test('all 30 sourced records publish across seven locations with prepared photographs',async()=>{
- const res=await request(app).get('/api/buildings?limit=48').expect(200);assert.equal(res.body.total,30);assert.equal(new Set(res.body.items.map(x=>x.site)).size,7);assert.ok(res.body.items.every(x=>x.images.some(i=>i.is_cover)&&x.citations.length&&x.elements.length));
+test('original Karnataka records remain across seven locations with prepared photographs',async()=>{
+ const res=await request(app).get('/api/buildings?limit=120&states=Karnataka').expect(200);assert.equal(res.body.total,30);assert.equal(new Set(res.body.items.map(x=>x.site)).size,7);assert.ok(res.body.items.every(x=>x.images.some(i=>i.is_cover)&&x.citations.length&&x.elements.length));
  const counts=Object.fromEntries([...new Set(res.body.items.map(x=>x.site))].map(site=>[site,res.body.items.filter(x=>x.site===site).length]));
  assert.deepEqual(counts,{Aihole:6,Badami:6,Belur:1,Halebidu:1,Hampi:8,Pattadakal:7,Somanathapura:1});
 });
@@ -35,7 +85,7 @@ test('combined location, type, material and all-elements filters return the know
 test('alternate names, literal SQL-like input, pagination and invalid IDs',async()=>{
  const alias=await request(app).get('/api/buildings').query({q:'Lokeshwara'}).expect(200);assert.ok(alias.body.items.some(x=>x.slug==='virupaksha-temple-pattadakal'));
  const injection=await request(app).get('/api/buildings').query({q:"' OR 1=1 --"}).expect(200);assert.equal(injection.body.total,0);
- const page=await request(app).get('/api/buildings?limit=2&page=2').expect(200);assert.equal(page.body.items.length,2);assert.equal(page.body.total,30);
+ const page=await request(app).get('/api/buildings?limit=2&page=2').expect(200);assert.equal(page.body.items.length,2);assert.equal(page.body.total,60);
  await request(app).get('/api/buildings?materials=oops').expect(400);
 });
 test('comparison validates distinct published buildings and identifies intersections',async()=>{
@@ -44,8 +94,8 @@ test('comparison validates distinct published buildings and identifies intersect
  await request(app).get(`/api/compare?ids=${a.id},${a.id}`).expect(400);
 });
 test('statistics count buildings rather than joined citation/media rows',async()=>{
- const res=await request(app).get('/api/statistics').expect(200);assert.equal(res.body.buildings,30);assert.equal(res.body.site_count,7);assert.equal(res.body.types.reduce((a,x)=>a+x.count,0),30);
- assert.equal(res.body.elements.find(x=>x.name==='Mandapa').count,15);
+ const res=await request(app).get('/api/statistics').expect(200);assert.equal(res.body.buildings,60);assert.equal(res.body.site_count,36);assert.equal(res.body.types.reduce((a,x)=>a+x.count,0),60);
+ assert.equal(res.body.elements.find(x=>x.name==='Mandapa').count,15+JSON.parse(await readFile('research/india.json','utf8')).buildings.filter(b=>b.elements.some(e=>e.name==='Mandapa')).length);
 });
 test('foreign keys and date constraints reject bad data',async()=>{
  await assert.rejects(pool.query('INSERT INTO building_materials(building_id,material_id) VALUES($1,$2)',[records[0].id,999999]),e=>e.code==='23503');
@@ -121,7 +171,7 @@ test('comparison explains shared spatial features and differences with per-build
 
 test('anatomy joins visible photographs, cited elements and other published monuments',async()=>{
  const{body}=await request(app).get('/api/explore/anatomy?building=elephant-stables-hampi').expect(200);
- assert.equal(body.catalogue.length,30);
+ assert.equal(body.catalogue.length,60);
  const image=body.building.images.find(x=>x.hotspots.length);assert.equal(image.hotspots.length,2);
  for(const h of image.hotspots){assert.ok(h.element.name);assert.ok(h.evidence.length);assert.ok(h.related.every(x=>x.id!==body.building.id));assert.ok(h.x>=0&&h.x<=100);}
  assert.ok(image.hotspots.find(x=>x.element.name==='Arch').related.length);
@@ -130,7 +180,7 @@ test('anatomy joins visible photographs, cited elements and other published monu
 });
 
 test('timeline uses overlapping building-date ranges and keeps undated records separate',async()=>{
- const all=(await request(app).get('/api/explore/time').expect(200)).body;assert.equal(all.dated.length,28);assert.equal(all.undated.length,2);
+ const all=(await request(app).get('/api/explore/time').expect(200)).body;assert.equal(all.dated.length,58);assert.equal(all.undated.length,2);
  assert.ok(all.undated.every(x=>x.year_from===null||x.year_to===null));assert.match(all.note,/do not establish/);
  const feature=tax.elements.find(x=>x.name==='Sculptural frieze');
  const window=(await request(app).get('/api/explore/time').query({element:feature.id,from:1200,to:1300}).expect(200)).body;
@@ -182,5 +232,30 @@ test('SQL calendar dates survive JSON backup round trips without timezone shifts
  const restored=(await pool.query('SELECT $1::date AS accessed_on',[json.accessed_on])).rows[0];
  assert.equal(restored.accessed_on,source.accessed_on);
 });
-test('map coverage and sourced life events preserve the catalogue',async()=>{const res=await request(app).get('/api/buildings?limit=48').expect(200);assert.equal(res.body.total,30);assert.ok(res.body.items.every(b=>b.map_latitude!==null&&b.map_longitude!==null&&b.map_source_url));const b=res.body.items.find(b=>b.slug==='chennakeshava-temple-belur');const events=await request(app).get(`/api/buildings/${b.slug}/events`).expect(200);assert.ok(events.body.some(e=>e.kind==='restoration'&&e.year_from===2023&&e.url));assert.ok(events.body.every(e=>e.year_from<=e.year_to&&e.source_title));await request(app).get('/api/buildings/no-such-building/events').expect(404);});
+test('map coverage and sourced life events preserve the catalogue',async()=>{const res=await request(app).get('/api/buildings?limit=120').expect(200);assert.equal(res.body.total,60);assert.ok(res.body.items.every(b=>b.map_latitude!==null&&b.map_longitude!==null&&b.map_source_url));const b=res.body.items.find(b=>b.slug==='chennakeshava-temple-belur');const events=await request(app).get(`/api/buildings/${b.slug}/events`).expect(200);assert.ok(events.body.some(e=>e.kind==='restoration'&&e.year_from===2023&&e.url));assert.ok(events.body.every(e=>e.year_from<=e.year_to&&e.source_title));await request(app).get('/api/buildings/no-such-building/events').expect(404);});
 test('life events require authentication, CSRF, valid sources and ordered dates',async()=>{const b=records[0];const event={kind:'addition',title:'Temporary test event',year_from:1200,year_to:1210,precision:'range',source_id:tax.sources[0].id,description:'Test only',locator:'test'};await request(app).post(`/api/admin/buildings/${b.id}/events`).send(event).expect(401);const agent=request.agent(app);let s=(await agent.get('/api/auth/session')).body;s=(await agent.post('/api/auth/login').set('X-CSRF-Token',s.csrf).send({email:'tester@vastukala.local',password:'test-password-1234'}).expect(200)).body;const path=`/api/admin/buildings/${b.id}/events`;await agent.post(path).send(event).expect(403);await agent.post(path).set('X-CSRF-Token',s.csrf).send({...event,year_to:1100}).expect(400);await agent.post(path).set('X-CSRF-Token',s.csrf).send({...event,source_id:2147483647}).expect(400);const r=await agent.post(path).set('X-CSRF-Token',s.csrf).send(event).expect(201);await agent.put(`${path}/${r.body.id}`).set('X-CSRF-Token',s.csrf).send({...event,title:'Edited event'}).expect(200);await agent.delete(`/api/admin/buildings/${records[1].id}/events/${r.body.id}`).set('X-CSRF-Token',s.csrf).expect(404);await agent.delete(`${path}/${r.body.id}`).set('X-CSRF-Token',s.csrf).expect(200);});
+
+test('India expansion publishes 60 monuments in 17 states/UTs with reusable images',async()=>{
+ const res=await request(app).get('/api/buildings?limit=120').expect(200);assert.equal(res.body.total,60);assert.equal(res.body.items.length,60);assert.equal(new Set(res.body.items.map(b=>b.slug)).size,60);assert.equal(new Set(res.body.items.map(b=>b.state)).size,17);
+ const india=JSON.parse(await readFile('research/india.json','utf8'));const slugs=new Set(india.buildings.map(b=>b.slug));const added=res.body.items.filter(b=>slugs.has(b.slug));assert.equal(added.length,30);assert.ok(added.every(b=>b.images.length>=1&&b.images.some(i=>i.is_cover&&i.approved)&&b.citations.length>=3));
+ assert.ok(added.every(b=>b.images.every(i=>i.author&&i.licence_url&&i.source_page_url&&i.width>=1500)));
+ const states=(await request(app).get('/api/taxonomy').expect(200)).body.states;assert.equal(states.length,36);assert.equal(states.reduce((sum,s)=>sum+s.count,0),60);assert.equal(states.find(s=>s.name==='Delhi').kind,'union territory');assert.equal(states.find(s=>s.name==='Karnataka').count,30);
+});
+test('state filters combine with location, type and aliases without changing Karnataka coverage',async()=>{
+ const k=await request(app).get('/api/buildings?states=Karnataka&limit=120').expect(200);assert.equal(k.body.total,30);assert.ok(k.body.items.every(b=>b.state==='Karnataka'));
+ const up=await request(app).get('/api/buildings').query({states:'Uttar Pradesh',q:'Taj Mahal'}).expect(200);assert.equal(up.body.total,1);assert.equal(up.body.items[0].slug,'taj-mahal-agra');
+ const two=await request(app).get('/api/buildings').query({states:'Delhi,Tamil Nadu',limit:120}).expect(200);assert.equal(two.body.total,7);assert.ok(two.body.items.every(b=>['Delhi','Tamil Nadu'].includes(b.state)));
+ assert.equal((await request(app).get('/api/buildings?states=Karnataka&q=Taj').expect(200)).body.total,0);
+ assert.equal((await request(app).get('/api/buildings?states=Punjab&q=Golden').expect(200)).body.items[0].slug,'harmandir-sahib-amritsar');
+ await request(app).get('/api/buildings').query({states:"Delhi' OR 1=1"}).expect(400);
+ await assert.rejects(pool.query("INSERT INTO sites(name,slug,locality,district,state) VALUES('Invalid state test','invalid-state-test','Test','Test','Atlantis')"),e=>e.code==='23503');
+});
+test('new monuments participate in cited comparison, anatomy, events and BCE chronology',async()=>{
+ const taj=records.find(b=>b.slug==='taj-mahal-agra'),humayun=records.find(b=>b.slug==='humayuns-tomb-delhi');
+ const c=(await request(app).get(`/api/compare?ids=${taj.id},${humayun.id}`).expect(200)).body;assert.ok(c.shared.elements.some(e=>e.name==='Dome'));assert.ok(c.groups.some(g=>g.items.some(e=>e.sides.every(side=>side.evidence.length))));
+ const anatomy=(await request(app).get('/api/explore/anatomy?building=taj-mahal-agra').expect(200)).body;const newSlugs=new Set(JSON.parse(await readFile('research/india.json','utf8')).buildings.map(b=>b.slug));assert.equal(anatomy.catalogue.filter(b=>newSlugs.has(b.slug)).length,30);assert.ok(anatomy.building.images.some(im=>im.hotspots.some(h=>h.evidence.length&&h.element.name)));
+ for(const b of JSON.parse(await readFile('research/india.json','utf8')).buildings){const ev=(await request(app).get(`/api/buildings/${b.slug}/events`).expect(200)).body;assert.ok(ev.length>0,`No sourced event: ${b.slug}`);assert.ok(ev.every(e=>e.url&&e.source_title));}
+ const ancient=(await request(app).get('/api/explore/time?from=-500&to=-1').expect(200)).body;assert.ok(ancient.dated.some(b=>b.slug==='great-stupa-sanchi'));assert.equal(ancient.dated.some(b=>b.slug==='taj-mahal-agra'),false);
+ await request(app).get('/api/explore/time?from=0&to=100').expect(400);
+ await assert.rejects(pool.query('UPDATE buildings SET year_from=0 WHERE id=$1',[taj.id]),e=>e.code==='23514');
+});

@@ -80,3 +80,24 @@ SELECT b.name,b.year_from,b.year_to,b.date_label FROM buildings b
 WHERE b.status='published' AND b.year_from<=1300 AND b.year_to>=1200
 ORDER BY b.year_from,b.name;
 -- Undated records are queried separately; no inferred date is assigned to them.
+
+-- National collection: states/UTs with published records (including zero-coverage states).
+SELECT st.name, st.kind, count(b.id) AS documented_monuments
+FROM states st
+LEFT JOIN sites s ON s.state=st.name
+LEFT JOIN buildings b ON b.site_id=s.id AND b.status='published'
+GROUP BY st.name, st.kind ORDER BY st.name;
+
+-- State search combines naturally with the existing material/element model.
+SELECT b.name, s.name AS site, s.state
+FROM buildings b JOIN sites s ON s.id=b.site_id
+WHERE b.status='published' AND s.state IN ('Uttar Pradesh','Delhi')
+  AND EXISTS (SELECT 1 FROM building_elements be JOIN elements e ON e.id=be.element_id
+              WHERE be.building_id=b.id AND e.name='Dome')
+ORDER BY s.state,b.name;
+
+-- BCE-aware inclusive interval overlap. Negative integers represent BCE, and year zero is invalid.
+SELECT b.name,b.date_label,b.year_from,b.year_to
+FROM buildings b
+WHERE b.status='published' AND b.year_from<=-1 AND b.year_to>=-500
+ORDER BY b.year_from,b.name;

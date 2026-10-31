@@ -1,11 +1,12 @@
 # Vastukala — ER Diagram
 
-Version 1 implementation model, 29 October 2026, aligned with migrations 001–004. The diagram shows domain entities, relationships and selected fields; the detailed field inventory is in plan.md. PostgreSQL session storage is an implementation table outside this domain view.
+Version 1 implementation model, 29 October 2026, aligned with migrations 001–006. The diagram shows domain entities, relationships and selected fields; the detailed field inventory is in plan.md. PostgreSQL session storage is an implementation table outside this domain view.
 
 ```mermaid
 erDiagram
     BUILDINGS ||--o{ BUILDING_EVENTS : experiences
     SOURCES ||--o{ BUILDING_EVENTS : documents
+    STATES ||--o{ SITES : locates
     SITES ||--o{ BUILDINGS : contains
     BUILDING_TYPES ||--o{ BUILDINGS : classifies
     BUILDINGS ||--o{ BUILDING_ALIASES : has
@@ -38,13 +39,17 @@ erDiagram
         text precision
         text locator
     }
+    STATES {
+        text name PK
+        text kind
+    }
     SITES {
         int id PK
         text name
         text slug UK
         text locality
         text district
-        text state
+        text state FK
         numeric map_latitude
         numeric map_longitude
         text map_source_url
@@ -158,3 +163,7 @@ erDiagram
 - Hotspots use composite image and element-occurrence keys within a building, not mutable association-row IDs. Percentage coordinates are bounded, and each image/element pair has at most one marker. Element-specific citation validation is application-level. The `seed_tasks` curation marker table is infrastructure outside the domain diagram.
 
 - Building events require one building and one source, bounded ordered CE dates and an allowed event type. Ordinary building edits preserve event records. Site map coordinates are approximate references separate from individual building coordinates.
+
+## National expansion — 31 October 2026
+
+State/UT names are natural keys in `states`. The existing `sites.state` column now references that controlled dimension, preserving earlier site IDs. No duplicate state column is introduced. BCE dates use negative integers, CE dates positive integers; event year zero is rejected.

@@ -2,11 +2,11 @@
 
 ## Title
 
-Vastukala: A Database-Driven Archive of Karnataka's Historic Architecture
+Vastukala: A Database-Driven Archive of India's Historic Architecture
 
 ## Abstract
 
-Vastukala is a web application for organizing and exploring documented examples of Karnataka's historic architecture. The local collection contains 30 monuments in Hampi, Belur, Pattadakal, Badami, Aihole, Halebidu, and Somanathapura. Each building record connects photographs and historical descriptions with its location, building type, architectural styles, construction materials, architectural elements, and references.
+Vastukala is a web application for organizing and exploring documented examples of India's historic architecture. The collection retains 30 Karnataka monuments and adds 30 monuments across 16 additional states and union territories. Each building record connects photographs and historical descriptions with its location, building type, architectural styles, construction materials, architectural elements, and references.
 
 The application allows visitors to browse without registration, combine search filters, compare two buildings, and view statistical summaries of the curated collection. An authenticated administrator can add, edit, and publish records. PostgreSQL stores the relational data, Express and Node.js provide the application API, and React provides the user interface. The application runs locally, with online deployment planned for a later phase.
 
@@ -25,7 +25,7 @@ Information about historic monuments is often presented as separate descriptions
 
 ## Scope and modules
 
-The local version contains 30 curated monument records and 59 reviewed photographs. Modules include catalogue/search, building details and gallery, cited comparison, photograph anatomy, building-date timelines, two-photo study, separately sourced life events, a clustered heritage map, statistics, administration, and reference/credit management. The collection includes ancient and medieval architecture; it does not claim complete documentation of all Karnataka monuments.
+The national version contains 60 curated monument records, with source-linked photographs and architectural evidence. Modules include catalogue/search, building details and gallery, cited comparison, photograph anatomy, building-date timelines, two-photo study, separately sourced life events, a clustered heritage map, statistics, administration, and reference/credit management. The collection includes ancient and medieval architecture; it does not claim complete documentation of all Karnataka monuments.
 
 ## Methodology
 
@@ -52,3 +52,11 @@ Submission details such as student names, institution, guide, and required forma
 ## Version 1 implementation status — 29 October 2026
 
 The local application includes 37 reviewed hotspots and 59 approved photographs across the fixed 30 monuments. Life events are stored independently of construction dates and require a source. Approximate site reference positions support map discovery without claiming surveyed building locations. Twenty-one integration tests and a 17-table logical backup restore have passed. Online deployment, exhaustive event research and surveyed monument coordinates remain future work.
+
+## National expansion — 31 October / 1 November 2026
+
+A state/UT dimension, state-based retrieval and a clustered India map extend the catalogue across 17 states/UTs. BCE-aware chronology accommodates early Buddhist monuments without mislabelling their dates. Existing Karnataka identifiers and records are retained, with imports designed to preserve administrator edits. Coverage is selective, not exhaustive.
+
+## Educational extension: DBMS Lab
+
+An optional learning route connects relational theory to the implemented archive through 13 lessons, a live 16-table schema explorer, guided parameterized SQL and four challenges. Fictional normalization examples, actual PostgreSQL constraint errors, transaction traces and rollback, and a separate synthetic indexing experiment support classroom demonstrations. Permanent catalogue tables are never written by practice exercises; temporary tables are connection-local and destroyed after each run. See [DBMS Lab guide](dbms-lab.md).

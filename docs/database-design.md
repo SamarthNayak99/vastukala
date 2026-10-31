@@ -58,3 +58,11 @@ Saving a building starts a transaction, updates the building, replaces its alias
 `sites.map_latitude`, `map_longitude` and `map_source_url` hold approximate discovery reference points; latitude/longitude range checks apply. Existing building latitude/longitude columns remain distinct and unpopulated until researched.
 
 The final domain diagram contains 15 content entities; `admins`, `sessions`, `schema_migrations` and `seed_tasks` serve authentication/runtime/migration/curation roles. The logical backup saves 17 tables (content plus admin accounts and seed tasks; sessions and migration history are reconstructed rather than copied).
+
+## India-wide dimension and chronology (migration 005)
+
+`states(name PRIMARY KEY, kind)` normalizes the existing state label into a referenced natural key. All 36 state/UT entries are available for filtering; only 17 currently have published monuments. Sites retain their existing IDs and reference `states(name)` through `sites.state`. The indexed state column supports filtering with an `EXISTS` subquery and parameterized text arrays.
+
+API catalogue pages remain paginated. Collection-wide selectors and the map request up to 120 records, covering all 60 current monuments rather than silently stopping at the former 48-record cap. The upper bound stays finite.
+
+Building and event chronology accepts negative BCE years. Event bounds are -1000 through 2100, exclude zero and remain ordered. Histories distinguish founding, surviving phases, later additions and recognition. The timeline supports BCE/CE labels and does not imply an influence relationship. The logical backup now includes the state dimension before sites; seeded controlled values are cleared only inside the isolated restore database before snapshot rows are inserted.
