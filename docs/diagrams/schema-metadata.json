@@ -1,0 +1,3436 @@
+{
+  "columns": [
+    {
+      "table_name": "admins",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "admins",
+      "column_name": "email",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "admins",
+      "column_name": "password_hash",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_aliases",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "building_aliases",
+      "column_name": "building_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_aliases",
+      "column_name": "alias",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_elements",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "building_elements",
+      "column_name": "building_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_elements",
+      "column_name": "element_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_elements",
+      "column_name": "description",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_elements",
+      "column_name": "location_notes",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_events",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "building_events",
+      "column_name": "building_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_events",
+      "column_name": "kind",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_events",
+      "column_name": "title",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_events",
+      "column_name": "description",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_events",
+      "column_name": "year_from",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_events",
+      "column_name": "year_to",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_events",
+      "column_name": "precision",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_events",
+      "column_name": "source_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_events",
+      "column_name": "locator",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_materials",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "building_materials",
+      "column_name": "building_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_materials",
+      "column_name": "material_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_materials",
+      "column_name": "usage_notes",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_styles",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "building_styles",
+      "column_name": "building_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_styles",
+      "column_name": "style_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_styles",
+      "column_name": "notes",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_types",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "building_types",
+      "column_name": "name",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_types",
+      "column_name": "description",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "buildings",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "buildings",
+      "column_name": "site_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "buildings",
+      "column_name": "type_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "buildings",
+      "column_name": "name",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "buildings",
+      "column_name": "slug",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "buildings",
+      "column_name": "summary",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "buildings",
+      "column_name": "history",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "buildings",
+      "column_name": "layout_notes",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "buildings",
+      "column_name": "year_from",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "buildings",
+      "column_name": "year_to",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "buildings",
+      "column_name": "date_label",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "'Not documented'::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "buildings",
+      "column_name": "date_precision",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "'unknown'::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "buildings",
+      "column_name": "latitude",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "buildings",
+      "column_name": "longitude",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "buildings",
+      "column_name": "status",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "'draft'::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "buildings",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "buildings",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "citations",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "citations",
+      "column_name": "building_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "citations",
+      "column_name": "source_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "citations",
+      "column_name": "claim_topic",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "citations",
+      "column_name": "locator",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "citations",
+      "column_name": "note",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "citations",
+      "column_name": "building_style_id",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "citations",
+      "column_name": "building_material_id",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "citations",
+      "column_name": "building_element_id",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "elements",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "elements",
+      "column_name": "name",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "elements",
+      "column_name": "description",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "elements",
+      "column_name": "function",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "hotspots",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "hotspots",
+      "column_name": "building_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "hotspots",
+      "column_name": "storage_key",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "hotspots",
+      "column_name": "element_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "hotspots",
+      "column_name": "label",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "hotspots",
+      "column_name": "x",
+      "data_type": "numeric",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "hotspots",
+      "column_name": "y",
+      "data_type": "numeric",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "hotspots",
+      "column_name": "note",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "images",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "images",
+      "column_name": "building_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "images",
+      "column_name": "building_element_id",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "images",
+      "column_name": "storage_key",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "images",
+      "column_name": "source_page_url",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "images",
+      "column_name": "original_url",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "images",
+      "column_name": "author",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "images",
+      "column_name": "licence_code",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "images",
+      "column_name": "licence_url",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "images",
+      "column_name": "caption",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "images",
+      "column_name": "alt_text",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "images",
+      "column_name": "width",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "images",
+      "column_name": "height",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "images",
+      "column_name": "byte_size",
+      "data_type": "bigint",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "images",
+      "column_name": "modification_note",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "images",
+      "column_name": "sort_order",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": "0",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "images",
+      "column_name": "is_cover",
+      "data_type": "boolean",
+      "is_nullable": "NO",
+      "column_default": "false",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "images",
+      "column_name": "approved",
+      "data_type": "boolean",
+      "is_nullable": "NO",
+      "column_default": "false",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "materials",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "materials",
+      "column_name": "name",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "materials",
+      "column_name": "description",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "schema_migrations",
+      "column_name": "name",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "schema_migrations",
+      "column_name": "applied_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "seed_tasks",
+      "column_name": "name",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "seed_tasks",
+      "column_name": "applied_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO",
+      "column_default": "now()",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sessions",
+      "column_name": "sid",
+      "data_type": "character varying",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sessions",
+      "column_name": "sess",
+      "data_type": "json",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sessions",
+      "column_name": "expire",
+      "data_type": "timestamp without time zone",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sites",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "sites",
+      "column_name": "name",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sites",
+      "column_name": "slug",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sites",
+      "column_name": "locality",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sites",
+      "column_name": "district",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sites",
+      "column_name": "state",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "'Karnataka'::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sites",
+      "column_name": "overview",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sites",
+      "column_name": "map_latitude",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sites",
+      "column_name": "map_longitude",
+      "data_type": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sites",
+      "column_name": "map_source_url",
+      "data_type": "text",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sources",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "sources",
+      "column_name": "title",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sources",
+      "column_name": "author_or_publisher",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sources",
+      "column_name": "url",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sources",
+      "column_name": "publication_year",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "sources",
+      "column_name": "accessed_on",
+      "data_type": "date",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "states",
+      "column_name": "name",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "states",
+      "column_name": "kind",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "styles",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "styles",
+      "column_name": "name",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "styles",
+      "column_name": "description",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    }
+  ],
+  "constraints": [
+    {
+      "table_name": "admins",
+      "name": "admins_email_key",
+      "kind": "u",
+      "definition": "UNIQUE (email)",
+      "referenced_table": null,
+      "columns": [
+        "email"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "admins",
+      "name": "admins_email_not_null",
+      "kind": "n",
+      "definition": "NOT NULL email",
+      "referenced_table": null,
+      "columns": [
+        "email"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "admins",
+      "name": "admins_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "admins",
+      "name": "admins_password_hash_not_null",
+      "kind": "n",
+      "definition": "NOT NULL password_hash",
+      "referenced_table": null,
+      "columns": [
+        "password_hash"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "admins",
+      "name": "admins_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_aliases",
+      "name": "building_aliases_alias_not_null",
+      "kind": "n",
+      "definition": "NOT NULL alias",
+      "referenced_table": null,
+      "columns": [
+        "alias"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_aliases",
+      "name": "building_aliases_building_id_alias_key",
+      "kind": "u",
+      "definition": "UNIQUE (building_id, alias)",
+      "referenced_table": null,
+      "columns": [
+        "building_id",
+        "alias"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_aliases",
+      "name": "building_aliases_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "building_aliases",
+      "name": "building_aliases_building_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL building_id",
+      "referenced_table": null,
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_aliases",
+      "name": "building_aliases_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_aliases",
+      "name": "building_aliases_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_elements",
+      "name": "building_elements_building_id_element_id_key",
+      "kind": "u",
+      "definition": "UNIQUE (building_id, element_id)",
+      "referenced_table": null,
+      "columns": [
+        "building_id",
+        "element_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_elements",
+      "name": "building_elements_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "building_elements",
+      "name": "building_elements_building_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL building_id",
+      "referenced_table": null,
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_elements",
+      "name": "building_elements_description_not_null",
+      "kind": "n",
+      "definition": "NOT NULL description",
+      "referenced_table": null,
+      "columns": [
+        "description"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_elements",
+      "name": "building_elements_element_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (element_id) REFERENCES elements(id) ON DELETE RESTRICT",
+      "referenced_table": "elements",
+      "columns": [
+        "element_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "building_elements",
+      "name": "building_elements_element_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL element_id",
+      "referenced_table": null,
+      "columns": [
+        "element_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_elements",
+      "name": "building_elements_id_building_id_key",
+      "kind": "u",
+      "definition": "UNIQUE (id, building_id)",
+      "referenced_table": null,
+      "columns": [
+        "id",
+        "building_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_elements",
+      "name": "building_elements_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_elements",
+      "name": "building_elements_location_notes_not_null",
+      "kind": "n",
+      "definition": "NOT NULL location_notes",
+      "referenced_table": null,
+      "columns": [
+        "location_notes"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_elements",
+      "name": "building_elements_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_building_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL building_id",
+      "referenced_table": null,
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_check",
+      "kind": "c",
+      "definition": "CHECK ((year_from <= year_to))",
+      "referenced_table": null,
+      "columns": [
+        "year_from",
+        "year_to"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_description_not_null",
+      "kind": "n",
+      "definition": "NOT NULL description",
+      "referenced_table": null,
+      "columns": [
+        "description"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_id_building_id_key",
+      "kind": "u",
+      "definition": "UNIQUE (id, building_id)",
+      "referenced_table": null,
+      "columns": [
+        "id",
+        "building_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_kind_check",
+      "kind": "c",
+      "definition": "CHECK ((kind = ANY (ARRAY['construction'::text, 'addition'::text, 'alteration'::text, 'restoration'::text, 'use'::text, 'recognition'::text])))",
+      "referenced_table": null,
+      "columns": [
+        "kind"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_kind_not_null",
+      "kind": "n",
+      "definition": "NOT NULL kind",
+      "referenced_table": null,
+      "columns": [
+        "kind"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_locator_not_null",
+      "kind": "n",
+      "definition": "NOT NULL locator",
+      "referenced_table": null,
+      "columns": [
+        "locator"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_precision_check",
+      "kind": "c",
+      "definition": "CHECK ((\"precision\" = ANY (ARRAY['year'::text, 'approximate'::text, 'range'::text])))",
+      "referenced_table": null,
+      "columns": [
+        "precision"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_precision_not_null",
+      "kind": "n",
+      "definition": "NOT NULL \"precision\"",
+      "referenced_table": null,
+      "columns": [
+        "precision"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_source_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (source_id) REFERENCES sources(id) ON DELETE RESTRICT",
+      "referenced_table": "sources",
+      "columns": [
+        "source_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_source_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL source_id",
+      "referenced_table": null,
+      "columns": [
+        "source_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_title_check",
+      "kind": "c",
+      "definition": "CHECK (((length(TRIM(BOTH FROM title)) >= 1) AND (length(TRIM(BOTH FROM title)) <= 200)))",
+      "referenced_table": null,
+      "columns": [
+        "title"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_title_not_null",
+      "kind": "n",
+      "definition": "NOT NULL title",
+      "referenced_table": null,
+      "columns": [
+        "title"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_year_from_check",
+      "kind": "c",
+      "definition": "CHECK ((((year_from >= '-1000'::integer) AND (year_from <= 2100)) AND (year_from <> 0)))",
+      "referenced_table": null,
+      "columns": [
+        "year_from"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_year_from_not_null",
+      "kind": "n",
+      "definition": "NOT NULL year_from",
+      "referenced_table": null,
+      "columns": [
+        "year_from"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_year_to_check",
+      "kind": "c",
+      "definition": "CHECK ((((year_to >= '-1000'::integer) AND (year_to <= 2100)) AND (year_to <> 0)))",
+      "referenced_table": null,
+      "columns": [
+        "year_to"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_year_to_not_null",
+      "kind": "n",
+      "definition": "NOT NULL year_to",
+      "referenced_table": null,
+      "columns": [
+        "year_to"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_materials",
+      "name": "building_materials_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "building_materials",
+      "name": "building_materials_building_id_material_id_key",
+      "kind": "u",
+      "definition": "UNIQUE (building_id, material_id)",
+      "referenced_table": null,
+      "columns": [
+        "building_id",
+        "material_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_materials",
+      "name": "building_materials_building_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL building_id",
+      "referenced_table": null,
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_materials",
+      "name": "building_materials_id_building_id_key",
+      "kind": "u",
+      "definition": "UNIQUE (id, building_id)",
+      "referenced_table": null,
+      "columns": [
+        "id",
+        "building_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_materials",
+      "name": "building_materials_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_materials",
+      "name": "building_materials_material_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (material_id) REFERENCES materials(id) ON DELETE RESTRICT",
+      "referenced_table": "materials",
+      "columns": [
+        "material_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "building_materials",
+      "name": "building_materials_material_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL material_id",
+      "referenced_table": null,
+      "columns": [
+        "material_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_materials",
+      "name": "building_materials_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_materials",
+      "name": "building_materials_usage_notes_not_null",
+      "kind": "n",
+      "definition": "NOT NULL usage_notes",
+      "referenced_table": null,
+      "columns": [
+        "usage_notes"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_styles",
+      "name": "building_styles_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "building_styles",
+      "name": "building_styles_building_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL building_id",
+      "referenced_table": null,
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_styles",
+      "name": "building_styles_building_id_style_id_key",
+      "kind": "u",
+      "definition": "UNIQUE (building_id, style_id)",
+      "referenced_table": null,
+      "columns": [
+        "building_id",
+        "style_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_styles",
+      "name": "building_styles_id_building_id_key",
+      "kind": "u",
+      "definition": "UNIQUE (id, building_id)",
+      "referenced_table": null,
+      "columns": [
+        "id",
+        "building_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_styles",
+      "name": "building_styles_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_styles",
+      "name": "building_styles_notes_not_null",
+      "kind": "n",
+      "definition": "NOT NULL notes",
+      "referenced_table": null,
+      "columns": [
+        "notes"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_styles",
+      "name": "building_styles_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_styles",
+      "name": "building_styles_style_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (style_id) REFERENCES styles(id) ON DELETE RESTRICT",
+      "referenced_table": "styles",
+      "columns": [
+        "style_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "building_styles",
+      "name": "building_styles_style_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL style_id",
+      "referenced_table": null,
+      "columns": [
+        "style_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_types",
+      "name": "building_types_description_not_null",
+      "kind": "n",
+      "definition": "NOT NULL description",
+      "referenced_table": null,
+      "columns": [
+        "description"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_types",
+      "name": "building_types_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_types",
+      "name": "building_types_name_key",
+      "kind": "u",
+      "definition": "UNIQUE (name)",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_types",
+      "name": "building_types_name_not_null",
+      "kind": "n",
+      "definition": "NOT NULL name",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_types",
+      "name": "building_types_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_check",
+      "kind": "c",
+      "definition": "CHECK (((year_from IS NULL) OR (year_to IS NULL) OR (year_from <= year_to)))",
+      "referenced_table": null,
+      "columns": [
+        "year_from",
+        "year_to"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_created_at_not_null",
+      "kind": "n",
+      "definition": "NOT NULL created_at",
+      "referenced_table": null,
+      "columns": [
+        "created_at"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_date_label_not_null",
+      "kind": "n",
+      "definition": "NOT NULL date_label",
+      "referenced_table": null,
+      "columns": [
+        "date_label"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_date_precision_check",
+      "kind": "c",
+      "definition": "CHECK ((date_precision = ANY (ARRAY['year'::text, 'approximate'::text, 'range'::text, 'unknown'::text])))",
+      "referenced_table": null,
+      "columns": [
+        "date_precision"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_date_precision_not_null",
+      "kind": "n",
+      "definition": "NOT NULL date_precision",
+      "referenced_table": null,
+      "columns": [
+        "date_precision"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_history_not_null",
+      "kind": "n",
+      "definition": "NOT NULL history",
+      "referenced_table": null,
+      "columns": [
+        "history"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_latitude_check",
+      "kind": "c",
+      "definition": "CHECK (((latitude >= ('-90'::integer)::numeric) AND (latitude <= (90)::numeric)))",
+      "referenced_table": null,
+      "columns": [
+        "latitude"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_layout_notes_not_null",
+      "kind": "n",
+      "definition": "NOT NULL layout_notes",
+      "referenced_table": null,
+      "columns": [
+        "layout_notes"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_longitude_check",
+      "kind": "c",
+      "definition": "CHECK (((longitude >= ('-180'::integer)::numeric) AND (longitude <= (180)::numeric)))",
+      "referenced_table": null,
+      "columns": [
+        "longitude"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_name_check",
+      "kind": "c",
+      "definition": "CHECK ((length(TRIM(BOTH FROM name)) > 0))",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_name_not_null",
+      "kind": "n",
+      "definition": "NOT NULL name",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_site_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (site_id) REFERENCES sites(id) ON DELETE RESTRICT",
+      "referenced_table": "sites",
+      "columns": [
+        "site_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_site_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL site_id",
+      "referenced_table": null,
+      "columns": [
+        "site_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_slug_key",
+      "kind": "u",
+      "definition": "UNIQUE (slug)",
+      "referenced_table": null,
+      "columns": [
+        "slug"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_slug_not_null",
+      "kind": "n",
+      "definition": "NOT NULL slug",
+      "referenced_table": null,
+      "columns": [
+        "slug"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_status_check",
+      "kind": "c",
+      "definition": "CHECK ((status = ANY (ARRAY['draft'::text, 'published'::text, 'archived'::text])))",
+      "referenced_table": null,
+      "columns": [
+        "status"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_status_not_null",
+      "kind": "n",
+      "definition": "NOT NULL status",
+      "referenced_table": null,
+      "columns": [
+        "status"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_summary_not_null",
+      "kind": "n",
+      "definition": "NOT NULL summary",
+      "referenced_table": null,
+      "columns": [
+        "summary"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_type_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (type_id) REFERENCES building_types(id) ON DELETE RESTRICT",
+      "referenced_table": "building_types",
+      "columns": [
+        "type_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_type_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL type_id",
+      "referenced_table": null,
+      "columns": [
+        "type_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_updated_at_not_null",
+      "kind": "n",
+      "definition": "NOT NULL updated_at",
+      "referenced_table": null,
+      "columns": [
+        "updated_at"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_year_from_no_zero",
+      "kind": "c",
+      "definition": "CHECK (((year_from IS NULL) OR (year_from <> 0)))",
+      "referenced_table": null,
+      "columns": [
+        "year_from"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_year_to_no_zero",
+      "kind": "c",
+      "definition": "CHECK (((year_to IS NULL) OR (year_to <> 0)))",
+      "referenced_table": null,
+      "columns": [
+        "year_to"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_building_element_id_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_element_id, building_id) REFERENCES building_elements(id, building_id) ON DELETE CASCADE",
+      "referenced_table": "building_elements",
+      "columns": [
+        "building_element_id",
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id",
+        "building_id"
+      ]
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_building_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL building_id",
+      "referenced_table": null,
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_building_material_id_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_material_id, building_id) REFERENCES building_materials(id, building_id) ON DELETE CASCADE",
+      "referenced_table": "building_materials",
+      "columns": [
+        "building_material_id",
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id",
+        "building_id"
+      ]
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_building_style_id_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_style_id, building_id) REFERENCES building_styles(id, building_id) ON DELETE CASCADE",
+      "referenced_table": "building_styles",
+      "columns": [
+        "building_style_id",
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id",
+        "building_id"
+      ]
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_check",
+      "kind": "c",
+      "definition": "CHECK ((num_nonnulls(building_style_id, building_material_id, building_element_id) <= 1))",
+      "referenced_table": null,
+      "columns": [
+        "building_style_id",
+        "building_material_id",
+        "building_element_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_claim_topic_not_null",
+      "kind": "n",
+      "definition": "NOT NULL claim_topic",
+      "referenced_table": null,
+      "columns": [
+        "claim_topic"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_locator_not_null",
+      "kind": "n",
+      "definition": "NOT NULL locator",
+      "referenced_table": null,
+      "columns": [
+        "locator"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_note_not_null",
+      "kind": "n",
+      "definition": "NOT NULL note",
+      "referenced_table": null,
+      "columns": [
+        "note"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_source_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (source_id) REFERENCES sources(id) ON DELETE RESTRICT",
+      "referenced_table": "sources",
+      "columns": [
+        "source_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_source_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL source_id",
+      "referenced_table": null,
+      "columns": [
+        "source_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "elements",
+      "name": "elements_description_not_null",
+      "kind": "n",
+      "definition": "NOT NULL description",
+      "referenced_table": null,
+      "columns": [
+        "description"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "elements",
+      "name": "elements_function_not_null",
+      "kind": "n",
+      "definition": "NOT NULL function",
+      "referenced_table": null,
+      "columns": [
+        "function"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "elements",
+      "name": "elements_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "elements",
+      "name": "elements_name_key",
+      "kind": "u",
+      "definition": "UNIQUE (name)",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "elements",
+      "name": "elements_name_not_null",
+      "kind": "n",
+      "definition": "NOT NULL name",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "elements",
+      "name": "elements_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_building_id_element_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id, element_id) REFERENCES building_elements(building_id, element_id) ON DELETE CASCADE",
+      "referenced_table": "building_elements",
+      "columns": [
+        "building_id",
+        "element_id"
+      ],
+      "referenced_columns": [
+        "building_id",
+        "element_id"
+      ]
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_building_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL building_id",
+      "referenced_table": null,
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_building_id_storage_key_element_id_key",
+      "kind": "u",
+      "definition": "UNIQUE (building_id, storage_key, element_id)",
+      "referenced_table": null,
+      "columns": [
+        "building_id",
+        "storage_key",
+        "element_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_building_id_storage_key_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id, storage_key) REFERENCES images(building_id, storage_key) ON DELETE CASCADE",
+      "referenced_table": "images",
+      "columns": [
+        "building_id",
+        "storage_key"
+      ],
+      "referenced_columns": [
+        "building_id",
+        "storage_key"
+      ]
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_element_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL element_id",
+      "referenced_table": null,
+      "columns": [
+        "element_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_label_check",
+      "kind": "c",
+      "definition": "CHECK (((length(TRIM(BOTH FROM label)) >= 1) AND (length(TRIM(BOTH FROM label)) <= 100)))",
+      "referenced_table": null,
+      "columns": [
+        "label"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_label_not_null",
+      "kind": "n",
+      "definition": "NOT NULL label",
+      "referenced_table": null,
+      "columns": [
+        "label"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_note_not_null",
+      "kind": "n",
+      "definition": "NOT NULL note",
+      "referenced_table": null,
+      "columns": [
+        "note"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_storage_key_not_null",
+      "kind": "n",
+      "definition": "NOT NULL storage_key",
+      "referenced_table": null,
+      "columns": [
+        "storage_key"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_x_check",
+      "kind": "c",
+      "definition": "CHECK (((x >= (0)::numeric) AND (x <= (100)::numeric)))",
+      "referenced_table": null,
+      "columns": [
+        "x"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_x_not_null",
+      "kind": "n",
+      "definition": "NOT NULL x",
+      "referenced_table": null,
+      "columns": [
+        "x"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_y_check",
+      "kind": "c",
+      "definition": "CHECK (((y >= (0)::numeric) AND (y <= (100)::numeric)))",
+      "referenced_table": null,
+      "columns": [
+        "y"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_y_not_null",
+      "kind": "n",
+      "definition": "NOT NULL y",
+      "referenced_table": null,
+      "columns": [
+        "y"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_alt_text_not_null",
+      "kind": "n",
+      "definition": "NOT NULL alt_text",
+      "referenced_table": null,
+      "columns": [
+        "alt_text"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_approved_not_null",
+      "kind": "n",
+      "definition": "NOT NULL approved",
+      "referenced_table": null,
+      "columns": [
+        "approved"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_author_not_null",
+      "kind": "n",
+      "definition": "NOT NULL author",
+      "referenced_table": null,
+      "columns": [
+        "author"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_building_asset_unique",
+      "kind": "u",
+      "definition": "UNIQUE (building_id, storage_key)",
+      "referenced_table": null,
+      "columns": [
+        "building_id",
+        "storage_key"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_building_element_id_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_element_id, building_id) REFERENCES building_elements(id, building_id) ON DELETE CASCADE",
+      "referenced_table": "building_elements",
+      "columns": [
+        "building_element_id",
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id",
+        "building_id"
+      ]
+    },
+    {
+      "table_name": "images",
+      "name": "images_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "images",
+      "name": "images_building_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL building_id",
+      "referenced_table": null,
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_building_id_source_page_url_key",
+      "kind": "u",
+      "definition": "UNIQUE (building_id, source_page_url)",
+      "referenced_table": null,
+      "columns": [
+        "building_id",
+        "source_page_url"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_byte_size_check",
+      "kind": "c",
+      "definition": "CHECK ((byte_size > 0))",
+      "referenced_table": null,
+      "columns": [
+        "byte_size"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_byte_size_not_null",
+      "kind": "n",
+      "definition": "NOT NULL byte_size",
+      "referenced_table": null,
+      "columns": [
+        "byte_size"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_caption_not_null",
+      "kind": "n",
+      "definition": "NOT NULL caption",
+      "referenced_table": null,
+      "columns": [
+        "caption"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_height_check",
+      "kind": "c",
+      "definition": "CHECK ((height > 0))",
+      "referenced_table": null,
+      "columns": [
+        "height"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_height_not_null",
+      "kind": "n",
+      "definition": "NOT NULL height",
+      "referenced_table": null,
+      "columns": [
+        "height"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_is_cover_not_null",
+      "kind": "n",
+      "definition": "NOT NULL is_cover",
+      "referenced_table": null,
+      "columns": [
+        "is_cover"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_licence_code_not_null",
+      "kind": "n",
+      "definition": "NOT NULL licence_code",
+      "referenced_table": null,
+      "columns": [
+        "licence_code"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_licence_url_not_null",
+      "kind": "n",
+      "definition": "NOT NULL licence_url",
+      "referenced_table": null,
+      "columns": [
+        "licence_url"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_modification_note_not_null",
+      "kind": "n",
+      "definition": "NOT NULL modification_note",
+      "referenced_table": null,
+      "columns": [
+        "modification_note"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_original_url_not_null",
+      "kind": "n",
+      "definition": "NOT NULL original_url",
+      "referenced_table": null,
+      "columns": [
+        "original_url"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_sort_order_not_null",
+      "kind": "n",
+      "definition": "NOT NULL sort_order",
+      "referenced_table": null,
+      "columns": [
+        "sort_order"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_source_page_url_not_null",
+      "kind": "n",
+      "definition": "NOT NULL source_page_url",
+      "referenced_table": null,
+      "columns": [
+        "source_page_url"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_storage_key_not_null",
+      "kind": "n",
+      "definition": "NOT NULL storage_key",
+      "referenced_table": null,
+      "columns": [
+        "storage_key"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_width_check",
+      "kind": "c",
+      "definition": "CHECK ((width > 0))",
+      "referenced_table": null,
+      "columns": [
+        "width"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "images",
+      "name": "images_width_not_null",
+      "kind": "n",
+      "definition": "NOT NULL width",
+      "referenced_table": null,
+      "columns": [
+        "width"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "materials",
+      "name": "materials_description_not_null",
+      "kind": "n",
+      "definition": "NOT NULL description",
+      "referenced_table": null,
+      "columns": [
+        "description"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "materials",
+      "name": "materials_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "materials",
+      "name": "materials_name_key",
+      "kind": "u",
+      "definition": "UNIQUE (name)",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "materials",
+      "name": "materials_name_not_null",
+      "kind": "n",
+      "definition": "NOT NULL name",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "materials",
+      "name": "materials_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "schema_migrations",
+      "name": "schema_migrations_applied_at_not_null",
+      "kind": "n",
+      "definition": "NOT NULL applied_at",
+      "referenced_table": null,
+      "columns": [
+        "applied_at"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "schema_migrations",
+      "name": "schema_migrations_name_not_null",
+      "kind": "n",
+      "definition": "NOT NULL name",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "schema_migrations",
+      "name": "schema_migrations_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (name)",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "seed_tasks",
+      "name": "seed_tasks_applied_at_not_null",
+      "kind": "n",
+      "definition": "NOT NULL applied_at",
+      "referenced_table": null,
+      "columns": [
+        "applied_at"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "seed_tasks",
+      "name": "seed_tasks_name_not_null",
+      "kind": "n",
+      "definition": "NOT NULL name",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "seed_tasks",
+      "name": "seed_tasks_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (name)",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sessions",
+      "name": "sessions_expire_not_null",
+      "kind": "n",
+      "definition": "NOT NULL expire",
+      "referenced_table": null,
+      "columns": [
+        "expire"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sessions",
+      "name": "sessions_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (sid)",
+      "referenced_table": null,
+      "columns": [
+        "sid"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sessions",
+      "name": "sessions_sess_not_null",
+      "kind": "n",
+      "definition": "NOT NULL sess",
+      "referenced_table": null,
+      "columns": [
+        "sess"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sessions",
+      "name": "sessions_sid_not_null",
+      "kind": "n",
+      "definition": "NOT NULL sid",
+      "referenced_table": null,
+      "columns": [
+        "sid"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_district_not_null",
+      "kind": "n",
+      "definition": "NOT NULL district",
+      "referenced_table": null,
+      "columns": [
+        "district"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_locality_not_null",
+      "kind": "n",
+      "definition": "NOT NULL locality",
+      "referenced_table": null,
+      "columns": [
+        "locality"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_map_latitude_check",
+      "kind": "c",
+      "definition": "CHECK (((map_latitude >= ('-90'::integer)::numeric) AND (map_latitude <= (90)::numeric)))",
+      "referenced_table": null,
+      "columns": [
+        "map_latitude"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_map_longitude_check",
+      "kind": "c",
+      "definition": "CHECK (((map_longitude >= ('-180'::integer)::numeric) AND (map_longitude <= (180)::numeric)))",
+      "referenced_table": null,
+      "columns": [
+        "map_longitude"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_name_key",
+      "kind": "u",
+      "definition": "UNIQUE (name)",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_name_not_null",
+      "kind": "n",
+      "definition": "NOT NULL name",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_overview_not_null",
+      "kind": "n",
+      "definition": "NOT NULL overview",
+      "referenced_table": null,
+      "columns": [
+        "overview"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_slug_key",
+      "kind": "u",
+      "definition": "UNIQUE (slug)",
+      "referenced_table": null,
+      "columns": [
+        "slug"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_slug_not_null",
+      "kind": "n",
+      "definition": "NOT NULL slug",
+      "referenced_table": null,
+      "columns": [
+        "slug"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_state_fk",
+      "kind": "f",
+      "definition": "FOREIGN KEY (state) REFERENCES states(name) ON DELETE RESTRICT",
+      "referenced_table": "states",
+      "columns": [
+        "state"
+      ],
+      "referenced_columns": [
+        "name"
+      ]
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_state_not_null",
+      "kind": "n",
+      "definition": "NOT NULL state",
+      "referenced_table": null,
+      "columns": [
+        "state"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sources",
+      "name": "sources_accessed_on_not_null",
+      "kind": "n",
+      "definition": "NOT NULL accessed_on",
+      "referenced_table": null,
+      "columns": [
+        "accessed_on"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sources",
+      "name": "sources_author_or_publisher_not_null",
+      "kind": "n",
+      "definition": "NOT NULL author_or_publisher",
+      "referenced_table": null,
+      "columns": [
+        "author_or_publisher"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sources",
+      "name": "sources_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sources",
+      "name": "sources_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sources",
+      "name": "sources_title_not_null",
+      "kind": "n",
+      "definition": "NOT NULL title",
+      "referenced_table": null,
+      "columns": [
+        "title"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sources",
+      "name": "sources_url_key",
+      "kind": "u",
+      "definition": "UNIQUE (url)",
+      "referenced_table": null,
+      "columns": [
+        "url"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "sources",
+      "name": "sources_url_not_null",
+      "kind": "n",
+      "definition": "NOT NULL url",
+      "referenced_table": null,
+      "columns": [
+        "url"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "states",
+      "name": "states_kind_check",
+      "kind": "c",
+      "definition": "CHECK ((kind = ANY (ARRAY['state'::text, 'union territory'::text])))",
+      "referenced_table": null,
+      "columns": [
+        "kind"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "states",
+      "name": "states_kind_not_null",
+      "kind": "n",
+      "definition": "NOT NULL kind",
+      "referenced_table": null,
+      "columns": [
+        "kind"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "states",
+      "name": "states_name_not_null",
+      "kind": "n",
+      "definition": "NOT NULL name",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "states",
+      "name": "states_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (name)",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "styles",
+      "name": "styles_description_not_null",
+      "kind": "n",
+      "definition": "NOT NULL description",
+      "referenced_table": null,
+      "columns": [
+        "description"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "styles",
+      "name": "styles_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "styles",
+      "name": "styles_name_key",
+      "kind": "u",
+      "definition": "UNIQUE (name)",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "styles",
+      "name": "styles_name_not_null",
+      "kind": "n",
+      "definition": "NOT NULL name",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "styles",
+      "name": "styles_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    }
+  ],
+  "indexes": [
+    {
+      "table_name": "admins",
+      "name": "admins_email_key",
+      "definition": "CREATE UNIQUE INDEX admins_email_key ON public.admins USING btree (email)"
+    },
+    {
+      "table_name": "admins",
+      "name": "admins_pkey",
+      "definition": "CREATE UNIQUE INDEX admins_pkey ON public.admins USING btree (id)"
+    },
+    {
+      "table_name": "building_aliases",
+      "name": "aliases_building_idx",
+      "definition": "CREATE INDEX aliases_building_idx ON public.building_aliases USING btree (building_id)"
+    },
+    {
+      "table_name": "building_aliases",
+      "name": "building_aliases_building_id_alias_key",
+      "definition": "CREATE UNIQUE INDEX building_aliases_building_id_alias_key ON public.building_aliases USING btree (building_id, alias)"
+    },
+    {
+      "table_name": "building_aliases",
+      "name": "building_aliases_pkey",
+      "definition": "CREATE UNIQUE INDEX building_aliases_pkey ON public.building_aliases USING btree (id)"
+    },
+    {
+      "table_name": "building_elements",
+      "name": "building_elements_building_id_element_id_key",
+      "definition": "CREATE UNIQUE INDEX building_elements_building_id_element_id_key ON public.building_elements USING btree (building_id, element_id)"
+    },
+    {
+      "table_name": "building_elements",
+      "name": "building_elements_id_building_id_key",
+      "definition": "CREATE UNIQUE INDEX building_elements_id_building_id_key ON public.building_elements USING btree (id, building_id)"
+    },
+    {
+      "table_name": "building_elements",
+      "name": "building_elements_pkey",
+      "definition": "CREATE UNIQUE INDEX building_elements_pkey ON public.building_elements USING btree (id)"
+    },
+    {
+      "table_name": "building_elements",
+      "name": "elements_reverse_idx",
+      "definition": "CREATE INDEX elements_reverse_idx ON public.building_elements USING btree (element_id, building_id)"
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_chronology",
+      "definition": "CREATE INDEX building_events_chronology ON public.building_events USING btree (building_id, year_from)"
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_id_building_id_key",
+      "definition": "CREATE UNIQUE INDEX building_events_id_building_id_key ON public.building_events USING btree (id, building_id)"
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_pkey",
+      "definition": "CREATE UNIQUE INDEX building_events_pkey ON public.building_events USING btree (id)"
+    },
+    {
+      "table_name": "building_materials",
+      "name": "building_materials_building_id_material_id_key",
+      "definition": "CREATE UNIQUE INDEX building_materials_building_id_material_id_key ON public.building_materials USING btree (building_id, material_id)"
+    },
+    {
+      "table_name": "building_materials",
+      "name": "building_materials_id_building_id_key",
+      "definition": "CREATE UNIQUE INDEX building_materials_id_building_id_key ON public.building_materials USING btree (id, building_id)"
+    },
+    {
+      "table_name": "building_materials",
+      "name": "building_materials_pkey",
+      "definition": "CREATE UNIQUE INDEX building_materials_pkey ON public.building_materials USING btree (id)"
+    },
+    {
+      "table_name": "building_materials",
+      "name": "materials_reverse_idx",
+      "definition": "CREATE INDEX materials_reverse_idx ON public.building_materials USING btree (material_id, building_id)"
+    },
+    {
+      "table_name": "building_styles",
+      "name": "building_styles_building_id_style_id_key",
+      "definition": "CREATE UNIQUE INDEX building_styles_building_id_style_id_key ON public.building_styles USING btree (building_id, style_id)"
+    },
+    {
+      "table_name": "building_styles",
+      "name": "building_styles_id_building_id_key",
+      "definition": "CREATE UNIQUE INDEX building_styles_id_building_id_key ON public.building_styles USING btree (id, building_id)"
+    },
+    {
+      "table_name": "building_styles",
+      "name": "building_styles_pkey",
+      "definition": "CREATE UNIQUE INDEX building_styles_pkey ON public.building_styles USING btree (id)"
+    },
+    {
+      "table_name": "building_styles",
+      "name": "styles_reverse_idx",
+      "definition": "CREATE INDEX styles_reverse_idx ON public.building_styles USING btree (style_id, building_id)"
+    },
+    {
+      "table_name": "building_types",
+      "name": "building_types_name_key",
+      "definition": "CREATE UNIQUE INDEX building_types_name_key ON public.building_types USING btree (name)"
+    },
+    {
+      "table_name": "building_types",
+      "name": "building_types_pkey",
+      "definition": "CREATE UNIQUE INDEX building_types_pkey ON public.building_types USING btree (id)"
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_pkey",
+      "definition": "CREATE UNIQUE INDEX buildings_pkey ON public.buildings USING btree (id)"
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_site_idx",
+      "definition": "CREATE INDEX buildings_site_idx ON public.buildings USING btree (site_id)"
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_slug_key",
+      "definition": "CREATE UNIQUE INDEX buildings_slug_key ON public.buildings USING btree (slug)"
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_status_idx",
+      "definition": "CREATE INDEX buildings_status_idx ON public.buildings USING btree (status)"
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_type_idx",
+      "definition": "CREATE INDEX buildings_type_idx ON public.buildings USING btree (type_id)"
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_building_idx",
+      "definition": "CREATE INDEX citations_building_idx ON public.citations USING btree (building_id)"
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_pkey",
+      "definition": "CREATE UNIQUE INDEX citations_pkey ON public.citations USING btree (id)"
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_source_idx",
+      "definition": "CREATE INDEX citations_source_idx ON public.citations USING btree (source_id)"
+    },
+    {
+      "table_name": "elements",
+      "name": "elements_name_key",
+      "definition": "CREATE UNIQUE INDEX elements_name_key ON public.elements USING btree (name)"
+    },
+    {
+      "table_name": "elements",
+      "name": "elements_pkey",
+      "definition": "CREATE UNIQUE INDEX elements_pkey ON public.elements USING btree (id)"
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_building_id_storage_key_element_id_key",
+      "definition": "CREATE UNIQUE INDEX hotspots_building_id_storage_key_element_id_key ON public.hotspots USING btree (building_id, storage_key, element_id)"
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_element_idx",
+      "definition": "CREATE INDEX hotspots_element_idx ON public.hotspots USING btree (element_id, building_id)"
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_pkey",
+      "definition": "CREATE UNIQUE INDEX hotspots_pkey ON public.hotspots USING btree (id)"
+    },
+    {
+      "table_name": "images",
+      "name": "images_building_asset_unique",
+      "definition": "CREATE UNIQUE INDEX images_building_asset_unique ON public.images USING btree (building_id, storage_key)"
+    },
+    {
+      "table_name": "images",
+      "name": "images_building_id_source_page_url_key",
+      "definition": "CREATE UNIQUE INDEX images_building_id_source_page_url_key ON public.images USING btree (building_id, source_page_url)"
+    },
+    {
+      "table_name": "images",
+      "name": "images_building_idx",
+      "definition": "CREATE INDEX images_building_idx ON public.images USING btree (building_id)"
+    },
+    {
+      "table_name": "images",
+      "name": "images_pkey",
+      "definition": "CREATE UNIQUE INDEX images_pkey ON public.images USING btree (id)"
+    },
+    {
+      "table_name": "images",
+      "name": "one_cover_per_building",
+      "definition": "CREATE UNIQUE INDEX one_cover_per_building ON public.images USING btree (building_id) WHERE is_cover"
+    },
+    {
+      "table_name": "materials",
+      "name": "materials_name_key",
+      "definition": "CREATE UNIQUE INDEX materials_name_key ON public.materials USING btree (name)"
+    },
+    {
+      "table_name": "materials",
+      "name": "materials_pkey",
+      "definition": "CREATE UNIQUE INDEX materials_pkey ON public.materials USING btree (id)"
+    },
+    {
+      "table_name": "schema_migrations",
+      "name": "schema_migrations_pkey",
+      "definition": "CREATE UNIQUE INDEX schema_migrations_pkey ON public.schema_migrations USING btree (name)"
+    },
+    {
+      "table_name": "seed_tasks",
+      "name": "seed_tasks_pkey",
+      "definition": "CREATE UNIQUE INDEX seed_tasks_pkey ON public.seed_tasks USING btree (name)"
+    },
+    {
+      "table_name": "sessions",
+      "name": "sessions_expire_idx",
+      "definition": "CREATE INDEX sessions_expire_idx ON public.sessions USING btree (expire)"
+    },
+    {
+      "table_name": "sessions",
+      "name": "sessions_pkey",
+      "definition": "CREATE UNIQUE INDEX sessions_pkey ON public.sessions USING btree (sid)"
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_name_key",
+      "definition": "CREATE UNIQUE INDEX sites_name_key ON public.sites USING btree (name)"
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_pkey",
+      "definition": "CREATE UNIQUE INDEX sites_pkey ON public.sites USING btree (id)"
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_slug_key",
+      "definition": "CREATE UNIQUE INDEX sites_slug_key ON public.sites USING btree (slug)"
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_state_idx",
+      "definition": "CREATE INDEX sites_state_idx ON public.sites USING btree (state)"
+    },
+    {
+      "table_name": "sources",
+      "name": "sources_pkey",
+      "definition": "CREATE UNIQUE INDEX sources_pkey ON public.sources USING btree (id)"
+    },
+    {
+      "table_name": "sources",
+      "name": "sources_url_key",
+      "definition": "CREATE UNIQUE INDEX sources_url_key ON public.sources USING btree (url)"
+    },
+    {
+      "table_name": "states",
+      "name": "states_pkey",
+      "definition": "CREATE UNIQUE INDEX states_pkey ON public.states USING btree (name)"
+    },
+    {
+      "table_name": "styles",
+      "name": "styles_name_key",
+      "definition": "CREATE UNIQUE INDEX styles_name_key ON public.styles USING btree (name)"
+    },
+    {
+      "table_name": "styles",
+      "name": "styles_pkey",
+      "definition": "CREATE UNIQUE INDEX styles_pkey ON public.styles USING btree (id)"
+    }
+  ],
+  "views": [
+    {
+      "viewname": "published_building_summary",
+      "definition": " SELECT b.id,\n    b.name,\n    b.slug,\n    b.summary,\n    b.date_label,\n    s.name AS site,\n    t.name AS building_type\n   FROM ((buildings b\n     JOIN sites s ON ((s.id = b.site_id)))\n     JOIN building_types t ON ((t.id = b.type_id)))\n  WHERE (b.status = 'published'::text);"
+    }
+  ]
+}
