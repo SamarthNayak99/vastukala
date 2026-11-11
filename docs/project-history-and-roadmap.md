@@ -53,7 +53,7 @@ The following decisions were established:
 
 The requested MERN-style stack was adapted to **PERN: PostgreSQL, Express, React and Node.js**. PostgreSQL replaces MongoDB because this project demonstrates relational modelling, joins, constraints, normalization and transactions.
 
-Deliverables created in this phase were [the plan](../plan.md), [the synopsis](synopsis.md), [the ER diagram](er-diagram.md), and [the research/source register](../research/resources.md). The ER diagram was subsequently aligned with the implemented schema, including integer identity keys.
+Deliverables created in this phase were [the plan](../plan.md), [the ER diagram](er-diagram.md), and [the research/source register](../research/resources.md). The ER diagram was subsequently aligned with the implemented schema, including integer identity keys.
 
 ## 4. Phase 2 — Five-monument pilot
 
@@ -314,7 +314,6 @@ Audit history, media uploads and hosting are substantial work items. The current
 |---|---|
 | [README.md](../README.md) | Local setup, commands and usage |
 | [plan.md](../plan.md) | Original requirements, milestone definitions and scope freeze |
-| [synopsis.md](synopsis.md) | College project synopsis draft |
 | [er-diagram.md](er-diagram.md) | Implemented domain relationships |
 | [database-design.md](database-design.md) | Keys, functional dependencies, normalization and integrity boundaries |
 | [progress.md](progress.md) | Short current-status and verification record |

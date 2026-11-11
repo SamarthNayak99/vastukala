@@ -7,6 +7,7 @@ import {pool} from '../server/db.mjs';
 import {saveBuilding} from '../server/catalogue.mjs';
 import {loadDataset} from '../research/dataset.mjs';
 import {seedHotspots} from './seed-hotspots.mjs';
+import {seedGallery} from './seed-gallery.mjs';
 export async function seed() {
  const pilot=await loadDataset();
  let media=[];try{media=JSON.parse(await readFile('research/media-manifest.json','utf8'));}catch{}
@@ -18,10 +19,11 @@ export async function seed() {
   if((await pool.query('SELECT id FROM buildings WHERE slug=$1',[b.slug])).rowCount){console.log(`Preserved existing ${b.slug}`);continue;}
   const payload={...b,site_id:sites.get(b.site),type_id:await category('building_types',b.type),styles:[],materials:[],elements:[],citations:b.citations.map(c=>({source_id:sources.get(c.source),claim_topic:c.topic,locator:c.locator,note:c.note||''})),images:[],status:'draft'};
   for(const [key,kind]of [['styles','style'],['materials','material'],['elements','element']])for(const rel of b[key]){const id=await category(key,rel.name,rel.description||'');payload[key].push({id,notes:rel.notes});payload.citations.push({source_id:sources.get(rel.source),claim_topic:rel.name,locator:rel.locator,note:rel.notes,target_kind:kind,taxonomy_id:id});}
-  payload.images=media.filter(im=>im.building===b.slug).map((im,index)=>({storage_key:im.storage_key,source_page_url:im.source_page_url,original_url:im.original_url,author:im.author,licence_code:im.licence_code,licence_url:im.licence_url,caption:im.caption,alt_text:im.caption,width:im.width,height:im.height,byte_size:im.byte_size,modification_note:im.modification_note,sort_order:index,is_cover:im.cover,approved:im.approved,element_id:im.element?payload.elements[b.elements.findIndex(e=>e.name===im.element)]?.id||null:null}));
+  payload.images=media.filter(im=>im.building===b.slug&&!im.key.startsWith('gallery-')).map((im,index)=>({storage_key:im.storage_key,source_page_url:im.source_page_url,original_url:im.original_url,author:im.author,licence_code:im.licence_code,licence_url:im.licence_url,caption:im.caption,alt_text:im.caption,width:im.width,height:im.height,byte_size:im.byte_size,modification_note:im.modification_note,sort_order:index,is_cover:im.cover,approved:im.approved,element_id:im.element?payload.elements[b.elements.findIndex(e=>e.name===im.element)]?.id||null:null}));
   if(payload.images.some(x=>x.is_cover&&x.approved))payload.status='published';
   await saveBuilding(payload,null,{coordinates:b});console.log(`Seeded ${b.slug} (${payload.status})`);
  }
  await seedHotspots();await seedHeritage();await seedConservation();await seedIndiaEvidence();
+ await seedGallery(media);
 }
 if(process.argv[1]===path.resolve('scripts/seed.mjs')){try{await seed();}finally{await pool.end();}}

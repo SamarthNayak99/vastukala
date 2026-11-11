@@ -22,6 +22,10 @@ test('DBMS guided queries execute joins, division, set operations, aggregates an
  const counts=await run('aggregation',{distinct:true}),trap=await run('aggregation',{distinct:false});assert.equal(counts.rows.reduce((a,r)=>a+r.monuments,0),100);assert.ok(trap.rows.reduce((a,r)=>a+r.joined_rows,0)>100);
  assert.equal((await run('state',{state:'Rajasthan'})).rows.length,9);
  assert.ok((await run('filters',{state:'Uttar Pradesh',material:'Marble',element:'Dome'})).rows.some(r=>r.name==='Taj Mahal'));
+ assert.ok((await run('filters',{state:'Gujarat',material:'Sandstone',element:'Curvilinear shikhara'})).rows.some(r=>r.name==='Somnath Temple'));
+ const gol=records.find(b=>b.slug==='gol-gumbaz-vijayapura'),qutb=records.find(b=>b.slug==='qutb-shahi-tombs');
+ assert.ok((await run('sets',{building:gol.id,other:qutb.id,operation:'shared'})).rows.some(r=>r.element==='Dome'));
+ assert.ok((await run('temporal',{from:-3000,to:-1500})).rows.some(r=>r.name==='Dholavira Harappan City'));
  assert.ok((await run('temporal',{from:-500,to:-1})).rows.some(r=>r.name==='Great Stupa at Sanchi'));
  assert.equal((await run('views')).rows.length,100);assert.equal((await run('ranking')).rows.length,100);
  assert.ok((await run('indexes',{building:tax.sites[0].id})).plan[0].Plan);
@@ -250,17 +254,46 @@ test('state filters combine with location, type and aliases across the expanded 
  await request(app).get('/api/buildings').query({states:"Delhi' OR 1=1"}).expect(400);
  await assert.rejects(pool.query("INSERT INTO sites(name,slug,locality,district,state) VALUES('Invalid state test','invalid-state-test','Test','Test','Atlantis')"),e=>e.code==='23503');
 });
-test('the 40 added records have mapped locations, open photographs, cited hotspots and sourced events',async()=>{
+test('every monument participates in catalogue, map, gallery, anatomy, life stories and comparison',async()=>{
+ const catalogue=(await request(app).get('/api/buildings?limit=120').expect(200)).body.items;
+ const timeline=(await request(app).get('/api/explore/time').expect(200)).body;
+ assert.deepEqual(new Set([...timeline.dated,...timeline.undated].map(b=>b.slug)),new Set(catalogue.map(b=>b.slug)));
  const {buildings}=JSON.parse(await readFile('research/india-100.json','utf8'));
- assert.equal(buildings.length,40);
- for(const {slug} of buildings){
-  const record=records.find(b=>b.slug===slug);
-  assert.ok(record?.map_latitude&&record?.map_longitude&&record?.map_source_url,slug);
-  assert.ok(record.images.some(i=>i.is_cover&&i.approved&&i.width>=1500&&i.author&&i.licence_url),slug);
+ const newSlugs=new Set(buildings.map(b=>b.slug));
+ const photos=new Set();
+ for(const [index,record] of catalogue.entries()){
+  const {slug,id}=record;
+  assert.ok(record.latitude!=null||record.map_latitude!=null,slug);
+  assert.ok(record.longitude!=null||record.map_longitude!=null,slug);
+  assert.ok(record.map_source_url,slug);
+  const detail=(await request(app).get(`/api/buildings/${slug}`).expect(200)).body;
+  assert.equal(detail.id,id,slug);
+  assert.ok(detail.citations.length&&detail.images.some(i=>i.is_cover&&i.approved),slug);
+  for(const image of detail.images){
+   assert.ok(image.approved&&image.author&&image.licence_url&&image.source_page_url,slug);
+   photos.add(image.storage_key);
+  }
   const anatomy=(await request(app).get('/api/explore/anatomy').query({building:slug}).expect(200)).body;
-  assert.ok(anatomy.building.images.some(i=>i.hotspots.some(h=>h.evidence.length)),slug);
+  assert.equal(anatomy.catalogue.length,catalogue.length,slug);
+  assert.ok(anatomy.building.images.some(i=>i.hotspots.some(h=>h.element&&h.evidence.length)),slug);
   const events=(await request(app).get(`/api/buildings/${slug}/events`).expect(200)).body;
-  assert.ok(events.length>0&&events.every(e=>e.url&&e.source_title),slug);
+  assert.ok(events.every(e=>e.url&&e.source_title&&e.year_from<=e.year_to),slug);
+  if(newSlugs.has(slug)){
+   assert.ok(events.length>0&&detail.images.find(i=>i.is_cover).width>=1500,slug);
+  }
+  const peer=catalogue[(index+1)%catalogue.length];
+  const pair=(await request(app).get('/api/compare').query({ids:`${id},${peer.id}`}).expect(200)).body;
+  assert.deepEqual(pair.buildings.map(b=>b.slug),[slug,peer.slug]);
+ }
+ assert.ok(photos.size>=catalogue.length);
+ const manifest=JSON.parse(await readFile('research/media-manifest.json','utf8'));
+ for(const image of manifest.filter(item=>item.approved&&item.key.startsWith('gallery-'))){
+  assert.ok(photos.has(image.storage_key),`Supplemental photograph missing from public gallery: ${image.key}`);
+ }
+ for(const key of photos){
+  await Promise.all([480,960,1600,2400].map(width=>
+   request(app).head(`/media/${key}-${width}.webp`).expect(200).expect('Content-Type',/image\/webp/)
+  ));
  }
  const gol=records.find(b=>b.slug==='gol-gumbaz-vijayapura');
  const qutb=records.find(b=>b.slug==='qutb-shahi-tombs');

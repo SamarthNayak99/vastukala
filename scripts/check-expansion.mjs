@@ -10,7 +10,7 @@ try{
  assert.equal(original.length,30,'Expected all 30 original monuments to be published');
  const stats=await statistics();
  for(const[name,count]of Object.entries(expected))assert.equal(stats.sites.find(x=>x.name===name)?.count,count,`${name} count`);
- for(const entry of expansion.buildings){const building=await getBuilding(entry.slug);assert.ok(building,entry.slug);assert.equal(building.images.length,2,`${entry.slug} gallery`);assert.ok(building.images.some(x=>x.is_cover));assert.ok(building.citations.length);assert.ok(building.elements.length);}
+ for(const entry of expansion.buildings){const building=await getBuilding(entry.slug);assert.ok(building,entry.slug);assert.equal(building.images.filter(x=>!x.storage_key.startsWith('gallery-')).length,2,`${entry.slug} original gallery`);assert.ok(building.images.some(x=>x.is_cover));assert.ok(building.citations.length);assert.ok(building.elements.length);}
  const backups=(await readdir('.local/backups')).filter(x=>/^catalogue-\d+\.json$/.test(x)).sort().reverse();
  let before;
  for(const file of backups){const snapshot=JSON.parse(await readFile(`.local/backups/${file}`,'utf8'));if(snapshot.tables.buildings.length===5){before=snapshot;break;}}
@@ -20,7 +20,7 @@ try{
   const current=(await pool.query(`SELECT * FROM ${table} WHERE id=ANY($1::int[]) ORDER BY id`,[old.map(x=>x.id)])).rows;
   assert.equal(JSON.stringify(current),JSON.stringify(old),`Existing ${table} records changed`);
  }
- const photos=(await pool.query('SELECT count(*)::int AS n FROM images WHERE approved AND building_id=ANY($1::int[])',[original.map(b=>b.id)])).rows[0].n;
+ const photos=(await pool.query("SELECT count(*)::int AS n FROM images WHERE approved AND storage_key NOT LIKE 'gallery-%' AND building_id=ANY($1::int[])",[original.map(b=>b.id)])).rows[0].n;
  assert.equal(photos,59,'All 59 selected photographs should be reviewed and imported');
  console.log(`Verified ${original.length} published monuments across the original 7 Karnataka sites with ${photos} approved photographs. Existing records preserved.`);
 }finally{await pool.end();}

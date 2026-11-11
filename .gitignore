@@ -8,3 +8,8 @@ media/originals/
 media/display/
 *.log
 coverage/
+
+# Local synopsis files
+/output/docx/*Synopsis*.docx
+/output/pdf/*Synopsis*.pdf
+/docs/synopsis.md

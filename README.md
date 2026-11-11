@@ -1,123 +1,78 @@
-# Vastukala — v1.1.0
+# Vastukala
 
-Vastukala is a PostgreSQL-backed archive of Indian architecture built with React, Express, and Node.js. The catalogue contains 100 monuments at 73 heritage locations across 21 states and union territories. It includes the original Karnataka collection and 70 subsequent additions, including Mysore Palace and Gol Gumbaz.
+Vastukala is an interactive archive of Indian architectural heritage built with **React, Node.js, Express, and PostgreSQL**. It covers **100 monuments at 73 sites across 21 states and union territories**, with 186 credited photographs, 110 reviewed photograph hotspots, and 116 sourced historical events.
+
+See the [40-monument expansion inventory](docs/india-100.md) for the latest additions.
+
+## Explore the archive
+
+| Feature | What you can do |
+| --- | --- |
+| Display theme | Use light or dark mode. The site follows your device preference until you choose a theme. |
+| Catalogue | Search names and aliases. Filter by state, site, type, material, and architectural element. |
+| Monument profiles | Read historical descriptions and follow citations for dates, styles, and documented features. |
+| Comparison | Select two monuments and inspect their shared and distinct features with supporting evidence. |
+| Photograph study | Zoom and pan, open images in full screen, compare photographs, and inspect annotated architectural features. |
+| Maps and timelines | Search clustered site markers by map area. Explore approximate construction ranges, BCE dates, and separately sourced historical events. |
+| Administration | Manage monument records, references, prepared photographs, hotspots, and events. Review publication status. |
+| DBMS Lab | Run guided SQL, explore the live schema, and practise transactions, constraint failures, and indexing with temporary tables. |
 
 ## Run locally
 
-Use Node.js 22.12 or newer. From this project directory:
+Use Node.js 22.12 or newer. From the repository root, install dependencies, fetch the catalogue photographs, and start the application.
 
-```powershell
+```sh
 npm ci
-npm run media:fetch  # First checkout only; downloads credited catalogue photographs
+npm run media:fetch
 npm run dev
 ```
 
-Open http://127.0.0.1:5173. The API uses port 3001. The startup command creates or reuses a project-local PostgreSQL instance on port 55432, runs migrations, imports missing catalogue records, and creates one administrator. Docker and a system PostgreSQL installation are not required.
+Open [Vastukala](http://127.0.0.1:5173). The API listens on port 3001. The development command starts or reuses a project-local PostgreSQL instance on port 55432, applies migrations, imports missing records, and creates the first administrator. Seed imports preserve existing administrator edits.
 
-The native database and its generated local connection settings live in `.local/`, which is ignored by Git. Administrator credentials are in `.local/admin-credentials.txt`; this file is generated once and is also ignored. Use the **Administrator** link in the footer to log in. Existing database records are preserved on startup, including admin edits.
+The first photograph download can take time. The media command retries interrupted downloads and reuses completed files. The application serves prepared catalogue photographs and the Natural Earth basemap locally. See [Setup and troubleshooting](docs/setup-and-troubleshooting.md).
 
-Stop the development command with Ctrl+C. If you separately started `npm run db:local`, stop that command too. PostgreSQL data remains on disk.
+### Administration
+
+Open **Administrator** in the footer and sign in with the initial credentials saved in `.local/admin-credentials.txt`. A record needs at least one citation and an approved, prepared cover image before publication. The editor manages metadata for prepared images.
+
+To use an existing PostgreSQL server, copy `.env.example` to `.env` and set `DATABASE_URL` and a random `SESSION_SECRET` of at least 32 characters. Set `ADMIN_EMAIL` and an `ADMIN_PASSWORD` of at least 12 characters before creating the first administrator.
 
 ## Try the database features
 
-The connected archive adds **[cited comparisons, photograph anatomy and feature timelines](docs/connected-archive.md)**. Open `/compare`, `/anatomy` or `/across-time`. There are reviewed hotspots across the national collection. Administrators can place and edit markers within the Photographs editor; every marker needs a cited building element.
+1. In **The collection**, select **Badami**, **Cave temple**, **Sandstone**, and **Carved pillar** to find Badami Cave 3. Add **Granite** to see how requiring every selected material changes the result.
+2. Search for **Lokeshwara** to find the Virupaksha Temple at Pattadakal through its alternate name.
+3. Compare two monuments, then open **In numbers** to see statistics calculated from published records.
+4. Open [DBMS Lab](http://127.0.0.1:5173/dbms-lab) for 13 lessons, four guided challenges, a 16-table schema explorer, and an indexing experiment with 40,000 synthetic rows. See the [DBMS Lab guide](docs/dbms-lab.md).
 
-1. Open **The collection**.
-2. Select **Badami**, **Cave temple**, **Sandstone**, and **Carved pillar**. Badami Cave 3 matches.
-3. Add **Granite** as a second material. No record matches, because every selected material is required.
-4. Reset filters and search **Lokeshwara**. The alternate-name relationship finds Virupaksha Temple at Pattadakal.
-5. Add two buildings to comparison, then open **Compare buildings**.
-6. Open **In numbers** for statistics computed from published database records.
-7. Log in as administrator to add/edit records, associate materials/elements/styles, cite references, manage photograph metadata, and change draft/published/archived status.
+## Development and verification
 
-Publishing requires an approved prepared cover image and at least one citation. Unknown materials stay unknown. Draft and archived buildings are excluded from public search, detail pages, comparison, and statistics.
+| Command | Purpose |
+| --- | --- |
+| `npm run db:local` | Run the local PostgreSQL instance separately. |
+| `npm run db:migrate` | Apply pending migrations. |
+| `npm run db:seed` | Import missing catalogue records. |
+| `npm run admin:create` | Create the first administrator. |
+| `npm run db:backup -- --verify` | Write a logical snapshot and verify a restore in a disposable database. |
+| `npm test` | Run integration tests in a temporary PostgreSQL database. |
+| `npm run build` | Build the production frontend. |
 
-## Research and photographs
+Start PostgreSQL before running database commands or tests. Tests require permission to create a database and can target a separate cluster through `TEST_DATABASE_BASE_URL`. To serve the built application locally, run `npm start` after building and open [the local server](http://127.0.0.1:3001).
 
-- `research/pilot.json` and `research/expansion.mjs`: structured building research and claim references, combined by `research/dataset.mjs`.
-- `research/expansion-notes.md`: identification choices, disputed dates and media workflow.
-- `research/media-candidates.json`: selected Wikimedia file titles.
-- `research/media-manifest.json`: author, licence, source URL, original dimensions/bytes and review status.
-- `media/originals/`: downloaded originals, ignored by Git.
-- `media/display/`: responsive WebP copies, ignored by Git.
+The recorded verification includes 30 passing integration tests, a successful production build, and a verified logical backup restore. See [Progress and verification](docs/progress.md).
 
-On a fresh checkout, fetch photographs **before** the first seed:
+## Project structure
 
-```powershell
-npm run media:fetch
-```
+| Path | Contents |
+| --- | --- |
+| `client/` | React interface and Vite configuration. |
+| `server/` | Express API, catalogue queries, authentication, and DBMS Lab. |
+| `database/` | PostgreSQL migrations and [demonstration SQL](database/queries/demo.sql). |
+| `research/` | Curated monument data, sources, and photograph credits. |
+| `scripts/` | Local setup, media preparation, and database maintenance. |
+| `docs/` | [Architecture and API](docs/architecture-and-api.md), [database design](docs/database-design.md), and implementation guides. |
 
-Newly fetched records default to unapproved; the committed manifest preserves approval of the reviewed catalogue images. The media script retries interrupted downloads, reuses completed files, spaces new requests, and honours Wikimedia retry periods. A fresh full download can take some time. Network access is needed for dependency/media installation, OpenStreetMap basemap tiles and optional Google Fonts; system font fallbacks are provided. Catalogue photographs are served locally.
+## Sources and collection scope
 
-For additional photographs, add a candidate, run the media command, inspect the actual image, record its approval, then add its metadata in the admin editor. The prepared asset key identifies the local files. The UI does not currently upload arbitrary files. Source and category creation forms are available below the admin table; site creation is currently a database/seed operation.
+The catalogue documents a curated selection of monuments. Map markers represent approximate site reference points, and historical event coverage varies by monument. The [research register](research/resources.md) records source references. Photograph authors and reuse terms are listed in the [media manifest](research/media-manifest.json) and [third-party notices](THIRD_PARTY_NOTICES.md).
 
-## Database commands
-
-```powershell
-npm run db:local       # Optional: run PostgreSQL separately
-npm run db:migrate     # Apply unapplied SQL migrations
-npm run db:seed        # Import missing catalogue records; preserve existing ones
-npm run admin:create   # Create the first administrator if none exists
-npm run db:backup -- --verify # Logical backup and isolated restore check
-npm test              # Integration tests in an isolated temporary database
-npm run build         # Production frontend build
-```
-
-The database must be running before migration, seed, administrator, or test commands. Tests create and remove their own uniquely named database; they do not alter catalogue data. This requires database-creation permissions on the local test cluster. Set `TEST_DATABASE_BASE_URL` to select a different test cluster.
-
-The backup command writes a project-specific JSON logical snapshot in `.local/backups/`. With `--verify`, it restores into a disposable database and compares every saved row. It includes administrator password hashes, so keep it private; photograph files must be backed up separately. This is a local project backup format, not a replacement for a deployment provider's PostgreSQL backup service.
-
-To use an installed PostgreSQL instance, copy `.env.example` to `.env` and set `DATABASE_URL` and a random `SESSION_SECRET` of at least 32 characters. Set `ADMIN_EMAIL` and `ADMIN_PASSWORD` (at least 12 characters) before initial administrator creation. Startup does not overwrite an existing account.
-
-For a local built version, keep PostgreSQL running, run `npm run build`, then `npm start` and open http://127.0.0.1:3001. Online deployment is a later milestone; secure cookies and a trusted proxy are enabled with `NODE_ENV=production`.
-
-## Current features
-
-- Catalogue: 100 monuments, state/UT and site filters, combined material/element filters and alternate-name search.
-- Cited comparison: shared and distinct materials, layouts, styles and elements.
-- Anatomy: curated photograph hotspots, definitions, citations and related monuments.
-- Across time: approximate building-date ranges, feature filtering and undated records.
-- Photograph study: zoom, pan, full-screen and independent two-photo comparison with attribution.
-- Life stories: separately sourced events, uncertainty, chronological display and admin event CRUD.
-- India map: clustered site reference markers, catalogue filters, map-area search and comparison selection.
-- Administration: session login, CSRF protection, validated record editing and publishing.
-
-Map positions currently represent approximate **site reference points**, not surveyed individual buildings. Event coverage varies; missing records are not evidence that no event occurred. No online deployment is included in this release.
-
-## Academic and implementation documentation
-
-The [India expansion notes](docs/india-expansion.md) describe national scope, state filtering, sources, BCE dates and preservation of the original Karnataka collection. Earlier phase documents are historical snapshots with their original counts.
-
-- [Version 1 release notes](CHANGELOG.md)
-- [Architecture and API](docs/architecture-and-api.md)
-- [Setup and troubleshooting](docs/setup-and-troubleshooting.md)
-- [Verification and demonstration](docs/v1-verification.md)
-- [Image study, map and life stories](docs/image-map-life-stories.md)
-- [Connected archive implementation and verification](docs/connected-archive.md)
-- [Phase-by-phase implementation history and major improvement roadmap](docs/project-history-and-roadmap.md)
-- [Plan and milestones](plan.md)
-- [Project synopsis](docs/synopsis.md)
-- [ER diagram](docs/er-diagram.md)
-- [Data dictionary and normalization](docs/database-design.md)
-- [Demonstration SQL](database/queries/demo.sql)
-- [Progress and verification](docs/progress.md)
-- [Research sources](research/resources.md)
-
-The archive includes 135 credited photographs, 110 reviewed photograph hotspots, and 116 sourced historical events. See the [40-monument expansion inventory](docs/india-100.md) for the new places and research scope.
-
-
-New local features: [photo study](http://127.0.0.1:5173/photographs), [life stories](http://127.0.0.1:5173/life-stories), and [heritage map](http://127.0.0.1:5173/map). See [implementation details](docs/image-map-life-stories.md), including source coverage and approximate site-coordinate limitations.
-
-## Repository contents and rights
-
-Local credentials, PostgreSQL data, session secrets, backups, downloaded originals, generated WebP images, dependencies and build output are excluded from Git. Recreate the catalogue through migrations, curated research data and the documented media-fetch step. Database edits made only through the administrator are local data and are not automatically exported to Git.
-
-Photograph metadata retains individual source, author and licence information in `research/media-manifest.json`; private repository visibility does not replace those licence obligations. No general open-source licence is granted for project code in this first private release. See [third-party notices](THIRD_PARTY_NOTICES.md).
-
-### Homepage photograph slideshow
-
-The homepage features eight monuments from the existing collection, advancing every 3 seconds after the next photograph is ready, with a 1.8-second crossfade, gentle photograph zoom and softly rising captions. Monument links, state/location captions and licence credits update together. Visitors can select dots, use previous/next controls or pause/play. Autoplay starts on page load and continues after manual selection, hovering or keyboard focus. Only the pause control or a hidden tab suspends it. Reduced-motion preferences remove visual transition effects. Failed image files are skipped.
-
-### Optional DBMS Lab
-
-Open `/dbms-lab` or the corner learning link. Thirteen lessons connect DBMS theory to this project, with live guided SQL, parameters, results, a 16-table interactive schema explorer, normalization steps, four challenges with hints/solutions, genuine temporary-table constraint and transaction demonstrations, and an isolated 40,000-row indexing experiment. No arbitrary SQL input or permanent practice writes are exposed. See [DBMS Lab implementation and demonstration guide](docs/dbms-lab.md). Current integration suite: 29 passing tests.
+Local credentials, database files, backups, generated media, and academic submission files belong in the local workspace.

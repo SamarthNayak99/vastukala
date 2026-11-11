@@ -4,6 +4,8 @@ Open `/dbms-lab`, or use the bottom-right DBMS Lab link on the public heritage p
 
 ## Learning content
 
+The **Start here** tab opens with three ready-to-run questions. Filter Gujarat by sandstone and curving shrine towers, compare the documented features of Gol Gumbaz and the Qutb Shahi Tombs, or search the date range of Dholavira. Each example runs against the current published catalogue. Results appear first, with the first ten rows shown by default. Open **Show SQL and parameters** to inspect the executed query and its inputs.
+
 Thirteen lessons cover relationships, INNER/LEFT JOIN, filtering and bound parameters, relational division, intersections/differences, aggregation and counting traps, normalization, constraints, transactions, indexes, temporal overlap, SQL views, and CTE/window-function ranking.
 
 Each lesson explains the concept, identifies the implementation in this project, names relevant source files, and links the involved tables to the schema explorer. Executable lessons show the exact SQL sent to PostgreSQL, parameter values separately, elapsed query time, column names and result rows. The relationships lesson also displays its three contributing relations. Empty results and NULL values are explicit.
@@ -43,7 +45,7 @@ All lab requests are limited to 90/minute per IP. Practice/performance share an 
 
 ## Validation
 
-The complete isolated PostgreSQL integration suite contains 29 passing tests. Five lab tests cover actual schema/sample bounds, all template families, state filtering, set/division semantics, correct versus multiplied counts, real EXPLAIN plans, strict input rejection, unpublished/private-data exclusion, genuine constraint errors, successful commits, failed-save rollback, fresh practice state and synthetic experiment cleanup. Existing catalogue, administration, media, map and historical-record checks still pass.
+The isolated PostgreSQL suite contains 30 passing tests. It checks all three starter queries and covers the schema explorer, guided queries, constraint exercises, transactions, and index plans. The collection audit checks every monument's detail, coordinates, gallery, cited anatomy, life-story route, and participation in a comparison. It also checks the four prepared WebP sizes for every approved image.
 
 The production frontend builds successfully. Browser review exercises the corner entry, live relationship query and source-table results, real rollback error/before-after state, interactive schema and challenge controls. The diagram/table panels scroll within their own regions on narrow screens.
 

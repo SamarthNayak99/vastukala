@@ -8,7 +8,7 @@ Historical claims link to their sources through the research dataset and databas
 
 ## Maps and fonts
 
-OpenStreetMap basemap data is credited to OpenStreetMap contributors with a copyright link in the map. Tile access is subject to the provider's usage policies. The map uses approximate discovery references, not surveyed navigation points.
+The local basemap uses public-domain land, lake, and river geometry from Natural Earth’s 1:50m vector release v5.1.2. The bundled GeoJSON retains features around India and rounds coordinates to four decimal places. Monument markers use approximate locations. [Natural Earth terms of use](https://www.naturalearthdata.com/about/terms-of-use/)
 
 The interface requests Google Fonts with local/system fallbacks. Fonts and external services retain their respective terms and licences.
 

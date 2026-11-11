@@ -42,7 +42,7 @@ async function worker(){while(cursor<candidates.length){const item=candidates[cu
   }
   const original=`media/originals/${item.key}.original`;
   let downloaded=false;
-  try{await access(original);}catch{const downloadUrl=new URL(record.original_url);downloadUrl.search='';await writeFile(original,await downloadOriginal(downloadUrl.toString()));downloaded=true;}
+  try{await access(original);}catch{const downloadUrl=new URL(record.download_url||record.original_url);downloadUrl.search='';await writeFile(original,await downloadOriginal(downloadUrl.toString()));downloaded=true;}
   for(const width of [480,960,1600,2400]) {const output=`media/display/${item.key}-${width}.webp`;try{await access(output);}catch{await sharp(original).rotate().resize({width,withoutEnlargement:true}).webp({quality:88}).toFile(output);}}
   if(!manifest.some(x=>x.key===record.key))manifest.push(record);
   await(writeQueue=writeQueue.then(()=>writeFile('research/media-manifest.json',JSON.stringify(manifest,null,2)+'\n')));
