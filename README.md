@@ -1,6 +1,6 @@
 # Vastukala — v1.1.0
 
-A PostgreSQL-backed architecture archive for a college DBMS project. The India-wide collection retains 30 Karnataka monuments and adds 30 researched historic monuments from 16 other states and union territories. It contains 60 monuments across 17 states/UTs. Built with React, Express, Node.js and PostgreSQL.
+Vastukala is a PostgreSQL-backed archive of Indian architecture built with React, Express, and Node.js. The catalogue contains 100 monuments at 73 heritage locations across 21 states and union territories. It includes the original Karnataka collection and 70 subsequent additions, including Mysore Palace and Gol Gumbaz.
 
 ## Run locally
 
@@ -73,7 +73,7 @@ For a local built version, keep PostgreSQL running, run `npm run build`, then `n
 
 ## Current features
 
-- Catalogue: 60 monuments, state/UT and site filters, combined material/element filters and alternate-name search.
+- Catalogue: 100 monuments, state/UT and site filters, combined material/element filters and alternate-name search.
 - Cited comparison: shared and distinct materials, layouts, styles and elements.
 - Anatomy: curated photograph hotspots, definitions, citations and related monuments.
 - Across time: approximate building-date ranges, feature filtering and undated records.
@@ -103,7 +103,7 @@ The [India expansion notes](docs/india-expansion.md) describe national scope, st
 - [Progress and verification](docs/progress.md)
 - [Research sources](research/resources.md)
 
-The original Karnataka collection remains Hampi (8), Pattadakal (7), Badami (6), Aihole (6), Belur (1), Halebidu (1), and Somanathapura (1). The 30 national additions are listed in `research/india.json`. The collection now has 92 approved photographs and 67 reviewed anatomy hotspots. Every national addition has at least one licensed photograph and one cited hotspot; selected records have extra detail views. Deeper dossiers, further element close-ups, final submission formatting, and online deployment remain later work.
+The archive includes 135 credited photographs, 110 reviewed photograph hotspots, and 116 sourced historical events. See the [40-monument expansion inventory](docs/india-100.md) for the new places and research scope.
 
 
 New local features: [photo study](http://127.0.0.1:5173/photographs), [life stories](http://127.0.0.1:5173/life-stories), and [heritage map](http://127.0.0.1:5173/map). See [implementation details](docs/image-map-life-stories.md), including source coverage and approximate site-coordinate limitations.

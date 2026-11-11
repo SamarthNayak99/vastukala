@@ -19,11 +19,11 @@ test('DBMS guided queries execute joins, division, set operations, aggregates an
  const left=await run('joins',{join:'left'}),inner=await run('joins',{join:'inner'});assert.ok(left.rows.some(r=>r.monument===null));assert.ok(inner.rows.every(r=>r.monument!==null));
  assert.ok((await run('division',{elements:['Dome','Garden']})).rows.some(r=>r.name==='Taj Mahal'));
  assert.ok((await run('sets',{building:taj.id,other:humayun.id,operation:'shared'})).rows.some(r=>r.element==='Dome'));
- const counts=await run('aggregation',{distinct:true}),trap=await run('aggregation',{distinct:false});assert.equal(counts.rows.reduce((a,r)=>a+r.monuments,0),60);assert.ok(trap.rows.reduce((a,r)=>a+r.joined_rows,0)>60);
- assert.equal((await run('state',{state:'Rajasthan'})).rows.length,3);
+ const counts=await run('aggregation',{distinct:true}),trap=await run('aggregation',{distinct:false});assert.equal(counts.rows.reduce((a,r)=>a+r.monuments,0),100);assert.ok(trap.rows.reduce((a,r)=>a+r.joined_rows,0)>100);
+ assert.equal((await run('state',{state:'Rajasthan'})).rows.length,9);
  assert.ok((await run('filters',{state:'Uttar Pradesh',material:'Marble',element:'Dome'})).rows.some(r=>r.name==='Taj Mahal'));
  assert.ok((await run('temporal',{from:-500,to:-1})).rows.some(r=>r.name==='Great Stupa at Sanchi'));
- assert.equal((await run('views')).rows.length,60);assert.equal((await run('ranking')).rows.length,60);
+ assert.equal((await run('views')).rows.length,100);assert.equal((await run('ranking')).rows.length,100);
  assert.ok((await run('indexes',{building:tax.sites[0].id})).plan[0].Plan);
 });
 test('DBMS Lab rejects arbitrary SQL and hides unpublished records from samples and templates',async()=>{
@@ -71,8 +71,8 @@ before(async()=>{
 });
 after(async()=>{app?.locals.sessionStore?.close();if(pool)await pool.end();if(control){if(testName)await control.query(`DROP DATABASE ${testName} WITH (FORCE)`);await control.end();}});
 test('original Karnataka records remain across seven locations with prepared photographs',async()=>{
- const res=await request(app).get('/api/buildings?limit=120&states=Karnataka').expect(200);assert.equal(res.body.total,30);assert.equal(new Set(res.body.items.map(x=>x.site)).size,7);assert.ok(res.body.items.every(x=>x.images.some(i=>i.is_cover)&&x.citations.length&&x.elements.length));
- const counts=Object.fromEntries([...new Set(res.body.items.map(x=>x.site))].map(site=>[site,res.body.items.filter(x=>x.site===site).length]));
+ const res=await request(app).get('/api/buildings?limit=120&states=Karnataka').expect(200);assert.equal(res.body.total,32);const originals=res.body.items.filter(b=>!['mysore-palace','gol-gumbaz-vijayapura'].includes(b.slug));assert.equal(new Set(originals.map(x=>x.site)).size,7);assert.ok(originals.every(x=>x.images.some(i=>i.is_cover)&&x.citations.length&&x.elements.length));
+ const counts=Object.fromEntries([...new Set(originals.map(x=>x.site))].map(site=>[site,originals.filter(x=>x.site===site).length]));
  assert.deepEqual(counts,{Aihole:6,Badami:6,Belur:1,Halebidu:1,Hampi:8,Pattadakal:7,Somanathapura:1});
 });
 test('combined location, type, material and all-elements filters return the known match',async()=>{
@@ -85,7 +85,7 @@ test('combined location, type, material and all-elements filters return the know
 test('alternate names, literal SQL-like input, pagination and invalid IDs',async()=>{
  const alias=await request(app).get('/api/buildings').query({q:'Lokeshwara'}).expect(200);assert.ok(alias.body.items.some(x=>x.slug==='virupaksha-temple-pattadakal'));
  const injection=await request(app).get('/api/buildings').query({q:"' OR 1=1 --"}).expect(200);assert.equal(injection.body.total,0);
- const page=await request(app).get('/api/buildings?limit=2&page=2').expect(200);assert.equal(page.body.items.length,2);assert.equal(page.body.total,60);
+ const page=await request(app).get('/api/buildings?limit=2&page=2').expect(200);assert.equal(page.body.items.length,2);assert.equal(page.body.total,100);
  await request(app).get('/api/buildings?materials=oops').expect(400);
 });
 test('comparison validates distinct published buildings and identifies intersections',async()=>{
@@ -94,8 +94,8 @@ test('comparison validates distinct published buildings and identifies intersect
  await request(app).get(`/api/compare?ids=${a.id},${a.id}`).expect(400);
 });
 test('statistics count buildings rather than joined citation/media rows',async()=>{
- const res=await request(app).get('/api/statistics').expect(200);assert.equal(res.body.buildings,60);assert.equal(res.body.site_count,36);assert.equal(res.body.types.reduce((a,x)=>a+x.count,0),60);
- assert.equal(res.body.elements.find(x=>x.name==='Mandapa').count,15+JSON.parse(await readFile('research/india.json','utf8')).buildings.filter(b=>b.elements.some(e=>e.name==='Mandapa')).length);
+ const res=await request(app).get('/api/statistics').expect(200);assert.equal(res.body.buildings,100);assert.equal(res.body.site_count,73);assert.equal(res.body.types.reduce((a,x)=>a+x.count,0),100);
+ assert.equal(res.body.elements.find(x=>x.name==='Mandapa').count,records.filter(b=>b.elements.some(e=>e.name==='Mandapa')).length);
 });
 test('foreign keys and date constraints reject bad data',async()=>{
  await assert.rejects(pool.query('INSERT INTO building_materials(building_id,material_id) VALUES($1,$2)',[records[0].id,999999]),e=>e.code==='23503');
@@ -171,7 +171,7 @@ test('comparison explains shared spatial features and differences with per-build
 
 test('anatomy joins visible photographs, cited elements and other published monuments',async()=>{
  const{body}=await request(app).get('/api/explore/anatomy?building=elephant-stables-hampi').expect(200);
- assert.equal(body.catalogue.length,60);
+ assert.equal(body.catalogue.length,100);
  const image=body.building.images.find(x=>x.hotspots.length);assert.equal(image.hotspots.length,2);
  for(const h of image.hotspots){assert.ok(h.element.name);assert.ok(h.evidence.length);assert.ok(h.related.every(x=>x.id!==body.building.id));assert.ok(h.x>=0&&h.x<=100);}
  assert.ok(image.hotspots.find(x=>x.element.name==='Arch').related.length);
@@ -180,7 +180,7 @@ test('anatomy joins visible photographs, cited elements and other published monu
 });
 
 test('timeline uses overlapping building-date ranges and keeps undated records separate',async()=>{
- const all=(await request(app).get('/api/explore/time').expect(200)).body;assert.equal(all.dated.length,58);assert.equal(all.undated.length,2);
+ const all=(await request(app).get('/api/explore/time').expect(200)).body;assert.equal(all.dated.length,98);assert.equal(all.undated.length,2);
  assert.ok(all.undated.every(x=>x.year_from===null||x.year_to===null));assert.match(all.note,/do not establish/);
  const feature=tax.elements.find(x=>x.name==='Sculptural frieze');
  const window=(await request(app).get('/api/explore/time').query({element:feature.id,from:1200,to:1300}).expect(200)).body;
@@ -232,23 +232,42 @@ test('SQL calendar dates survive JSON backup round trips without timezone shifts
  const restored=(await pool.query('SELECT $1::date AS accessed_on',[json.accessed_on])).rows[0];
  assert.equal(restored.accessed_on,source.accessed_on);
 });
-test('map coverage and sourced life events preserve the catalogue',async()=>{const res=await request(app).get('/api/buildings?limit=120').expect(200);assert.equal(res.body.total,60);assert.ok(res.body.items.every(b=>b.map_latitude!==null&&b.map_longitude!==null&&b.map_source_url));const b=res.body.items.find(b=>b.slug==='chennakeshava-temple-belur');const events=await request(app).get(`/api/buildings/${b.slug}/events`).expect(200);assert.ok(events.body.some(e=>e.kind==='restoration'&&e.year_from===2023&&e.url));assert.ok(events.body.every(e=>e.year_from<=e.year_to&&e.source_title));await request(app).get('/api/buildings/no-such-building/events').expect(404);});
+test('map coverage and sourced life events preserve the catalogue',async()=>{const res=await request(app).get('/api/buildings?limit=120').expect(200);assert.equal(res.body.total,100);assert.ok(res.body.items.every(b=>b.map_latitude!==null&&b.map_longitude!==null&&b.map_source_url));const b=res.body.items.find(b=>b.slug==='chennakeshava-temple-belur');const events=await request(app).get(`/api/buildings/${b.slug}/events`).expect(200);assert.ok(events.body.some(e=>e.kind==='restoration'&&e.year_from===2023&&e.url));assert.ok(events.body.every(e=>e.year_from<=e.year_to&&e.source_title));await request(app).get('/api/buildings/no-such-building/events').expect(404);});
 test('life events require authentication, CSRF, valid sources and ordered dates',async()=>{const b=records[0];const event={kind:'addition',title:'Temporary test event',year_from:1200,year_to:1210,precision:'range',source_id:tax.sources[0].id,description:'Test only',locator:'test'};await request(app).post(`/api/admin/buildings/${b.id}/events`).send(event).expect(401);const agent=request.agent(app);let s=(await agent.get('/api/auth/session')).body;s=(await agent.post('/api/auth/login').set('X-CSRF-Token',s.csrf).send({email:'tester@vastukala.local',password:'test-password-1234'}).expect(200)).body;const path=`/api/admin/buildings/${b.id}/events`;await agent.post(path).send(event).expect(403);await agent.post(path).set('X-CSRF-Token',s.csrf).send({...event,year_to:1100}).expect(400);await agent.post(path).set('X-CSRF-Token',s.csrf).send({...event,source_id:2147483647}).expect(400);const r=await agent.post(path).set('X-CSRF-Token',s.csrf).send(event).expect(201);await agent.put(`${path}/${r.body.id}`).set('X-CSRF-Token',s.csrf).send({...event,title:'Edited event'}).expect(200);await agent.delete(`/api/admin/buildings/${records[1].id}/events/${r.body.id}`).set('X-CSRF-Token',s.csrf).expect(404);await agent.delete(`${path}/${r.body.id}`).set('X-CSRF-Token',s.csrf).expect(200);});
 
-test('India expansion publishes 60 monuments in 17 states/UTs with reusable images',async()=>{
- const res=await request(app).get('/api/buildings?limit=120').expect(200);assert.equal(res.body.total,60);assert.equal(res.body.items.length,60);assert.equal(new Set(res.body.items.map(b=>b.slug)).size,60);assert.equal(new Set(res.body.items.map(b=>b.state)).size,17);
+test('India expansion publishes 100 monuments in 21 states/UTs with reusable images',async()=>{
+ const res=await request(app).get('/api/buildings?limit=120').expect(200);assert.equal(res.body.total,100);assert.equal(res.body.items.length,100);assert.equal(new Set(res.body.items.map(b=>b.slug)).size,100);assert.equal(new Set(res.body.items.map(b=>b.state)).size,21);
  const india=JSON.parse(await readFile('research/india.json','utf8'));const slugs=new Set(india.buildings.map(b=>b.slug));const added=res.body.items.filter(b=>slugs.has(b.slug));assert.equal(added.length,30);assert.ok(added.every(b=>b.images.length>=1&&b.images.some(i=>i.is_cover&&i.approved)&&b.citations.length>=3));
  assert.ok(added.every(b=>b.images.every(i=>i.author&&i.licence_url&&i.source_page_url&&i.width>=1500)));
- const states=(await request(app).get('/api/taxonomy').expect(200)).body.states;assert.equal(states.length,36);assert.equal(states.reduce((sum,s)=>sum+s.count,0),60);assert.equal(states.find(s=>s.name==='Delhi').kind,'union territory');assert.equal(states.find(s=>s.name==='Karnataka').count,30);
+ const states=(await request(app).get('/api/taxonomy').expect(200)).body.states;assert.equal(states.length,36);assert.equal(states.reduce((sum,s)=>sum+s.count,0),100);assert.equal(states.find(s=>s.name==='Delhi').kind,'union territory');assert.equal(states.find(s=>s.name==='Karnataka').count,32);
 });
-test('state filters combine with location, type and aliases without changing Karnataka coverage',async()=>{
- const k=await request(app).get('/api/buildings?states=Karnataka&limit=120').expect(200);assert.equal(k.body.total,30);assert.ok(k.body.items.every(b=>b.state==='Karnataka'));
+test('state filters combine with location, type and aliases across the expanded catalogue',async()=>{
+ const k=await request(app).get('/api/buildings?states=Karnataka&limit=120').expect(200);assert.equal(k.body.total,32);assert.ok(k.body.items.every(b=>b.state==='Karnataka'));
  const up=await request(app).get('/api/buildings').query({states:'Uttar Pradesh',q:'Taj Mahal'}).expect(200);assert.equal(up.body.total,1);assert.equal(up.body.items[0].slug,'taj-mahal-agra');
- const two=await request(app).get('/api/buildings').query({states:'Delhi,Tamil Nadu',limit:120}).expect(200);assert.equal(two.body.total,7);assert.ok(two.body.items.every(b=>['Delhi','Tamil Nadu'].includes(b.state)));
+ const two=await request(app).get('/api/buildings').query({states:'Delhi,Tamil Nadu',limit:120}).expect(200);assert.equal(two.body.total,14);assert.ok(two.body.items.every(b=>['Delhi','Tamil Nadu'].includes(b.state)));
  assert.equal((await request(app).get('/api/buildings?states=Karnataka&q=Taj').expect(200)).body.total,0);
  assert.equal((await request(app).get('/api/buildings?states=Punjab&q=Golden').expect(200)).body.items[0].slug,'harmandir-sahib-amritsar');
  await request(app).get('/api/buildings').query({states:"Delhi' OR 1=1"}).expect(400);
  await assert.rejects(pool.query("INSERT INTO sites(name,slug,locality,district,state) VALUES('Invalid state test','invalid-state-test','Test','Test','Atlantis')"),e=>e.code==='23503');
+});
+test('the 40 added records have mapped locations, open photographs, cited hotspots and sourced events',async()=>{
+ const {buildings}=JSON.parse(await readFile('research/india-100.json','utf8'));
+ assert.equal(buildings.length,40);
+ for(const {slug} of buildings){
+  const record=records.find(b=>b.slug===slug);
+  assert.ok(record?.map_latitude&&record?.map_longitude&&record?.map_source_url,slug);
+  assert.ok(record.images.some(i=>i.is_cover&&i.approved&&i.width>=1500&&i.author&&i.licence_url),slug);
+  const anatomy=(await request(app).get('/api/explore/anatomy').query({building:slug}).expect(200)).body;
+  assert.ok(anatomy.building.images.some(i=>i.hotspots.some(h=>h.evidence.length)),slug);
+  const events=(await request(app).get(`/api/buildings/${slug}/events`).expect(200)).body;
+  assert.ok(events.length>0&&events.every(e=>e.url&&e.source_title),slug);
+ }
+ const gol=records.find(b=>b.slug==='gol-gumbaz-vijayapura');
+ const qutb=records.find(b=>b.slug==='qutb-shahi-tombs');
+ const comparison=(await request(app).get('/api/compare').query({ids:`${gol.id},${qutb.id}`}).expect(200)).body;
+ assert.ok(comparison.shared.elements.some(e=>e.name==='Dome'));
+ const harappan=(await request(app).get('/api/explore/time?from=-3000&to=-1500').expect(200)).body;
+ assert.ok(harappan.dated.some(b=>b.slug==='dholavira-harappan-city'));
 });
 test('new monuments participate in cited comparison, anatomy, events and BCE chronology',async()=>{
  const taj=records.find(b=>b.slug==='taj-mahal-agra'),humayun=records.find(b=>b.slug==='humayuns-tomb-delhi');

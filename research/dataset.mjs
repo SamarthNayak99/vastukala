@@ -1,3 +1,23 @@
 import {readFile} from 'node:fs/promises';
 import expansion from './expansion.mjs';
-export async function loadDataset(){const pilot=JSON.parse(await readFile(new URL('./pilot.json',import.meta.url),'utf8'));const india=JSON.parse(await readFile(new URL('./india.json',import.meta.url),'utf8'));return {researchedOn:india.researchedOn,sources:[...pilot.sources,...expansion.sources,...india.sources],sites:[...pilot.sites,...expansion.sites,...india.sites],buildings:[...pilot.buildings,...expansion.buildings,...india.buildings]};}
+
+async function readDataset(file) {
+ return JSON.parse(await readFile(new URL(file, import.meta.url), 'utf8'));
+}
+
+export async function loadDataset() {
+ const [pilot, india, india100] = await Promise.all([
+  readDataset('./pilot.json'),
+  readDataset('./india.json'),
+  readDataset('./india-100.json')
+ ]);
+ const batches = [pilot, expansion, india, india100];
+ return {
+  sources: batches.flatMap(batch => batch.sources.map(source => ({
+   ...source,
+   accessedOn: batch.researchedOn || india.researchedOn
+  }))),
+  sites: batches.flatMap(batch => batch.sites),
+  buildings: batches.flatMap(batch => batch.buildings)
+ };
+}

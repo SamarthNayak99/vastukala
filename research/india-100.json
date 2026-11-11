@@ -1,0 +1,3517 @@
+{
+  "researchedOn": "2026-11-11",
+  "sources": [
+    {
+      "key": "india100-csm-terminus-mumbai",
+      "title": "Chhatrapati Shivaji Maharaj Terminus",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/945/"
+    },
+    {
+      "key": "india100-gateway-of-india-mumbai",
+      "title": "Gateway of India",
+      "publisher": "Mumbai City District",
+      "url": "https://mumbaicity.gov.in/tourist-place/gateway-of-india/"
+    },
+    {
+      "key": "india100-lotus-temple-delhi",
+      "title": "Lotus Temple",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/tentativelists/5921/"
+    },
+    {
+      "key": "india100-jama-masjid-delhi",
+      "title": "Jama Masjid, Delhi",
+      "publisher": "Delhi Tourism",
+      "url": "https://www.delhitourism.gov.in/tourist_place/jama_masjid.html"
+    },
+    {
+      "key": "india100-india-gate-delhi",
+      "title": "India Gate",
+      "publisher": "Delhi Tourism",
+      "url": "https://www.delhitourism.gov.in/tourist_place/india_gate.html"
+    },
+    {
+      "key": "india100-jantar-mantar-jaipur",
+      "title": "Jantar Mantar, Jaipur",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1338/"
+    },
+    {
+      "key": "india100-jantar-mantar-jaipur-detail",
+      "title": "Jantar Mantar, Jaipur",
+      "publisher": "Rajasthan Tourism",
+      "url": "https://www.tourism.rajasthan.gov.in/jantar-mantar.html"
+    },
+    {
+      "key": "india100-chittorgarh-fort",
+      "title": "Hill Forts of Rajasthan",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/247/"
+    },
+    {
+      "key": "india100-kumbhalgarh-fort",
+      "title": "Hill Forts of Rajasthan",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/247/"
+    },
+    {
+      "key": "india100-kumbhalgarh-fort-detail",
+      "title": "Kumbhalgarh Fort",
+      "publisher": "Rajasthan Tourism",
+      "url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/kumbhalgarh-fort.html"
+    },
+    {
+      "key": "india100-mehrangarh-fort-jodhpur",
+      "title": "Mehrangarh Fort",
+      "publisher": "Mehrangarh Museum Trust",
+      "url": "https://www.mehrangarh.org/mehrangarh-2/architecture/"
+    },
+    {
+      "key": "india100-ranakpur-jain-temple",
+      "title": "Ranakpur Jain Temple",
+      "publisher": "Rajasthan Tourism",
+      "url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/ranakpur-temple.html"
+    },
+    {
+      "key": "india100-dilwara-temples",
+      "title": "Dilwara Jain Temples",
+      "publisher": "Rajasthan Tourism",
+      "url": "https://www.tourism.rajasthan.gov.in/mount-abu.html"
+    },
+    {
+      "key": "india100-somnath-temple",
+      "title": "Somnath Temple",
+      "publisher": "Gujarat Tourism",
+      "url": "https://www.gujarattourism.com/saurashtra/gir-somnath/somnath-temple.html"
+    },
+    {
+      "key": "india100-dwarkadhish-temple",
+      "title": "Dwarkadhish Temple",
+      "publisher": "Gujarat Tourism",
+      "url": "https://www.gujarattourism.com/saurashtra/devbhoomi-dwarka/dwarkadhish-temple.html"
+    },
+    {
+      "key": "india100-dholavira-harappan-city",
+      "title": "Dholavira Harappan City",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1645/"
+    },
+    {
+      "key": "india100-jama-masjid-champaner",
+      "title": "Jami Masjid, Champaner",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1101/"
+    },
+    {
+      "key": "india100-sidi-saiyyed-mosque",
+      "title": "Sidi Saiyyed Mosque",
+      "publisher": "Ahmedabad Municipal Corporation",
+      "url": "https://heritage.ahmedabadcity.gov.in/details/67/heritage_site/evening-walk/en"
+    },
+    {
+      "key": "india100-ramappa-temple",
+      "title": "Ramappa Temple",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/1570/"
+    },
+    {
+      "key": "india100-golconda-fort",
+      "title": "The Qutb Shahi Monuments of Hyderabad",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/tentativelists/5573/"
+    },
+    {
+      "key": "india100-qutb-shahi-tombs",
+      "title": "The Qutb Shahi Monuments of Hyderabad",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/tentativelists/5573/"
+    },
+    {
+      "key": "india100-qutb-shahi-tombs-detail",
+      "title": "Qutb Shahi Heritage Park restored to former glory",
+      "publisher": "Aga Khan Development Network",
+      "url": "https://the.akdn/en/resources-media/whats-new/news-release/qutb-shahi-heritage-park-restored-to-former-glory"
+    },
+    {
+      "key": "india100-brihadisvara-gangaikonda-cholapuram",
+      "title": "Great Living Chola Temples",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/list/250/"
+    },
+    {
+      "key": "india100-ranganathaswamy-srirangam",
+      "title": "Ranganathaswamy Temple, Srirangam",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/tentativelists/5894/"
+    },
+    {
+      "key": "india100-ramanathaswamy-rameswaram",
+      "title": "Ramanathaswamy Temple",
+      "publisher": "Ramanathapuram District",
+      "url": "https://ramanathapuram.nic.in/tourist-place/ramanathaswamy-temple/"
+    },
+    {
+      "key": "india100-ramanathaswamy-rameswaram-detail",
+      "title": "History of Rameswaram",
+      "publisher": "Rameswaram Municipality",
+      "url": "https://www.tnurbantree.tn.gov.in/rameswaram/about-us/"
+    },
+    {
+      "key": "india100-kailasanatha-kanchipuram",
+      "title": "Kailasanatha Temple, Kanchipuram",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/tentativelists/6528/"
+    },
+    {
+      "key": "india100-tirumala-venkateswara",
+      "title": "Sri Venkateswara Temple, Tirumala",
+      "publisher": "Tirumala Tirupati Devasthanams",
+      "url": "https://www.tirumala.org/TTDTempleHistory.aspx"
+    },
+    {
+      "key": "india100-tirumala-venkateswara-detail",
+      "title": "The Tirumala Temple by N. Ramesan",
+      "publisher": "Tirumala Tirupati Devasthanams",
+      "url": "https://ebooks.tirumala.org/downloads/the_tirumala_temple.pdf"
+    },
+    {
+      "key": "india100-veerabhadra-temple-lepakshi",
+      "title": "Veerabhadra Temple, Lepakshi",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/tentativelists/6607/"
+    },
+    {
+      "key": "india100-jagannath-temple-puri",
+      "title": "Jagannath Temple, Puri",
+      "publisher": "Puri District",
+      "url": "https://puri.odisha.gov.in/en/tourism/tourist-places/shree-jagannath-temple"
+    },
+    {
+      "key": "india100-lingaraj-temple-bhubaneswar",
+      "title": "Lingaraj Temple",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/tentativelists/5916/"
+    },
+    {
+      "key": "india100-gwalior-fort",
+      "title": "Gwalior Fort",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/tentativelists/6730/"
+    },
+    {
+      "key": "india100-jahaz-mahal-mandu",
+      "title": "Jahaz Mahal, Mandu",
+      "publisher": "Dhar District",
+      "url": "https://dhar.nic.in/en/tourist-place/jahaz-mahal-ship-palace/"
+    },
+    {
+      "key": "india100-jahangir-mahal-orchha",
+      "title": "Jahangir Mahal, Orchha",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/tentativelists/6404/"
+    },
+    {
+      "key": "india100-dhamek-stupa-sarnath",
+      "title": "Dhamek Stupa",
+      "publisher": "Kashi Official Web Portal",
+      "url": "https://kashi.gov.in/listing-details/sarnath-dhamek-stupa"
+    },
+    {
+      "key": "india100-bara-imambara-lucknow",
+      "title": "Bara Imambara",
+      "publisher": "Lucknow District",
+      "url": "https://lucknow.nic.in/tourist-place/bada-imambara/"
+    },
+    {
+      "key": "india100-kashi-vishwanath-varanasi",
+      "title": "Kashi Vishwanath Temple",
+      "publisher": "Kashi Official Web Portal",
+      "url": "https://kashi.gov.in/listing-details/shri-kashi-vishwanath"
+    },
+    {
+      "key": "india100-rasmancha-bishnupur",
+      "title": "Rasmancha, Bishnupur",
+      "publisher": "Bankura District",
+      "url": "https://bankura.gov.in/tourist-place/bishnupur/"
+    },
+    {
+      "key": "india100-mattancherry-palace",
+      "title": "Mattancherry Palace",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/tentativelists/1092/"
+    },
+    {
+      "key": "india100-mysore-palace",
+      "title": "Mysore Palace",
+      "publisher": "Mysuru District",
+      "url": "https://mysore.nic.in/en/tourist-place/mysuru-palace/"
+    },
+    {
+      "key": "india100-mysore-palace-detail",
+      "title": "Mysuru Palace",
+      "publisher": "Karnataka Tourism",
+      "url": "https://karnatakatourism.org/en/attractions/mysuru-palace/"
+    },
+    {
+      "key": "india100-gol-gumbaz-vijayapura",
+      "title": "Gol Gumbaz",
+      "publisher": "Vijayapura District",
+      "url": "https://vijayapura.nic.in/en/places-of-interest/"
+    },
+    {
+      "key": "india100-cellular-jail-port-blair",
+      "title": "Cellular Jail",
+      "publisher": "UNESCO World Heritage Centre",
+      "url": "https://whc.unesco.org/en/tentativelists/5888/"
+    },
+    {
+      "key": "india100-leh-palace",
+      "title": "Leh Palace",
+      "publisher": "National Culture Fund",
+      "url": "https://ncf.nic.in/assets/images/Leh%20Ladakh.pdf"
+    },
+    {
+      "key": "india100-tawang-monastery",
+      "title": "Tawang Monastery",
+      "publisher": "Arunachal Tourism",
+      "url": "https://arunachaltourism.com/tawang-2/"
+    },
+    {
+      "key": "india100-dhamek-stupa-sarnath-dating",
+      "title": "Buddhist monuments and sculpture of Sarnath",
+      "publisher": "Indira Gandhi National Centre for the Arts digital archive",
+      "url": "https://ignca.gov.in/Asi_data/18011.pdf"
+    },
+    {
+      "key": "india100-somnath-temple-fabric",
+      "title": "Somnath Temple",
+      "publisher": "Incredible India, Ministry of Tourism",
+      "url": "https://www.incredibleindia.gov.in/en/gujarat/gir-somnath/somnath-temple"
+    },
+    {
+      "key": "india100-jahangir-mahal-orchha-fabric",
+      "title": "A Day in Orchha",
+      "publisher": "Incredible India, Ministry of Tourism",
+      "url": "https://www.prod.incredibleindia.gov.in/content/incredible-india-v2/en/destinations/orchha/listicle/a-day-in-orchha-.html"
+    },
+    {
+      "key": "india100-jahaz-mahal-mandu-dating",
+      "title": "Indo-Islamic Architecture",
+      "publisher": "Indira Gandhi National Centre for the Arts digital archive",
+      "url": "https://ignca.gov.in/Asi_data/35603.pdf"
+    }
+  ],
+  "sites": [
+    {
+      "name": "Mumbai",
+      "slug": "india100-mumbai",
+      "locality": "Mumbai",
+      "district": "Mumbai City",
+      "state": "Maharashtra",
+      "overview": "Heritage architecture in Mumbai, Maharashtra.",
+      "latitude": 18.93985,
+      "longitude": 72.83544,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=18.93985&mlon=72.83544#map=17/18.93985/72.83544"
+    },
+    {
+      "name": "Kalkaji",
+      "slug": "india100-lotus-temple-delhi",
+      "locality": "Kalkaji",
+      "district": "South East Delhi",
+      "state": "Delhi",
+      "overview": "Heritage architecture in Kalkaji, Delhi.",
+      "latitude": 28.55333,
+      "longitude": 77.25846,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=28.55333&mlon=77.25846#map=17/28.55333/77.25846"
+    },
+    {
+      "name": "New Delhi",
+      "slug": "india100-india-gate-delhi",
+      "locality": "New Delhi",
+      "district": "New Delhi",
+      "state": "Delhi",
+      "overview": "Heritage architecture in New Delhi, Delhi.",
+      "latitude": 28.61286,
+      "longitude": 77.22931,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=28.61286&mlon=77.22931#map=17/28.61286/77.22931"
+    },
+    {
+      "name": "Chittorgarh",
+      "slug": "india100-chittorgarh-fort",
+      "locality": "Chittorgarh",
+      "district": "Chittorgarh",
+      "state": "Rajasthan",
+      "overview": "Heritage architecture in Chittorgarh, Rajasthan.",
+      "latitude": 24.8888,
+      "longitude": 74.646,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=24.8888&mlon=74.646#map=17/24.8888/74.646"
+    },
+    {
+      "name": "Kumbhalgarh",
+      "slug": "india100-kumbhalgarh-fort",
+      "locality": "Kumbhalgarh",
+      "district": "Rajsamand",
+      "state": "Rajasthan",
+      "overview": "Heritage architecture in Kumbhalgarh, Rajasthan.",
+      "latitude": 25.14889,
+      "longitude": 73.58028,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=25.14889&mlon=73.58028#map=17/25.14889/73.58028"
+    },
+    {
+      "name": "Jodhpur",
+      "slug": "india100-mehrangarh-fort-jodhpur",
+      "locality": "Jodhpur",
+      "district": "Jodhpur",
+      "state": "Rajasthan",
+      "overview": "Heritage architecture in Jodhpur, Rajasthan.",
+      "latitude": 26.29806,
+      "longitude": 73.01889,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=26.29806&mlon=73.01889#map=17/26.29806/73.01889"
+    },
+    {
+      "name": "Ranakpur",
+      "slug": "india100-ranakpur-jain-temple",
+      "locality": "Ranakpur",
+      "district": "Pali",
+      "state": "Rajasthan",
+      "overview": "Heritage architecture in Ranakpur, Rajasthan.",
+      "latitude": 25.11574,
+      "longitude": 73.47283,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=25.11574&mlon=73.47283#map=17/25.11574/73.47283"
+    },
+    {
+      "name": "Mount Abu",
+      "slug": "india100-dilwara-temples",
+      "locality": "Mount Abu",
+      "district": "Sirohi",
+      "state": "Rajasthan",
+      "overview": "Heritage architecture in Mount Abu, Rajasthan.",
+      "latitude": 24.60931,
+      "longitude": 72.72306,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=24.60931&mlon=72.72306#map=17/24.60931/72.72306"
+    },
+    {
+      "name": "Prabhas Patan",
+      "slug": "india100-somnath-temple",
+      "locality": "Prabhas Patan",
+      "district": "Gir Somnath",
+      "state": "Gujarat",
+      "overview": "Heritage architecture in Prabhas Patan, Gujarat.",
+      "latitude": 20.88803,
+      "longitude": 70.40139,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=20.88803&mlon=70.40139#map=17/20.88803/70.40139"
+    },
+    {
+      "name": "Dwarka",
+      "slug": "india100-dwarkadhish-temple",
+      "locality": "Dwarka",
+      "district": "Devbhumi Dwarka",
+      "state": "Gujarat",
+      "overview": "Heritage architecture in Dwarka, Gujarat.",
+      "latitude": 22.23789,
+      "longitude": 68.96756,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=22.23789&mlon=68.96756#map=17/22.23789/68.96756"
+    },
+    {
+      "name": "Dholavira",
+      "slug": "india100-dholavira-harappan-city",
+      "locality": "Dholavira",
+      "district": "Kachchh",
+      "state": "Gujarat",
+      "overview": "Heritage architecture in Dholavira, Gujarat.",
+      "latitude": 23.88861,
+      "longitude": 70.21364,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=23.88861&mlon=70.21364#map=17/23.88861/70.21364"
+    },
+    {
+      "name": "Champaner",
+      "slug": "india100-jama-masjid-champaner",
+      "locality": "Champaner",
+      "district": "Panchmahal",
+      "state": "Gujarat",
+      "overview": "Heritage architecture in Champaner, Gujarat.",
+      "latitude": 22.4859,
+      "longitude": 73.5371,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=22.4859&mlon=73.5371#map=17/22.4859/73.5371"
+    },
+    {
+      "name": "Ahmedabad",
+      "slug": "india100-sidi-saiyyed-mosque",
+      "locality": "Ahmedabad",
+      "district": "Ahmedabad",
+      "state": "Gujarat",
+      "overview": "Heritage architecture in Ahmedabad, Gujarat.",
+      "latitude": 23.02694,
+      "longitude": 72.58111,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=23.02694&mlon=72.58111#map=17/23.02694/72.58111"
+    },
+    {
+      "name": "Palampet",
+      "slug": "india100-ramappa-temple",
+      "locality": "Palampet",
+      "district": "Mulugu",
+      "state": "Telangana",
+      "overview": "Heritage architecture in Palampet, Telangana.",
+      "latitude": 18.25917,
+      "longitude": 79.94333,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=18.25917&mlon=79.94333#map=17/18.25917/79.94333"
+    },
+    {
+      "name": "Golconda",
+      "slug": "india100-golconda-fort",
+      "locality": "Golconda",
+      "district": "Hyderabad",
+      "state": "Telangana",
+      "overview": "Heritage architecture in Golconda, Telangana.",
+      "latitude": 17.38306,
+      "longitude": 78.40111,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=17.38306&mlon=78.40111#map=17/17.38306/78.40111"
+    },
+    {
+      "name": "Ibrahim Bagh",
+      "slug": "india100-qutb-shahi-tombs",
+      "locality": "Ibrahim Bagh",
+      "district": "Hyderabad",
+      "state": "Telangana",
+      "overview": "Heritage architecture in Ibrahim Bagh, Telangana.",
+      "latitude": 17.395,
+      "longitude": 78.396,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=17.395&mlon=78.396#map=17/17.395/78.396"
+    },
+    {
+      "name": "Gangaikonda Cholapuram",
+      "slug": "india100-brihadisvara-gangaikonda-cholapuram",
+      "locality": "Gangaikonda Cholapuram",
+      "district": "Ariyalur",
+      "state": "Tamil Nadu",
+      "overview": "Heritage architecture in Gangaikonda Cholapuram, Tamil Nadu.",
+      "latitude": 11.20644,
+      "longitude": 79.44833,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=11.20644&mlon=79.44833#map=17/11.20644/79.44833"
+    },
+    {
+      "name": "Srirangam",
+      "slug": "india100-ranganathaswamy-srirangam",
+      "locality": "Srirangam",
+      "district": "Tiruchirappalli",
+      "state": "Tamil Nadu",
+      "overview": "Heritage architecture in Srirangam, Tamil Nadu.",
+      "latitude": 10.8625,
+      "longitude": 78.68972,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=10.8625&mlon=78.68972#map=17/10.8625/78.68972"
+    },
+    {
+      "name": "Rameswaram",
+      "slug": "india100-ramanathaswamy-rameswaram",
+      "locality": "Rameswaram",
+      "district": "Ramanathapuram",
+      "state": "Tamil Nadu",
+      "overview": "Heritage architecture in Rameswaram, Tamil Nadu.",
+      "latitude": 9.28811,
+      "longitude": 79.31728,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=9.28811&mlon=79.31728#map=17/9.28811/79.31728"
+    },
+    {
+      "name": "Kanchipuram",
+      "slug": "india100-kailasanatha-kanchipuram",
+      "locality": "Kanchipuram",
+      "district": "Kanchipuram",
+      "state": "Tamil Nadu",
+      "overview": "Heritage architecture in Kanchipuram, Tamil Nadu.",
+      "latitude": 12.84231,
+      "longitude": 79.68967,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=12.84231&mlon=79.68967#map=17/12.84231/79.68967"
+    },
+    {
+      "name": "Tirumala",
+      "slug": "india100-tirumala-venkateswara",
+      "locality": "Tirumala",
+      "district": "Tirupati",
+      "state": "Andhra Pradesh",
+      "overview": "Heritage architecture in Tirumala, Andhra Pradesh.",
+      "latitude": 13.68325,
+      "longitude": 79.34719,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=13.68325&mlon=79.34719#map=17/13.68325/79.34719"
+    },
+    {
+      "name": "Lepakshi",
+      "slug": "india100-veerabhadra-temple-lepakshi",
+      "locality": "Lepakshi",
+      "district": "Sri Sathya Sai",
+      "state": "Andhra Pradesh",
+      "overview": "Heritage architecture in Lepakshi, Andhra Pradesh.",
+      "latitude": 13.80184,
+      "longitude": 77.60955,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=13.80184&mlon=77.60955#map=17/13.80184/77.60955"
+    },
+    {
+      "name": "Puri",
+      "slug": "india100-jagannath-temple-puri",
+      "locality": "Puri",
+      "district": "Puri",
+      "state": "Odisha",
+      "overview": "Heritage architecture in Puri, Odisha.",
+      "latitude": 19.80472,
+      "longitude": 85.81833,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=19.80472&mlon=85.81833#map=17/19.80472/85.81833"
+    },
+    {
+      "name": "Bhubaneswar",
+      "slug": "india100-lingaraj-temple-bhubaneswar",
+      "locality": "Bhubaneswar",
+      "district": "Khordha",
+      "state": "Odisha",
+      "overview": "Heritage architecture in Bhubaneswar, Odisha.",
+      "latitude": 20.23833,
+      "longitude": 85.83361,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=20.23833&mlon=85.83361#map=17/20.23833/85.83361"
+    },
+    {
+      "name": "Gwalior",
+      "slug": "india100-gwalior-fort",
+      "locality": "Gwalior",
+      "district": "Gwalior",
+      "state": "Madhya Pradesh",
+      "overview": "Heritage architecture in Gwalior, Madhya Pradesh.",
+      "latitude": 26.2303,
+      "longitude": 78.1689,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=26.2303&mlon=78.1689#map=17/26.2303/78.1689"
+    },
+    {
+      "name": "Mandu",
+      "slug": "india100-jahaz-mahal-mandu",
+      "locality": "Mandu",
+      "district": "Dhar",
+      "state": "Madhya Pradesh",
+      "overview": "Heritage architecture in Mandu, Madhya Pradesh.",
+      "latitude": 22.35545,
+      "longitude": 75.39324,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=22.35545&mlon=75.39324#map=17/22.35545/75.39324"
+    },
+    {
+      "name": "Orchha",
+      "slug": "india100-jahangir-mahal-orchha",
+      "locality": "Orchha",
+      "district": "Niwari",
+      "state": "Madhya Pradesh",
+      "overview": "Heritage architecture in Orchha, Madhya Pradesh.",
+      "latitude": 25.3507,
+      "longitude": 78.64422,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=25.3507&mlon=78.64422#map=17/25.3507/78.64422"
+    },
+    {
+      "name": "Sarnath",
+      "slug": "india100-dhamek-stupa-sarnath",
+      "locality": "Sarnath",
+      "district": "Varanasi",
+      "state": "Uttar Pradesh",
+      "overview": "Heritage architecture in Sarnath, Uttar Pradesh.",
+      "latitude": 25.3808,
+      "longitude": 83.0245,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=25.3808&mlon=83.0245#map=17/25.3808/83.0245"
+    },
+    {
+      "name": "Lucknow",
+      "slug": "india100-bara-imambara-lucknow",
+      "locality": "Lucknow",
+      "district": "Lucknow",
+      "state": "Uttar Pradesh",
+      "overview": "Heritage architecture in Lucknow, Uttar Pradesh.",
+      "latitude": 26.86917,
+      "longitude": 80.91278,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=26.86917&mlon=80.91278#map=17/26.86917/80.91278"
+    },
+    {
+      "name": "Varanasi",
+      "slug": "india100-kashi-vishwanath-varanasi",
+      "locality": "Varanasi",
+      "district": "Varanasi",
+      "state": "Uttar Pradesh",
+      "overview": "Heritage architecture in Varanasi, Uttar Pradesh.",
+      "latitude": 25.31077,
+      "longitude": 83.01061,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=25.31077&mlon=83.01061#map=17/25.31077/83.01061"
+    },
+    {
+      "name": "Bishnupur",
+      "slug": "india100-rasmancha-bishnupur",
+      "locality": "Bishnupur",
+      "district": "Bankura",
+      "state": "West Bengal",
+      "overview": "Heritage architecture in Bishnupur, West Bengal.",
+      "latitude": 23.07171,
+      "longitude": 87.32679,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=23.07171&mlon=87.32679#map=17/23.07171/87.32679"
+    },
+    {
+      "name": "Mattancherry",
+      "slug": "india100-mattancherry-palace",
+      "locality": "Mattancherry",
+      "district": "Ernakulam",
+      "state": "Kerala",
+      "overview": "Heritage architecture in Mattancherry, Kerala.",
+      "latitude": 9.958,
+      "longitude": 76.259,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=9.958&mlon=76.259#map=17/9.958/76.259"
+    },
+    {
+      "name": "Mysuru",
+      "slug": "india100-mysore-palace",
+      "locality": "Mysuru",
+      "district": "Mysuru",
+      "state": "Karnataka",
+      "overview": "Heritage architecture in Mysuru, Karnataka.",
+      "latitude": 12.30389,
+      "longitude": 76.65444,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=12.30389&mlon=76.65444#map=17/12.30389/76.65444"
+    },
+    {
+      "name": "Vijayapura",
+      "slug": "india100-gol-gumbaz-vijayapura",
+      "locality": "Vijayapura",
+      "district": "Vijayapura",
+      "state": "Karnataka",
+      "overview": "Heritage architecture in Vijayapura, Karnataka.",
+      "latitude": 16.83003,
+      "longitude": 75.7361,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=16.83003&mlon=75.7361#map=17/16.83003/75.7361"
+    },
+    {
+      "name": "Sri Vijaya Puram",
+      "slug": "india100-cellular-jail-port-blair",
+      "locality": "Sri Vijaya Puram",
+      "district": "South Andaman",
+      "state": "Andaman and Nicobar Islands",
+      "overview": "Heritage architecture in Sri Vijaya Puram, Andaman and Nicobar Islands.",
+      "latitude": 11.6743,
+      "longitude": 92.7485,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=11.6743&mlon=92.7485#map=17/11.6743/92.7485"
+    },
+    {
+      "name": "Leh",
+      "slug": "india100-leh-palace",
+      "locality": "Leh",
+      "district": "Leh",
+      "state": "Ladakh",
+      "overview": "Heritage architecture in Leh, Ladakh.",
+      "latitude": 34.16628,
+      "longitude": 77.58639,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=34.16628&mlon=77.58639#map=17/34.16628/77.58639"
+    },
+    {
+      "name": "Tawang",
+      "slug": "india100-tawang-monastery",
+      "locality": "Tawang",
+      "district": "Tawang",
+      "state": "Arunachal Pradesh",
+      "overview": "Heritage architecture in Tawang, Arunachal Pradesh.",
+      "latitude": 27.58639,
+      "longitude": 91.8575,
+      "map_source_url": "https://www.openstreetmap.org/?mlat=27.58639&mlon=91.8575#map=17/27.58639/91.8575"
+    }
+  ],
+  "buildings": [
+    {
+      "slug": "csm-terminus-mumbai",
+      "name": "Chhatrapati Shivaji Maharaj Terminus",
+      "site": "india100-mumbai",
+      "type": "Railway station",
+      "summary": "The central dome anchors a symmetrical façade articulated by towers, gables and pointed openings.",
+      "history": "Frederick William Stevens designed the terminus for the railway era. UNESCO describes a synthesis of Victorian Gothic Revival and Indian building traditions.",
+      "layout_notes": "The central dome anchors a symmetrical façade articulated by towers, gables and pointed openings.",
+      "year_from": 1878,
+      "year_to": 1888,
+      "date_label": "Construction, 1878–1888 CE",
+      "date_precision": "range",
+      "aliases": [
+        "CSMT",
+        "Victoria Terminus",
+        "Chhatrapati Shivaji Terminus"
+      ],
+      "styles": [
+        {
+          "name": "Victorian Gothic Revival",
+          "description": "",
+          "notes": "Frederick William Stevens designed the terminus for the railway era. UNESCO describes a synthesis of Victorian Gothic Revival and Indian building traditions.",
+          "source": "india100-csm-terminus-mumbai",
+          "locator": "Description and Outstanding Universal Value"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Stone",
+          "description": "",
+          "notes": "UNESCO describes the central stone dome.",
+          "source": "india100-csm-terminus-mumbai",
+          "locator": "Description and Outstanding Universal Value"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Dome",
+          "description": "",
+          "notes": "The central dome anchors a symmetrical façade articulated by towers, gables and pointed openings.",
+          "source": "india100-csm-terminus-mumbai",
+          "locator": "Description and Outstanding Universal Value"
+        },
+        {
+          "name": "Pointed arch",
+          "description": "An arch whose rising curves meet at a point.",
+          "notes": "The central dome anchors a symmetrical façade articulated by towers, gables and pointed openings.",
+          "source": "india100-csm-terminus-mumbai",
+          "locator": "Description and Outstanding Universal Value"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-csm-terminus-mumbai",
+          "topic": "Historical context and chronology",
+          "locator": "Description and Outstanding Universal Value",
+          "note": "Frederick William Stevens designed the terminus for the railway era. UNESCO describes a synthesis of Victorian Gothic Revival and Indian building traditions."
+        },
+        {
+          "source": "india100-csm-terminus-mumbai",
+          "topic": "Plan and visible architectural features",
+          "locator": "Description and Outstanding Universal Value",
+          "note": "The central dome anchors a symmetrical façade articulated by towers, gables and pointed openings."
+        }
+      ],
+      "latitude": 18.93985,
+      "longitude": 72.83544
+    },
+    {
+      "slug": "gateway-of-india-mumbai",
+      "name": "Gateway of India",
+      "site": "india100-mumbai",
+      "type": "Ceremonial gateway",
+      "summary": "A tall central opening faces the harbour, framed by projecting towers and a central dome.",
+      "history": "The gateway commemorated the 1911 visit of George V and Queen Mary. The Mumbai district account dates its completion to 1924.",
+      "layout_notes": "A tall central opening faces the harbour, framed by projecting towers and a central dome.",
+      "year_from": 1924,
+      "year_to": 1924,
+      "date_label": "Completed in 1924 CE",
+      "date_precision": "year",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Indo-Saracenic",
+          "description": "",
+          "notes": "The gateway commemorated the 1911 visit of George V and Queen Mary. The Mumbai district account dates its completion to 1924.",
+          "source": "india100-gateway-of-india-mumbai",
+          "locator": "History, completion and ceremonial use"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Basalt",
+          "description": "",
+          "notes": "Basalt is documented in the architectural account of Gateway of India.",
+          "source": "india100-gateway-of-india-mumbai",
+          "locator": "History, completion and ceremonial use"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Arch",
+          "description": "A curved structure spanning an opening.",
+          "notes": "A tall central opening faces the harbour, framed by projecting towers and a central dome.",
+          "source": "india100-gateway-of-india-mumbai",
+          "locator": "History, completion and ceremonial use"
+        },
+        {
+          "name": "Dome",
+          "description": "",
+          "notes": "A tall central opening faces the harbour, framed by projecting towers and a central dome.",
+          "source": "india100-gateway-of-india-mumbai",
+          "locator": "History, completion and ceremonial use"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-gateway-of-india-mumbai",
+          "topic": "Historical context and chronology",
+          "locator": "History, completion and ceremonial use",
+          "note": "The gateway commemorated the 1911 visit of George V and Queen Mary. The Mumbai district account dates its completion to 1924."
+        },
+        {
+          "source": "india100-gateway-of-india-mumbai",
+          "topic": "Plan and visible architectural features",
+          "locator": "History, completion and ceremonial use",
+          "note": "A tall central opening faces the harbour, framed by projecting towers and a central dome."
+        }
+      ],
+      "latitude": 18.92198,
+      "longitude": 72.83466
+    },
+    {
+      "slug": "lotus-temple-delhi",
+      "name": "Lotus Temple",
+      "site": "india100-lotus-temple-delhi",
+      "type": "House of worship",
+      "summary": "Three rings of nine petal-shaped shells frame the entrances, central prayer hall and roof.",
+      "history": "Fariborz Sahba designed this Bahá’í House of Worship, inaugurated in 1986. Its lotus form is made from repeated structural petals.",
+      "layout_notes": "Three rings of nine petal-shaped shells frame the entrances, central prayer hall and roof.",
+      "year_from": 1986,
+      "year_to": 1986,
+      "date_label": "Opened in 1986 CE",
+      "date_precision": "year",
+      "aliases": [
+        "Bahai House of Worship",
+        "Bahá’í House of Worship"
+      ],
+      "styles": [
+        {
+          "name": "Modernist",
+          "description": "",
+          "notes": "Fariborz Sahba designed this Bahá’í House of Worship, inaugurated in 1986. Its lotus form is made from repeated structural petals.",
+          "source": "india100-lotus-temple-delhi",
+          "locator": "Description, structure and inauguration"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Concrete",
+          "description": "",
+          "notes": "Concrete is documented in the architectural account of Lotus Temple.",
+          "source": "india100-lotus-temple-delhi",
+          "locator": "Description, structure and inauguration"
+        },
+        {
+          "name": "Marble",
+          "description": "",
+          "notes": "Marble is documented in the architectural account of Lotus Temple.",
+          "source": "india100-lotus-temple-delhi",
+          "locator": "Description, structure and inauguration"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Shell structure",
+          "description": "A thin curved structural surface that carries loads through its geometry.",
+          "notes": "Three rings of nine petal-shaped shells frame the entrances, central prayer hall and roof.",
+          "source": "india100-lotus-temple-delhi",
+          "locator": "Description, structure and inauguration"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-lotus-temple-delhi",
+          "topic": "Historical context and chronology",
+          "locator": "Description, structure and inauguration",
+          "note": "Fariborz Sahba designed this Bahá’í House of Worship, inaugurated in 1986. Its lotus form is made from repeated structural petals."
+        },
+        {
+          "source": "india100-lotus-temple-delhi",
+          "topic": "Plan and visible architectural features",
+          "locator": "Description, structure and inauguration",
+          "note": "Three rings of nine petal-shaped shells frame the entrances, central prayer hall and roof."
+        }
+      ],
+      "latitude": 28.55333,
+      "longitude": 77.25846
+    },
+    {
+      "slug": "jama-masjid-delhi",
+      "name": "Jama Masjid, Delhi",
+      "site": "india-shahjahanabad",
+      "type": "Mosque",
+      "summary": "Steps approach a raised courtyard facing a prayer hall with three domes and two tall minarets.",
+      "history": "Shah Jahan commissioned the congregational mosque as part of his imperial city. Delhi Tourism places its completion in 1656.",
+      "layout_notes": "Steps approach a raised courtyard facing a prayer hall with three domes and two tall minarets.",
+      "year_from": 1650,
+      "year_to": 1656,
+      "date_label": "Construction, 1650–1656 CE",
+      "date_precision": "range",
+      "aliases": [
+        "Masjid-i Jahan Numa",
+        "Jama Mosque Delhi"
+      ],
+      "styles": [
+        {
+          "name": "Mughal",
+          "description": "",
+          "notes": "Shah Jahan commissioned the congregational mosque as part of his imperial city. Delhi Tourism places its completion in 1656.",
+          "source": "india100-jama-masjid-delhi",
+          "locator": "Architectural description and history"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Sandstone",
+          "description": "",
+          "notes": "Sandstone is documented in the architectural account of Jama Masjid, Delhi.",
+          "source": "india100-jama-masjid-delhi",
+          "locator": "Architectural description and history"
+        },
+        {
+          "name": "Marble",
+          "description": "",
+          "notes": "Marble is documented in the architectural account of Jama Masjid, Delhi.",
+          "source": "india100-jama-masjid-delhi",
+          "locator": "Architectural description and history"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Minaret",
+          "description": "",
+          "notes": "Steps approach a raised courtyard facing a prayer hall with three domes and two tall minarets.",
+          "source": "india100-jama-masjid-delhi",
+          "locator": "Architectural description and history"
+        },
+        {
+          "name": "Courtyard",
+          "description": "",
+          "notes": "Steps approach a raised courtyard facing a prayer hall with three domes and two tall minarets.",
+          "source": "india100-jama-masjid-delhi",
+          "locator": "Architectural description and history"
+        },
+        {
+          "name": "Dome",
+          "description": "",
+          "notes": "Steps approach a raised courtyard facing a prayer hall with three domes and two tall minarets.",
+          "source": "india100-jama-masjid-delhi",
+          "locator": "Architectural description and history"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-jama-masjid-delhi",
+          "topic": "Historical context and chronology",
+          "locator": "Architectural description and history",
+          "note": "Shah Jahan commissioned the congregational mosque as part of his imperial city. Delhi Tourism places its completion in 1656."
+        },
+        {
+          "source": "india100-jama-masjid-delhi",
+          "topic": "Plan and visible architectural features",
+          "locator": "Architectural description and history",
+          "note": "Steps approach a raised courtyard facing a prayer hall with three domes and two tall minarets."
+        }
+      ],
+      "latitude": 28.6507,
+      "longitude": 77.2334
+    },
+    {
+      "slug": "india-gate-delhi",
+      "name": "India Gate",
+      "site": "india100-india-gate-delhi",
+      "type": "War memorial",
+      "summary": "The memorial forms a freestanding monumental arch along the ceremonial axis of New Delhi.",
+      "history": "Edwin Lutyens designed the memorial to commemorate soldiers of the Indian Army. Its foundation stone was laid in 1921 and it was inaugurated in 1931.",
+      "layout_notes": "The memorial forms a freestanding monumental arch along the ceremonial axis of New Delhi.",
+      "year_from": 1921,
+      "year_to": 1931,
+      "date_label": "Foundation to inauguration, 1921–1931 CE",
+      "date_precision": "range",
+      "aliases": [
+        "All India War Memorial"
+      ],
+      "styles": [
+        {
+          "name": "Classical Revival",
+          "description": "",
+          "notes": "Edwin Lutyens designed the memorial to commemorate soldiers of the Indian Army. Its foundation stone was laid in 1921 and it was inaugurated in 1931.",
+          "source": "india100-india-gate-delhi",
+          "locator": "Description and foundation stone"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Sandstone",
+          "description": "",
+          "notes": "Sandstone is documented in the architectural account of India Gate.",
+          "source": "india100-india-gate-delhi",
+          "locator": "Description and foundation stone"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Arch",
+          "description": "A curved structure spanning an opening.",
+          "notes": "The memorial forms a freestanding monumental arch along the ceremonial axis of New Delhi.",
+          "source": "india100-india-gate-delhi",
+          "locator": "Description and foundation stone"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-india-gate-delhi",
+          "topic": "Historical context and chronology",
+          "locator": "Description and foundation stone",
+          "note": "Edwin Lutyens designed the memorial to commemorate soldiers of the Indian Army. Its foundation stone was laid in 1921 and it was inaugurated in 1931."
+        },
+        {
+          "source": "india100-india-gate-delhi",
+          "topic": "Plan and visible architectural features",
+          "locator": "Description and foundation stone",
+          "note": "The memorial forms a freestanding monumental arch along the ceremonial axis of New Delhi."
+        }
+      ],
+      "latitude": 28.61286,
+      "longitude": 77.22931
+    },
+    {
+      "slug": "jantar-mantar-jaipur",
+      "name": "Jantar Mantar, Jaipur",
+      "site": "india-jaipur",
+      "type": "Observatory",
+      "summary": "Fixed structures align to the sky.",
+      "history": "Sawai Jai Singh II commissioned the observatory in the early eighteenth century. Its architectural instruments were built to observe celestial positions.",
+      "layout_notes": "Fixed structures align to the sky. The Samrat Yantra uses a sloping gnomon and graduated quadrants to measure local solar time.",
+      "year_from": 1734,
+      "year_to": 1734,
+      "date_label": "Completed in 1734 CE",
+      "date_precision": "year",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Rajput",
+          "description": "",
+          "notes": "Sawai Jai Singh II commissioned the observatory in the early eighteenth century. Its architectural instruments were built to observe celestial positions.",
+          "source": "india100-jantar-mantar-jaipur",
+          "locator": "Outstanding Universal Value and instruments"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Masonry",
+          "description": "",
+          "notes": "Masonry is documented in the architectural account of Jantar Mantar, Jaipur.",
+          "source": "india100-jantar-mantar-jaipur",
+          "locator": "Outstanding Universal Value and instruments"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Astronomical instrument",
+          "description": "A fixed architectural instrument for observing or measuring celestial positions.",
+          "notes": "Fixed structures align to the sky. The Samrat Yantra uses a sloping gnomon and graduated quadrants to measure local solar time.",
+          "source": "india100-jantar-mantar-jaipur",
+          "locator": "Outstanding Universal Value and instruments"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-jantar-mantar-jaipur-detail",
+          "topic": "Historical context and chronology",
+          "locator": "Construction and completion",
+          "note": "Sawai Jai Singh II commissioned the observatory in the early eighteenth century. Its architectural instruments were built to observe celestial positions."
+        },
+        {
+          "source": "india100-jantar-mantar-jaipur",
+          "topic": "Plan and visible architectural features",
+          "locator": "Outstanding Universal Value and instruments",
+          "note": "Fixed structures align to the sky. The Samrat Yantra uses a sloping gnomon and graduated quadrants to measure local solar time."
+        },
+        {
+          "source": "india100-jantar-mantar-jaipur-detail",
+          "topic": "Additional historical evidence",
+          "locator": "Construction and completion",
+          "note": "Rajasthan Tourism gives 1734 as the completion year."
+        }
+      ],
+      "latitude": 26.92472,
+      "longitude": 75.82444
+    },
+    {
+      "slug": "chittorgarh-fort",
+      "name": "Chittorgarh Fort",
+      "site": "india100-chittorgarh-fort",
+      "type": "Fort",
+      "summary": "Ramparts follow the hilltop and enclose reservoirs, palaces, temples and commemorative towers.",
+      "history": "Chittorgarh is part of the serial Hill Forts of Rajasthan inscription. Its long history includes successive phases of occupation and major Rajput building campaigns.",
+      "layout_notes": "Ramparts follow the hilltop and enclose reservoirs, palaces, temples and commemorative towers.",
+      "year_from": 701,
+      "year_to": 1600,
+      "date_label": "Major phases, 8th–16th centuries CE",
+      "date_precision": "range",
+      "aliases": [
+        "Chittor Fort",
+        "Chittaurgarh Fort"
+      ],
+      "styles": [
+        {
+          "name": "Rajput",
+          "description": "",
+          "notes": "Chittorgarh is part of the serial Hill Forts of Rajasthan inscription. Its long history includes successive phases of occupation and major Rajput building campaigns.",
+          "source": "india100-chittorgarh-fort",
+          "locator": "Outstanding Universal Value, Chittorgarh component"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Fortification wall",
+          "description": "A defensive wall defining or protecting an enclosed area.",
+          "notes": "Ramparts follow the hilltop and enclose reservoirs, palaces, temples and commemorative towers.",
+          "source": "india100-chittorgarh-fort",
+          "locator": "Outstanding Universal Value, Chittorgarh component"
+        },
+        {
+          "name": "Gateway",
+          "description": "",
+          "notes": "Ramparts follow the hilltop and enclose reservoirs, palaces, temples and commemorative towers.",
+          "source": "india100-chittorgarh-fort",
+          "locator": "Outstanding Universal Value, Chittorgarh component"
+        },
+        {
+          "name": "Tower",
+          "description": "A tall structure rising above its surroundings or adjoining building.",
+          "notes": "Ramparts follow the hilltop and enclose reservoirs, palaces, temples and commemorative towers.",
+          "source": "india100-chittorgarh-fort",
+          "locator": "Outstanding Universal Value, Chittorgarh component"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-chittorgarh-fort",
+          "topic": "Historical context and chronology",
+          "locator": "Outstanding Universal Value, Chittorgarh component",
+          "note": "Chittorgarh is part of the serial Hill Forts of Rajasthan inscription. Its long history includes successive phases of occupation and major Rajput building campaigns."
+        },
+        {
+          "source": "india100-chittorgarh-fort",
+          "topic": "Plan and visible architectural features",
+          "locator": "Outstanding Universal Value, Chittorgarh component",
+          "note": "Ramparts follow the hilltop and enclose reservoirs, palaces, temples and commemorative towers."
+        }
+      ],
+      "latitude": 24.8888,
+      "longitude": 74.646
+    },
+    {
+      "slug": "kumbhalgarh-fort",
+      "name": "Kumbhalgarh Fort",
+      "site": "india100-kumbhalgarh-fort",
+      "type": "Fort",
+      "summary": "Long ramparts follow the Aravalli ridges, with gates controlling approaches to the fortified interior.",
+      "history": "Rana Kumbha is associated with the fifteenth-century fortifications at Kumbhalgarh. Later buildings within the walls belong to other phases.",
+      "layout_notes": "Long ramparts follow the Aravalli ridges, with gates controlling approaches to the fortified interior.",
+      "year_from": 1401,
+      "year_to": 1500,
+      "date_label": "Major fortification, 15th century CE",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Rajput",
+          "description": "",
+          "notes": "Rana Kumbha is associated with the fifteenth-century fortifications at Kumbhalgarh. Later buildings within the walls belong to other phases.",
+          "source": "india100-kumbhalgarh-fort",
+          "locator": "Outstanding Universal Value, Kumbhalgarh component"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Fortification wall",
+          "description": "A defensive wall defining or protecting an enclosed area.",
+          "notes": "Long ramparts follow the Aravalli ridges, with gates controlling approaches to the fortified interior.",
+          "source": "india100-kumbhalgarh-fort",
+          "locator": "Outstanding Universal Value, Kumbhalgarh component"
+        },
+        {
+          "name": "Gateway",
+          "description": "",
+          "notes": "Long ramparts follow the Aravalli ridges, with gates controlling approaches to the fortified interior.",
+          "source": "india100-kumbhalgarh-fort",
+          "locator": "Outstanding Universal Value, Kumbhalgarh component"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-kumbhalgarh-fort",
+          "topic": "Historical context and chronology",
+          "locator": "Outstanding Universal Value, Kumbhalgarh component",
+          "note": "Rana Kumbha is associated with the fifteenth-century fortifications at Kumbhalgarh. Later buildings within the walls belong to other phases."
+        },
+        {
+          "source": "india100-kumbhalgarh-fort",
+          "topic": "Plan and visible architectural features",
+          "locator": "Outstanding Universal Value, Kumbhalgarh component",
+          "note": "Long ramparts follow the Aravalli ridges, with gates controlling approaches to the fortified interior."
+        },
+        {
+          "source": "india100-kumbhalgarh-fort-detail",
+          "topic": "Additional historical evidence",
+          "locator": "Rana Kumbha and the fort",
+          "note": "Documents the fifteenth-century fortification under Rana Kumbha."
+        }
+      ],
+      "latitude": 25.14889,
+      "longitude": 73.58028
+    },
+    {
+      "slug": "mehrangarh-fort-jodhpur",
+      "name": "Mehrangarh Fort",
+      "site": "india100-mehrangarh-fort-jodhpur",
+      "type": "Fort",
+      "summary": "Walls crown a steep rock.",
+      "history": "Rao Jodha laid the foundation in 1459. The museum trust records major later phases under Rao Maldeo and Maharaja Ajit Singh.",
+      "layout_notes": "Walls crown a steep rock. The ascent leads through gates to palatial rooms and carved courtyard façades.",
+      "year_from": 1459,
+      "year_to": 1459,
+      "date_label": "Founded in 1459 CE",
+      "date_precision": "year",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Rajput",
+          "description": "",
+          "notes": "Rao Jodha laid the foundation in 1459. The museum trust records major later phases under Rao Maldeo and Maharaja Ajit Singh.",
+          "source": "india100-mehrangarh-fort-jodhpur",
+          "locator": "Early building phases and palace expansion"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Fortification wall",
+          "description": "A defensive wall defining or protecting an enclosed area.",
+          "notes": "Walls crown a steep rock. The ascent leads through gates to palatial rooms and carved courtyard façades.",
+          "source": "india100-mehrangarh-fort-jodhpur",
+          "locator": "Early building phases and palace expansion"
+        },
+        {
+          "name": "Courtyard",
+          "description": "",
+          "notes": "Walls crown a steep rock. The ascent leads through gates to palatial rooms and carved courtyard façades.",
+          "source": "india100-mehrangarh-fort-jodhpur",
+          "locator": "Early building phases and palace expansion"
+        },
+        {
+          "name": "Gateway",
+          "description": "",
+          "notes": "Walls crown a steep rock. The ascent leads through gates to palatial rooms and carved courtyard façades.",
+          "source": "india100-mehrangarh-fort-jodhpur",
+          "locator": "Early building phases and palace expansion"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-mehrangarh-fort-jodhpur",
+          "topic": "Historical context and chronology",
+          "locator": "Early building phases and palace expansion",
+          "note": "Rao Jodha laid the foundation in 1459. The museum trust records major later phases under Rao Maldeo and Maharaja Ajit Singh."
+        },
+        {
+          "source": "india100-mehrangarh-fort-jodhpur",
+          "topic": "Plan and visible architectural features",
+          "locator": "Early building phases and palace expansion",
+          "note": "Walls crown a steep rock. The ascent leads through gates to palatial rooms and carved courtyard façades."
+        }
+      ],
+      "latitude": 26.29806,
+      "longitude": 73.01889
+    },
+    {
+      "slug": "ranakpur-jain-temple",
+      "name": "Ranakpur Jain Temple",
+      "site": "india100-ranakpur-jain-temple",
+      "type": "Temple",
+      "summary": "A four-facing shrine is surrounded by halls, pillars and domed bays.",
+      "history": "The Adinatha temple at Ranakpur belongs to a fifteenth-century Jain building campaign. Rajasthan Tourism identifies its carved marble as a defining feature.",
+      "layout_notes": "A four-facing shrine is surrounded by halls, pillars and domed bays.",
+      "year_from": 1401,
+      "year_to": 1500,
+      "date_label": "15th century CE",
+      "date_precision": "range",
+      "aliases": [
+        "Chaumukha Temple",
+        "Adinatha Temple Ranakpur"
+      ],
+      "styles": [
+        {
+          "name": "Maru-Gurjara",
+          "description": "",
+          "notes": "The Adinatha temple at Ranakpur belongs to a fifteenth-century Jain building campaign. Rajasthan Tourism identifies its carved marble as a defining feature.",
+          "source": "india100-ranakpur-jain-temple",
+          "locator": "Adinatha shrine and carved marble"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Marble",
+          "description": "",
+          "notes": "Marble is documented in the architectural account of Ranakpur Jain Temple.",
+          "source": "india100-ranakpur-jain-temple",
+          "locator": "Adinatha shrine and carved marble"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Mandapa",
+          "description": "",
+          "notes": "A four-facing shrine is surrounded by halls, pillars and domed bays.",
+          "source": "india100-ranakpur-jain-temple",
+          "locator": "Adinatha shrine and carved marble"
+        },
+        {
+          "name": "Carved pillar",
+          "description": "An upright support in a building.",
+          "notes": "A four-facing shrine is surrounded by halls, pillars and domed bays.",
+          "source": "india100-ranakpur-jain-temple",
+          "locator": "Adinatha shrine and carved marble"
+        },
+        {
+          "name": "Dome",
+          "description": "",
+          "notes": "A four-facing shrine is surrounded by halls, pillars and domed bays.",
+          "source": "india100-ranakpur-jain-temple",
+          "locator": "Adinatha shrine and carved marble"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-ranakpur-jain-temple",
+          "topic": "Historical context and chronology",
+          "locator": "Adinatha shrine and carved marble",
+          "note": "The Adinatha temple at Ranakpur belongs to a fifteenth-century Jain building campaign. Rajasthan Tourism identifies its carved marble as a defining feature."
+        },
+        {
+          "source": "india100-ranakpur-jain-temple",
+          "topic": "Plan and visible architectural features",
+          "locator": "Adinatha shrine and carved marble",
+          "note": "A four-facing shrine is surrounded by halls, pillars and domed bays."
+        }
+      ],
+      "latitude": 25.11574,
+      "longitude": 73.47283
+    },
+    {
+      "slug": "dilwara-temples",
+      "name": "Dilwara Jain Temples",
+      "site": "india100-dilwara-temples",
+      "type": "Temple",
+      "summary": "Temple interiors are organized around shrines, pillared halls and domed ceilings with finely cut marble ornament.",
+      "history": "Dilwara is a group of Jain temples built in different periods. The Vimal Vasahi and Luna Vasahi are among its earliest and are renowned for intricately carved interiors.",
+      "layout_notes": "Temple interiors are organized around shrines, pillared halls and domed ceilings with finely cut marble ornament.",
+      "year_from": 1001,
+      "year_to": 1300,
+      "date_label": "Early principal temples, 11th–13th centuries CE",
+      "date_precision": "range",
+      "aliases": [
+        "Delwara Temples",
+        "Dilwada Temples"
+      ],
+      "styles": [
+        {
+          "name": "Maru-Gurjara",
+          "description": "",
+          "notes": "Dilwara is a group of Jain temples built in different periods. The Vimal Vasahi and Luna Vasahi are among its earliest and are renowned for intricately carved interiors.",
+          "source": "india100-dilwara-temples",
+          "locator": "Dilwara Jain Temples"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Marble",
+          "description": "",
+          "notes": "Marble is documented in the architectural account of Dilwara Jain Temples.",
+          "source": "india100-dilwara-temples",
+          "locator": "Dilwara Jain Temples"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Carved pillar",
+          "description": "An upright support in a building.",
+          "notes": "Temple interiors are organized around shrines, pillared halls and domed ceilings with finely cut marble ornament.",
+          "source": "india100-dilwara-temples",
+          "locator": "Dilwara Jain Temples"
+        },
+        {
+          "name": "Dome",
+          "description": "",
+          "notes": "Temple interiors are organized around shrines, pillared halls and domed ceilings with finely cut marble ornament.",
+          "source": "india100-dilwara-temples",
+          "locator": "Dilwara Jain Temples"
+        },
+        {
+          "name": "Mandapa",
+          "description": "",
+          "notes": "Temple interiors are organized around shrines, pillared halls and domed ceilings with finely cut marble ornament.",
+          "source": "india100-dilwara-temples",
+          "locator": "Dilwara Jain Temples"
+        },
+        {
+          "name": "Sculptural relief",
+          "description": "",
+          "notes": "Carved marble ceiling panels carry densely arranged relief figures.",
+          "source": "india100-dilwara-temples",
+          "locator": "Dilwara Jain Temples, sculpted interiors"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-dilwara-temples",
+          "topic": "Historical context and chronology",
+          "locator": "Dilwara Jain Temples",
+          "note": "Dilwara is a group of Jain temples built in different periods. The Vimal Vasahi and Luna Vasahi are among its earliest and are renowned for intricately carved interiors."
+        },
+        {
+          "source": "india100-dilwara-temples",
+          "topic": "Plan and visible architectural features",
+          "locator": "Dilwara Jain Temples",
+          "note": "Temple interiors are organized around shrines, pillared halls and domed ceilings with finely cut marble ornament."
+        }
+      ],
+      "latitude": 24.60931,
+      "longitude": 72.72306
+    },
+    {
+      "slug": "somnath-temple",
+      "name": "Somnath Temple",
+      "site": "india100-somnath-temple",
+      "type": "Temple",
+      "summary": "The coastal temple is organized around a towered sanctuary and an axial approach through halls.",
+      "history": "The site has a long history of rebuilding. The current shrine belongs to a twentieth-century reconstruction, consecrated in 1951.",
+      "layout_notes": "The coastal temple is organized around a towered sanctuary and an axial approach through halls.",
+      "year_from": 1951,
+      "year_to": 1951,
+      "date_label": "Present shrine consecrated in 1951 CE",
+      "date_precision": "year",
+      "aliases": [
+        "Shree Somnath Jyotirlinga"
+      ],
+      "styles": [
+        {
+          "name": "Nagara",
+          "description": "",
+          "notes": "The site has a long history of rebuilding. The current shrine belongs to a twentieth-century reconstruction, consecrated in 1951.",
+          "source": "india100-somnath-temple",
+          "locator": "About Place and Brief History"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Sandstone",
+          "description": "",
+          "notes": "Carved sandstone forms the visible fabric of the rebuilt shrine.",
+          "source": "india100-somnath-temple-fabric",
+          "locator": "Description of the coastal shrine"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Curvilinear shikhara",
+          "description": "",
+          "notes": "The coastal temple is organized around a towered sanctuary and an axial approach through halls.",
+          "source": "india100-somnath-temple",
+          "locator": "About Place and Brief History"
+        },
+        {
+          "name": "Mandapa",
+          "description": "",
+          "notes": "The coastal temple is organized around a towered sanctuary and an axial approach through halls.",
+          "source": "india100-somnath-temple",
+          "locator": "About Place and Brief History"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-somnath-temple",
+          "topic": "Historical context and chronology",
+          "locator": "About Place and Brief History",
+          "note": "The site has a long history of rebuilding. The current shrine belongs to a twentieth-century reconstruction, consecrated in 1951."
+        },
+        {
+          "source": "india100-somnath-temple",
+          "topic": "Plan and visible architectural features",
+          "locator": "About Place and Brief History",
+          "note": "The coastal temple is organized around a towered sanctuary and an axial approach through halls."
+        }
+      ],
+      "latitude": 20.88803,
+      "longitude": 70.40139
+    },
+    {
+      "slug": "dwarkadhish-temple",
+      "name": "Dwarkadhish Temple",
+      "site": "india100-dwarkadhish-temple",
+      "type": "Temple",
+      "summary": "The Jagat Mandir rises above the precinct in a tapering tower, with columned spaces and two principal entrances.",
+      "history": "Gujarat Tourism distinguishes the religious traditions of Dwarka from phases of rebuilding, especially in the sixteenth and nineteenth centuries.",
+      "layout_notes": "The Jagat Mandir rises above the precinct in a tapering tower, with columned spaces and two principal entrances.",
+      "year_from": 1501,
+      "year_to": 1900,
+      "date_label": "Documented rebuilding phases, 16th and 19th centuries CE",
+      "date_precision": "range",
+      "aliases": [
+        "Jagat Mandir",
+        "Dwarakadheesh Temple"
+      ],
+      "styles": [
+        {
+          "name": "Nagara",
+          "description": "",
+          "notes": "The Gujarat Tourism account distinguishes the religious traditions of Dwarka from the rebuilding of the standing temple in the sixteenth century.",
+          "source": "india100-dwarkadhish-temple",
+          "locator": "About Place and Brief History"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Curvilinear shikhara",
+          "description": "",
+          "notes": "The Jagat Mandir rises above the precinct in a tapering tower, with columned spaces and two principal entrances.",
+          "source": "india100-dwarkadhish-temple",
+          "locator": "About Place and Brief History"
+        },
+        {
+          "name": "Gateway",
+          "description": "",
+          "notes": "The Jagat Mandir rises above the precinct in a tapering tower, with columned spaces and two principal entrances.",
+          "source": "india100-dwarkadhish-temple",
+          "locator": "About Place and Brief History"
+        },
+        {
+          "name": "Pillar",
+          "description": "An upright support in a building.",
+          "notes": "The Jagat Mandir rises above the precinct in a tapering tower, with columned spaces and two principal entrances.",
+          "source": "india100-dwarkadhish-temple",
+          "locator": "About Place and Brief History"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-dwarkadhish-temple",
+          "topic": "Historical context and chronology",
+          "locator": "About Place and Brief History",
+          "note": "Gujarat Tourism distinguishes the religious traditions of Dwarka from phases of rebuilding, especially in the sixteenth and nineteenth centuries."
+        },
+        {
+          "source": "india100-dwarkadhish-temple",
+          "topic": "Plan and visible architectural features",
+          "locator": "About Place and Brief History",
+          "note": "The Jagat Mandir rises above the precinct in a tapering tower, with columned spaces and two principal entrances."
+        }
+      ],
+      "latitude": 22.23789,
+      "longitude": 68.96756
+    },
+    {
+      "slug": "dholavira-harappan-city",
+      "name": "Dholavira Harappan City",
+      "site": "india100-dholavira-harappan-city",
+      "type": "Archaeological site",
+      "summary": "The fortified sectors and reservoirs reflect the site's response to seasonal water supply in an arid landscape.",
+      "history": "Dholavira preserves a long sequence of Harappan occupation. The mapped ruins include multiple divisions of the settlement and its engineered system for water storage.",
+      "layout_notes": "The fortified sectors and reservoirs reflect the site's response to seasonal water supply in an arid landscape.",
+      "year_from": -3000,
+      "year_to": -1500,
+      "date_label": "Harappan occupation, c. 3000–1500 BCE",
+      "date_precision": "range",
+      "aliases": [
+        "Dholavira",
+        "Kotada Timba"
+      ],
+      "styles": [
+        {
+          "name": "Harappan",
+          "description": "",
+          "notes": "Dholavira preserves a long sequence of Harappan occupation. The mapped ruins include multiple divisions of the settlement and its engineered system for water storage.",
+          "source": "india100-dholavira-harappan-city",
+          "locator": "Description and Outstanding Universal Value"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Stone",
+          "description": "",
+          "notes": "Stone is documented in the architectural account of Dholavira Harappan City.",
+          "source": "india100-dholavira-harappan-city",
+          "locator": "Description and Outstanding Universal Value"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Fortification wall",
+          "description": "A defensive wall defining or protecting an enclosed area.",
+          "notes": "The fortified sectors and reservoirs reflect the site's response to seasonal water supply in an arid landscape.",
+          "source": "india100-dholavira-harappan-city",
+          "locator": "Description and Outstanding Universal Value"
+        },
+        {
+          "name": "Reservoir",
+          "description": "An engineered enclosure for storing water.",
+          "notes": "The fortified sectors and reservoirs reflect the site's response to seasonal water supply in an arid landscape.",
+          "source": "india100-dholavira-harappan-city",
+          "locator": "Description and Outstanding Universal Value"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-dholavira-harappan-city",
+          "topic": "Historical context and chronology",
+          "locator": "Description and Outstanding Universal Value",
+          "note": "Dholavira preserves a long sequence of Harappan occupation. The mapped ruins include multiple divisions of the settlement and its engineered system for water storage."
+        },
+        {
+          "source": "india100-dholavira-harappan-city",
+          "topic": "Plan and visible architectural features",
+          "locator": "Description and Outstanding Universal Value",
+          "note": "The fortified sectors and reservoirs reflect the site's response to seasonal water supply in an arid landscape."
+        }
+      ],
+      "latitude": 23.88861,
+      "longitude": 70.21364
+    },
+    {
+      "slug": "jama-masjid-champaner",
+      "name": "Jami Masjid, Champaner",
+      "site": "india100-jama-masjid-champaner",
+      "type": "Mosque",
+      "summary": "Two slender minarets flank the central entrance and an open courtyard leads to the prayer hall.",
+      "history": "The congregational mosque belongs to the Gujarat Sultanate phase of Champaner. The park preserves the mosque alongside the fortified capital and earlier remains.",
+      "layout_notes": "Two slender minarets flank the central entrance and an open courtyard leads to the prayer hall.",
+      "year_from": 1501,
+      "year_to": 1525,
+      "date_label": "Early 16th century CE",
+      "date_precision": "range",
+      "aliases": [
+        "Jama Mosque Champaner",
+        "Great Mosque of Champaner"
+      ],
+      "styles": [
+        {
+          "name": "Gujarat Sultanate",
+          "description": "",
+          "notes": "The congregational mosque belongs to the Gujarat Sultanate phase of Champaner. The park preserves the mosque alongside the fortified capital and earlier remains.",
+          "source": "india100-jama-masjid-champaner",
+          "locator": "Outstanding Universal Value, Great Mosque"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Minaret",
+          "description": "",
+          "notes": "Two slender minarets flank the central entrance and an open courtyard leads to the prayer hall.",
+          "source": "india100-jama-masjid-champaner",
+          "locator": "Outstanding Universal Value, Great Mosque"
+        },
+        {
+          "name": "Courtyard",
+          "description": "",
+          "notes": "Two slender minarets flank the central entrance and an open courtyard leads to the prayer hall.",
+          "source": "india100-jama-masjid-champaner",
+          "locator": "Outstanding Universal Value, Great Mosque"
+        },
+        {
+          "name": "Arch",
+          "description": "A curved structure spanning an opening.",
+          "notes": "Two slender minarets flank the central entrance and an open courtyard leads to the prayer hall.",
+          "source": "india100-jama-masjid-champaner",
+          "locator": "Outstanding Universal Value, Great Mosque"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-jama-masjid-champaner",
+          "topic": "Historical context and chronology",
+          "locator": "Outstanding Universal Value, Great Mosque",
+          "note": "The congregational mosque belongs to the Gujarat Sultanate phase of Champaner. The park preserves the mosque alongside the fortified capital and earlier remains."
+        },
+        {
+          "source": "india100-jama-masjid-champaner",
+          "topic": "Plan and visible architectural features",
+          "locator": "Outstanding Universal Value, Great Mosque",
+          "note": "Two slender minarets flank the central entrance and an open courtyard leads to the prayer hall."
+        }
+      ],
+      "latitude": 22.4859,
+      "longitude": 73.5371
+    },
+    {
+      "slug": "sidi-saiyyed-mosque",
+      "name": "Sidi Saiyyed Mosque",
+      "site": "india100-sidi-saiyyed-mosque",
+      "type": "Mosque",
+      "summary": "The open façade is articulated by arches.",
+      "history": "Sidi Saiyyed's mosque was built near the close of Gujarat Sultanate rule. The municipal heritage account records its completion in 1573.",
+      "layout_notes": "The open façade is articulated by arches. Carved stone screens fill windows in the rear wall.",
+      "year_from": 1572,
+      "year_to": 1573,
+      "date_label": "Construction, 1572–1573 CE",
+      "date_precision": "range",
+      "aliases": [
+        "Sidi Sayed ni Jali",
+        "Siddi Sayed Mosque"
+      ],
+      "styles": [
+        {
+          "name": "Gujarat Sultanate",
+          "description": "",
+          "notes": "Sidi Saiyyed's mosque was built near the close of Gujarat Sultanate rule. The municipal heritage account records its completion in 1573.",
+          "source": "india100-sidi-saiyyed-mosque",
+          "locator": "Sidi Saiyyed Mosque, architecture and jalis"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Stone",
+          "description": "",
+          "notes": "Stone is documented in the architectural account of Sidi Saiyyed Mosque.",
+          "source": "india100-sidi-saiyyed-mosque",
+          "locator": "Sidi Saiyyed Mosque, architecture and jalis"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Pierced stone window",
+          "description": "",
+          "notes": "The open façade is articulated by arches. Carved stone screens fill windows in the rear wall.",
+          "source": "india100-sidi-saiyyed-mosque",
+          "locator": "Sidi Saiyyed Mosque, architecture and jalis"
+        },
+        {
+          "name": "Arch",
+          "description": "A curved structure spanning an opening.",
+          "notes": "The open façade is articulated by arches. Carved stone screens fill windows in the rear wall.",
+          "source": "india100-sidi-saiyyed-mosque",
+          "locator": "Sidi Saiyyed Mosque, architecture and jalis"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-sidi-saiyyed-mosque",
+          "topic": "Historical context and chronology",
+          "locator": "Sidi Saiyyed Mosque, architecture and jalis",
+          "note": "Sidi Saiyyed's mosque was built near the close of Gujarat Sultanate rule. The municipal heritage account records its completion in 1573."
+        },
+        {
+          "source": "india100-sidi-saiyyed-mosque",
+          "topic": "Plan and visible architectural features",
+          "locator": "Sidi Saiyyed Mosque, architecture and jalis",
+          "note": "The open façade is articulated by arches. Carved stone screens fill windows in the rear wall."
+        }
+      ],
+      "latitude": 23.02694,
+      "longitude": 72.58111
+    },
+    {
+      "slug": "ramappa-temple",
+      "name": "Ramappa Temple",
+      "site": "india100-ramappa-temple",
+      "type": "Temple",
+      "summary": "A raised platform carries the main shrine and pillared hall.",
+      "history": "The Rudreshwara temple at Palampet was commissioned in the Kakatiya period. UNESCO dates the beginning of its construction to 1213.",
+      "layout_notes": "A raised platform carries the main shrine and pillared hall. Carved brackets and a lightweight brick superstructure are among the documented details.",
+      "year_from": 1213,
+      "year_to": 1213,
+      "date_label": "Construction began in 1213 CE",
+      "date_precision": "year",
+      "aliases": [
+        "Kakatiya Rudreshwara Temple",
+        "Rudreswara Temple Palampet"
+      ],
+      "styles": [
+        {
+          "name": "Kakatiya",
+          "description": "",
+          "notes": "The Rudreshwara temple at Palampet was commissioned in the Kakatiya period. UNESCO dates the beginning of its construction to 1213.",
+          "source": "india100-ramappa-temple",
+          "locator": "Outstanding Universal Value, construction and materials"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Sandstone",
+          "description": "",
+          "notes": "Sandstone is documented in the architectural account of Ramappa Temple.",
+          "source": "india100-ramappa-temple",
+          "locator": "Outstanding Universal Value, construction and materials"
+        },
+        {
+          "name": "Brick",
+          "description": "",
+          "notes": "A raised platform carries the main shrine and pillared hall. Carved brackets and a lightweight brick superstructure are among the documented details.",
+          "source": "india100-ramappa-temple",
+          "locator": "Outstanding Universal Value, construction and materials"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Sculptural relief",
+          "description": "",
+          "notes": "A raised platform carries the main shrine and pillared hall. Carved brackets and a lightweight brick superstructure are among the documented details.",
+          "source": "india100-ramappa-temple",
+          "locator": "Outstanding Universal Value, construction and materials"
+        },
+        {
+          "name": "Mandapa",
+          "description": "",
+          "notes": "A raised platform carries the main shrine and pillared hall. Carved brackets and a lightweight brick superstructure are among the documented details.",
+          "source": "india100-ramappa-temple",
+          "locator": "Outstanding Universal Value, construction and materials"
+        },
+        {
+          "name": "Vimana",
+          "description": "",
+          "notes": "A raised platform carries the main shrine and pillared hall. Carved brackets and a lightweight brick superstructure are among the documented details.",
+          "source": "india100-ramappa-temple",
+          "locator": "Outstanding Universal Value, construction and materials"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-ramappa-temple",
+          "topic": "Historical context and chronology",
+          "locator": "Outstanding Universal Value, construction and materials",
+          "note": "The Rudreshwara temple at Palampet was commissioned in the Kakatiya period. UNESCO dates the beginning of its construction to 1213."
+        },
+        {
+          "source": "india100-ramappa-temple",
+          "topic": "Plan and visible architectural features",
+          "locator": "Outstanding Universal Value, construction and materials",
+          "note": "A raised platform carries the main shrine and pillared hall. Carved brackets and a lightweight brick superstructure are among the documented details."
+        }
+      ],
+      "latitude": 18.25917,
+      "longitude": 79.94333
+    },
+    {
+      "slug": "golconda-fort",
+      "name": "Golconda Fort",
+      "site": "india100-golconda-fort",
+      "type": "Fort",
+      "summary": "The granite hill carries the upper citadel.",
+      "history": "Golconda's origins precede Qutb Shahi rule. The dynasty enlarged the fortified capital over the sixteenth and seventeenth centuries.",
+      "layout_notes": "The granite hill carries the upper citadel. Successive lines of walls, gateways and bastions control access to the interior.",
+      "year_from": 1518,
+      "year_to": 1687,
+      "date_label": "Qutb Shahi phase, 1518–1687 CE",
+      "date_precision": "range",
+      "aliases": [
+        "Golkonda Fort"
+      ],
+      "styles": [
+        {
+          "name": "Qutb Shahi",
+          "description": "",
+          "notes": "Golconda's origins precede Qutb Shahi rule. The dynasty enlarged the fortified capital over the sixteenth and seventeenth centuries.",
+          "source": "india100-golconda-fort",
+          "locator": "Description, Golconda Fort"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Granite",
+          "description": "",
+          "notes": "Granite is documented in the architectural account of Golconda Fort.",
+          "source": "india100-golconda-fort",
+          "locator": "Description, Golconda Fort"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Fortification wall",
+          "description": "A defensive wall defining or protecting an enclosed area.",
+          "notes": "The granite hill carries the upper citadel. Successive lines of walls, gateways and bastions control access to the interior.",
+          "source": "india100-golconda-fort",
+          "locator": "Description, Golconda Fort"
+        },
+        {
+          "name": "Gateway",
+          "description": "",
+          "notes": "The granite hill carries the upper citadel. Successive lines of walls, gateways and bastions control access to the interior.",
+          "source": "india100-golconda-fort",
+          "locator": "Description, Golconda Fort"
+        },
+        {
+          "name": "Bastion",
+          "description": "A projecting part of a fortification designed to command the adjacent wall and approaches.",
+          "notes": "The granite hill carries the upper citadel. Successive lines of walls, gateways and bastions control access to the interior.",
+          "source": "india100-golconda-fort",
+          "locator": "Description, Golconda Fort"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-golconda-fort",
+          "topic": "Historical context and chronology",
+          "locator": "Description, Golconda Fort",
+          "note": "Golconda's origins precede Qutb Shahi rule. The dynasty enlarged the fortified capital over the sixteenth and seventeenth centuries."
+        },
+        {
+          "source": "india100-golconda-fort",
+          "topic": "Plan and visible architectural features",
+          "locator": "Description, Golconda Fort",
+          "note": "The granite hill carries the upper citadel. Successive lines of walls, gateways and bastions control access to the interior."
+        }
+      ],
+      "latitude": 17.38306,
+      "longitude": 78.40111
+    },
+    {
+      "slug": "qutb-shahi-tombs",
+      "name": "Qutb Shahi Tombs",
+      "site": "india100-qutb-shahi-tombs",
+      "type": "Tomb complex",
+      "summary": "Domed tombs rise on platforms and often use repeated arches to articulate their elevations.",
+      "history": "The funerary complex contains the tombs of the Qutb Shahi dynasty and associated structures. Conservation has worked across the ensemble, including landscape and water features.",
+      "layout_notes": "Domed tombs rise on platforms and often use repeated arches to articulate their elevations.",
+      "year_from": 1543,
+      "year_to": 1687,
+      "date_label": "Qutb Shahi burials, 16th–17th centuries CE",
+      "date_precision": "range",
+      "aliases": [
+        "Seven Tombs",
+        "Qutb Shahi Heritage Park"
+      ],
+      "styles": [
+        {
+          "name": "Qutb Shahi",
+          "description": "",
+          "notes": "The funerary complex contains the tombs of the Qutb Shahi dynasty and associated structures. Conservation has worked across the ensemble, including landscape and water features.",
+          "source": "india100-qutb-shahi-tombs",
+          "locator": "Description, Qutb Shahi Tombs"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Stone",
+          "description": "",
+          "notes": "Mortared stone forms the structure of the tombs.",
+          "source": "india100-qutb-shahi-tombs",
+          "locator": "Integrity, traditional building materials"
+        },
+        {
+          "name": "Stucco",
+          "description": "",
+          "notes": "Carved stucco contributes to the tombs’ exterior articulation.",
+          "source": "india100-qutb-shahi-tombs",
+          "locator": "Integrity, traditional building materials"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Dome",
+          "description": "",
+          "notes": "Domed tombs rise on platforms and often use repeated arches to articulate their elevations.",
+          "source": "india100-qutb-shahi-tombs",
+          "locator": "Description, Qutb Shahi Tombs"
+        },
+        {
+          "name": "Arch",
+          "description": "A curved structure spanning an opening.",
+          "notes": "Domed tombs rise on platforms and often use repeated arches to articulate their elevations.",
+          "source": "india100-qutb-shahi-tombs",
+          "locator": "Description, Qutb Shahi Tombs"
+        },
+        {
+          "name": "Plinth",
+          "description": "A raised base supporting a building or architectural feature.",
+          "notes": "Domed tombs rise on platforms and often use repeated arches to articulate their elevations.",
+          "source": "india100-qutb-shahi-tombs",
+          "locator": "Description, Qutb Shahi Tombs"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-qutb-shahi-tombs",
+          "topic": "Historical context and chronology",
+          "locator": "Description, Qutb Shahi Tombs",
+          "note": "The funerary complex contains the tombs of the Qutb Shahi dynasty and associated structures. Conservation has worked across the ensemble, including landscape and water features."
+        },
+        {
+          "source": "india100-qutb-shahi-tombs",
+          "topic": "Plan and visible architectural features",
+          "locator": "Description, Qutb Shahi Tombs",
+          "note": "Domed tombs rise on platforms and often use repeated arches to articulate their elevations."
+        },
+        {
+          "source": "india100-qutb-shahi-tombs-detail",
+          "topic": "Additional historical evidence",
+          "locator": "2024 conservation programme",
+          "note": "Documents work across tombs, gardens and water infrastructure."
+        }
+      ],
+      "latitude": 17.395,
+      "longitude": 78.396
+    },
+    {
+      "slug": "brihadisvara-gangaikonda-cholapuram",
+      "name": "Brihadisvara Temple, Gangaikonda Cholapuram",
+      "site": "india100-brihadisvara-gangaikonda-cholapuram",
+      "type": "Temple",
+      "summary": "The shrine rises into a tiered vimana.",
+      "history": "Rajendra I commissioned the temple for his new Chola capital. It is the Gangaikonda Cholapuram component of the Great Living Chola Temples.",
+      "layout_notes": "The shrine rises into a tiered vimana. Sculpture is integrated into the exterior niches and the main axis includes a pillared hall.",
+      "year_from": 1035,
+      "year_to": 1035,
+      "date_label": "Completed in 1035 CE",
+      "date_precision": "approximate",
+      "aliases": [
+        "Gangaikondacholapuram",
+        "Gangaikonda Cholapuram Temple"
+      ],
+      "styles": [
+        {
+          "name": "Chola",
+          "description": "",
+          "notes": "Rajendra I commissioned the temple for his new Chola capital. It is the Gangaikonda Cholapuram component of the Great Living Chola Temples.",
+          "source": "india100-brihadisvara-gangaikonda-cholapuram",
+          "locator": "Gangaikondacholapuram component"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Vimana",
+          "description": "",
+          "notes": "The shrine rises into a tiered vimana. Sculpture is integrated into the exterior niches and the main axis includes a pillared hall.",
+          "source": "india100-brihadisvara-gangaikonda-cholapuram",
+          "locator": "Gangaikondacholapuram component"
+        },
+        {
+          "name": "Sculptural relief",
+          "description": "",
+          "notes": "The shrine rises into a tiered vimana. Sculpture is integrated into the exterior niches and the main axis includes a pillared hall.",
+          "source": "india100-brihadisvara-gangaikonda-cholapuram",
+          "locator": "Gangaikondacholapuram component"
+        },
+        {
+          "name": "Mandapa",
+          "description": "",
+          "notes": "The shrine rises into a tiered vimana. Sculpture is integrated into the exterior niches and the main axis includes a pillared hall.",
+          "source": "india100-brihadisvara-gangaikonda-cholapuram",
+          "locator": "Gangaikondacholapuram component"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-brihadisvara-gangaikonda-cholapuram",
+          "topic": "Historical context and chronology",
+          "locator": "Gangaikondacholapuram component",
+          "note": "Rajendra I commissioned the temple for his new Chola capital. It is the Gangaikonda Cholapuram component of the Great Living Chola Temples."
+        },
+        {
+          "source": "india100-brihadisvara-gangaikonda-cholapuram",
+          "topic": "Plan and visible architectural features",
+          "locator": "Gangaikondacholapuram component",
+          "note": "The shrine rises into a tiered vimana. Sculpture is integrated into the exterior niches and the main axis includes a pillared hall."
+        }
+      ],
+      "latitude": 11.20644,
+      "longitude": 79.44833
+    },
+    {
+      "slug": "ranganathaswamy-srirangam",
+      "name": "Ranganathaswamy Temple, Srirangam",
+      "site": "india100-ranganathaswamy-srirangam",
+      "type": "Temple",
+      "summary": "Successive enclosures organize streets, courts and halls around the sanctuary.",
+      "history": "The temple grew through multiple periods of patronage. The site dossier describes an extensive living temple town, with phases including Chola, Pandya, Vijayanagara and Nayaka work.",
+      "layout_notes": "Successive enclosures organize streets, courts and halls around the sanctuary. Gopurams mark routes between the precincts.",
+      "year_from": 1101,
+      "year_to": 1700,
+      "date_label": "Major documented phases, 12th–17th centuries CE",
+      "date_precision": "range",
+      "aliases": [
+        "Sri Ranganathaswamy Temple",
+        "Srirangam Temple"
+      ],
+      "styles": [
+        {
+          "name": "Dravidian",
+          "description": "",
+          "notes": "The temple grew through multiple periods of patronage. The site dossier describes an extensive living temple town, with phases including Chola, Pandya, Vijayanagara and Nayaka work.",
+          "source": "india100-ranganathaswamy-srirangam",
+          "locator": "Architectural enclosures and gateway towers"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Granite",
+          "description": "",
+          "notes": "The dossier identifies granite in the Vijayanagara Hall of 1,000 pillars.",
+          "source": "india100-ranganathaswamy-srirangam",
+          "locator": "Architectural features, Hall of 1,000 pillars"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Gopuram",
+          "description": "",
+          "notes": "Successive enclosures organize streets, courts and halls around the sanctuary. Gopurams mark routes between the precincts.",
+          "source": "india100-ranganathaswamy-srirangam",
+          "locator": "Architectural enclosures and gateway towers"
+        },
+        {
+          "name": "Mandapa",
+          "description": "",
+          "notes": "Successive enclosures organize streets, courts and halls around the sanctuary. Gopurams mark routes between the precincts.",
+          "source": "india100-ranganathaswamy-srirangam",
+          "locator": "Architectural enclosures and gateway towers"
+        },
+        {
+          "name": "Courtyard",
+          "description": "",
+          "notes": "Successive enclosures organize streets, courts and halls around the sanctuary. Gopurams mark routes between the precincts.",
+          "source": "india100-ranganathaswamy-srirangam",
+          "locator": "Architectural enclosures and gateway towers"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-ranganathaswamy-srirangam",
+          "topic": "Historical context and chronology",
+          "locator": "Architectural enclosures and gateway towers",
+          "note": "The temple grew through multiple periods of patronage. The site dossier describes an extensive living temple town, with phases including Chola, Pandya, Vijayanagara and Nayaka work."
+        },
+        {
+          "source": "india100-ranganathaswamy-srirangam",
+          "topic": "Plan and visible architectural features",
+          "locator": "Architectural enclosures and gateway towers",
+          "note": "Successive enclosures organize streets, courts and halls around the sanctuary. Gopurams mark routes between the precincts."
+        }
+      ],
+      "latitude": 10.8625,
+      "longitude": 78.68972
+    },
+    {
+      "slug": "ramanathaswamy-rameswaram",
+      "name": "Ramanathaswamy Temple",
+      "site": "india100-ramanathaswamy-rameswaram",
+      "type": "Temple",
+      "summary": "The corridor runs around the inner precinct.",
+      "history": "District records describe contributions by rulers from the twelfth century. The celebrated Third Corridor belongs to a later Sethupathi campaign.",
+      "layout_notes": "The corridor runs around the inner precinct. Rows of columns establish its repeating bays and strong axial views.",
+      "year_from": 1101,
+      "year_to": 1800,
+      "date_label": "Documented phases from the 12th century CE",
+      "date_precision": "range",
+      "aliases": [
+        "Rameswaram Temple",
+        "Ramanathaswamy Mandir"
+      ],
+      "styles": [
+        {
+          "name": "Dravidian",
+          "description": "",
+          "notes": "District records describe contributions by rulers from the twelfth century. The celebrated Third Corridor belongs to a later Sethupathi campaign.",
+          "source": "india100-ramanathaswamy-rameswaram",
+          "locator": "Temple construction and Third Corridor"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Gopuram",
+          "description": "",
+          "notes": "The corridor runs around the inner precinct. Rows of columns establish its repeating bays and strong axial views.",
+          "source": "india100-ramanathaswamy-rameswaram",
+          "locator": "Temple construction and Third Corridor"
+        },
+        {
+          "name": "Pillared corridor",
+          "description": "A covered passage with a sequence of columns along one or both sides.",
+          "notes": "The corridor runs around the inner precinct. Rows of columns establish its repeating bays and strong axial views.",
+          "source": "india100-ramanathaswamy-rameswaram",
+          "locator": "Temple construction and Third Corridor"
+        },
+        {
+          "name": "Pillar",
+          "description": "An upright support in a building.",
+          "notes": "The corridor runs around the inner precinct. Rows of columns establish its repeating bays and strong axial views.",
+          "source": "india100-ramanathaswamy-rameswaram",
+          "locator": "Temple construction and Third Corridor"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-ramanathaswamy-rameswaram",
+          "topic": "Historical context and chronology",
+          "locator": "Temple construction and Third Corridor",
+          "note": "District records describe contributions by rulers from the twelfth century. The celebrated Third Corridor belongs to a later Sethupathi campaign."
+        },
+        {
+          "source": "india100-ramanathaswamy-rameswaram",
+          "topic": "Plan and visible architectural features",
+          "locator": "Temple construction and Third Corridor",
+          "note": "The corridor runs around the inner precinct. Rows of columns establish its repeating bays and strong axial views."
+        },
+        {
+          "source": "india100-ramanathaswamy-rameswaram-detail",
+          "topic": "Additional historical evidence",
+          "locator": "Sethupathi patronage",
+          "note": "Describes the later architectural contributions of the Sethupathi rulers."
+        }
+      ],
+      "latitude": 9.28811,
+      "longitude": 79.31728
+    },
+    {
+      "slug": "kailasanatha-kanchipuram",
+      "name": "Kailasanatha Temple, Kanchipuram",
+      "site": "india100-kailasanatha-kanchipuram",
+      "type": "Temple",
+      "summary": "A tiered shrine rises inside an enclosure lined with smaller shrines.",
+      "history": "The temple is associated with the Pallava ruler Narasimhavarman II, also called Rajasimha, and later work under Mahendravarman III.",
+      "layout_notes": "A tiered shrine rises inside an enclosure lined with smaller shrines. A narrow passage permits circulation around the sanctum.",
+      "year_from": 700,
+      "year_to": 728,
+      "date_label": "Early 8th century CE",
+      "date_precision": "range",
+      "aliases": [
+        "Kailasanathar Temple",
+        "Rajasimhesvaram"
+      ],
+      "styles": [
+        {
+          "name": "Pallava",
+          "description": "",
+          "notes": "The temple is associated with the Pallava ruler Narasimhavarman II, also called Rajasimha, and later work under Mahendravarman III.",
+          "source": "india100-kailasanatha-kanchipuram",
+          "locator": "Rajasimhesvaram (Kailasanatha temple)"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Sandstone",
+          "description": "",
+          "notes": "Sandstone is documented in the architectural account of Kailasanatha Temple, Kanchipuram.",
+          "source": "india100-kailasanatha-kanchipuram",
+          "locator": "Rajasimhesvaram (Kailasanatha temple)"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Vimana",
+          "description": "",
+          "notes": "A tiered shrine rises inside an enclosure lined with smaller shrines. A narrow passage permits circulation around the sanctum.",
+          "source": "india100-kailasanatha-kanchipuram",
+          "locator": "Rajasimhesvaram (Kailasanatha temple)"
+        },
+        {
+          "name": "Sculptural relief",
+          "description": "",
+          "notes": "A tiered shrine rises inside an enclosure lined with smaller shrines. A narrow passage permits circulation around the sanctum.",
+          "source": "india100-kailasanatha-kanchipuram",
+          "locator": "Rajasimhesvaram (Kailasanatha temple)"
+        },
+        {
+          "name": "Circumambulatory passage",
+          "description": "",
+          "notes": "A tiered shrine rises inside an enclosure lined with smaller shrines. A narrow passage permits circulation around the sanctum.",
+          "source": "india100-kailasanatha-kanchipuram",
+          "locator": "Rajasimhesvaram (Kailasanatha temple)"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-kailasanatha-kanchipuram",
+          "topic": "Historical context and chronology",
+          "locator": "Rajasimhesvaram (Kailasanatha temple)",
+          "note": "The temple is associated with the Pallava ruler Narasimhavarman II, also called Rajasimha, and later work under Mahendravarman III."
+        },
+        {
+          "source": "india100-kailasanatha-kanchipuram",
+          "topic": "Plan and visible architectural features",
+          "locator": "Rajasimhesvaram (Kailasanatha temple)",
+          "note": "A tiered shrine rises inside an enclosure lined with smaller shrines. A narrow passage permits circulation around the sanctum."
+        }
+      ],
+      "latitude": 12.84231,
+      "longitude": 79.68967
+    },
+    {
+      "slug": "tirumala-venkateswara",
+      "name": "Sri Venkateswara Temple, Tirumala",
+      "site": "india100-tirumala-venkateswara",
+      "type": "Temple",
+      "summary": "Entrance towers and processional spaces lead to the inner shrine, above which the gilded Ananda Nilayam vimana rises.",
+      "history": "The temple has a long history of patronage. The trust connects a dated donation by Krishnadevaraya in 1517 with the mandapa bearing his name.",
+      "layout_notes": "Entrance towers and processional spaces lead to the inner shrine, above which the gilded Ananda Nilayam vimana rises.",
+      "year_from": 1517,
+      "year_to": 1517,
+      "date_label": "Documented patronage in 1517 CE",
+      "date_precision": "year",
+      "aliases": [
+        "Tirupati Balaji",
+        "Tirumala Temple",
+        "Sri Venkateswara Swamy Temple"
+      ],
+      "styles": [
+        {
+          "name": "Dravidian",
+          "description": "",
+          "notes": "The temple has a long history of patronage. The trust connects a dated donation by Krishnadevaraya in 1517 with the mandapa bearing his name.",
+          "source": "india100-tirumala-venkateswara",
+          "locator": "Temple History, Krishnadevaraya Mandapam and inner precinct"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Gold",
+          "description": "",
+          "notes": "Entrance towers and processional spaces lead to the inner shrine, above which the gilded Ananda Nilayam vimana rises.",
+          "source": "india100-tirumala-venkateswara-detail",
+          "locator": "Inscription 576-T.T. on gilding"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Vimana",
+          "description": "",
+          "notes": "Entrance towers and processional spaces lead to the inner shrine, above which the gilded Ananda Nilayam vimana rises.",
+          "source": "india100-tirumala-venkateswara",
+          "locator": "Temple History, Krishnadevaraya Mandapam and inner precinct"
+        },
+        {
+          "name": "Gopuram",
+          "description": "",
+          "notes": "Entrance towers and processional spaces lead to the inner shrine, above which the gilded Ananda Nilayam vimana rises.",
+          "source": "india100-tirumala-venkateswara",
+          "locator": "Temple History, Krishnadevaraya Mandapam and inner precinct"
+        },
+        {
+          "name": "Mandapa",
+          "description": "",
+          "notes": "Entrance towers and processional spaces lead to the inner shrine, above which the gilded Ananda Nilayam vimana rises.",
+          "source": "india100-tirumala-venkateswara",
+          "locator": "Temple History, Krishnadevaraya Mandapam and inner precinct"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-tirumala-venkateswara",
+          "topic": "Historical context and chronology",
+          "locator": "Temple History, Krishnadevaraya Mandapam and inner precinct",
+          "note": "The temple has a long history of patronage. The trust connects a dated donation by Krishnadevaraya in 1517 with the mandapa bearing his name."
+        },
+        {
+          "source": "india100-tirumala-venkateswara",
+          "topic": "Plan and visible architectural features",
+          "locator": "Temple History, Krishnadevaraya Mandapam and inner precinct",
+          "note": "Entrance towers and processional spaces lead to the inner shrine, above which the gilded Ananda Nilayam vimana rises."
+        },
+        {
+          "source": "india100-tirumala-venkateswara-detail",
+          "topic": "Additional historical evidence",
+          "locator": "Inscription 576-T.T. on gilding",
+          "note": "The record is dated 1518 and describes the gilding of the vimana."
+        }
+      ],
+      "latitude": 13.68325,
+      "longitude": 79.34719
+    },
+    {
+      "slug": "veerabhadra-temple-lepakshi",
+      "name": "Veerabhadra Temple, Lepakshi",
+      "site": "india100-veerabhadra-temple-lepakshi",
+      "type": "Temple",
+      "summary": "The shrine and halls share a rocky setting with carved pillars and a partially completed ceremonial pavilion.",
+      "history": "The Veerabhadra Temple is a Vijayanagara complex linked to the patronage of Virupanna and Viranna. Painted ceilings and sculpted granite are documented features.",
+      "layout_notes": "The shrine and halls share a rocky setting with carved pillars and a partially completed ceremonial pavilion.",
+      "year_from": 1501,
+      "year_to": 1600,
+      "date_label": "16th century CE",
+      "date_precision": "range",
+      "aliases": [
+        "Lepakshi Temple"
+      ],
+      "styles": [
+        {
+          "name": "Vijayanagara",
+          "description": "",
+          "notes": "The Veerabhadra Temple is a Vijayanagara complex linked to the patronage of Virupanna and Viranna. Painted ceilings and sculpted granite are documented features.",
+          "source": "india100-veerabhadra-temple-lepakshi",
+          "locator": "Description, temple architecture and patronage"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Granite",
+          "description": "",
+          "notes": "Granite is documented in the architectural account of Veerabhadra Temple, Lepakshi.",
+          "source": "india100-veerabhadra-temple-lepakshi",
+          "locator": "Description, temple architecture and patronage"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Mandapa",
+          "description": "",
+          "notes": "The shrine and halls share a rocky setting with carved pillars and a partially completed ceremonial pavilion.",
+          "source": "india100-veerabhadra-temple-lepakshi",
+          "locator": "Description, temple architecture and patronage"
+        },
+        {
+          "name": "Carved pillar",
+          "description": "An upright support in a building.",
+          "notes": "The shrine and halls share a rocky setting with carved pillars and a partially completed ceremonial pavilion.",
+          "source": "india100-veerabhadra-temple-lepakshi",
+          "locator": "Description, temple architecture and patronage"
+        },
+        {
+          "name": "Sculptural relief",
+          "description": "",
+          "notes": "The shrine and halls share a rocky setting with carved pillars and a partially completed ceremonial pavilion.",
+          "source": "india100-veerabhadra-temple-lepakshi",
+          "locator": "Description, temple architecture and patronage"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-veerabhadra-temple-lepakshi",
+          "topic": "Historical context and chronology",
+          "locator": "Description, temple architecture and patronage",
+          "note": "The Veerabhadra Temple is a Vijayanagara complex linked to the patronage of Virupanna and Viranna. Painted ceilings and sculpted granite are documented features."
+        },
+        {
+          "source": "india100-veerabhadra-temple-lepakshi",
+          "topic": "Plan and visible architectural features",
+          "locator": "Description, temple architecture and patronage",
+          "note": "The shrine and halls share a rocky setting with carved pillars and a partially completed ceremonial pavilion."
+        }
+      ],
+      "latitude": 13.80184,
+      "longitude": 77.60955
+    },
+    {
+      "slug": "jagannath-temple-puri",
+      "name": "Jagannath Temple, Puri",
+      "site": "india100-jagannath-temple-puri",
+      "type": "Temple",
+      "summary": "An elevated platform carries the main curving tower and the sequence of halls on its ceremonial axis.",
+      "history": "The present principal shrine is associated with the Eastern Ganga dynasty. Its construction belongs to the twelfth century and the complex remains in ritual use.",
+      "layout_notes": "An elevated platform carries the main curving tower and the sequence of halls on its ceremonial axis.",
+      "year_from": 1101,
+      "year_to": 1200,
+      "date_label": "Principal shrine, 12th century CE",
+      "date_precision": "range",
+      "aliases": [
+        "Shree Jagannath Temple",
+        "Jagannath Mandir"
+      ],
+      "styles": [
+        {
+          "name": "Kalinga",
+          "description": "",
+          "notes": "The present principal shrine is associated with the Eastern Ganga dynasty. Its construction belongs to the twelfth century and the complex remains in ritual use.",
+          "source": "india100-jagannath-temple-puri",
+          "locator": "History and architectural description"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Curvilinear shikhara",
+          "description": "",
+          "notes": "An elevated platform carries the main curving tower and the sequence of halls on its ceremonial axis.",
+          "source": "india100-jagannath-temple-puri",
+          "locator": "History and architectural description"
+        },
+        {
+          "name": "Mandapa",
+          "description": "",
+          "notes": "An elevated platform carries the main curving tower and the sequence of halls on its ceremonial axis.",
+          "source": "india100-jagannath-temple-puri",
+          "locator": "History and architectural description"
+        },
+        {
+          "name": "Plinth",
+          "description": "A raised base supporting a building or architectural feature.",
+          "notes": "An elevated platform carries the main curving tower and the sequence of halls on its ceremonial axis.",
+          "source": "india100-jagannath-temple-puri",
+          "locator": "History and architectural description"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-jagannath-temple-puri",
+          "topic": "Historical context and chronology",
+          "locator": "History and architectural description",
+          "note": "The present principal shrine is associated with the Eastern Ganga dynasty. Its construction belongs to the twelfth century and the complex remains in ritual use."
+        },
+        {
+          "source": "india100-jagannath-temple-puri",
+          "topic": "Plan and visible architectural features",
+          "locator": "History and architectural description",
+          "note": "An elevated platform carries the main curving tower and the sequence of halls on its ceremonial axis."
+        }
+      ],
+      "latitude": 19.80472,
+      "longitude": 85.81833
+    },
+    {
+      "slug": "lingaraj-temple-bhubaneswar",
+      "name": "Lingaraj Temple",
+      "site": "india100-lingaraj-temple-bhubaneswar",
+      "type": "Temple",
+      "summary": "A tall curving sanctuary tower rises behind lower halls.",
+      "history": "The principal fabric of Lingaraj belongs to the eleventh century. The Ekamra Kshetra dossier places it within a wider landscape of shrines and sacred water bodies.",
+      "layout_notes": "A tall curving sanctuary tower rises behind lower halls. The enclosed precinct contains subsidiary shrines.",
+      "year_from": 1001,
+      "year_to": 1100,
+      "date_label": "Principal phase, 11th century CE",
+      "date_precision": "range",
+      "aliases": [
+        "Lingaraja Temple"
+      ],
+      "styles": [
+        {
+          "name": "Kalinga",
+          "description": "",
+          "notes": "The principal fabric of Lingaraj belongs to the eleventh century. The Ekamra Kshetra dossier places it within a wider landscape of shrines and sacred water bodies.",
+          "source": "india100-lingaraj-temple-bhubaneswar",
+          "locator": "Lingaraj Temple and Ekamra Kshetra"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Curvilinear shikhara",
+          "description": "",
+          "notes": "A tall curving sanctuary tower rises behind lower halls. The enclosed precinct contains subsidiary shrines.",
+          "source": "india100-lingaraj-temple-bhubaneswar",
+          "locator": "Lingaraj Temple and Ekamra Kshetra"
+        },
+        {
+          "name": "Mandapa",
+          "description": "",
+          "notes": "A tall curving sanctuary tower rises behind lower halls. The enclosed precinct contains subsidiary shrines.",
+          "source": "india100-lingaraj-temple-bhubaneswar",
+          "locator": "Lingaraj Temple and Ekamra Kshetra"
+        },
+        {
+          "name": "Sculptural relief",
+          "description": "",
+          "notes": "A tall curving sanctuary tower rises behind lower halls. The enclosed precinct contains subsidiary shrines.",
+          "source": "india100-lingaraj-temple-bhubaneswar",
+          "locator": "Lingaraj Temple and Ekamra Kshetra"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-lingaraj-temple-bhubaneswar",
+          "topic": "Historical context and chronology",
+          "locator": "Lingaraj Temple and Ekamra Kshetra",
+          "note": "The principal fabric of Lingaraj belongs to the eleventh century. The Ekamra Kshetra dossier places it within a wider landscape of shrines and sacred water bodies."
+        },
+        {
+          "source": "india100-lingaraj-temple-bhubaneswar",
+          "topic": "Plan and visible architectural features",
+          "locator": "Lingaraj Temple and Ekamra Kshetra",
+          "note": "A tall curving sanctuary tower rises behind lower halls. The enclosed precinct contains subsidiary shrines."
+        }
+      ],
+      "latitude": 20.23833,
+      "longitude": 85.83361
+    },
+    {
+      "slug": "gwalior-fort",
+      "name": "Gwalior Fort",
+      "site": "india100-gwalior-fort",
+      "type": "Fort",
+      "summary": "Walls follow the sandstone plateau.",
+      "history": "The fort's known history spans much earlier evidence than the Tomar palace phase. The tentative-list dossier identifies extensive work under Man Singh Tomar.",
+      "layout_notes": "Walls follow the sandstone plateau. Palaces, temples and rock-cut Jain monuments are distributed across the fortified site.",
+      "year_from": 1398,
+      "year_to": 1516,
+      "date_label": "Tomar phase, 1398–1516 CE",
+      "date_precision": "range",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Rajput",
+          "description": "",
+          "notes": "The fort's known history spans much earlier evidence than the Tomar palace phase. The tentative-list dossier identifies extensive work under Man Singh Tomar.",
+          "source": "india100-gwalior-fort",
+          "locator": "History and palace structures"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Sandstone",
+          "description": "",
+          "notes": "Sandstone is documented in the architectural account of Gwalior Fort.",
+          "source": "india100-gwalior-fort",
+          "locator": "History and palace structures"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Fortification wall",
+          "description": "A defensive wall defining or protecting an enclosed area.",
+          "notes": "Walls follow the sandstone plateau. Palaces, temples and rock-cut Jain monuments are distributed across the fortified site.",
+          "source": "india100-gwalior-fort",
+          "locator": "History and palace structures"
+        },
+        {
+          "name": "Gateway",
+          "description": "",
+          "notes": "Walls follow the sandstone plateau. Palaces, temples and rock-cut Jain monuments are distributed across the fortified site.",
+          "source": "india100-gwalior-fort",
+          "locator": "History and palace structures"
+        },
+        {
+          "name": "Tower",
+          "description": "A tall structure rising above its surroundings or adjoining building.",
+          "notes": "Walls follow the sandstone plateau. Palaces, temples and rock-cut Jain monuments are distributed across the fortified site.",
+          "source": "india100-gwalior-fort",
+          "locator": "History and palace structures"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-gwalior-fort",
+          "topic": "Historical context and chronology",
+          "locator": "History and palace structures",
+          "note": "The fort's known history spans much earlier evidence than the Tomar palace phase. The tentative-list dossier identifies extensive work under Man Singh Tomar."
+        },
+        {
+          "source": "india100-gwalior-fort",
+          "topic": "Plan and visible architectural features",
+          "locator": "History and palace structures",
+          "note": "Walls follow the sandstone plateau. Palaces, temples and rock-cut Jain monuments are distributed across the fortified site."
+        }
+      ],
+      "latitude": 26.2303,
+      "longitude": 78.1689
+    },
+    {
+      "slug": "jahaz-mahal-mandu",
+      "name": "Jahaz Mahal, Mandu",
+      "site": "india100-jahaz-mahal-mandu",
+      "type": "Palace",
+      "summary": "A long double-storey range with terraces and roof pavilions extends between the Munj and Kapur tanks.",
+      "history": "The Dhar district account attributes the palace to Ghiyasuddin Khalji. An architectural survey proposes the earlier reign of Mahmud Khalji I. The date range reflects both attributions.",
+      "layout_notes": "A long double-storey range with terraces and roof pavilions extends between the Munj and Kapur tanks.",
+      "year_from": 1436,
+      "year_to": 1500,
+      "date_label": "15th century CE, attribution disputed",
+      "date_precision": "range",
+      "aliases": [
+        "Ship Palace"
+      ],
+      "styles": [
+        {
+          "name": "Malwa Sultanate",
+          "description": "",
+          "notes": "The Dhar district account attributes the palace to Ghiyasuddin Khalji. The name Ship Palace describes the way it sits between two bodies of water.",
+          "source": "india100-jahaz-mahal-mandu",
+          "locator": "Description of the Ship Palace"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Pavilion",
+          "description": "A distinct roofed structure or section of a larger building.",
+          "notes": "A long double-storey range with terraces and roof pavilions extends between the Munj and Kapur tanks.",
+          "source": "india100-jahaz-mahal-mandu",
+          "locator": "Description of the Ship Palace"
+        },
+        {
+          "name": "Arch",
+          "description": "A curved structure spanning an opening.",
+          "notes": "A long double-storey range with terraces and roof pavilions extends between the Munj and Kapur tanks.",
+          "source": "india100-jahaz-mahal-mandu",
+          "locator": "Description of the Ship Palace"
+        },
+        {
+          "name": "Reservoir",
+          "description": "An engineered enclosure for storing water.",
+          "notes": "A long double-storey range with terraces and roof pavilions extends between the Munj and Kapur tanks.",
+          "source": "india100-jahaz-mahal-mandu",
+          "locator": "Description of the Ship Palace"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-jahaz-mahal-mandu",
+          "topic": "Historical context and chronology",
+          "locator": "Description of the Ship Palace",
+          "note": "The Dhar district account attributes the palace to Ghiyasuddin Khalji. An architectural survey proposes the earlier reign of Mahmud Khalji I. The date range reflects both attributions."
+        },
+        {
+          "source": "india100-jahaz-mahal-mandu",
+          "topic": "Plan and visible architectural features",
+          "locator": "Description of the Ship Palace",
+          "note": "A long double-storey range with terraces and roof pavilions extends between the Munj and Kapur tanks."
+        },
+        {
+          "source": "india100-jahaz-mahal-mandu-dating",
+          "topic": "Alternative patronage and date",
+          "locator": "Indo-Islamic Architecture, page 117",
+          "note": "The survey proposes Mahmud Khalji I as the patron."
+        }
+      ],
+      "latitude": 22.35545,
+      "longitude": 75.39324
+    },
+    {
+      "slug": "jahangir-mahal-orchha",
+      "name": "Jahangir Mahal, Orchha",
+      "site": "india100-jahangir-mahal-orchha",
+      "type": "Palace",
+      "summary": "Ranges enclose a central courtyard, with domed pavilions marking the corners and upper silhouette.",
+      "history": "Jahangir Mahal is associated with the Bundela ruler Bir Singh Deo. It forms part of the palace ensemble in Orchha's fortified river setting.",
+      "layout_notes": "Ranges enclose a central courtyard, with domed pavilions marking the corners and upper silhouette.",
+      "year_from": 1601,
+      "year_to": 1627,
+      "date_label": "Early 17th century CE",
+      "date_precision": "range",
+      "aliases": [
+        "Jehangir Mahal"
+      ],
+      "styles": [
+        {
+          "name": "Bundela",
+          "description": "",
+          "notes": "Jahangir Mahal is associated with the Bundela ruler Bir Singh Deo. It forms part of the palace ensemble in Orchha's fortified river setting.",
+          "source": "india100-jahangir-mahal-orchha",
+          "locator": "Description of palace plans and fort complex"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Sandstone",
+          "description": "",
+          "notes": "The palace uses red and yellow sandstone.",
+          "source": "india100-jahangir-mahal-orchha-fabric",
+          "locator": "Jahangir Mahal"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Chhatri",
+          "description": "A raised, domed pavilion, often open on its sides.",
+          "notes": "Ranges enclose a central courtyard, with domed pavilions marking the corners and upper silhouette.",
+          "source": "india100-jahangir-mahal-orchha",
+          "locator": "Description of palace plans and fort complex"
+        },
+        {
+          "name": "Courtyard",
+          "description": "",
+          "notes": "Ranges enclose a central courtyard, with domed pavilions marking the corners and upper silhouette.",
+          "source": "india100-jahangir-mahal-orchha",
+          "locator": "Description of palace plans and fort complex"
+        },
+        {
+          "name": "Gateway",
+          "description": "",
+          "notes": "Ranges enclose a central courtyard, with domed pavilions marking the corners and upper silhouette.",
+          "source": "india100-jahangir-mahal-orchha",
+          "locator": "Description of palace plans and fort complex"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-jahangir-mahal-orchha",
+          "topic": "Historical context and chronology",
+          "locator": "Description of palace plans and fort complex",
+          "note": "Jahangir Mahal is associated with the Bundela ruler Bir Singh Deo. It forms part of the palace ensemble in Orchha's fortified river setting."
+        },
+        {
+          "source": "india100-jahangir-mahal-orchha",
+          "topic": "Plan and visible architectural features",
+          "locator": "Description of palace plans and fort complex",
+          "note": "Ranges enclose a central courtyard, with domed pavilions marking the corners and upper silhouette."
+        }
+      ],
+      "latitude": 25.3507,
+      "longitude": 78.64422
+    },
+    {
+      "slug": "dhamek-stupa-sarnath",
+      "name": "Dhamek Stupa",
+      "site": "india100-dhamek-stupa-sarnath",
+      "type": "Stupa",
+      "summary": "A massive drum forms the principal volume.",
+      "history": "The stupa marks a Buddhist sacred landscape with several building periods. The standing cylinder incorporates a carved stone lower zone and brick upper fabric.",
+      "layout_notes": "A massive drum forms the principal volume. Niche recesses and carved bands articulate the lower part.",
+      "year_from": 501,
+      "year_to": 600,
+      "date_label": "Carved lower band, c. 6th century CE",
+      "date_precision": "range",
+      "aliases": [
+        "Dhamekh Stupa",
+        "Dhamekha Stupa"
+      ],
+      "styles": [
+        {
+          "name": "Buddhist",
+          "description": "",
+          "notes": "The stupa marks a Buddhist sacred landscape with several building periods. The standing cylinder incorporates a carved stone lower zone and brick upper fabric.",
+          "source": "india100-dhamek-stupa-sarnath",
+          "locator": "Sarnath monuments and the Dhamek Stupa"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Stone",
+          "description": "",
+          "notes": "Stone is documented in the architectural account of Dhamek Stupa.",
+          "source": "india100-dhamek-stupa-sarnath",
+          "locator": "Sarnath monuments and the Dhamek Stupa"
+        },
+        {
+          "name": "Brick",
+          "description": "",
+          "notes": "A massive drum forms the principal volume. Niche recesses and carved bands articulate the lower part.",
+          "source": "india100-dhamek-stupa-sarnath",
+          "locator": "Sarnath monuments and the Dhamek Stupa"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Stupa drum",
+          "description": "The cylindrical body or base of a stupa.",
+          "notes": "A massive drum forms the principal volume. Niche recesses and carved bands articulate the lower part.",
+          "source": "india100-dhamek-stupa-sarnath",
+          "locator": "Sarnath monuments and the Dhamek Stupa"
+        },
+        {
+          "name": "Sculptural relief",
+          "description": "",
+          "notes": "A massive drum forms the principal volume. Niche recesses and carved bands articulate the lower part.",
+          "source": "india100-dhamek-stupa-sarnath",
+          "locator": "Sarnath monuments and the Dhamek Stupa"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-dhamek-stupa-sarnath",
+          "topic": "Historical context and chronology",
+          "locator": "Sarnath monuments and the Dhamek Stupa",
+          "note": "The stupa marks a Buddhist sacred landscape with several building periods. The standing cylinder incorporates a carved stone lower zone and brick upper fabric."
+        },
+        {
+          "source": "india100-dhamek-stupa-sarnath",
+          "topic": "Plan and visible architectural features",
+          "locator": "Sarnath monuments and the Dhamek Stupa",
+          "note": "A massive drum forms the principal volume. Niche recesses and carved bands articulate the lower part."
+        },
+        {
+          "source": "india100-dhamek-stupa-sarnath-dating",
+          "topic": "Approximate date of the relief band",
+          "locator": "97. Gupta frieze, Dhamek Stupa",
+          "note": "Stylistic dating of the carved decoration points to approximately the sixth century."
+        }
+      ],
+      "latitude": 25.3808,
+      "longitude": 83.0245
+    },
+    {
+      "slug": "bara-imambara-lucknow",
+      "name": "Bara Imambara",
+      "site": "india100-bara-imambara-lucknow",
+      "type": "Imambara",
+      "summary": "A central vaulted hall is framed by subsidiary spaces, with passages above forming the Bhul Bhulaiya.",
+      "history": "Asaf-ud-Daula commissioned the imambara in 1784. Lucknow district records the building campaign in the context of famine relief.",
+      "layout_notes": "A central vaulted hall is framed by subsidiary spaces, with passages above forming the Bhul Bhulaiya.",
+      "year_from": 1784,
+      "year_to": 1791,
+      "date_label": "Construction, 1784–1791 CE",
+      "date_precision": "range",
+      "aliases": [
+        "Bada Imambara",
+        "Asafi Imambara"
+      ],
+      "styles": [
+        {
+          "name": "Awadhi",
+          "description": "",
+          "notes": "Asaf-ud-Daula commissioned the imambara in 1784. Lucknow district records the building campaign in the context of famine relief.",
+          "source": "india100-bara-imambara-lucknow",
+          "locator": "Construction and central hall"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Brick",
+          "description": "",
+          "notes": "A central vaulted hall is framed by subsidiary spaces, with passages above forming the Bhul Bhulaiya.",
+          "source": "india100-bara-imambara-lucknow",
+          "locator": "Construction and central hall"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Vault",
+          "description": "An arched construction spanning an interior space.",
+          "notes": "A central vaulted hall is framed by subsidiary spaces, with passages above forming the Bhul Bhulaiya.",
+          "source": "india100-bara-imambara-lucknow",
+          "locator": "Construction and central hall"
+        },
+        {
+          "name": "Arch",
+          "description": "A curved structure spanning an opening.",
+          "notes": "A central vaulted hall is framed by subsidiary spaces, with passages above forming the Bhul Bhulaiya.",
+          "source": "india100-bara-imambara-lucknow",
+          "locator": "Construction and central hall"
+        },
+        {
+          "name": "Gateway",
+          "description": "",
+          "notes": "A central vaulted hall is framed by subsidiary spaces, with passages above forming the Bhul Bhulaiya.",
+          "source": "india100-bara-imambara-lucknow",
+          "locator": "Construction and central hall"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-bara-imambara-lucknow",
+          "topic": "Historical context and chronology",
+          "locator": "Construction and central hall",
+          "note": "Asaf-ud-Daula commissioned the imambara in 1784. Lucknow district records the building campaign in the context of famine relief."
+        },
+        {
+          "source": "india100-bara-imambara-lucknow",
+          "topic": "Plan and visible architectural features",
+          "locator": "Construction and central hall",
+          "note": "A central vaulted hall is framed by subsidiary spaces, with passages above forming the Bhul Bhulaiya."
+        }
+      ],
+      "latitude": 26.86917,
+      "longitude": 80.91278
+    },
+    {
+      "slug": "kashi-vishwanath-varanasi",
+      "name": "Kashi Vishwanath Temple",
+      "site": "india100-kashi-vishwanath-varanasi",
+      "type": "Temple",
+      "summary": "The spired shrine sits within the dense historic setting of Varanasi and is linked to the ghats by the modern precinct route.",
+      "history": "The official Kashi portal credits Ahilyabai Holkar with rebuilding the present temple in 1780. The date describes the principal shrine within a larger living sacred precinct.",
+      "layout_notes": "The spired shrine sits within the dense historic setting of Varanasi and is linked to the ghats by the modern precinct route.",
+      "year_from": 1780,
+      "year_to": 1780,
+      "date_label": "Present principal shrine, 1780 CE",
+      "date_precision": "year",
+      "aliases": [
+        "Vishwanath Mandir",
+        "Kashi Vishveshwar"
+      ],
+      "styles": [
+        {
+          "name": "Nagara",
+          "description": "",
+          "notes": "The official Kashi portal credits Ahilyabai Holkar with rebuilding the present temple in 1780. The date describes the principal shrine within a larger living sacred precinct.",
+          "source": "india100-kashi-vishwanath-varanasi",
+          "locator": "History of the present temple and its management"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Curvilinear shikhara",
+          "description": "",
+          "notes": "The spired shrine sits within the dense historic setting of Varanasi and is linked to the ghats by the modern precinct route.",
+          "source": "india100-kashi-vishwanath-varanasi",
+          "locator": "History of the present temple and its management"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-kashi-vishwanath-varanasi",
+          "topic": "Historical context and chronology",
+          "locator": "History of the present temple and its management",
+          "note": "The official Kashi portal credits Ahilyabai Holkar with rebuilding the present temple in 1780. The date describes the principal shrine within a larger living sacred precinct."
+        },
+        {
+          "source": "india100-kashi-vishwanath-varanasi",
+          "topic": "Plan and visible architectural features",
+          "locator": "History of the present temple and its management",
+          "note": "The spired shrine sits within the dense historic setting of Varanasi and is linked to the ghats by the modern precinct route."
+        }
+      ],
+      "latitude": 25.31077,
+      "longitude": 83.01061
+    },
+    {
+      "slug": "rasmancha-bishnupur",
+      "name": "Rasmancha, Bishnupur",
+      "site": "india100-rasmancha-bishnupur",
+      "type": "Ritual pavilion",
+      "summary": "Repeated arches surround the central chamber on a raised platform beneath a pyramidal roof.",
+      "history": "The Malla ruler Bir Hambir is credited with building the Rasmancha. It served as a ceremonial gathering place for images during the Ras festival.",
+      "layout_notes": "Repeated arches surround the central chamber on a raised platform beneath a pyramidal roof.",
+      "year_from": 1600,
+      "year_to": 1600,
+      "date_label": "Built c. 1600 CE",
+      "date_precision": "approximate",
+      "aliases": [],
+      "styles": [
+        {
+          "name": "Bengal temple architecture",
+          "description": "",
+          "notes": "The Malla ruler Bir Hambir is credited with building the Rasmancha. It served as a ceremonial gathering place for images during the Ras festival.",
+          "source": "india100-rasmancha-bishnupur",
+          "locator": "Rasmancha entry"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Brick",
+          "description": "",
+          "notes": "Repeated arches surround the central chamber on a raised platform beneath a pyramidal roof.",
+          "source": "india100-rasmancha-bishnupur",
+          "locator": "Rasmancha entry"
+        },
+        {
+          "name": "Laterite",
+          "description": "",
+          "notes": "Laterite is documented in the architectural account of Rasmancha, Bishnupur.",
+          "source": "india100-rasmancha-bishnupur",
+          "locator": "Rasmancha entry"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Arch",
+          "description": "A curved structure spanning an opening.",
+          "notes": "Repeated arches surround the central chamber on a raised platform beneath a pyramidal roof.",
+          "source": "india100-rasmancha-bishnupur",
+          "locator": "Rasmancha entry"
+        },
+        {
+          "name": "Plinth",
+          "description": "A raised base supporting a building or architectural feature.",
+          "notes": "Repeated arches surround the central chamber on a raised platform beneath a pyramidal roof.",
+          "source": "india100-rasmancha-bishnupur",
+          "locator": "Rasmancha entry"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-rasmancha-bishnupur",
+          "topic": "Historical context and chronology",
+          "locator": "Rasmancha entry",
+          "note": "The Malla ruler Bir Hambir is credited with building the Rasmancha. It served as a ceremonial gathering place for images during the Ras festival."
+        },
+        {
+          "source": "india100-rasmancha-bishnupur",
+          "topic": "Plan and visible architectural features",
+          "locator": "Rasmancha entry",
+          "note": "Repeated arches surround the central chamber on a raised platform beneath a pyramidal roof."
+        }
+      ],
+      "latitude": 23.07171,
+      "longitude": 87.32679
+    },
+    {
+      "slug": "mattancherry-palace",
+      "name": "Mattancherry Palace",
+      "site": "india100-mattancherry-palace",
+      "type": "Palace",
+      "summary": "Four ranges enclose a central courtyard.",
+      "history": "The Portuguese built the palace around 1555 and presented it to the ruler of Cochin. The Dutch renovated the building in the seventeenth century.",
+      "layout_notes": "Four ranges enclose a central courtyard. Sloped roofs and mural-painted interiors characterize the ensemble.",
+      "year_from": 1555,
+      "year_to": 1555,
+      "date_label": "Built c. 1555 CE",
+      "date_precision": "approximate",
+      "aliases": [
+        "Mattanchery Palace",
+        "Dutch Palace Kochi"
+      ],
+      "styles": [
+        {
+          "name": "Kerala vernacular",
+          "description": "",
+          "notes": "The Portuguese built the palace around 1555 and presented it to the ruler of Cochin. The Dutch renovated the building in the seventeenth century.",
+          "source": "india100-mattancherry-palace",
+          "locator": "Description and architectural plan"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Courtyard",
+          "description": "",
+          "notes": "Four ranges enclose a central courtyard. Sloped roofs and mural-painted interiors characterize the ensemble.",
+          "source": "india100-mattancherry-palace",
+          "locator": "Description and architectural plan"
+        },
+        {
+          "name": "Pitched roof",
+          "description": "A roof formed with one or more sloping surfaces.",
+          "notes": "Four ranges enclose a central courtyard. Sloped roofs and mural-painted interiors characterize the ensemble.",
+          "source": "india100-mattancherry-palace",
+          "locator": "Description and architectural plan"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-mattancherry-palace",
+          "topic": "Historical context and chronology",
+          "locator": "Description and architectural plan",
+          "note": "The Portuguese built the palace around 1555 and presented it to the ruler of Cochin. The Dutch renovated the building in the seventeenth century."
+        },
+        {
+          "source": "india100-mattancherry-palace",
+          "topic": "Plan and visible architectural features",
+          "locator": "Description and architectural plan",
+          "note": "Four ranges enclose a central courtyard. Sloped roofs and mural-painted interiors characterize the ensemble."
+        }
+      ],
+      "latitude": 9.958,
+      "longitude": 76.259
+    },
+    {
+      "slug": "mysore-palace",
+      "name": "Mysore Palace",
+      "site": "india100-mysore-palace",
+      "type": "Palace",
+      "summary": "Domed towers and arcades organize the main façade.",
+      "history": "The Wadiyar palace was rebuilt after a fire in 1897. Henry Irwin designed the present palace, completed in 1912.",
+      "layout_notes": "Domed towers and arcades organize the main façade. The interior includes ceremonial halls and courtly spaces.",
+      "year_from": 1897,
+      "year_to": 1912,
+      "date_label": "Rebuilt, 1897–1912 CE",
+      "date_precision": "range",
+      "aliases": [
+        "Mysuru Palace",
+        "Amba Vilas Palace"
+      ],
+      "styles": [
+        {
+          "name": "Indo-Saracenic",
+          "description": "",
+          "notes": "The Wadiyar palace was rebuilt after a fire in 1897. Henry Irwin designed the present palace, completed in 1912.",
+          "source": "india100-mysore-palace",
+          "locator": "Description of palace and domed towers"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Granite",
+          "description": "",
+          "notes": "Granite is documented in the architectural account of Mysore Palace.",
+          "source": "india100-mysore-palace-detail",
+          "locator": "Architectural details and materials"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Dome",
+          "description": "",
+          "notes": "Domed towers and arcades organize the main façade. The interior includes ceremonial halls and courtly spaces.",
+          "source": "india100-mysore-palace",
+          "locator": "Description of palace and domed towers"
+        },
+        {
+          "name": "Arch",
+          "description": "A curved structure spanning an opening.",
+          "notes": "Domed towers and arcades organize the main façade. The interior includes ceremonial halls and courtly spaces.",
+          "source": "india100-mysore-palace",
+          "locator": "Description of palace and domed towers"
+        },
+        {
+          "name": "Pavilion",
+          "description": "A distinct roofed structure or section of a larger building.",
+          "notes": "Domed towers and arcades organize the main façade. The interior includes ceremonial halls and courtly spaces.",
+          "source": "india100-mysore-palace",
+          "locator": "Description of palace and domed towers"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-mysore-palace",
+          "topic": "Historical context and chronology",
+          "locator": "Description of palace and domed towers",
+          "note": "The Wadiyar palace was rebuilt after a fire in 1897. Henry Irwin designed the present palace, completed in 1912."
+        },
+        {
+          "source": "india100-mysore-palace",
+          "topic": "Plan and visible architectural features",
+          "locator": "Description of palace and domed towers",
+          "note": "Domed towers and arcades organize the main façade. The interior includes ceremonial halls and courtly spaces."
+        },
+        {
+          "source": "india100-mysore-palace-detail",
+          "topic": "Additional historical evidence",
+          "locator": "Construction period and 1940 extension",
+          "note": "Distinguishes completion of the replacement palace from a later extension."
+        }
+      ],
+      "latitude": 12.30389,
+      "longitude": 76.65444
+    },
+    {
+      "slug": "gol-gumbaz-vijayapura",
+      "name": "Gol Gumbaz",
+      "site": "india100-gol-gumbaz-vijayapura",
+      "type": "Tomb",
+      "summary": "A large dome crowns the square chamber, and four corner towers contain stairs to the upper level.",
+      "history": "Gol Gumbaz is the mausoleum of Muhammad Adil Shah of Bijapur. The domed chamber contains the Whispering Gallery around its interior.",
+      "layout_notes": "A large dome crowns the square chamber, and four corner towers contain stairs to the upper level.",
+      "year_from": 1626,
+      "year_to": 1656,
+      "date_label": "17th-century campaign, c. 1626–1656 CE",
+      "date_precision": "range",
+      "aliases": [
+        "Gol Gumbad",
+        "Gol Gumbaz Bijapur"
+      ],
+      "styles": [
+        {
+          "name": "Adil Shahi",
+          "description": "",
+          "notes": "Gol Gumbaz is the mausoleum of Muhammad Adil Shah of Bijapur. The domed chamber contains the Whispering Gallery around its interior.",
+          "source": "india100-gol-gumbaz-vijayapura",
+          "locator": "Description of mausoleum and gallery"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Dome",
+          "description": "",
+          "notes": "A large dome crowns the square chamber, and four corner towers contain stairs to the upper level.",
+          "source": "india100-gol-gumbaz-vijayapura",
+          "locator": "Description of mausoleum and gallery"
+        },
+        {
+          "name": "Tower",
+          "description": "A tall structure rising above its surroundings or adjoining building.",
+          "notes": "A large dome crowns the square chamber, and four corner towers contain stairs to the upper level.",
+          "source": "india100-gol-gumbaz-vijayapura",
+          "locator": "Description of mausoleum and gallery"
+        },
+        {
+          "name": "Arch",
+          "description": "A curved structure spanning an opening.",
+          "notes": "A large dome crowns the square chamber, and four corner towers contain stairs to the upper level.",
+          "source": "india100-gol-gumbaz-vijayapura",
+          "locator": "Description of mausoleum and gallery"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-gol-gumbaz-vijayapura",
+          "topic": "Historical context and chronology",
+          "locator": "Description of mausoleum and gallery",
+          "note": "Gol Gumbaz is the mausoleum of Muhammad Adil Shah of Bijapur. The domed chamber contains the Whispering Gallery around its interior."
+        },
+        {
+          "source": "india100-gol-gumbaz-vijayapura",
+          "topic": "Plan and visible architectural features",
+          "locator": "Description of mausoleum and gallery",
+          "note": "A large dome crowns the square chamber, and four corner towers contain stairs to the upper level."
+        }
+      ],
+      "latitude": 16.83003,
+      "longitude": 75.7361
+    },
+    {
+      "slug": "cellular-jail-port-blair",
+      "name": "Cellular Jail",
+      "site": "india100-cellular-jail-port-blair",
+      "type": "Prison",
+      "summary": "Three-storey wings radiated from a central surveillance tower.",
+      "history": "The colonial prison was built for cellular confinement and held political prisoners. Only part of its original seven-wing plan survives.",
+      "layout_notes": "Three-storey wings radiated from a central surveillance tower. Corridors ran along rows of individual cells.",
+      "year_from": 1896,
+      "year_to": 1906,
+      "date_label": "Construction, 1896–1906 CE",
+      "date_precision": "range",
+      "aliases": [
+        "Kala Pani",
+        "Port Blair Cellular Jail"
+      ],
+      "styles": [
+        {
+          "name": "Colonial penal architecture",
+          "description": "",
+          "notes": "The colonial prison was built for cellular confinement and held political prisoners. Only part of its original seven-wing plan survives.",
+          "source": "india100-cellular-jail-port-blair",
+          "locator": "Description, radial plan and National Memorial"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Brick",
+          "description": "",
+          "notes": "Three-storey wings radiated from a central surveillance tower. Corridors ran along rows of individual cells.",
+          "source": "india100-cellular-jail-port-blair",
+          "locator": "Description, radial plan and National Memorial"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Radial prison wing",
+          "description": "A block of prison cells extending from a shared central point.",
+          "notes": "Three-storey wings radiated from a central surveillance tower. Corridors ran along rows of individual cells.",
+          "source": "india100-cellular-jail-port-blair",
+          "locator": "Description, radial plan and National Memorial"
+        },
+        {
+          "name": "Tower",
+          "description": "A tall structure rising above its surroundings or adjoining building.",
+          "notes": "Three-storey wings radiated from a central surveillance tower. Corridors ran along rows of individual cells.",
+          "source": "india100-cellular-jail-port-blair",
+          "locator": "Description, radial plan and National Memorial"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-cellular-jail-port-blair",
+          "topic": "Historical context and chronology",
+          "locator": "Description, radial plan and National Memorial",
+          "note": "The colonial prison was built for cellular confinement and held political prisoners. Only part of its original seven-wing plan survives."
+        },
+        {
+          "source": "india100-cellular-jail-port-blair",
+          "topic": "Plan and visible architectural features",
+          "locator": "Description, radial plan and National Memorial",
+          "note": "Three-storey wings radiated from a central surveillance tower. Corridors ran along rows of individual cells."
+        }
+      ],
+      "latitude": 11.6743,
+      "longitude": 92.7485
+    },
+    {
+      "slug": "leh-palace",
+      "name": "Leh Palace",
+      "site": "india100-leh-palace",
+      "type": "Palace",
+      "summary": "The stacked volumes rise in terraces against the ridge.",
+      "history": "The nine-storey palace was built in the seventeenth century under Sengge Namgyal. The National Culture Fund documents its masonry, sun-dried bricks and timber.",
+      "layout_notes": "The stacked volumes rise in terraces against the ridge. Windows and projecting timber details break up the long elevations.",
+      "year_from": 1601,
+      "year_to": 1700,
+      "date_label": "17th century CE",
+      "date_precision": "range",
+      "aliases": [
+        "Lachen Palkar Palace"
+      ],
+      "styles": [
+        {
+          "name": "Tibetan-Ladakhi",
+          "description": "",
+          "notes": "The nine-storey palace is linked to the Namgyal ruler Sengge Namgyal. It stands above the old town of Leh.",
+          "source": "india100-leh-palace",
+          "locator": "Namgyal dynasty and palace"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Stone",
+          "description": "",
+          "notes": "Stone masonry forms the banded walls.",
+          "source": "india100-leh-palace",
+          "locator": "Brief history and materials of the monument"
+        },
+        {
+          "name": "Timber",
+          "description": "",
+          "notes": "The source documents poplar, juniper and willow.",
+          "source": "india100-leh-palace",
+          "locator": "Brief history and materials of the monument"
+        },
+        {
+          "name": "Mud brick",
+          "description": "",
+          "notes": "Sun-dried mud bricks are used with stone and wood.",
+          "source": "india100-leh-palace",
+          "locator": "Brief history and materials of the monument"
+        }
+      ],
+      "elements": [
+        {
+          "name": "Terrace",
+          "description": "An open, level platform or roof area within a building or landscape.",
+          "notes": "The stacked volumes rise in terraces against the ridge. Windows and projecting timber details break up the long elevations.",
+          "source": "india100-leh-palace",
+          "locator": "Namgyal dynasty and palace"
+        },
+        {
+          "name": "Timber window",
+          "description": "A window opening framed or screened by timber components.",
+          "notes": "The stacked volumes rise in terraces against the ridge. Windows and projecting timber details break up the long elevations.",
+          "source": "india100-leh-palace",
+          "locator": "Namgyal dynasty and palace"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-leh-palace",
+          "topic": "Historical context and chronology",
+          "locator": "Brief history and materials of the monument",
+          "note": "The nine-storey palace was built in the seventeenth century under Sengge Namgyal. The National Culture Fund documents its masonry, sun-dried bricks and timber."
+        },
+        {
+          "source": "india100-leh-palace",
+          "topic": "Plan and visible architectural features",
+          "locator": "Namgyal dynasty and palace",
+          "note": "The stacked volumes rise in terraces against the ridge. Windows and projecting timber details break up the long elevations."
+        }
+      ],
+      "latitude": 34.16628,
+      "longitude": 77.58639
+    },
+    {
+      "slug": "tawang-monastery",
+      "name": "Tawang Monastery",
+      "site": "india100-tawang-monastery",
+      "type": "Monastery",
+      "summary": "The Dukhang assembly hall is the ceremonial focus of a hilltop precinct that also contains residential and monastic buildings.",
+      "history": "Merak Lama Lodre Gyatso founded the monastery in the late seventeenth century. It remains a working Buddhist institution.",
+      "layout_notes": "The Dukhang assembly hall is the ceremonial focus of a hilltop precinct that also contains residential and monastic buildings.",
+      "year_from": 1680,
+      "year_to": 1681,
+      "date_label": "Founded in 1680–1681 CE",
+      "date_precision": "range",
+      "aliases": [
+        "Galden Namgey Lhatse"
+      ],
+      "styles": [
+        {
+          "name": "Tibetan Buddhist",
+          "description": "",
+          "notes": "Merak Lama Lodre Gyatso founded the monastery in the late seventeenth century. It remains a working Buddhist institution.",
+          "source": "india100-tawang-monastery",
+          "locator": "Tawang Monastery, history and assembly hall"
+        }
+      ],
+      "materials": [],
+      "elements": [
+        {
+          "name": "Assembly hall",
+          "description": "A communal room used for assemblies, ceremonies or prayers.",
+          "notes": "The Dukhang assembly hall is the ceremonial focus of a hilltop precinct that also contains residential and monastic buildings.",
+          "source": "india100-tawang-monastery",
+          "locator": "Tawang Monastery, history and assembly hall"
+        },
+        {
+          "name": "Courtyard",
+          "description": "",
+          "notes": "The Dukhang assembly hall is the ceremonial focus of a hilltop precinct that also contains residential and monastic buildings.",
+          "source": "india100-tawang-monastery",
+          "locator": "Tawang Monastery, history and assembly hall"
+        },
+        {
+          "name": "Pitched roof",
+          "description": "A roof formed with one or more sloping surfaces.",
+          "notes": "Sloped roofs cap the assembly hall and surrounding monastic buildings.",
+          "source": "india100-tawang-monastery",
+          "locator": "Tawang Monastery and photo gallery"
+        }
+      ],
+      "citations": [
+        {
+          "source": "india100-tawang-monastery",
+          "topic": "Historical context and chronology",
+          "locator": "Tawang Monastery, history and assembly hall",
+          "note": "Merak Lama Lodre Gyatso founded the monastery in the late seventeenth century. It remains a working Buddhist institution."
+        },
+        {
+          "source": "india100-tawang-monastery",
+          "topic": "Plan and visible architectural features",
+          "locator": "Tawang Monastery, history and assembly hall",
+          "note": "The Dukhang assembly hall is the ceremonial focus of a hilltop precinct that also contains residential and monastic buildings."
+        }
+      ],
+      "latitude": 27.58639,
+      "longitude": 91.8575
+    }
+  ]
+}

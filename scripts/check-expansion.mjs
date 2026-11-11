@@ -4,9 +4,11 @@ import {pool} from '../server/db.mjs';
 import {getBuilding,listBuildings,statistics} from '../server/catalogue.mjs';
 import expansion from '../research/expansion.mjs';
 try{
- const catalogue=await listBuildings({limit:120,states:'Karnataka'});assert.equal(catalogue.total,30,'Expected all 30 monuments to be published');
- const stats=await statistics();assert.equal(new Set(catalogue.items.map(b=>b.site)).size,7);
  const expected={Hampi:8,Pattadakal:7,Badami:6,Aihole:6,Belur:1,Halebidu:1,Somanathapura:1};
+ const catalogue=await listBuildings({limit:120,states:'Karnataka'});
+ const original=catalogue.items.filter(b=>Object.hasOwn(expected,b.site));
+ assert.equal(original.length,30,'Expected all 30 original monuments to be published');
+ const stats=await statistics();
  for(const[name,count]of Object.entries(expected))assert.equal(stats.sites.find(x=>x.name===name)?.count,count,`${name} count`);
  for(const entry of expansion.buildings){const building=await getBuilding(entry.slug);assert.ok(building,entry.slug);assert.equal(building.images.length,2,`${entry.slug} gallery`);assert.ok(building.images.some(x=>x.is_cover));assert.ok(building.citations.length);assert.ok(building.elements.length);}
  const backups=(await readdir('.local/backups')).filter(x=>/^catalogue-\d+\.json$/.test(x)).sort().reverse();
@@ -18,7 +20,7 @@ try{
   const current=(await pool.query(`SELECT * FROM ${table} WHERE id=ANY($1::int[]) ORDER BY id`,[old.map(x=>x.id)])).rows;
   assert.equal(JSON.stringify(current),JSON.stringify(old),`Existing ${table} records changed`);
  }
- const photos=(await pool.query("SELECT count(*)::int AS n FROM images i JOIN buildings b ON b.id=i.building_id JOIN sites s ON s.id=b.site_id WHERE i.approved AND s.state='Karnataka'")).rows[0].n;
+ const photos=(await pool.query('SELECT count(*)::int AS n FROM images WHERE approved AND building_id=ANY($1::int[])',[original.map(b=>b.id)])).rows[0].n;
  assert.equal(photos,59,'All 59 selected photographs should be reviewed and imported');
- console.log(`Verified ${catalogue.total} published monuments across 7 Karnataka sites with ${photos} approved photographs. Existing records preserved.`);
+ console.log(`Verified ${original.length} published monuments across the original 7 Karnataka sites with ${photos} approved photographs. Existing records preserved.`);
 }finally{await pool.end();}

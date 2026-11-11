@@ -63,14 +63,18 @@ export async function listBuildings(query,{admin=false}={}) {
  const rows=await pool.query(`SELECT b.id FROM buildings b ${predicate} ORDER BY ${order} LIMIT ${add(f.limit)} OFFSET ${add((f.page-1)*f.limit)}`,params);
  return {items:await Promise.all(rows.rows.map(x=>getBuilding(x.id,{byId:true,admin}))),total:count.rows[0].total,page:f.page,limit:f.limit};
 }
-export async function saveBuilding(input,buildingId=null) {
+export async function saveBuilding(input,buildingId=null,{coordinates}={}) {
  const b=buildingSchema.parse(input);
  for(const image of b.images.filter(x=>x.approved)) {try{await access(`media/display/${image.storage_key}-1600.webp`);}catch{throw Object.assign(new Error(`Prepared photograph ${image.storage_key} is missing. Import the file before approving it.`),{status:400});}}
  return transaction(async client=>{
  const fields=['name','slug','site_id','type_id','summary','history','layout_notes','year_from','year_to','date_label','date_precision','status'];
  let idValue=buildingId;
  if(buildingId){const result=await client.query(`UPDATE buildings SET ${fields.map((x,i)=>`${x}=$${i+1}`).join(',')},updated_at=now() WHERE id=$${fields.length+1} RETURNING id`,[...fields.map(x=>b[x]),buildingId]);if(!result.rowCount)throw Object.assign(new Error('Building not found.'),{status:404});}
- else{idValue=(await client.query(`INSERT INTO buildings(${fields.join(',')}) VALUES(${fields.map((_,i)=>`$${i+1}`).join(',')}) RETURNING id`,fields.map(x=>b[x]))).rows[0].id;}
+ else{
+  const columns=[...fields,'latitude','longitude'];
+  const values=[...fields.map(field=>b[field]),coordinates?.latitude??null,coordinates?.longitude??null];
+  idValue=(await client.query(`INSERT INTO buildings(${columns.join(',')}) VALUES(${columns.map((_,i)=>`$${i+1}`).join(',')}) RETURNING id`,values)).rows[0].id;
+ }
  const previous=(await client.query('SELECT storage_key,element_id,label,x::float8,y::float8,note FROM hotspots WHERE building_id=$1',[idValue])).rows;
  const images=b.images.map(im=>({...im,hotspots:im.hotspots??previous.filter(h=>h.storage_key===im.storage_key&&b.elements.some(e=>e.id===h.element_id))}));
  buildingSchema.parse({...b,images});

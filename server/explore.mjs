@@ -49,7 +49,7 @@ export async function anatomy(slug){
 }
 
 export async function acrossTime(query){
- const schema=z.object({element:z.coerce.number().int().positive().optional(),from:z.coerce.number().int().min(-1000).max(2100).refine(x=>x!==0,'There is no year zero').default(-500),to:z.coerce.number().int().min(-1000).max(2100).refine(x=>x!==0,'There is no year zero').default(2000)}).refine(x=>x.from<=x.to,'Start year must not exceed end year.');
+ const schema=z.object({element:z.coerce.number().int().positive().optional(),from:z.coerce.number().int().min(-4000).max(2100).refine(x=>x!==0,'There is no year zero').default(-3000),to:z.coerce.number().int().min(-4000).max(2100).refine(x=>x!==0,'There is no year zero').default(2000)}).refine(x=>x.from<=x.to,'Start year must not exceed end year.');
  const filters=schema.parse(query);
  const rows=(await pool.query(`SELECT b.id FROM buildings b WHERE b.status='published'
  AND ($1::int IS NULL OR EXISTS(SELECT 1 FROM building_elements be WHERE be.building_id=b.id AND be.element_id=$1))

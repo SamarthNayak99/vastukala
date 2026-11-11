@@ -1,5 +1,12 @@
 # Changelog
 
+## India catalogue expansion
+
+- Add 40 researched monuments for a total of 100 at 73 sites across 21 states and union territories.
+- Add openly licensed photographs, cited anatomy hotspots, mapped locations, and historical events for the new records.
+- Feature the Lotus Temple, Ramappa Temple, Mysore Palace, and the Qutb Shahi Tombs in the homepage slideshow.
+- Extend the chronology bounds to include Dholavira's occupation range. See [the expansion inventory](docs/india-100.md).
+
 ## DBMS Lab — local addition, 1 November 2026
 
 - Optional corner entry and lazily loaded educational route with 13 lessons and four guided challenges.

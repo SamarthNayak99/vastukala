@@ -1,0 +1,389 @@
+[
+  {
+    "building": "csm-terminus-mumbai",
+    "storage_key": "india100-csm-terminus-mumbai-overview",
+    "element": "Pointed arch",
+    "x": 50,
+    "y": 31,
+    "label": "Pointed opening on the clock tower",
+    "note": "The historic terminus from the street."
+  },
+  {
+    "building": "gateway-of-india-mumbai",
+    "storage_key": "india100-gateway-of-india-mumbai-overview",
+    "element": "Arch",
+    "x": 49,
+    "y": 60,
+    "label": "Main harbour-facing arch",
+    "note": "The Gateway of India and its central opening."
+  },
+  {
+    "building": "lotus-temple-delhi",
+    "storage_key": "india100-lotus-temple-delhi-overview",
+    "element": "Shell structure",
+    "x": 49,
+    "y": 62,
+    "label": "Central petal shell",
+    "note": "Petal shells of the Bahá’í House of Worship."
+  },
+  {
+    "building": "jama-masjid-delhi",
+    "storage_key": "india100-jama-masjid-delhi-overview",
+    "element": "Minaret",
+    "x": 13,
+    "y": 43,
+    "label": "Left minaret of the prayer hall",
+    "note": "Prayer hall of the Jama Masjid from the courtyard."
+  },
+  {
+    "building": "india-gate-delhi",
+    "storage_key": "india100-india-gate-delhi-overview",
+    "element": "Arch",
+    "x": 49,
+    "y": 46,
+    "label": "Memorial arch",
+    "note": "The freestanding memorial arch."
+  },
+  {
+    "building": "jantar-mantar-jaipur",
+    "storage_key": "india100-jantar-mantar-jaipur-overview",
+    "element": "Astronomical instrument",
+    "x": 52,
+    "y": 55,
+    "label": "Fixed masonry instrument",
+    "note": "The observatory instruments from above."
+  },
+  {
+    "building": "chittorgarh-fort",
+    "storage_key": "india100-chittorgarh-fort-overview",
+    "element": "Tower",
+    "x": 64,
+    "y": 27,
+    "label": "Tower rising above the fort",
+    "note": "The fortified hilltop at Chittorgarh."
+  },
+  {
+    "building": "kumbhalgarh-fort",
+    "storage_key": "india100-kumbhalgarh-fort-overview",
+    "element": "Fortification wall",
+    "x": 53,
+    "y": 55,
+    "label": "Ramparts across the ridge",
+    "note": "The ridge and defensive ramparts at Kumbhalgarh."
+  },
+  {
+    "building": "mehrangarh-fort-jodhpur",
+    "storage_key": "india100-mehrangarh-fort-jodhpur-overview",
+    "element": "Gateway",
+    "x": 53,
+    "y": 57,
+    "label": "Arched passage into the palace court",
+    "note": "The palace courtyard and arched entrance at Mehrangarh."
+  },
+  {
+    "building": "ranakpur-jain-temple",
+    "storage_key": "india100-ranakpur-jain-temple-overview",
+    "element": "Mandapa",
+    "x": 47,
+    "y": 51,
+    "label": "Columned entrance pavilion",
+    "note": "The Adinatha temple seen from its entrance steps."
+  },
+  {
+    "building": "dilwara-temples",
+    "storage_key": "india100-dilwara-temples-overview",
+    "element": "Sculptural relief",
+    "x": 53,
+    "y": 46,
+    "label": "Carved figures on the ceiling",
+    "note": "Marble ceiling relief at the Dilwara temples."
+  },
+  {
+    "building": "somnath-temple",
+    "storage_key": "india100-somnath-temple-overview",
+    "element": "Curvilinear shikhara",
+    "x": 72,
+    "y": 34,
+    "label": "Tower above the sanctuary",
+    "note": "Side view of the rebuilt coastal shrine."
+  },
+  {
+    "building": "dwarkadhish-temple",
+    "storage_key": "india100-dwarkadhish-temple-overview",
+    "element": "Curvilinear shikhara",
+    "x": 26,
+    "y": 54,
+    "label": "Tower below the flag",
+    "note": "The Jagat Mandir shrine and its tower."
+  },
+  {
+    "building": "dholavira-harappan-city",
+    "storage_key": "india100-dholavira-harappan-city-overview",
+    "element": "Reservoir",
+    "x": 65,
+    "y": 52,
+    "label": "Stone-lined reservoir",
+    "note": "Excavated masonry and a reservoir at Dholavira."
+  },
+  {
+    "building": "jama-masjid-champaner",
+    "storage_key": "india100-jama-masjid-champaner-overview",
+    "element": "Minaret",
+    "x": 45,
+    "y": 33,
+    "label": "Minaret beside the main entrance",
+    "note": "The Champaner prayer hall framed by an arch."
+  },
+  {
+    "building": "sidi-saiyyed-mosque",
+    "storage_key": "india100-sidi-saiyyed-mosque-overview",
+    "element": "Pierced stone window",
+    "x": 63,
+    "y": 39,
+    "label": "Latticed rear window",
+    "note": "The rear wall of the mosque and its window screens."
+  },
+  {
+    "building": "ramappa-temple",
+    "storage_key": "india100-ramappa-temple-overview",
+    "element": "Vimana",
+    "x": 75,
+    "y": 32,
+    "label": "Tiered brick sanctuary tower",
+    "note": "The Ramappa shrine with its pillared hall and tower."
+  },
+  {
+    "building": "golconda-fort",
+    "storage_key": "india100-golconda-fort-overview",
+    "element": "Fortification wall",
+    "x": 66,
+    "y": 44,
+    "label": "Defensive wall above the inner precinct",
+    "note": "Walls and terraces inside Golconda Fort."
+  },
+  {
+    "building": "qutb-shahi-tombs",
+    "storage_key": "india100-qutb-shahi-tombs-overview",
+    "element": "Dome",
+    "x": 35,
+    "y": 46,
+    "label": "Ribbed dome of the foreground tomb",
+    "note": "Two domed tombs at sunset."
+  },
+  {
+    "building": "brihadisvara-gangaikonda-cholapuram",
+    "storage_key": "india100-brihadisvara-gangaikonda-cholapuram-flickr-overview",
+    "element": "Vimana",
+    "x": 48,
+    "y": 48,
+    "label": "Tiered tower above the shrine",
+    "note": "Brihadisvara Temple at Gangaikonda Cholapuram."
+  },
+  {
+    "building": "ranganathaswamy-srirangam",
+    "storage_key": "india100-ranganathaswamy-srirangam-flickr-overview",
+    "element": "Gopuram",
+    "x": 46,
+    "y": 43,
+    "label": "Sculpted gateway tower",
+    "note": "A sculpted gateway tower at Srirangam."
+  },
+  {
+    "building": "ramanathaswamy-rameswaram",
+    "storage_key": "india100-ramanathaswamy-rameswaram-flickr-overview",
+    "element": "Gopuram",
+    "x": 51,
+    "y": 45,
+    "label": "Gateway tower above the rooftops",
+    "note": "Gateway towers at Rameswaram."
+  },
+  {
+    "building": "kailasanatha-kanchipuram",
+    "storage_key": "india100-kailasanatha-kanchipuram-flickr-overview",
+    "element": "Sculptural relief",
+    "x": 52,
+    "y": 83,
+    "label": "Relief carved into the outer wall",
+    "note": "Sculpted sandstone and shrine roofs at Kailasanatha."
+  },
+  {
+    "building": "tirumala-venkateswara",
+    "storage_key": "india100-tirumala-venkateswara-flickr-overview",
+    "element": "Gopuram",
+    "x": 48,
+    "y": 43,
+    "label": "Lit entrance tower",
+    "note": "The Tirumala temple entrance and gathering area at night."
+  },
+  {
+    "building": "veerabhadra-temple-lepakshi",
+    "storage_key": "india100-veerabhadra-temple-lepakshi-flickr-overview",
+    "element": "Carved pillar",
+    "x": 64,
+    "y": 62,
+    "label": "Carved granite column",
+    "note": "Pillared hall at Veerabhadra Temple, Lepakshi."
+  },
+  {
+    "building": "lingaraj-temple-bhubaneswar",
+    "storage_key": "india100-lingaraj-temple-bhubaneswar-flickr-overview",
+    "element": "Curvilinear shikhara",
+    "x": 87,
+    "y": 39,
+    "label": "Tower over the principal shrine",
+    "note": "The Lingaraj precinct and curving sanctuary tower."
+  },
+  {
+    "building": "gwalior-fort",
+    "storage_key": "india100-gwalior-fort-flickr-overview",
+    "element": "Tower",
+    "x": 31,
+    "y": 29,
+    "label": "Domed tower above the fort façade",
+    "note": "The Man Mandir façade and domed towers at Gwalior Fort."
+  },
+  {
+    "building": "jahangir-mahal-orchha",
+    "storage_key": "india100-jahangir-mahal-orchha-flickr-overview",
+    "element": "Chhatri",
+    "x": 76,
+    "y": 50,
+    "label": "Domed rooftop pavilion",
+    "note": "Courtyard and upper pavilions of Jahangir Mahal."
+  },
+  {
+    "building": "dhamek-stupa-sarnath",
+    "storage_key": "india100-dhamek-stupa-sarnath-flickr-overview",
+    "element": "Stupa drum",
+    "x": 57,
+    "y": 31,
+    "label": "Cylindrical brick upper drum",
+    "note": "The stone and brick cylinder of the Dhamek Stupa."
+  },
+  {
+    "building": "ranakpur-jain-temple",
+    "storage_key": "india100-ranakpur-jain-temple-flickr-detail",
+    "element": "Carved pillar",
+    "x": 67,
+    "y": 56,
+    "label": "Carved interior support",
+    "note": "Close view of the carved pillars in the Adinatha temple."
+  },
+  {
+    "building": "sidi-saiyyed-mosque",
+    "storage_key": "india100-sidi-saiyyed-mosque-flickr-detail",
+    "element": "Pierced stone window",
+    "x": 53,
+    "y": 62,
+    "label": "Tree motif in the stone screen",
+    "note": "Close view of the carved tree-of-life window."
+  },
+  {
+    "building": "ramanathaswamy-rameswaram",
+    "storage_key": "india100-ramanathaswamy-rameswaram-flickr-detail",
+    "element": "Pillared corridor",
+    "x": 63,
+    "y": 51,
+    "label": "Repeating columns along the corridor",
+    "note": "Interior view along a pillared corridor at Rameswaram."
+  },
+  {
+    "building": "gol-gumbaz-vijayapura",
+    "storage_key": "india100-gol-gumbaz-vijayapura-flickr-overview",
+    "element": "Dome",
+    "x": 48,
+    "y": 34,
+    "label": "Dome over the central chamber",
+    "note": "Gol Gumbaz from its entrance axis."
+  },
+  {
+    "building": "cellular-jail-port-blair",
+    "storage_key": "india100-cellular-jail-port-blair-flickr-overview",
+    "element": "Radial prison wing",
+    "x": 86,
+    "y": 56,
+    "label": "Cell-block wing beside the open yard",
+    "note": "View along one of the surviving wings of the Cellular Jail."
+  },
+  {
+    "building": "jahaz-mahal-mandu",
+    "storage_key": "india100-jahaz-mahal-mandu-overview",
+    "element": "Pavilion",
+    "x": 33,
+    "y": 32,
+    "label": "Roof pavilion above the long palace range",
+    "note": "Jahaz Mahal from the side of the palace range."
+  },
+  {
+    "building": "bara-imambara-lucknow",
+    "storage_key": "india100-bara-imambara-lucknow-overview",
+    "element": "Arch",
+    "x": 49,
+    "y": 60,
+    "label": "Central arch of the imambara façade",
+    "note": "Bara Imambara and its formal garden."
+  },
+  {
+    "building": "rasmancha-bishnupur",
+    "storage_key": "india100-rasmancha-bishnupur-overview",
+    "element": "Arch",
+    "x": 49,
+    "y": 44,
+    "label": "Repeated arches around the platform",
+    "note": "The Rasmancha pavilion and its arcaded exterior."
+  },
+  {
+    "building": "mattancherry-palace",
+    "storage_key": "india100-mattancherry-palace-overview",
+    "element": "Pitched roof",
+    "x": 31,
+    "y": 27,
+    "label": "Sloping tiled roof",
+    "note": "The tiled roof and exterior walls of Mattancherry Palace."
+  },
+  {
+    "building": "mysore-palace",
+    "storage_key": "india100-mysore-palace-overview",
+    "element": "Dome",
+    "x": 57,
+    "y": 40,
+    "label": "Dome above a palace tower",
+    "note": "The front of Mysore Palace in daylight."
+  },
+  {
+    "building": "leh-palace",
+    "storage_key": "india100-leh-palace-overview",
+    "element": "Terrace",
+    "x": 76,
+    "y": 37,
+    "label": "Stepped upper palace levels",
+    "note": "Leh Palace on the ridge above the town."
+  },
+  {
+    "building": "tawang-monastery",
+    "storage_key": "india100-tawang-monastery-overview",
+    "element": "Pitched roof",
+    "x": 64,
+    "y": 63,
+    "label": "Sloping roof on the upper monastic complex",
+    "note": "The hilltop Tawang Monastery precinct and its mountain setting."
+  },
+  {
+    "building": "jagannath-temple-puri",
+    "storage_key": "india100-jagannath-temple-puri-overview",
+    "element": "Curvilinear shikhara",
+    "x": 58,
+    "y": 48,
+    "label": "Tower over the Jagannath shrine",
+    "note": "Jagannath Temple and its sanctuary tower during a festival."
+  },
+  {
+    "building": "kashi-vishwanath-varanasi",
+    "storage_key": "india100-kashi-vishwanath-varanasi-overview",
+    "element": "Curvilinear shikhara",
+    "x": 47,
+    "y": 26,
+    "label": "Gilded shrine tower",
+    "note": "The historic Kashi Vishwanath shrine tower through an entrance arch."
+  }
+]
