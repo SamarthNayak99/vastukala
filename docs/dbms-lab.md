@@ -21,6 +21,10 @@ The view exercise queries the actual `published_building_summary` view. Other qu
 
 ## Interactive schema
 
+The **ER diagrams** tab (`/dbms-lab?section=er-diagrams`) provides eight vector diagrams: the content overview, catalogue geography and primary type, material/style/element junctions, citation evidence, photographs and hotspots, sourced life events, operational tables, and temporary practice tables. Each diagram includes a plain-language explanation, key/cardinality legend, table inspection links, zoom controls and a full-size SVG link. Relationship registers identify all 22 declared foreign keys, including composite references. Operations are structure-only; administrator/session records remain excluded. Temporary relationships are explicitly separate from the permanent model.
+
+The diagram assets in `client/public/er-diagrams/` and their structural reference in `client/src/er-diagrams.json` represent migrations 001–007. Update both when changing the schema. The existing Schema explorer reads live public schema metadata; diagram connectors run parent-to-child, while its arrows run child-to-parent.
+
 `GET /api/lab/schema` reads current PostgreSQL column, constraint and index metadata for 16 explicitly allowed content tables. Authentication, sessions, migrations and seed bookkeeping are excluded. Foreign-key arrows point from the referencing table to the referenced parent. Keyboard-operable nodes and table buttons select a table; the current lesson's tables are highlighted.
 
 `GET /api/lab/tables/:name` returns at most eight sample rows using a server-owned column projection. Samples include published monuments and related public associations only; image rows must also be approved. All 36 controlled state/UT names are public. Unknown table names, including `admins` and `sessions`, are rejected.

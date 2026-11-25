@@ -1,0 +1,552 @@
+{
+  "pages": [
+    {
+      "id": "01-overview",
+      "title": "The complete heritage model",
+      "subtitle": "All 16 persistent content entities and all 22 declared foreign keys. Detailed attributes follow on the detailed diagrams.",
+      "names": [
+        "building_aliases",
+        "building_elements",
+        "building_events",
+        "building_materials",
+        "building_styles",
+        "building_types",
+        "buildings",
+        "citations",
+        "elements",
+        "hotspots",
+        "images",
+        "materials",
+        "sites",
+        "sources",
+        "states",
+        "styles"
+      ],
+      "notes": [
+        "Each R-number identifies a physical foreign key; the complete register appears on the relationship register below.",
+        "The four operational tables are separate from this content model and are shown on the operations diagram."
+      ],
+      "relationships": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17",
+        "R18",
+        "R19",
+        "R20",
+        "R21",
+        "R22"
+      ]
+    },
+    {
+      "id": "02-catalogue",
+      "title": "Places, monuments and primary classification",
+      "subtitle": "State / UT -> heritage site -> monument. Each monument has one primary building type and may have alternate names.",
+      "names": [
+        "states",
+        "sites",
+        "buildings",
+        "building_types",
+        "building_aliases"
+      ],
+      "notes": [
+        "All columns are shown. PK = primary key; FK = foreign-key participant; UQ = single-column uniqueness; ? = nullable.",
+        "Site state is a natural-key reference to states.name. Map fields are approximate site reference points.",
+        "Narratives, construction ranges and individual coordinates remain properties of buildings."
+      ],
+      "relationships": [
+        "R01",
+        "R10",
+        "R11",
+        "R22"
+      ]
+    },
+    {
+      "id": "03-taxonomies",
+      "title": "Materials, styles and architectural elements",
+      "subtitle": "Three many-to-many relationships, resolved through occurrence / junction tables.",
+      "names": [
+        "buildings",
+        "building_materials",
+        "materials",
+        "building_styles",
+        "styles",
+        "building_elements",
+        "elements"
+      ],
+      "notes": [
+        "buildings is abbreviated here; its complete definition is on the catalogue diagram. All category and junction fields are shown.",
+        "UNIQUE(building_id, material_id), UNIQUE(building_id, style_id), UNIQUE(building_id, element_id).",
+        "Local usage_notes / descriptions belong to the monument-category pair, not to the shared category definition."
+      ],
+      "relationships": [
+        "R02",
+        "R03",
+        "R06",
+        "R07",
+        "R08",
+        "R09"
+      ]
+    },
+    {
+      "id": "04-evidence",
+      "title": "Evidence, sources and assertion targets",
+      "subtitle": "A citation supports one monument, comes from one source, and may identify at most one specific occurrence.",
+      "names": [
+        "buildings",
+        "sources",
+        "citations",
+        "building_styles",
+        "building_materials",
+        "building_elements"
+      ],
+      "notes": [
+        "Sources and citations show all columns. Repeated monument/junction cards show only relevant keys.",
+        "CHECK(num_nonnulls(building_style_id, building_material_id, building_element_id) <= 1).",
+        "The three optional target FKs include building_id. This prevents evidence targeting another monument's occurrence."
+      ],
+      "relationships": [
+        "R02",
+        "R06",
+        "R08",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16"
+      ]
+    },
+    {
+      "id": "05-media",
+      "title": "Photographs and monument anatomy",
+      "subtitle": "An image belongs to a monument. A hotspot connects a position on that image to a local architectural element.",
+      "names": [
+        "buildings",
+        "images",
+        "building_elements",
+        "hotspots"
+      ],
+      "notes": [
+        "Images, hotspots and building_elements show all columns. buildings is abbreviated; see the catalogue diagram.",
+        "Hotspot -> image uses (building_id, storage_key); hotspot -> occurrence uses (building_id, element_id).",
+        "UNIQUE(building_id, storage_key, element_id); x/y are 0-100 percentages. Element-specific citation checks are application-level.",
+        "A partial unique index allows at most one cover image per building; publication prerequisites are application-level."
+      ],
+      "relationships": [
+        "R02",
+        "R17",
+        "R18",
+        "R19",
+        "R20",
+        "R21"
+      ]
+    },
+    {
+      "id": "06-events",
+      "title": "A monument's life through sourced events",
+      "subtitle": "Construction, additions, alterations, restorations, changes of use and recognition are separately dated records.",
+      "names": [
+        "buildings",
+        "sources",
+        "building_events"
+      ],
+      "notes": [
+        "Sources and building_events show all columns. buildings repeats only identification and construction-period fields.",
+        "Event years are -4000..2100, excluding zero; year_from <= year_to. Negative years represent BCE.",
+        "Building year zero is also rejected. NULL construction dates remain unknown; no historical influence relationship is implied."
+      ],
+      "relationships": [
+        "R04",
+        "R05"
+      ]
+    },
+    {
+      "id": "07-operations",
+      "title": "Authentication and runtime bookkeeping",
+      "subtitle": "Four permanent operational tables. No foreign keys are declared between these tables and the content entities.",
+      "names": [
+        "admins",
+        "sessions",
+        "schema_migrations",
+        "seed_tasks"
+      ],
+      "notes": [
+        "Only column definitions are shown: no account, password-hash or session values are included.",
+        "The application stores administrator session identity inside sessions.sess JSON; this is not a declared relational FK.",
+        "schema_migrations records applied SQL files; seed_tasks prevents curated data from being reapplied over administrator edits.",
+        "published_building_summary is a SQL view over buildings, sites and building_types, not another stored table."
+      ],
+      "relationships": []
+    },
+    {
+      "id": "08-lab-temporary",
+      "title": "DBMS Lab: temporary practice models",
+      "subtitle": "Disposable PostgreSQL TEMP tables created per exercise connection. None is a permanent catalogue entity.",
+      "notes": [
+        "Constraint / transaction exercises use lab_sites, lab_buildings and lab_links. UNIQUE(building_id, material) prevents duplicate non-null associations.",
+        "Practice site_id and building_id FKs are nullable in the actual teaching setup; their optional cardinalities are shown accurately.",
+        "lab_scale is an unrelated 40,000-row synthetic table made with CREATE TABLE AS. No PK or FK is declared; a site_id index is added for measurement.",
+        "No relationship to permanent monuments exists. Closing the connection destroys these tables after each exercise."
+      ]
+    }
+  ],
+  "fks": [
+    {
+      "table_name": "building_aliases",
+      "name": "building_aliases_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R01"
+    },
+    {
+      "table_name": "building_elements",
+      "name": "building_elements_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R02"
+    },
+    {
+      "table_name": "building_elements",
+      "name": "building_elements_element_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (element_id) REFERENCES elements(id) ON DELETE RESTRICT",
+      "referenced_table": "elements",
+      "columns": [
+        "element_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R03"
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R04"
+    },
+    {
+      "table_name": "building_events",
+      "name": "building_events_source_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (source_id) REFERENCES sources(id) ON DELETE RESTRICT",
+      "referenced_table": "sources",
+      "columns": [
+        "source_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R05"
+    },
+    {
+      "table_name": "building_materials",
+      "name": "building_materials_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R06"
+    },
+    {
+      "table_name": "building_materials",
+      "name": "building_materials_material_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (material_id) REFERENCES materials(id) ON DELETE RESTRICT",
+      "referenced_table": "materials",
+      "columns": [
+        "material_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R07"
+    },
+    {
+      "table_name": "building_styles",
+      "name": "building_styles_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R08"
+    },
+    {
+      "table_name": "building_styles",
+      "name": "building_styles_style_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (style_id) REFERENCES styles(id) ON DELETE RESTRICT",
+      "referenced_table": "styles",
+      "columns": [
+        "style_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R09"
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_site_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (site_id) REFERENCES sites(id) ON DELETE RESTRICT",
+      "referenced_table": "sites",
+      "columns": [
+        "site_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R10"
+    },
+    {
+      "table_name": "buildings",
+      "name": "buildings_type_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (type_id) REFERENCES building_types(id) ON DELETE RESTRICT",
+      "referenced_table": "building_types",
+      "columns": [
+        "type_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R11"
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_building_element_id_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_element_id, building_id) REFERENCES building_elements(id, building_id) ON DELETE CASCADE",
+      "referenced_table": "building_elements",
+      "columns": [
+        "building_element_id",
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id",
+        "building_id"
+      ],
+      "number": "R12"
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R13"
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_building_material_id_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_material_id, building_id) REFERENCES building_materials(id, building_id) ON DELETE CASCADE",
+      "referenced_table": "building_materials",
+      "columns": [
+        "building_material_id",
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id",
+        "building_id"
+      ],
+      "number": "R14"
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_building_style_id_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_style_id, building_id) REFERENCES building_styles(id, building_id) ON DELETE CASCADE",
+      "referenced_table": "building_styles",
+      "columns": [
+        "building_style_id",
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id",
+        "building_id"
+      ],
+      "number": "R15"
+    },
+    {
+      "table_name": "citations",
+      "name": "citations_source_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (source_id) REFERENCES sources(id) ON DELETE RESTRICT",
+      "referenced_table": "sources",
+      "columns": [
+        "source_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R16"
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_building_id_element_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id, element_id) REFERENCES building_elements(building_id, element_id) ON DELETE CASCADE",
+      "referenced_table": "building_elements",
+      "columns": [
+        "building_id",
+        "element_id"
+      ],
+      "referenced_columns": [
+        "building_id",
+        "element_id"
+      ],
+      "number": "R17"
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R18"
+    },
+    {
+      "table_name": "hotspots",
+      "name": "hotspots_building_id_storage_key_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id, storage_key) REFERENCES images(building_id, storage_key) ON DELETE CASCADE",
+      "referenced_table": "images",
+      "columns": [
+        "building_id",
+        "storage_key"
+      ],
+      "referenced_columns": [
+        "building_id",
+        "storage_key"
+      ],
+      "number": "R19"
+    },
+    {
+      "table_name": "images",
+      "name": "images_building_element_id_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_element_id, building_id) REFERENCES building_elements(id, building_id) ON DELETE CASCADE",
+      "referenced_table": "building_elements",
+      "columns": [
+        "building_element_id",
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id",
+        "building_id"
+      ],
+      "number": "R20"
+    },
+    {
+      "table_name": "images",
+      "name": "images_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R21"
+    },
+    {
+      "table_name": "sites",
+      "name": "sites_state_fk",
+      "kind": "f",
+      "definition": "FOREIGN KEY (state) REFERENCES states(name) ON DELETE RESTRICT",
+      "referenced_table": "states",
+      "columns": [
+        "state"
+      ],
+      "referenced_columns": [
+        "name"
+      ],
+      "number": "R22"
+    }
+  ],
+  "tables": [
+    "admins",
+    "building_aliases",
+    "building_elements",
+    "building_events",
+    "building_materials",
+    "building_styles",
+    "building_types",
+    "buildings",
+    "citations",
+    "elements",
+    "hotspots",
+    "images",
+    "materials",
+    "schema_migrations",
+    "seed_tasks",
+    "sessions",
+    "sites",
+    "sources",
+    "states",
+    "styles"
+  ],
+  "tableCount": 20,
+  "columnCount": 119
+}
