@@ -1,5 +1,6 @@
 import {z} from 'zod';
-import {pool} from './db.mjs';
+import pg from 'pg';
+import {pool,databaseUrl} from './db.mjs';
 
 // Only server-owned templates execute. Neither SQL text nor identifiers come from visitors.
 const integer=z.coerce.number().int().positive().max(2147483647);
@@ -69,8 +70,12 @@ const practiceStatements={
  'transaction-success':{sql:"UPDATE lab_buildings SET name='Edited practice monument' WHERE id=1;\nINSERT INTO lab_links(building_id,material) VALUES (1,'Granite');",why:'Both writes commit together in temporary practice tables.'},
  'transaction-failure':{sql:"UPDATE lab_buildings SET name='This edit must roll back' WHERE id=1;\nINSERT INTO lab_links(building_id,material) VALUES (1,'Sandstone');",why:'The second write fails; ROLLBACK also undoes the first name change.'}
 };
-export async function labPractice(body){const {scenario}=z.object({scenario:z.enum(Object.keys(practiceStatements))}).strict().parse(body);const c=await pool.connect();
+// TEMP tables must stay on one physical session across COMMIT / ROLLBACK.
+// Hosted transaction poolers require an explicitly configured direct URL here.
+function practiceClient(){return new pg.Client({connectionString:process.env.LAB_DATABASE_URL||databaseUrl,connectionTimeoutMillis:10000});}
+export async function labPractice(body){const {scenario}=z.object({scenario:z.enum(Object.keys(practiceStatements))}).strict().parse(body);const c=practiceClient();
  try{
+  await c.connect();
   await c.query("SET statement_timeout='5000ms'");
   const setup="CREATE TEMP TABLE lab_sites(id int PRIMARY KEY,name text NOT NULL);\nCREATE TEMP TABLE lab_buildings(\n id int PRIMARY KEY,site_id int REFERENCES lab_sites(id),\n name text NOT NULL,year_from int,year_to int,\n CHECK(year_from<=year_to));\nCREATE TEMP TABLE lab_links(\n building_id int REFERENCES lab_buildings(id),material text NOT NULL,\n UNIQUE(building_id,material));\nINSERT INTO lab_sites VALUES(1,'Fictional practice site');\nINSERT INTO lab_buildings VALUES(1,1,'Practice monument',1000,1100);\nINSERT INTO lab_links VALUES(1,'Sandstone');";
   await c.query(setup);
@@ -79,13 +84,14 @@ export async function labPractice(body){const {scenario}=z.object({scenario:z.en
   // These statements are fixed literals above, not a parser for user-submitted SQL.
   await c.query('BEGIN');try{for(const statement of task.sql.split(';').map(x=>x.trim()).filter(Boolean)){currentStatement=statement;const r=await c.query(statement);const interim=await snapshot();trace.push({statement,status:`${r.command} ${r.rowCount}`,monument_name:interim.buildings[0].name,material_links:interim.links.length});}await c.query('COMMIT');committed=true;}catch(e){trace.push({statement:currentStatement,status:`Rejected · ${e.code}`,monument_name:'Transaction aborted; inspect state after ROLLBACK',material_links:null});await c.query('ROLLBACK');error={code:e.code,message:e.message,constraint:e.constraint};}
   return {label:'Practice exercise · real PostgreSQL temporary tables',scenario,setup,trace,sql:`BEGIN;\n${task.sql}\n${committed?'COMMIT;':'-- PostgreSQL rejected a statement.\nROLLBACK;'}`,explanation:task.why,before,after:await snapshot(),error,committed,isolation:'Every run creates fresh, connection-local temporary tables. They are destroyed when this connection closes; catalogue tables are never written.'};
- }finally{c.release(true);}
+ }finally{await c.end();}
 }
-export async function labPerformance(){const c=await pool.connect();try{
+export async function labPerformance(){const c=practiceClient();try{
+ await c.connect();
  await c.query("SET statement_timeout='8000ms'");
  const setup="CREATE TEMP TABLE lab_scale AS SELECT n AS id,(n%4000)::int AS site_id,'Synthetic monument '||n AS name FROM generate_series(1,40000) AS g(n);\nANALYZE lab_scale;";
  await c.query(setup);const sql='SELECT id,name FROM lab_scale WHERE site_id=7;';
  const explain=async()=>(await c.query(`EXPLAIN (ANALYZE, BUFFERS, FORMAT JSON) ${sql}`)).rows[0]['QUERY PLAN'];
  const before=await explain();const indexSql='CREATE INDEX lab_scale_site_idx ON lab_scale(site_id);\nANALYZE lab_scale;';await c.query(indexSql);const after=await explain();
  return {label:'Practice exercise · 40,000 synthetic rows',setup,sql,indexSql,before,after,explanation:'These measurements come from this request, not a promised speedup. Compare scan nodes and buffers as well as execution time. Cache state and machine load affect timings. This disposable table is unrelated to the researched monuments.'};
- }finally{c.release(true);}}
+ }finally{await c.end();}}

@@ -31,6 +31,8 @@ The diagram assets in `client/public/er-diagrams/` and their structural referenc
 
 ## Guided queries and challenges
 
+Hosted TEMP-table exercises require a physical database session across statements and transactions. Set the server-only `LAB_DATABASE_URL` to the provider's **direct** PostgreSQL URL when `DATABASE_URL` uses a transaction pooler (such as Neon's `-pooler` endpoint). Practice and indexing create a dedicated client and close it after each request. Local development uses the normal local database URL. Catalogue and read-only Lab queries continue using the main application pool. See [Neon's pooling limitations](https://neon.com/docs/connect/connection-pooling).
+
 `POST /api/lab/query` accepts `{template, params}`. Templates are `state`, `relationships`, `joins`, `filters`, `division`, `sets`, `aggregation`, `temporal`, `views`, `ranking` and `indexes`. Visitor input never supplies executable SQL, identifiers, a sort expression or a table name outside a fixed allowlist. Strict Zod objects reject additional SQL fields. Values are bound with PostgreSQL parameters.
 
 Every query runs within `BEGIN READ ONLY`, with a three-second statement timeout and a maximum of 120 result rows. The SQL view already restricts publication status; other templates explicitly restrict published buildings. The index template accepts a **site ID**, exposed through a site selector, even though the shared request parameter is named `building`. Its EXPLAIN output is from `EXPLAIN (ANALYZE, BUFFERS, FORMAT JSON)` on the same fixed SELECT.
