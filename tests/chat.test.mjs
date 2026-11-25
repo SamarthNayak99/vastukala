@@ -30,6 +30,9 @@ test('general answers have no invented references or unrelated catalogue results
 test('valid structured references survive when the model omits inline citation markers',async()=>{
  const result=await answerQuestion({message:'Taj Mahal'},{db,key:'test-only',fetchImpl:fakeFetch({answer:'The documented material is marble.',citationIds:[1],basis:'catalogue'})});assert.equal(result.sources.length,1);assert.equal(result.basis,'catalogue');
 });
+test('uncited catalogue context remains available without claiming it supports every generated statement',async()=>{
+ const result=await answerQuestion({message:'Taj Mahal'},{db,key:'test-only',fetchImpl:fakeFetch({answer:'The catalogue records marble.',citationIds:[],basis:'catalogue'})});assert.equal(result.sources.length,0);assert.equal(result.contextSources.length,1);assert.equal(result.basis,'catalogue');
+});
 test('missing credentials and provider errors have useful sanitized responses',async()=>{
  await assert.rejects(answerQuestion({message:'Taj Mahal'},{db,key:''}),{status:503});
  for(const [providerStatus,status] of [[429,429],[401,503],[500,503]])await assert.rejects(answerQuestion({message:'Taj Mahal'},{db,key:'test-only',fetchImpl:fakeFetch({},providerStatus)}),{status});

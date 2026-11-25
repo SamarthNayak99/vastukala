@@ -69,5 +69,5 @@ export async function answerQuestion(input,{db,fetchImpl=fetch,key=process.env.G
  const cited=new Set(parsed.citationIds.filter(id=>validIds.has(id)));
  const answer=parsed.answer.replace(/\[(\d+)\]/g,(match,id)=>cited.has(Number(id))?match:'');
  const sources=context.sources.filter(s=>cited.has(s.id));
- return {answer,sources,buildings:context.buildings,basis:sources.length?parsed.basis:'general',provider:'Groq',model};
+ return {answer,sources,contextSources:context.sources,buildings:context.buildings,basis:context.documents.length?parsed.basis:'general',provider:'Groq',model};
 }
