@@ -1,4 +1,5 @@
 import {events,saveEvent} from './life-events.mjs';
+import {answerQuestion} from './chat.mjs';
 import {labSchema,labSample,labQuery,labPractice,labPerformance} from './lab.mjs';
 import express from 'express';
 import session from 'express-session';
@@ -25,6 +26,9 @@ export async function createApp() {
  const store=new Store({pool,tableName:'sessions'});app.locals.sessionStore=store;
  app.use(session({store,name:'vastukala.sid',secret,resave:false,saveUninitialized:false,cookie:{httpOnly:true,secure:production,sameSite:'lax',maxAge:8*60*60*1000}}));
  app.get('/api/health',async(req,res)=>{await pool.query('SELECT 1');res.json({status:'ok',database:'PostgreSQL'});});
+ app.use('/api/chat',(req,res,next)=>{res.set('Cache-Control','no-store');if(req.get('Sec-Fetch-Site')==='cross-site')return res.status(403).json({error:'Open the guide on the Vastukala website.'});next();});
+ app.get('/api/chat/status',(req,res)=>res.json({available:Boolean(process.env.GROQ_API_KEY),provider:'Groq'}));
+ app.post('/api/chat',rateLimit({windowMs:60*1000,limit:8,standardHeaders:'draft-8',legacyHeaders:false,message:{error:'Please wait a minute before asking more questions.'}}),async(req,res)=>res.json(await answerQuestion(req.body,{db:pool})));
  app.use('/api/lab',rateLimit({windowMs:60*1000,limit:90,standardHeaders:'draft-8',legacyHeaders:false,message:{error:'Take a moment before running more lab exercises.'}}),(req,res,next)=>{res.set('Cache-Control','no-store');next();});
  app.get('/api/lab/schema',async(req,res)=>res.json(await labSchema()));
  app.get('/api/lab/tables/:name',async(req,res)=>res.json(await labSample(req.params.name)));

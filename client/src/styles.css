@@ -14,3 +14,6 @@
  .header nav{grid-column:1/-1;grid-row:2}
  .header-actions{grid-column:2;grid-row:1}
 }
+
+/* Keep the architecture guide link readable as navigation wraps. */
+.header nav{min-width:0;flex-wrap:wrap;row-gap:0}.header nav a{white-space:nowrap}

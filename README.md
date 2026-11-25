@@ -19,6 +19,8 @@ See the [40-monument expansion inventory](docs/india-100.md) for the latest addi
 
 ## Run locally
 
+**Ask Vastukala** adds a separate architecture chatbot at `/ask`, powered by Groq. It combines relevant public catalogue excerpts and references with general architectural explanations. To connect it, set the server-only `GROQ_API_KEY` in your ignored `.env` and restart the API. Free-plan quotas apply. See [chat setup, evidence and privacy](docs/architecture-chat.md).
+
 Use Node.js 22.12 or newer. From the repository root, install dependencies, fetch the catalogue photographs, and start the application.
 
 ```sh
