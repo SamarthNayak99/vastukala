@@ -53,11 +53,12 @@ export async function getBuilding(value,{admin=false,byId=false}={}) {
 }
 export function listFilters(query) {
  const ids=value=>{if(!value)return [];const values=String(value).split(',');if(values.length>30||values.some(x=>!/^\d+$/.test(x)||Number(x)<1||Number(x)>2147483647))throw Object.assign(new Error('Invalid filter IDs.'),{status:400});return [...new Set(values.map(Number))];};
- const states=String(query.states||query.state||'').split(',').map(x=>x.trim()).filter(Boolean);if(states.length>36||states.some(x=>x.length>80||!/^[A-Za-z ]+$/.test(x)))throw Object.assign(new Error('Invalid states.'),{status:400});return {states,q:String(query.q||'').slice(0,200),sites:ids(query.sites),types:ids(query.types),materials:ids(query.materials),elements:ids(query.elements),empires:ids(query.empires),page:Math.min(100000,Math.max(1,Number.parseInt(query.page)||1)),limit:Math.min(200,Math.max(1,Number.parseInt(query.limit)||12)),sort:['name','oldest','newest'].includes(query.sort)?query.sort:'name'};
+ const relationship=query.relationship?z.enum(['construction','patronage','addition','restoration','historical_context']).parse(query.relationship):'';
+ const states=String(query.states||query.state||'').split(',').map(x=>x.trim()).filter(Boolean);if(states.length>36||states.some(x=>x.length>80||!/^[A-Za-z ]+$/.test(x)))throw Object.assign(new Error('Invalid states.'),{status:400});return {states,relationship,q:String(query.q||'').slice(0,200),sites:ids(query.sites),types:ids(query.types),materials:ids(query.materials),elements:ids(query.elements),empires:ids(query.empires),page:Math.min(100000,Math.max(1,Number.parseInt(query.page)||1)),limit:Math.min(200,Math.max(1,Number.parseInt(query.limit)||12)),sort:['name','oldest','newest'].includes(query.sort)?query.sort:'name'};
 }
 // Hydrate a catalogue page with a fixed set of queries instead of querying each
 // monument separately. All child rows are restricted to the selected page IDs.
-async function cataloguePage(ids,{admin=false}={}) {
+export async function cataloguePage(ids,{admin=false}={}) {
  if(!ids.length)return [];
  const values=[ids];
  const queries=[
@@ -87,7 +88,7 @@ export async function listBuildings(query,{admin=false}={}) {
  const add=value=>{params.push(value);return `$${params.length}`;};
  if(!admin)where.push("b.status='published'");
  if(f.states.length)where.push(`EXISTS(SELECT 1 FROM sites site WHERE site.id=b.site_id AND site.state=ANY(${add(f.states)}::text[]))`);
- if(f.empires.length)where.push(`EXISTS(SELECT 1 FROM building_empires be WHERE be.building_id=b.id AND be.empire_id=ANY(${add(f.empires)}::int[]))`);
+ if(f.empires.length||f.relationship){const historical=['be.building_id=b.id'];if(f.empires.length)historical.push(`be.empire_id=ANY(${add(f.empires)}::int[])`);if(f.relationship)historical.push(`be.relationship=${add(f.relationship)}`);where.push(`EXISTS(SELECT 1 FROM building_empires be WHERE ${historical.join(' AND ')})`);}
  if(f.q){const p=add(`%${f.q.replace(/[\\%_]/g,'\\$&')}%`);where.push(`(b.name ILIKE ${p} OR EXISTS(SELECT 1 FROM building_aliases a WHERE a.building_id=b.id AND a.alias ILIKE ${p}))`);}
  for(const [key,col]of [['sites','site_id'],['types','type_id']])if(f[key].length)where.push(`b.${col}=ANY(${add(f[key])}::int[])`);
  for(const [key,table,col]of [['materials','building_materials','material_id'],['elements','building_elements','element_id']])if(f[key].length){const p=add(f[key]);where.push(`NOT EXISTS(SELECT 1 FROM unnest(${p}::int[]) required(id) WHERE NOT EXISTS(SELECT 1 FROM ${table} rel WHERE rel.building_id=b.id AND rel.${col}=required.id))`);}

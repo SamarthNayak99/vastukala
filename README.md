@@ -57,6 +57,7 @@ To use an existing PostgreSQL server, copy `.env.example` to `.env` and set `DAT
 | `npm run admin:create` | Create the first administrator. |
 | `npm run db:backup -- --verify` | Write a logical snapshot and verify a restore in a disposable database. |
 | `npm test` | Run integration tests in a temporary PostgreSQL database. |
+| `npm run test:isolated` | Discover all test files and run them against a disposable UTF-8 PostgreSQL cluster, without using the project or hosted database. |
 | `npm run build` | Build the production frontend. |
 
 Start PostgreSQL before running database commands or tests. Tests require permission to create a database and can target a separate cluster through `TEST_DATABASE_BASE_URL`. To serve the built application locally, run `npm start` after building and open [the local server](http://127.0.0.1:3001).

@@ -1,6 +1,6 @@
 import {z} from 'zod';
 import {pool} from './db.mjs';
-import {getBuilding} from './catalogue.mjs';
+import {getBuilding,cataloguePage} from './catalogue.mjs';
 
 const spatial=new Set(['Garden','Stepped tank','Stepped descent','Causeway','Sacred pool','Monastic cells','Colonnade','Mandapa','Courtyard','Circumambulatory passage','Circumambulatory platform','Apsidal plan','Twin-shrine plan','Triple-shrine plan']);
 export function evidenceFor(building,kind,categoryId){
@@ -55,7 +55,7 @@ export async function acrossTime(query){
  AND ($1::int IS NULL OR EXISTS(SELECT 1 FROM building_elements be WHERE be.building_id=b.id AND be.element_id=$1))
  AND ((b.year_from IS NULL OR b.year_to IS NULL) OR (b.year_from<=$3 AND b.year_to>=$2))
  ORDER BY b.year_from ASC NULLS LAST,b.name,b.id`,[filters.element||null,filters.from,filters.to])).rows;
- const items=await Promise.all(rows.map(x=>getBuilding(x.id,{byId:true})));
+ const items=await cataloguePage(rows.map(x=>x.id));
  const element=filters.element?(await pool.query('SELECT * FROM elements WHERE id=$1',[filters.element])).rows[0]:null;
  if(filters.element&&!element)throw Object.assign(new Error('Architectural element not found.'),{status:404});
  const records=items.map(b=>({...b,date_evidence:b.citations.filter(c=>!c.target_kind),feature_evidence:filters.element?evidenceFor(b,'element',filters.element):[]}));

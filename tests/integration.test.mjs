@@ -4,6 +4,7 @@ import {readFile} from 'node:fs/promises';
 import pg from 'pg';
 import request from 'supertest';
 import bcrypt from 'bcryptjs';
+import {historicalQuery} from '../client/src/heritage-filters.mjs';
 
 test('DBMS Lab exposes actual public schema and bounded samples, excluding infrastructure',async()=>{
  const schema=(await request(app).get('/api/lab/schema').expect(200)).body;
@@ -378,4 +379,38 @@ test('new fifty-monument batch retains unknown chronology and links every review
  assert.ok(['empires','building_empires','empire_sources'].every(name=>schema.tables.some(t=>t.name===name)));
  const lab=(await request(app).post('/api/lab/query').send({template:'empires',params:{state:'Tripura'}}).expect(200)).body;
  assert.equal(lab.rows.length,2);assert.ok(lab.rows.every(r=>r.source&&r.url&&r.relationship==='construction'));
+});
+
+test('historical discovery links preserve state and relationship on the same cited connection',async()=>{
+ const maratha=(await request(app).get('/api/empires/maratha').expect(200)).body;
+ const cases=[['Maharashtra','addition','raigad-fort'],['Maharashtra','construction','sindhudurg-fort'],['Tamil Nadu','historical_context','gingee-fort']];
+ for(const [state,relationship,slug] of cases){
+  const query=historicalQuery(maratha.id,state,relationship);
+  const response=(await request(app).get('/api/buildings?limit=200&'+query).expect(200)).body;
+  assert.deepEqual(response.items.map(b=>b.slug),[slug]);assert.equal(response.total,1);
+ }
+ const mughal=(await request(app).get('/api/empires/mughal').expect(200)).body;
+ const taj=records.find(b=>b.slug==='taj-mahal-agra');
+ const temporary=(await pool.query("INSERT INTO building_empires(building_id,empire_id,relationship,evidence,source_id) VALUES($1,$2,'addition','Disposable regression claim',$3) RETURNING id",[taj.id,maratha.id,tax.sources[0].id])).rows[0];
+ try{
+  const response=(await request(app).get('/api/buildings').query({empires:mughal.id,relationship:'addition',limit:200}).expect(200)).body;
+  assert.ok(!response.items.some(b=>b.id===taj.id),'A claim for another polity must not satisfy this relationship filter');
+ }finally{await pool.query('DELETE FROM building_empires WHERE id=$1',[temporary.id]);}
+ await request(app).get('/api/buildings?relationship=not-a-relationship').expect(400);
+});
+
+test('timeline and event endpoints use bounded query counts while preserving public visibility',async()=>{
+ const originalQuery=pool.query;let calls=0;
+ pool.query=function(...args){calls++;return originalQuery.apply(this,args);};
+ try{
+  const timeline=(await request(app).get('/api/explore/time').expect(200)).body;
+  assert.equal(timeline.dated.length+timeline.undated.length,150);
+  assert.ok(calls<=12,`Timeline must batch its records; observed ${calls} queries`);
+  calls=0;
+  const events=(await request(app).get('/api/buildings/raigad-fort/events').expect(200)).body;
+  assert.ok(events.length);assert.ok(calls<=2,`Events must not hydrate an entire monument; observed ${calls} queries`);
+ }finally{pool.query=originalQuery;}
+ const hidden=(await pool.query("INSERT INTO buildings(site_id,type_id,name,slug,status) VALUES($1,$2,'Hidden events test','hidden-events-test','draft') RETURNING id",[tax.sites[0].id,tax.building_types[0].id])).rows[0];
+ try{await request(app).get('/api/buildings/hidden-events-test/events').expect(404);}
+ finally{await pool.query('DELETE FROM buildings WHERE id=$1',[hidden.id]);}
 });

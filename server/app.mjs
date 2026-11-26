@@ -42,7 +42,7 @@ export async function createApp() {
  app.get('/api/taxonomy',async(req,res)=>res.json(await taxonomy()));
  app.get('/api/sites',async(req,res)=>res.json((await taxonomy()).sites));
  app.get('/api/buildings',async(req,res)=>res.json(await listBuildings(req.query)));
- app.get('/api/buildings/:slug/events',async(req,res)=>{const b=await getBuilding(req.params.slug);if(!b)return res.status(404).json({error:'Building not found'});res.json(await events(b.id));});
+ app.get('/api/buildings/:slug/events',async(req,res)=>{const b=(await pool.query("SELECT id FROM buildings WHERE slug=$1 AND status='published'",[req.params.slug])).rows[0];if(!b)return res.status(404).json({error:'Building not found'});res.json(await events(b.id));});
  app.get('/api/buildings/:slug',async(req,res)=>{const b=await getBuilding(req.params.slug);if(!b)return res.status(404).json({error:'Building not found.'});res.json(b);});
  app.get('/api/statistics',async(req,res)=>res.json(await statistics()));
  app.get('/api/compare',async(req,res)=>res.json(await compareBuildings(req.query.ids)));

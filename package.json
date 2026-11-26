@@ -17,7 +17,8 @@
     "build": "vite build --config client/vite.config.js",
     "build:vercel": "npm run build && node scripts/build-vercel.mjs",
     "start": "node --env-file-if-exists=.env server/index.mjs",
-    "test": "node --env-file-if-exists=.env --test tests/*.test.mjs"
+    "test": "node --env-file-if-exists=.env --test tests/*.test.mjs",
+    "test:isolated": "node scripts/test-isolated.mjs"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
@@ -39,7 +40,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^5.0.4",
     "embedded-postgres": "18.4.0-beta.17",
-    "sharp": "^0.34.4",
+    "sharp": "^0.35.5",
     "supertest": "^7.1.4",
     "vite": "^7.1.12"
   }
