@@ -23,6 +23,8 @@ npx vercel deploy --prod
 
 Set `ADMIN_EMAIL` and `ADMIN_PASSWORD` in your local shell before running `npm run admin:create` against the hosted database if the production site needs an administrator. Keep the generated credentials private.
 
-The CLI deployment uploads the prepared display images from the workspace. A Git-only deployment also needs a source for those assets because the WebP files are ignored by Git.
+The CLI deployment uploads prepared display images from the workspace. For Git deployments, the build reuses approved display copies from the existing public archive at `https://vastukala.vercel.app/media/`, or an HTTPS `MEDIA_BASE_URL` that you configure. Original file pages, authors and licences remain in the manifest. The build fails if any approved copy is unavailable; it never silently drops a photograph.
+
+Publish newly imported photographs from the local workspace before relying on the mirror for subsequent Git deployments. Code-only changes can then deploy directly from GitHub without uploading the full collection again.
 
 After publishing, check `/api/health`, `/api/buildings?limit=200`, a monument photograph, and a guided query in `/dbms-lab`.
