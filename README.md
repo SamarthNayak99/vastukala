@@ -1,8 +1,8 @@
 # Vastukala
 
-Vastukala is an interactive archive of Indian architectural heritage built with **React, Node.js, Express, and PostgreSQL**. It covers **100 monuments at 73 sites across 21 states and union territories**, with 186 credited photographs, 110 reviewed photograph hotspots, and 116 sourced historical events.
+Vastukala is an interactive archive of Indian architectural heritage built with **React, Node.js, Express, and PostgreSQL**. It covers **150 monuments at 123 sites across 35 states and union territories**, with 280 credited photographs, 160 reviewed photograph hotspots, and 162 sourced historical events.
 
-See the [40-monument expansion inventory](docs/india-100.md) for the latest additions.
+Explore [the 50-monument expansion and Empires implementation](docs/india-150.md). The Empires directory connects 57 historical profiles to 120 cited monument relationships.
 
 ## Explore the archive
 
@@ -11,6 +11,7 @@ See the [40-monument expansion inventory](docs/india-100.md) for the latest addi
 | Display theme | Use light or dark mode. The site follows your device preference until you choose a theme. |
 | Catalogue | Search names and aliases. Filter by state, site, type, material, and architectural element. |
 | Monument profiles | Read historical descriptions and follow citations for dates, styles, and documented features. |
+| Empires | Explore historical profiles, filter connected monuments, and inspect the source for each patronage or historical-context claim. |
 | Comparison | Select two monuments and inspect their shared and distinct features with supporting evidence. |
 | Photograph study | Zoom and pan, open images in full screen, compare photographs, and inspect annotated architectural features. |
 | Maps and timelines | Search clustered site markers by map area. Explore approximate construction ranges, BCE dates, and separately sourced historical events. |
@@ -44,7 +45,7 @@ To use an existing PostgreSQL server, copy `.env.example` to `.env` and set `DAT
 1. In **The collection**, select **Badami**, **Cave temple**, **Sandstone**, and **Carved pillar** to find Badami Cave 3. Add **Granite** to see how requiring every selected material changes the result.
 2. Search for **Lokeshwara** to find the Virupaksha Temple at Pattadakal through its alternate name.
 3. Compare two monuments, then open **In numbers** to see statistics calculated from published records.
-4. Open [DBMS Lab](http://127.0.0.1:5173/dbms-lab) for 13 lessons, four guided challenges, a 16-table schema explorer, and an indexing experiment with 40,000 synthetic rows. See the [DBMS Lab guide](docs/dbms-lab.md).
+4. Open [DBMS Lab](http://127.0.0.1:5173/dbms-lab) for 14 lessons, four guided challenges, a 19-table schema explorer and nine ER diagrams, and an indexing experiment with 40,000 synthetic rows. See the [DBMS Lab guide](docs/dbms-lab.md).
 
 ## Development and verification
 
@@ -60,7 +61,7 @@ To use an existing PostgreSQL server, copy `.env.example` to `.env` and set `DAT
 
 Start PostgreSQL before running database commands or tests. Tests require permission to create a database and can target a separate cluster through `TEST_DATABASE_BASE_URL`. To serve the built application locally, run `npm start` after building and open [the local server](http://127.0.0.1:3001).
 
-The recorded verification includes 30 passing integration tests, a successful production build, and a verified logical backup restore. See [Progress and verification](docs/progress.md).
+Verification covers the expanded integration and chatbot tests, a successful production build, and a verified logical backup restore. See [Progress and verification](docs/progress.md).
 
 ## Project structure
 

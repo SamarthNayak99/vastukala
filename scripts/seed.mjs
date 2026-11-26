@@ -1,3 +1,4 @@
+import {seedEmpires} from './seed-empires.mjs';
 import {seedIndiaEvidence} from './seed-india-evidence.mjs';
 import {seedConservation} from './seed-conservation.mjs';
 import {seedHeritage} from './seed-heritage.mjs';
@@ -23,7 +24,7 @@ export async function seed() {
   if(payload.images.some(x=>x.is_cover&&x.approved))payload.status='published';
   await saveBuilding(payload,null,{coordinates:b});console.log(`Seeded ${b.slug} (${payload.status})`);
  }
- await seedHotspots();await seedHeritage();await seedConservation();await seedIndiaEvidence();
- await seedGallery(media);
+ await seedHotspots();await seedHeritage();await seedConservation();
+ await seedGallery(media);await seedIndiaEvidence();await seedEmpires();
 }
 if(process.argv[1]===path.resolve('scripts/seed.mjs')){try{await seed();}finally{await pool.end();}}

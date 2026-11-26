@@ -1,7 +1,7 @@
 import {readFile} from 'node:fs/promises';
 import {transaction} from '../server/db.mjs';
 export async function seedIndiaEvidence(){
- const batches=await Promise.all(['india','india-100'].map(async name=>{
+ const batches=await Promise.all(['india','india-100','india-150'].map(async name=>{
   const [dataset,events,points]=await Promise.all(['','-events','-hotspots'].map(async suffix=>
    JSON.parse(await readFile(`research/${name}${suffix}.json`,'utf8'))
   ));
@@ -14,7 +14,7 @@ export async function seedIndiaEvidence(){
    if((await c.query('SELECT 1 FROM seed_tasks WHERE name=$1',[task])).rowCount)continue;
    const row=(await c.query("SELECT id FROM buildings WHERE slug=$1 AND status='published'",[b.slug])).rows[0];
    const annotations=points.filter(p=>p.building===b.slug);
-   if(!row||!annotations.length)continue;
+   if(!row)continue;
    for(const event of events.filter(e=>e.building===b.slug)){
     const source=dataset.sources.find(s=>s.key===event.source);if(!source)throw new Error('Unknown India event source: '+event.source);
     const sid=(await c.query('SELECT id FROM sources WHERE url=$1',[source.url])).rows[0]?.id;if(!sid)throw new Error('Missing event source');

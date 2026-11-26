@@ -1,3 +1,4 @@
+import {listEmpires,getEmpire,saveEmpire,saveAssociation} from './empires.mjs';
 import {events,saveEvent} from './life-events.mjs';
 import {answerQuestion} from './chat.mjs';
 import {labSchema,labSample,labQuery,labPractice,labPerformance} from './lab.mjs';
@@ -36,6 +37,8 @@ export async function createApp() {
  const practiceLimit=rateLimit({windowMs:60*1000,limit:15,standardHeaders:'draft-8',legacyHeaders:false,message:{error:'Practice limit reached. Try again in a minute.'}});
  app.post('/api/lab/practice',practiceLimit,async(req,res)=>res.json(await labPractice(req.body)));
  app.post('/api/lab/performance',practiceLimit,async(req,res)=>{z.object({}).strict().parse(req.body);res.json(await labPerformance());});
+ app.get('/api/empires',async(req,res)=>res.json(await listEmpires()));
+ app.get('/api/empires/:slug',async(req,res)=>{const e=await getEmpire(z.string().regex(/^[a-z0-9-]+$/).parse(req.params.slug));if(!e)return res.status(404).json({error:'Empire profile not found'});res.json(e);});
  app.get('/api/taxonomy',async(req,res)=>res.json(await taxonomy()));
  app.get('/api/sites',async(req,res)=>res.json((await taxonomy()).sites));
  app.get('/api/buildings',async(req,res)=>res.json(await listBuildings(req.query)));
@@ -51,6 +54,11 @@ export async function createApp() {
  app.post('/api/auth/login',rateLimit({windowMs:15*60*1000,limit:10,standardHeaders:'draft-8',legacyHeaders:false}),csrf,async(req,res)=>{const input=z.object({email:z.email().max(254),password:z.string().min(1).max(200)}).parse(req.body);const account=(await pool.query('SELECT * FROM admins WHERE email=$1',[input.email.toLowerCase()])).rows[0];if(!account||!await bcrypt.compare(input.password,account.password_hash))return res.status(401).json({error:'Email or password is incorrect.'});await new Promise((resolve,reject)=>req.session.regenerate(error=>error?reject(error):resolve()));req.session.adminId=account.id;req.session.csrf=randomBytes(24).toString('hex');res.json({authenticated:true,csrf:req.session.csrf});});
  app.post('/api/auth/logout',admin,csrf,async(req,res)=>{await new Promise((resolve,reject)=>req.session.destroy(error=>error?reject(error):resolve()));res.clearCookie('vastukala.sid');res.json({ok:true});});
  app.use('/api/admin',admin,(req,res,next)=>{res.set('Cache-Control','no-store');next();});
+ app.post('/api/admin/empires',csrf,async(req,res)=>res.status(201).json(await saveEmpire(req.body)));
+ app.put('/api/admin/empires/:id',csrf,async(req,res)=>res.json(await saveEmpire(req.body,z.coerce.number().int().positive().parse(req.params.id))));
+ app.post('/api/admin/empire-associations',csrf,async(req,res)=>res.status(201).json(await saveAssociation(req.body)));
+ app.put('/api/admin/empire-associations/:id',csrf,async(req,res)=>res.json(await saveAssociation(req.body,z.coerce.number().int().positive().parse(req.params.id))));
+ app.delete('/api/admin/empire-associations/:id',csrf,async(req,res)=>{const r=await pool.query('DELETE FROM building_empires WHERE id=$1 RETURNING id',[z.coerce.number().int().positive().parse(req.params.id)]);res.status(r.rowCount?200:404).json(r.rowCount?{ok:true}:{error:'Association not found'});});
  app.get('/api/admin/buildings',async(req,res)=>res.json(await listBuildings(req.query,{admin:true})));
  app.get('/api/admin/buildings/:id',async(req,res)=>{const b=await getBuilding(z.coerce.number().int().positive().parse(req.params.id),{byId:true,admin:true});if(!b)return res.status(404).json({error:'Building not found.'});res.json(b);});
  app.get('/api/admin/buildings/:id/events',async(req,res)=>res.json(await events(z.coerce.number().int().positive().parse(req.params.id))));

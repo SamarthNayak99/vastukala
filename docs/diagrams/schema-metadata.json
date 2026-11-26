@@ -89,6 +89,78 @@
       "is_identity": "NO"
     },
     {
+      "table_name": "building_empires",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "building_empires",
+      "column_name": "building_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_empires",
+      "column_name": "empire_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_empires",
+      "column_name": "relationship",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_empires",
+      "column_name": "evidence",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_empires",
+      "column_name": "source_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_empires",
+      "column_name": "locator",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_empires",
+      "column_name": "year_from",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "building_empires",
+      "column_name": "year_to",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
       "table_name": "building_events",
       "column_name": "id",
       "data_type": "integer",
@@ -494,6 +566,126 @@
       "data_type": "text",
       "is_nullable": "NO",
       "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "empire_sources",
+      "column_name": "empire_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "empire_sources",
+      "column_name": "source_id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "empire_sources",
+      "column_name": "topic",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "empire_sources",
+      "column_name": "locator",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": "''::text",
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "empires",
+      "column_name": "id",
+      "data_type": "integer",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "YES"
+    },
+    {
+      "table_name": "empires",
+      "column_name": "slug",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "empires",
+      "column_name": "name",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "empires",
+      "column_name": "kind",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "empires",
+      "column_name": "region",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "empires",
+      "column_name": "year_from",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "empires",
+      "column_name": "year_to",
+      "data_type": "integer",
+      "is_nullable": "YES",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "empires",
+      "column_name": "date_label",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "empires",
+      "column_name": "summary",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "empires",
+      "column_name": "history",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
+      "is_identity": "NO"
+    },
+    {
+      "table_name": "empires",
+      "column_name": "architectural_notes",
+      "data_type": "text",
+      "is_nullable": "NO",
+      "column_default": null,
       "is_identity": "NO"
     },
     {
@@ -1195,6 +1387,202 @@
       "referenced_columns": []
     },
     {
+      "table_name": "building_empires",
+      "name": "building_empires_building_id_empire_id_relationship_key",
+      "kind": "u",
+      "definition": "UNIQUE (building_id, empire_id, relationship)",
+      "referenced_table": null,
+      "columns": [
+        "building_id",
+        "empire_id",
+        "relationship"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_building_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL building_id",
+      "referenced_table": null,
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_check",
+      "kind": "c",
+      "definition": "CHECK (((year_from IS NULL) OR (year_to IS NULL) OR (year_from <= year_to)))",
+      "referenced_table": null,
+      "columns": [
+        "year_from",
+        "year_to"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_empire_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (empire_id) REFERENCES empires(id) ON DELETE CASCADE",
+      "referenced_table": "empires",
+      "columns": [
+        "empire_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_empire_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL empire_id",
+      "referenced_table": null,
+      "columns": [
+        "empire_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_evidence_check",
+      "kind": "c",
+      "definition": "CHECK ((length(TRIM(BOTH FROM evidence)) > 0))",
+      "referenced_table": null,
+      "columns": [
+        "evidence"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_evidence_not_null",
+      "kind": "n",
+      "definition": "NOT NULL evidence",
+      "referenced_table": null,
+      "columns": [
+        "evidence"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_locator_not_null",
+      "kind": "n",
+      "definition": "NOT NULL locator",
+      "referenced_table": null,
+      "columns": [
+        "locator"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_relationship_check",
+      "kind": "c",
+      "definition": "CHECK ((relationship = ANY (ARRAY['construction'::text, 'patronage'::text, 'addition'::text, 'restoration'::text, 'historical_context'::text])))",
+      "referenced_table": null,
+      "columns": [
+        "relationship"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_relationship_not_null",
+      "kind": "n",
+      "definition": "NOT NULL relationship",
+      "referenced_table": null,
+      "columns": [
+        "relationship"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_source_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (source_id) REFERENCES sources(id) ON DELETE RESTRICT",
+      "referenced_table": "sources",
+      "columns": [
+        "source_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_source_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL source_id",
+      "referenced_table": null,
+      "columns": [
+        "source_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_year_from_check",
+      "kind": "c",
+      "definition": "CHECK ((((year_from >= '-4000'::integer) AND (year_from <= 2100)) AND (year_from <> 0)))",
+      "referenced_table": null,
+      "columns": [
+        "year_from"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_year_to_check",
+      "kind": "c",
+      "definition": "CHECK ((((year_to >= '-4000'::integer) AND (year_to <= 2100)) AND (year_to <> 0)))",
+      "referenced_table": null,
+      "columns": [
+        "year_to"
+      ],
+      "referenced_columns": []
+    },
+    {
       "table_name": "building_events",
       "name": "building_events_building_id_fkey",
       "kind": "f",
@@ -1380,7 +1768,7 @@
       "table_name": "building_events",
       "name": "building_events_year_from_check",
       "kind": "c",
-      "definition": "CHECK ((((year_from >= '-1000'::integer) AND (year_from <= 2100)) AND (year_from <> 0)))",
+      "definition": "CHECK ((((year_from >= '-4000'::integer) AND (year_from <= 2100)) AND (year_from <> 0)))",
       "referenced_table": null,
       "columns": [
         "year_from"
@@ -1402,7 +1790,7 @@
       "table_name": "building_events",
       "name": "building_events_year_to_check",
       "kind": "c",
-      "definition": "CHECK ((((year_to >= '-1000'::integer) AND (year_to <= 2100)) AND (year_to <> 0)))",
+      "definition": "CHECK ((((year_to >= '-4000'::integer) AND (year_to <= 2100)) AND (year_to <> 0)))",
       "referenced_table": null,
       "columns": [
         "year_to"
@@ -2189,6 +2577,276 @@
       "referenced_table": null,
       "columns": [
         "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empire_sources",
+      "name": "empire_sources_empire_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (empire_id) REFERENCES empires(id) ON DELETE CASCADE",
+      "referenced_table": "empires",
+      "columns": [
+        "empire_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "empire_sources",
+      "name": "empire_sources_empire_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL empire_id",
+      "referenced_table": null,
+      "columns": [
+        "empire_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empire_sources",
+      "name": "empire_sources_locator_not_null",
+      "kind": "n",
+      "definition": "NOT NULL locator",
+      "referenced_table": null,
+      "columns": [
+        "locator"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empire_sources",
+      "name": "empire_sources_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (empire_id, source_id)",
+      "referenced_table": null,
+      "columns": [
+        "empire_id",
+        "source_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empire_sources",
+      "name": "empire_sources_source_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (source_id) REFERENCES sources(id) ON DELETE RESTRICT",
+      "referenced_table": "sources",
+      "columns": [
+        "source_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ]
+    },
+    {
+      "table_name": "empire_sources",
+      "name": "empire_sources_source_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL source_id",
+      "referenced_table": null,
+      "columns": [
+        "source_id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empire_sources",
+      "name": "empire_sources_topic_not_null",
+      "kind": "n",
+      "definition": "NOT NULL topic",
+      "referenced_table": null,
+      "columns": [
+        "topic"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empires",
+      "name": "empires_architectural_notes_not_null",
+      "kind": "n",
+      "definition": "NOT NULL architectural_notes",
+      "referenced_table": null,
+      "columns": [
+        "architectural_notes"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empires",
+      "name": "empires_check",
+      "kind": "c",
+      "definition": "CHECK (((year_from IS NULL) OR (year_to IS NULL) OR (year_from <= year_to)))",
+      "referenced_table": null,
+      "columns": [
+        "year_from",
+        "year_to"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empires",
+      "name": "empires_date_label_not_null",
+      "kind": "n",
+      "definition": "NOT NULL date_label",
+      "referenced_table": null,
+      "columns": [
+        "date_label"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empires",
+      "name": "empires_history_not_null",
+      "kind": "n",
+      "definition": "NOT NULL history",
+      "referenced_table": null,
+      "columns": [
+        "history"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empires",
+      "name": "empires_id_not_null",
+      "kind": "n",
+      "definition": "NOT NULL id",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empires",
+      "name": "empires_kind_check",
+      "kind": "c",
+      "definition": "CHECK ((kind = ANY (ARRAY['empire'::text, 'dynasty'::text, 'kingdom'::text, 'sultanate'::text, 'confederacy'::text, 'colonial administration'::text, 'civilisation'::text, 'chiefdom'::text, 'patron family'::text])))",
+      "referenced_table": null,
+      "columns": [
+        "kind"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empires",
+      "name": "empires_kind_not_null",
+      "kind": "n",
+      "definition": "NOT NULL kind",
+      "referenced_table": null,
+      "columns": [
+        "kind"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empires",
+      "name": "empires_name_key",
+      "kind": "u",
+      "definition": "UNIQUE (name)",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empires",
+      "name": "empires_name_not_null",
+      "kind": "n",
+      "definition": "NOT NULL name",
+      "referenced_table": null,
+      "columns": [
+        "name"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empires",
+      "name": "empires_pkey",
+      "kind": "p",
+      "definition": "PRIMARY KEY (id)",
+      "referenced_table": null,
+      "columns": [
+        "id"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empires",
+      "name": "empires_region_not_null",
+      "kind": "n",
+      "definition": "NOT NULL region",
+      "referenced_table": null,
+      "columns": [
+        "region"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empires",
+      "name": "empires_slug_check",
+      "kind": "c",
+      "definition": "CHECK ((slug ~ '^[a-z0-9]+(-[a-z0-9]+)*$'::text))",
+      "referenced_table": null,
+      "columns": [
+        "slug"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empires",
+      "name": "empires_slug_key",
+      "kind": "u",
+      "definition": "UNIQUE (slug)",
+      "referenced_table": null,
+      "columns": [
+        "slug"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empires",
+      "name": "empires_slug_not_null",
+      "kind": "n",
+      "definition": "NOT NULL slug",
+      "referenced_table": null,
+      "columns": [
+        "slug"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empires",
+      "name": "empires_summary_not_null",
+      "kind": "n",
+      "definition": "NOT NULL summary",
+      "referenced_table": null,
+      "columns": [
+        "summary"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empires",
+      "name": "empires_year_from_check",
+      "kind": "c",
+      "definition": "CHECK ((((year_from >= '-4000'::integer) AND (year_from <= 2100)) AND (year_from <> 0)))",
+      "referenced_table": null,
+      "columns": [
+        "year_from"
+      ],
+      "referenced_columns": []
+    },
+    {
+      "table_name": "empires",
+      "name": "empires_year_to_check",
+      "kind": "c",
+      "definition": "CHECK ((((year_to >= '-4000'::integer) AND (year_to <= 2100)) AND (year_to <> 0)))",
+      "referenced_table": null,
+      "columns": [
+        "year_to"
       ],
       "referenced_columns": []
     },
@@ -3148,289 +3806,6 @@
         "id"
       ],
       "referenced_columns": []
-    }
-  ],
-  "indexes": [
-    {
-      "table_name": "admins",
-      "name": "admins_email_key",
-      "definition": "CREATE UNIQUE INDEX admins_email_key ON public.admins USING btree (email)"
-    },
-    {
-      "table_name": "admins",
-      "name": "admins_pkey",
-      "definition": "CREATE UNIQUE INDEX admins_pkey ON public.admins USING btree (id)"
-    },
-    {
-      "table_name": "building_aliases",
-      "name": "aliases_building_idx",
-      "definition": "CREATE INDEX aliases_building_idx ON public.building_aliases USING btree (building_id)"
-    },
-    {
-      "table_name": "building_aliases",
-      "name": "building_aliases_building_id_alias_key",
-      "definition": "CREATE UNIQUE INDEX building_aliases_building_id_alias_key ON public.building_aliases USING btree (building_id, alias)"
-    },
-    {
-      "table_name": "building_aliases",
-      "name": "building_aliases_pkey",
-      "definition": "CREATE UNIQUE INDEX building_aliases_pkey ON public.building_aliases USING btree (id)"
-    },
-    {
-      "table_name": "building_elements",
-      "name": "building_elements_building_id_element_id_key",
-      "definition": "CREATE UNIQUE INDEX building_elements_building_id_element_id_key ON public.building_elements USING btree (building_id, element_id)"
-    },
-    {
-      "table_name": "building_elements",
-      "name": "building_elements_id_building_id_key",
-      "definition": "CREATE UNIQUE INDEX building_elements_id_building_id_key ON public.building_elements USING btree (id, building_id)"
-    },
-    {
-      "table_name": "building_elements",
-      "name": "building_elements_pkey",
-      "definition": "CREATE UNIQUE INDEX building_elements_pkey ON public.building_elements USING btree (id)"
-    },
-    {
-      "table_name": "building_elements",
-      "name": "elements_reverse_idx",
-      "definition": "CREATE INDEX elements_reverse_idx ON public.building_elements USING btree (element_id, building_id)"
-    },
-    {
-      "table_name": "building_events",
-      "name": "building_events_chronology",
-      "definition": "CREATE INDEX building_events_chronology ON public.building_events USING btree (building_id, year_from)"
-    },
-    {
-      "table_name": "building_events",
-      "name": "building_events_id_building_id_key",
-      "definition": "CREATE UNIQUE INDEX building_events_id_building_id_key ON public.building_events USING btree (id, building_id)"
-    },
-    {
-      "table_name": "building_events",
-      "name": "building_events_pkey",
-      "definition": "CREATE UNIQUE INDEX building_events_pkey ON public.building_events USING btree (id)"
-    },
-    {
-      "table_name": "building_materials",
-      "name": "building_materials_building_id_material_id_key",
-      "definition": "CREATE UNIQUE INDEX building_materials_building_id_material_id_key ON public.building_materials USING btree (building_id, material_id)"
-    },
-    {
-      "table_name": "building_materials",
-      "name": "building_materials_id_building_id_key",
-      "definition": "CREATE UNIQUE INDEX building_materials_id_building_id_key ON public.building_materials USING btree (id, building_id)"
-    },
-    {
-      "table_name": "building_materials",
-      "name": "building_materials_pkey",
-      "definition": "CREATE UNIQUE INDEX building_materials_pkey ON public.building_materials USING btree (id)"
-    },
-    {
-      "table_name": "building_materials",
-      "name": "materials_reverse_idx",
-      "definition": "CREATE INDEX materials_reverse_idx ON public.building_materials USING btree (material_id, building_id)"
-    },
-    {
-      "table_name": "building_styles",
-      "name": "building_styles_building_id_style_id_key",
-      "definition": "CREATE UNIQUE INDEX building_styles_building_id_style_id_key ON public.building_styles USING btree (building_id, style_id)"
-    },
-    {
-      "table_name": "building_styles",
-      "name": "building_styles_id_building_id_key",
-      "definition": "CREATE UNIQUE INDEX building_styles_id_building_id_key ON public.building_styles USING btree (id, building_id)"
-    },
-    {
-      "table_name": "building_styles",
-      "name": "building_styles_pkey",
-      "definition": "CREATE UNIQUE INDEX building_styles_pkey ON public.building_styles USING btree (id)"
-    },
-    {
-      "table_name": "building_styles",
-      "name": "styles_reverse_idx",
-      "definition": "CREATE INDEX styles_reverse_idx ON public.building_styles USING btree (style_id, building_id)"
-    },
-    {
-      "table_name": "building_types",
-      "name": "building_types_name_key",
-      "definition": "CREATE UNIQUE INDEX building_types_name_key ON public.building_types USING btree (name)"
-    },
-    {
-      "table_name": "building_types",
-      "name": "building_types_pkey",
-      "definition": "CREATE UNIQUE INDEX building_types_pkey ON public.building_types USING btree (id)"
-    },
-    {
-      "table_name": "buildings",
-      "name": "buildings_pkey",
-      "definition": "CREATE UNIQUE INDEX buildings_pkey ON public.buildings USING btree (id)"
-    },
-    {
-      "table_name": "buildings",
-      "name": "buildings_site_idx",
-      "definition": "CREATE INDEX buildings_site_idx ON public.buildings USING btree (site_id)"
-    },
-    {
-      "table_name": "buildings",
-      "name": "buildings_slug_key",
-      "definition": "CREATE UNIQUE INDEX buildings_slug_key ON public.buildings USING btree (slug)"
-    },
-    {
-      "table_name": "buildings",
-      "name": "buildings_status_idx",
-      "definition": "CREATE INDEX buildings_status_idx ON public.buildings USING btree (status)"
-    },
-    {
-      "table_name": "buildings",
-      "name": "buildings_type_idx",
-      "definition": "CREATE INDEX buildings_type_idx ON public.buildings USING btree (type_id)"
-    },
-    {
-      "table_name": "citations",
-      "name": "citations_building_idx",
-      "definition": "CREATE INDEX citations_building_idx ON public.citations USING btree (building_id)"
-    },
-    {
-      "table_name": "citations",
-      "name": "citations_pkey",
-      "definition": "CREATE UNIQUE INDEX citations_pkey ON public.citations USING btree (id)"
-    },
-    {
-      "table_name": "citations",
-      "name": "citations_source_idx",
-      "definition": "CREATE INDEX citations_source_idx ON public.citations USING btree (source_id)"
-    },
-    {
-      "table_name": "elements",
-      "name": "elements_name_key",
-      "definition": "CREATE UNIQUE INDEX elements_name_key ON public.elements USING btree (name)"
-    },
-    {
-      "table_name": "elements",
-      "name": "elements_pkey",
-      "definition": "CREATE UNIQUE INDEX elements_pkey ON public.elements USING btree (id)"
-    },
-    {
-      "table_name": "hotspots",
-      "name": "hotspots_building_id_storage_key_element_id_key",
-      "definition": "CREATE UNIQUE INDEX hotspots_building_id_storage_key_element_id_key ON public.hotspots USING btree (building_id, storage_key, element_id)"
-    },
-    {
-      "table_name": "hotspots",
-      "name": "hotspots_element_idx",
-      "definition": "CREATE INDEX hotspots_element_idx ON public.hotspots USING btree (element_id, building_id)"
-    },
-    {
-      "table_name": "hotspots",
-      "name": "hotspots_pkey",
-      "definition": "CREATE UNIQUE INDEX hotspots_pkey ON public.hotspots USING btree (id)"
-    },
-    {
-      "table_name": "images",
-      "name": "images_building_asset_unique",
-      "definition": "CREATE UNIQUE INDEX images_building_asset_unique ON public.images USING btree (building_id, storage_key)"
-    },
-    {
-      "table_name": "images",
-      "name": "images_building_id_source_page_url_key",
-      "definition": "CREATE UNIQUE INDEX images_building_id_source_page_url_key ON public.images USING btree (building_id, source_page_url)"
-    },
-    {
-      "table_name": "images",
-      "name": "images_building_idx",
-      "definition": "CREATE INDEX images_building_idx ON public.images USING btree (building_id)"
-    },
-    {
-      "table_name": "images",
-      "name": "images_pkey",
-      "definition": "CREATE UNIQUE INDEX images_pkey ON public.images USING btree (id)"
-    },
-    {
-      "table_name": "images",
-      "name": "one_cover_per_building",
-      "definition": "CREATE UNIQUE INDEX one_cover_per_building ON public.images USING btree (building_id) WHERE is_cover"
-    },
-    {
-      "table_name": "materials",
-      "name": "materials_name_key",
-      "definition": "CREATE UNIQUE INDEX materials_name_key ON public.materials USING btree (name)"
-    },
-    {
-      "table_name": "materials",
-      "name": "materials_pkey",
-      "definition": "CREATE UNIQUE INDEX materials_pkey ON public.materials USING btree (id)"
-    },
-    {
-      "table_name": "schema_migrations",
-      "name": "schema_migrations_pkey",
-      "definition": "CREATE UNIQUE INDEX schema_migrations_pkey ON public.schema_migrations USING btree (name)"
-    },
-    {
-      "table_name": "seed_tasks",
-      "name": "seed_tasks_pkey",
-      "definition": "CREATE UNIQUE INDEX seed_tasks_pkey ON public.seed_tasks USING btree (name)"
-    },
-    {
-      "table_name": "sessions",
-      "name": "sessions_expire_idx",
-      "definition": "CREATE INDEX sessions_expire_idx ON public.sessions USING btree (expire)"
-    },
-    {
-      "table_name": "sessions",
-      "name": "sessions_pkey",
-      "definition": "CREATE UNIQUE INDEX sessions_pkey ON public.sessions USING btree (sid)"
-    },
-    {
-      "table_name": "sites",
-      "name": "sites_name_key",
-      "definition": "CREATE UNIQUE INDEX sites_name_key ON public.sites USING btree (name)"
-    },
-    {
-      "table_name": "sites",
-      "name": "sites_pkey",
-      "definition": "CREATE UNIQUE INDEX sites_pkey ON public.sites USING btree (id)"
-    },
-    {
-      "table_name": "sites",
-      "name": "sites_slug_key",
-      "definition": "CREATE UNIQUE INDEX sites_slug_key ON public.sites USING btree (slug)"
-    },
-    {
-      "table_name": "sites",
-      "name": "sites_state_idx",
-      "definition": "CREATE INDEX sites_state_idx ON public.sites USING btree (state)"
-    },
-    {
-      "table_name": "sources",
-      "name": "sources_pkey",
-      "definition": "CREATE UNIQUE INDEX sources_pkey ON public.sources USING btree (id)"
-    },
-    {
-      "table_name": "sources",
-      "name": "sources_url_key",
-      "definition": "CREATE UNIQUE INDEX sources_url_key ON public.sources USING btree (url)"
-    },
-    {
-      "table_name": "states",
-      "name": "states_pkey",
-      "definition": "CREATE UNIQUE INDEX states_pkey ON public.states USING btree (name)"
-    },
-    {
-      "table_name": "styles",
-      "name": "styles_name_key",
-      "definition": "CREATE UNIQUE INDEX styles_name_key ON public.styles USING btree (name)"
-    },
-    {
-      "table_name": "styles",
-      "name": "styles_pkey",
-      "definition": "CREATE UNIQUE INDEX styles_pkey ON public.styles USING btree (id)"
-    }
-  ],
-  "views": [
-    {
-      "viewname": "published_building_summary",
-      "definition": " SELECT b.id,\n    b.name,\n    b.slug,\n    b.summary,\n    b.date_label,\n    s.name AS site,\n    t.name AS building_type\n   FROM ((buildings b\n     JOIN sites s ON ((s.id = b.site_id)))\n     JOIN building_types t ON ((t.id = b.type_id)))\n  WHERE (b.status = 'published'::text);"
     }
   ]
 }

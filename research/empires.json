@@ -1,0 +1,2796 @@
+{
+  "researchedOn": "2026-11-26",
+  "scope": "Dates bound monument phases represented in this collection, not the lifespan or territorial extent of a polity. Historical context does not prove construction patronage.",
+  "empires": [
+    {
+      "slug": "vijayanagara",
+      "name": "Vijayanagara Empire",
+      "kind": "empire",
+      "region": "Southern Deccan",
+      "summary": "Courtly and sacred building at Hampi",
+      "history": "Temple precincts, pillared halls and royal enclosures coexist in the capital landscape. A Vijayanagara phase can be an enlargement of a much older sacred site. In the collection: Developed under Vijayanagara patronage, the complex forms part of Hampi's sacred landscape. Its buildings reflect successive phases rather than a single construction event.",
+      "architectural_notes": "Vitthala Temple: An enclosure brings together the main shrine, pillared halls and the chariot-shaped shrine. Architectural details reward close inspection of individual pillars and pavilions. Virupaksha Temple: Two main courts divide the rectangular enclosure. Gateway towers establish the approach to the shrine and its pillared spaces. Achyutaraya Temple: Two precinct walls frame courtyards and gateway towers. A vestibule and assembly hall connect the sanctuary with the larger mandapa.",
+      "sources": [
+        {
+          "title": "Group of Monuments at Hampi",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/241/",
+          "topic": "History and architectural context",
+          "locator": "Brief synthesis; Vijayanagara context"
+        },
+        {
+          "title": "Virupaksha Temple Complex and its surrounding",
+          "publisher": "Archaeological Survey of India, Hampi Circle",
+          "url": "https://www.asihampicircle.in/virupaksha-temple-complex-and-its-surrounding/",
+          "topic": "History and architectural context",
+          "locator": "Virupaksha Temple"
+        },
+        {
+          "title": "Vittala temple complex and its surrounding",
+          "publisher": "Archaeological Survey of India, Hampi Circle",
+          "url": "https://www.asihampicircle.in/vittala-temple-complex-and-its-surrounding/",
+          "topic": "History and architectural context",
+          "locator": "Achyutaraya Temple"
+        },
+        {
+          "title": "Krishna Temple, Hampi",
+          "publisher": "Incredible India, Ministry of Tourism",
+          "url": "https://www.incredibleindia.gov.in/en/karnataka/hampi/krishna-temple",
+          "topic": "History and architectural context",
+          "locator": "Krishna Temple"
+        },
+        {
+          "title": "Royal Enclosure area",
+          "publisher": "Archaeological Survey of India, Hampi Circle",
+          "url": "https://www.asihampicircle.in/royal-enclosure-area/",
+          "topic": "History and architectural context",
+          "locator": "Hazara Rama Temple"
+        },
+        {
+          "title": "Lotus Mahal",
+          "publisher": "Karnataka Tourism",
+          "url": "https://karnatakatourism.org/en/attractions/lotus-mahal/",
+          "topic": "History and architectural context",
+          "locator": "Lotus Mahal"
+        },
+        {
+          "title": "Elephant Stables, Hampi",
+          "publisher": "Incredible India, Ministry of Tourism",
+          "url": "https://www.incredibleindia.gov.in/en/karnataka/hampi/elephant-stables",
+          "topic": "History and architectural context",
+          "locator": "Elephant Stables"
+        },
+        {
+          "title": "Queen’s Bath",
+          "publisher": "Government of Karnataka, Hampi GIS Tourism Portal",
+          "url": "https://hampi360.com/42queensbath.html",
+          "topic": "History and architectural context",
+          "locator": "Queen’s Bath"
+        },
+        {
+          "title": "Veerabhadra Temple, Lepakshi",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/tentativelists/6607/",
+          "topic": "History and architectural context",
+          "locator": "Description, temple architecture and patronage"
+        }
+      ],
+      "year_from": 1400,
+      "year_to": 1600,
+      "date_label": "Documented collection phases: 1400 CE–1600 CE"
+    },
+    {
+      "slug": "early-chalukya",
+      "name": "Early Chalukyas of Badami",
+      "kind": "dynasty",
+      "region": "Malaprabha valley, Karnataka",
+      "summary": "Experimentation in structural and rock-cut temples",
+      "history": "Aihole, Badami and Pattadakal preserve varied shrine forms. Northern and southern architectural vocabularies occur within this regional collection. In the collection: The temple commemorates the military success of Lokamahadevi's husband. Its location within the Pattadakal ensemble makes it a useful point of comparison with neighbouring temple forms.",
+      "architectural_notes": "Virupaksha Temple: The southern architectural tradition is expressed in the temple's shrine and superstructure. Sculpture is integral to its architectural treatment. Badami Cave 3: A pillared entrance space leads into the excavated interior. Large relief panels and carved bracket figures are important parts of the architectural experience. Durga Temple: A rounded shrine end and surrounding passage distinguish the plan. An open colonnade, hall and porch establish a sequence between the exterior and the shrine.",
+      "sources": [
+        {
+          "title": "Group of Monuments at Pattadakal",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/239/",
+          "topic": "History and architectural context",
+          "locator": "Property description"
+        },
+        {
+          "title": "Badami Caves",
+          "publisher": "Bagalkote District, Government of Karnataka",
+          "url": "https://bagalkot.nic.in/en/tourist-place/badami-caves/",
+          "topic": "History and architectural context",
+          "locator": "Cave III"
+        },
+        {
+          "title": "The Great Durga Temple",
+          "publisher": "Archaeological Survey of India, Dharwad Circle",
+          "url": "https://www.asidharwadcircle.in/monument/the-great-durga-temple/",
+          "topic": "History and architectural context",
+          "locator": "Architectural description"
+        },
+        {
+          "title": "Mallikarjuna Temple",
+          "publisher": "Karnataka Tourism",
+          "url": "https://karnatakatourism.org/en/attractions/mallikarjuna-temple/",
+          "topic": "History and architectural context",
+          "locator": "Mallikarjuna Temple"
+        },
+        {
+          "title": "Sangameshwara Temple, Pattadakal",
+          "publisher": "Archaeological Survey of India, Dharwad Circle",
+          "url": "https://www.asidharwadcircle.in/sangameshwara-temple-the-temple-of-sangameshwarto-the-north-of-virupaksha-pattadakal-district-bagalkote/",
+          "topic": "History and architectural context",
+          "locator": "Sangameshvara Temple"
+        },
+        {
+          "title": "Pattadakal",
+          "publisher": "Bagalkote District, Government of Karnataka",
+          "url": "https://bagalkot.nic.in/en/tourist-place/pattadakal/",
+          "topic": "History and architectural context",
+          "locator": "Papanatha Temple"
+        },
+        {
+          "title": "Galganath temple on the north of Sangameshwar temple",
+          "publisher": "Archaeological Survey of India, Dharwad Circle",
+          "url": "https://www.asidharwadcircle.in/monument/galganath-temple-on-the-north-of-sangameshwar-temple/",
+          "topic": "History and architectural context",
+          "locator": "Galaganatha Temple"
+        },
+        {
+          "title": "Jambulinga temple on the west of Galganath",
+          "publisher": "Archaeological Survey of India, Dharwad Circle",
+          "url": "https://www.asidharwadcircle.in/monument/jambulinga-temple-on-the-west-of-galganath/",
+          "topic": "History and architectural context",
+          "locator": "Jambulinga Temple"
+        },
+        {
+          "title": "The Bhutnath group of temples on the east margin of the tank",
+          "publisher": "Archaeological Survey of India, Dharwad Circle",
+          "url": "https://www.asidharwadcircle.in/monument/the-bhutanath-group-of-temples-on-the-east-margin-of-the-tank/",
+          "topic": "History and architectural context",
+          "locator": "Bhutanatha Temple"
+        },
+        {
+          "title": "Temple on the knoll under the bastion of the north fort",
+          "publisher": "Archaeological Survey of India, Dharwad Circle",
+          "url": "https://www.asidharwadcircle.in/monument/temples-on-the-knoll-under-the-bastion-of-the-north-fort/",
+          "topic": "History and architectural context",
+          "locator": "Malegitti Shivalaya"
+        },
+        {
+          "title": "Aihole",
+          "publisher": "Bagalkote District, Government of Karnataka",
+          "url": "https://bagalkot.nic.in/en/tourist-place/aihole/",
+          "topic": "History and architectural context",
+          "locator": "Lad Khan Temple"
+        },
+        {
+          "title": "The Jain Temple of Meguti",
+          "publisher": "Archaeological Survey of India, Dharwad Circle",
+          "url": "https://www.asidharwadcircle.in/monument/the-jain-temple-of-meguti/",
+          "topic": "History and architectural context",
+          "locator": "Meguti Jain Temple"
+        },
+        {
+          "title": "Evolution of Temple Architecture – Aihole–Badami–Pattadakal",
+          "publisher": "UNESCO World Heritage Centre, tentative-list submission",
+          "url": "https://whc.unesco.org/en/tentativelists/5972/",
+          "topic": "History and architectural context",
+          "locator": "Hucchimalli Temple"
+        },
+        {
+          "title": "The Art and Architecture of Aihole",
+          "publisher": "Institutional digitization, Indira Gandhi National Centre for the Arts",
+          "url": "https://ignca.gov.in/Asi_data/48215.pdf",
+          "topic": "History and architectural context",
+          "locator": "Huchappayya Matha"
+        }
+      ],
+      "year_from": 500,
+      "year_to": 999,
+      "date_label": "Documented collection phases: 500 CE–999 CE"
+    },
+    {
+      "slug": "hoysala",
+      "name": "Hoysala dynasty",
+      "kind": "dynasty",
+      "region": "Southern Karnataka",
+      "summary": "Temples and sculptural programmes",
+      "history": "Belur, Halebidu and Somanathapura represent distinct commissions. Shared craftsmanship does not make their patrons or construction dates identical. In the collection: Worship at the Belur temple is documented from 1117 CE. It belongs to the UNESCO-listed Sacred Ensembles of the Hoysalas and remains an active religious place.",
+      "architectural_notes": "Chennakeshava Temple: The circumambulatory platform allows the exterior to be experienced as a sequence of carved surfaces. The present form also reflects changes and losses over time. Hoysaleswara Temple: Two sanctuaries, for Hoysaleswara and Shantaleswara, form the temple composition. A raised platform follows the articulated outline, while turned pillars and ornamented ceilings distinguish the interior. Keshava Temple: Three shrines form a trikuta arrangement on a raised, star-shaped platform. Horizontal sculptural bands animate the outer walls, while the platform supports movement around the temple.",
+      "sources": [
+        {
+          "title": "Sacred Ensembles of the Hoysalas",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/1670/",
+          "topic": "History and architectural context",
+          "locator": "Integrity and Authenticity"
+        },
+        {
+          "title": "Somanathpura Temple",
+          "publisher": "Karnataka Tourism",
+          "url": "https://karnatakatourism.org/en/attractions/somanathpura-temple/",
+          "topic": "History and architectural context",
+          "locator": "Keshava Temple"
+        }
+      ],
+      "year_from": 1100,
+      "year_to": 1268,
+      "date_label": "Documented collection phases: 1100 CE–1268 CE"
+    },
+    {
+      "slug": "chola",
+      "name": "Chola Empire",
+      "kind": "empire",
+      "region": "Tamil Nadu and the Kaveri region",
+      "summary": "Monumental sacred complexes",
+      "history": "The three Great Living Chola Temples represent successive royal commissions. Their continued ritual use and later repairs are separate from their initial building phases. In the collection: The temple is associated with Rajaraja I and the early eleventh-century Chola state. It remains part of a living religious tradition; painting, sculpture and stone construction complement the monumental sanctuary tower.",
+      "architectural_notes": "Brihadisvara Temple: The tall pyramidal vimana dominates a broad enclosed court. Gateways and subsidiary structures establish an axial approach to the sanctuary. Airavatesvara Temple: The sanctuary tower and richly articulated mandapa form the main composition. Chariot-like sculptural treatment and finely worked supports distinguish its ceremonial spaces. Brihadisvara Temple, Gangaikonda Cholapuram: The shrine rises into a tiered vimana. Sculpture is integrated into the exterior niches and the main axis includes a pillared hall.",
+      "sources": [
+        {
+          "title": "Brihadisvara Temple — historical and architectural reference",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/250/",
+          "topic": "History and architectural context",
+          "locator": "Monument description and historical context"
+        }
+      ],
+      "year_from": 1003,
+      "year_to": 1200,
+      "date_label": "Documented collection phases: 1003 CE–1200 CE"
+    },
+    {
+      "slug": "pallava",
+      "name": "Pallava dynasty",
+      "kind": "dynasty",
+      "region": "Northern Tamil Nadu",
+      "summary": "Rock-cut and structural sacred architecture",
+      "history": "The monuments at Mahabalipuram and Kanchipuram preserve different building techniques and temple forms within Pallava-period traditions. In the collection: The Shore Temple belongs to the Pallava architectural landscape at Mahabalipuram. Unlike the group’s rock-cut caves and monolithic rathas, it represents structural temple building beside the sea.",
+      "architectural_notes": "Shore Temple: Two prominent tiered towers and associated shrines occupy a compact coastal precinct. Nandi figures along the enclosure reinforce the shrine ensemble’s sculptural setting. Kailasanatha Temple, Kanchipuram: A tiered shrine rises inside an enclosure lined with smaller shrines. A narrow passage permits circulation around the sanctum.",
+      "sources": [
+        {
+          "title": "Shore Temple — historical and architectural reference",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/249/",
+          "topic": "History and architectural context",
+          "locator": "Monument description and historical context"
+        },
+        {
+          "title": "Kailasanatha Temple, Kanchipuram",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/tentativelists/6528/",
+          "topic": "History and architectural context",
+          "locator": "Rajasimhesvaram (Kailasanatha temple)"
+        }
+      ],
+      "year_from": 700,
+      "year_to": 728,
+      "date_label": "Documented collection phases: 700 CE–728 CE"
+    },
+    {
+      "slug": "mughal",
+      "name": "Mughal Empire",
+      "kind": "empire",
+      "region": "Northern India and Kashmir",
+      "summary": "Imperial cities, tombs and gardens",
+      "history": "The collection connects monumental tombs, fortified precincts, mosques and gardens. Named patronage is retained where documented; a stylistic association alone is historical context. In the collection: Shah Jahan commissioned the mausoleum for Mumtaz Mahal beside the Yamuna. UNESCO distinguishes the main tomb’s completion in 1648 from later ancillary works completed in 1653; its descriptions also use different starting years, so this record retains that uncertainty.",
+      "architectural_notes": "Taj Mahal: The tomb stands on a raised terrace beyond a formally divided garden. Four minarets frame the central domed building, while subsidiary structures and a monumental entrance organize the approach. Agra Fort: Fortified gates lead into successive courts and palace precincts. The Jahangiri Mahal, Khas Mahal and audience halls should be read as distinct components within the larger enclosure. Fatehpur Sikri: The complex includes palaces, public audience spaces, columned pavilions and a mosque precinct. Levels and courtyards separate public circulation from more restricted royal spaces.",
+      "sources": [
+        {
+          "title": "Taj Mahal — historical and architectural reference",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/252/",
+          "topic": "History and architectural context",
+          "locator": "Monument description and historical context"
+        },
+        {
+          "title": "Agra Fort — historical and architectural reference",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/251/",
+          "topic": "History and architectural context",
+          "locator": "Monument description and historical context"
+        },
+        {
+          "title": "Fatehpur Sikri — historical and architectural reference",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/255/",
+          "topic": "History and architectural context",
+          "locator": "Monument description and historical context"
+        },
+        {
+          "title": "Humayun’s Tomb — historical and architectural reference",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/232/",
+          "topic": "History and architectural context",
+          "locator": "Monument description and historical context"
+        },
+        {
+          "title": "Red Fort — historical and architectural reference",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/231/",
+          "topic": "History and architectural context",
+          "locator": "Monument description and historical context"
+        },
+        {
+          "title": "Jama Masjid, Delhi",
+          "publisher": "Delhi Tourism",
+          "url": "https://www.delhitourism.gov.in/tourist_place/jama_masjid.html",
+          "topic": "History and architectural context",
+          "locator": "Architectural description and history"
+        },
+        {
+          "title": "Sheikh Chilli's Tomb — history and architecture",
+          "publisher": "archaeology.haryana.gov.in",
+          "url": "https://archaeology.haryana.gov.in/sites/default/files/site-docs/Heritage-Monuments-and-Sites-of-Haryana.pdf",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        },
+        {
+          "title": "Pari Mahal — history and architecture",
+          "publisher": "whc.unesco.org",
+          "url": "https://whc.unesco.org/en/tentativelists/5580/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1565,
+      "year_to": 1700,
+      "date_label": "Documented collection phases: 1565 CE–1700 CE"
+    },
+    {
+      "slug": "delhi-sultanate",
+      "name": "Delhi Sultanate",
+      "kind": "sultanate",
+      "region": "Delhi and the Deccan",
+      "summary": "Minarets and fortified landscapes",
+      "history": "The Qutb ensemble and the later political use of Daulatabad illustrate different aspects of the sultanate's built environment. Control of a fort is distinct from its original construction. In the collection: The minaret forms part of a larger early Sultanate ensemble at Mehrauli. Successive construction and repair phases shaped the tower now visible; nearby mosques, tombs and gateways belong to the complex but are not interchangeable with the minaret itself.",
+      "architectural_notes": "Qutb Minar: The circular tower narrows upward through successive storeys. Alternating fluted surfaces, inscription bands and projecting balconies articulate the elevation. Daulatabad Fort: Successive fortified enclosures, gateways, a moat and a steep citadel exploit the isolated hill's terrain.",
+      "sources": [
+        {
+          "title": "Qutb Minar — historical and architectural reference",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/233/",
+          "topic": "History and architectural context",
+          "locator": "Monument description and historical context"
+        },
+        {
+          "title": "Daulatabad Fort — history and architecture",
+          "publisher": "maharashtratourism.gov.in",
+          "url": "https://maharashtratourism.gov.in/fort/devgiri-daulatabad/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1199,
+      "year_to": 1368,
+      "date_label": "Documented collection phases: 1199 CE–1368 CE"
+    },
+    {
+      "slug": "rashtrakuta",
+      "name": "Rashtrakuta dynasty",
+      "kind": "dynasty",
+      "region": "Deccan",
+      "summary": "Monumental rock-cut architecture",
+      "history": "Ellora's Kailasa shrine provides a documented setting for studying an excavated architectural ensemble and its sculptural surfaces. In the collection: Kailasa is the major monolithic Hindu temple within Ellora’s multi-religious cave complex. Excavation removed surrounding basalt to create courts, built-looking forms and sculptural surfaces from the parent rock.",
+      "architectural_notes": "Kailasa Temple, Ellora: A deep open court surrounds the main temple mass. Gateways, subsidiary spaces and relief-covered walls create a sequence that differs from a cave simply cut into a cliff face.",
+      "sources": [
+        {
+          "title": "Kailasa Temple, Ellora — historical and architectural reference",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/243/",
+          "topic": "History and architectural context",
+          "locator": "Monument description and historical context"
+        }
+      ],
+      "year_from": 750,
+      "year_to": 800,
+      "date_label": "Documented collection phases: 750 CE–800 CE"
+    },
+    {
+      "slug": "kakatiya",
+      "name": "Kakatiya dynasty",
+      "kind": "dynasty",
+      "region": "Telangana",
+      "summary": "Temple structures and carved stone",
+      "history": "Ramappa and the Thousand Pillar Temple document different Kakatiya-period commissions, with substantial attention to columns, raised bases and shrine arrangements. In the collection: The Rudreshwara temple at Palampet was commissioned in the Kakatiya period. UNESCO dates the beginning of its construction to 1213.",
+      "architectural_notes": "Ramappa Temple: A raised platform carries the main shrine and pillared hall. Carved brackets and a lightweight brick superstructure are among the documented details. Thousand Pillar Temple: The temple's three-shrine arrangement, sculpted columns and raised platform organize a compact ritual ensemble.",
+      "sources": [
+        {
+          "title": "Ramappa Temple",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/1570/",
+          "topic": "History and architectural context",
+          "locator": "Outstanding Universal Value, construction and materials"
+        },
+        {
+          "title": "Thousand Pillar Temple — history and architecture",
+          "publisher": "hanumakonda.telangana.gov.in",
+          "url": "https://hanumakonda.telangana.gov.in/tourist-place/thousand-pillar-temple/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1163,
+      "year_to": 1213,
+      "date_label": "Documented collection phases: 1163 CE–1213 CE"
+    },
+    {
+      "slug": "qutb-shahi",
+      "name": "Qutb Shahi dynasty",
+      "kind": "sultanate",
+      "region": "Hyderabad and Golconda",
+      "summary": "Fortified capitals and commemorative buildings",
+      "history": "Golconda, Charminar and the royal tombs connect defence, urban identity and funerary architecture. Each record retains its own date and evidence. In the collection: The Hyderabad district account dates the monument to 1591 under Muhammad Quli Qutb Shah. Several explanations for its commemoration survive; the record does not turn an uncertain founding story into an established fact.",
+      "architectural_notes": "Charminar: Four large arches define passages through the square structure. Corner minarets, balconies and upper-level spaces mark the monument’s relationship to the surrounding streets. Golconda Fort: The granite hill carries the upper citadel. Successive lines of walls, gateways and bastions control access to the interior. Qutb Shahi Tombs: Domed tombs rise on platforms and often use repeated arches to articulate their elevations.",
+      "sources": [
+        {
+          "title": "Charminar — historical and architectural reference",
+          "publisher": "Official heritage, tourism or monument-management authority",
+          "url": "https://hyderabad.telangana.gov.in/tourist-place/charminar/",
+          "topic": "History and architectural context",
+          "locator": "Monument description and historical context"
+        },
+        {
+          "title": "The Qutb Shahi Monuments of Hyderabad",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/tentativelists/5573/",
+          "topic": "History and architectural context",
+          "locator": "Description, Golconda Fort"
+        }
+      ],
+      "year_from": 1518,
+      "year_to": 1687,
+      "date_label": "Documented collection phases: 1518 CE–1687 CE"
+    },
+    {
+      "slug": "gujarat-sultanate",
+      "name": "Gujarat Sultanate",
+      "kind": "sultanate",
+      "region": "Gujarat",
+      "summary": "Mosques, stone screens and regional craftsmanship",
+      "history": "Champaner and Ahmedabad preserve distinct mosque ensembles. Gujarat's architecture also reflects local patrons and craftspeople beyond any one ruling house. In the collection: The congregational mosque belongs to the Gujarat Sultanate phase of Champaner. The park preserves the mosque alongside the fortified capital and earlier remains.",
+      "architectural_notes": "Jami Masjid, Champaner: Two slender minarets flank the central entrance and an open courtyard leads to the prayer hall. Sidi Saiyyed Mosque: The open façade is articulated by arches. Carved stone screens fill windows in the rear wall. Adalaj Stepwell: Multiple subterranean levels descend toward the well through carved columns, landings and an octagonal opening.",
+      "sources": [
+        {
+          "title": "Jami Masjid, Champaner",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/1101/",
+          "topic": "History and architectural context",
+          "locator": "Outstanding Universal Value, Great Mosque"
+        },
+        {
+          "title": "Sidi Saiyyed Mosque",
+          "publisher": "Ahmedabad Municipal Corporation",
+          "url": "https://heritage.ahmedabadcity.gov.in/details/67/heritage_site/evening-walk/en",
+          "topic": "History and architectural context",
+          "locator": "Sidi Saiyyed Mosque, architecture and jalis"
+        },
+        {
+          "title": "Adalaj Stepwell — history and architecture",
+          "publisher": "gujarattourism.com",
+          "url": "https://www.gujarattourism.com/content/dam/gujrattourism/images/ebroucher/50GoldenDestinationofGujarat.pdf",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1498,
+      "year_to": 1573,
+      "date_label": "Documented collection phases: 1498 CE–1573 CE"
+    },
+    {
+      "slug": "malwa-sultanate",
+      "name": "Malwa Sultanate",
+      "kind": "sultanate",
+      "region": "Malwa, Madhya Pradesh",
+      "summary": "Courtly architecture at Mandu",
+      "history": "Mandu's palace landscape brings together water, courts and vaulted spaces. The archive's association is restricted to the monument evidence linked below. In the collection: The Dhar district account attributes the palace to Ghiyasuddin Khalji. An architectural survey proposes the earlier reign of Mahmud Khalji I. The date range reflects both attributions.",
+      "architectural_notes": "Jahaz Mahal, Mandu: A long double-storey range with terraces and roof pavilions extends between the Munj and Kapur tanks.",
+      "sources": [
+        {
+          "title": "Jahaz Mahal, Mandu",
+          "publisher": "Dhar District",
+          "url": "https://dhar.nic.in/en/tourist-place/jahaz-mahal-ship-palace/",
+          "topic": "History and architectural context",
+          "locator": "Description of the Ship Palace"
+        }
+      ],
+      "year_from": 1436,
+      "year_to": 1500,
+      "date_label": "Documented collection phases: 1436 CE–1500 CE"
+    },
+    {
+      "slug": "adil-shahi",
+      "name": "Adil Shahi dynasty",
+      "kind": "sultanate",
+      "region": "Bijapur, Karnataka",
+      "summary": "Royal funerary architecture",
+      "history": "Gol Gumbaz connects an immense domed chamber with a specific royal funerary setting. It is not a label for every later monument in Karnataka. In the collection: Gol Gumbaz is the mausoleum of Muhammad Adil Shah of Bijapur. The domed chamber contains the Whispering Gallery around its interior.",
+      "architectural_notes": "Gol Gumbaz: A large dome crowns the square chamber, and four corner towers contain stairs to the upper level.",
+      "sources": [
+        {
+          "title": "Gol Gumbaz",
+          "publisher": "Vijayapura District",
+          "url": "https://vijayapura.nic.in/en/places-of-interest/",
+          "topic": "History and architectural context",
+          "locator": "Description of mausoleum and gallery"
+        }
+      ],
+      "year_from": 1626,
+      "year_to": 1656,
+      "date_label": "Documented collection phases: 1626 CE–1656 CE"
+    },
+    {
+      "slug": "ahom",
+      "name": "Ahom kingdom",
+      "kind": "kingdom",
+      "region": "Assam",
+      "summary": "Royal pavilions, temples and burial landscapes",
+      "history": "Rang Ghar, Shiva Dol and the Moidams show different royal and sacred functions. The burial landscape developed over many generations. In the collection: The Assam district account places the Shivadol, Vishnudol and Devidol beside the tank in 1734 under Queen Madambika. This record concerns the Shiva temple, not every structure at the larger water precinct.",
+      "architectural_notes": "Shiva Dol: A rising sanctuary tower gives the temple a strong vertical profile. Its relationship to the tank and adjoining shrines is an important part of the setting. Rang Ghar: A two-storeyed, elongated pavilion uses repeated openings and a curved roof profile to face the surrounding ground. Charaideo Moidams: Earth-covered burial vaults, small shrines and enclosing walls form a funerary landscape integrated with the terrain.",
+      "sources": [
+        {
+          "title": "Shiva Dol — historical and architectural reference",
+          "publisher": "Official heritage, tourism or monument-management authority",
+          "url": "https://sivasagar.assam.gov.in/about-district/district-glance",
+          "topic": "History and architectural context",
+          "locator": "Monument description and historical context"
+        },
+        {
+          "title": "Rang Ghar — history and architecture",
+          "publisher": "en.wikipedia.org",
+          "url": "https://en.wikipedia.org/wiki/Rang_Ghar",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        },
+        {
+          "title": "Charaideo Moidams — history and architecture",
+          "publisher": "whc.unesco.org",
+          "url": "https://whc.unesco.org/en/list/1711/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1200,
+      "year_to": 1899,
+      "date_label": "Documented collection phases: 1200 CE–1899 CE"
+    },
+    {
+      "slug": "maratha",
+      "name": "Maratha polity",
+      "kind": "confederacy",
+      "region": "Maharashtra and Tamil Nadu",
+      "summary": "Landscape-based fortification",
+      "history": "Hill, coastal and island forts adapted defence to terrain. Maratha occupation or strengthening need not establish the earliest construction date of a fort. In the collection: Shivaji adapted the earlier hill fort as a Maratha capital and held his coronation there in 1674. Its history includes earlier occupation and later military events.",
+      "architectural_notes": "Raigad Fort: Gateways and defensive walls guard approaches to palace platforms, courts and other summit remains. Sindhudurg Fort: Masonry ramparts and bastions follow the island's edge, enclosing internal buildings and protected landing approaches. Gingee Fort: Three fortified hills, connecting walls, gateways and water-storage works form a defensive landscape.",
+      "sources": [
+        {
+          "title": "Raigad Fort — history and architecture",
+          "publisher": "raigad.gov.in",
+          "url": "https://raigad.gov.in/en/tourist-place/forts-in-raigad/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        },
+        {
+          "title": "Sindhudurg Fort — history and architecture",
+          "publisher": "sindhudurg.nic.in",
+          "url": "https://sindhudurg.nic.in/en/tourist-place/sindhudurg-fort/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        },
+        {
+          "title": "Gingee Fort — history and architecture",
+          "publisher": "whc.unesco.org",
+          "url": "https://whc.unesco.org/en/list/1739/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1500,
+      "year_to": 1799,
+      "date_label": "Documented collection phases: 1500 CE–1799 CE"
+    },
+    {
+      "slug": "portuguese-india",
+      "name": "Portuguese administration in India",
+      "kind": "colonial administration",
+      "region": "Goa and Diu",
+      "summary": "Churches and coastal military architecture",
+      "history": "Goa's churches and Diu's fort belong to different religious and military settings under Portuguese administration. Communities and institutions also exercised patronage. In the collection: The basilica is a component of Goa’s World Heritage churches and convents and houses the tomb associated with Francis Xavier. Its early modern architecture belongs to the wider exchange of European religious forms in Portuguese Asia.",
+      "architectural_notes": "Basilica of Bom Jesus: An articulated façade uses Classical architectural orders. The longitudinal church interior and associated funerary setting should be distinguished from the larger Old Goa group. Se Cathedral: A long church plan with chapels and a monumental facade opens onto Old Goa's ecclesiastical precinct. Diu Fort: Massive coastal ramparts, bastions and landward defences enclose an eastern promontory of the island.",
+      "sources": [
+        {
+          "title": "Basilica of Bom Jesus — historical and architectural reference",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/234/",
+          "topic": "History and architectural context",
+          "locator": "Monument description and historical context"
+        },
+        {
+          "title": "Diu Fort — history and architecture",
+          "publisher": "diu.gov.in",
+          "url": "https://diu.gov.in/tourist-place/forts/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1535,
+      "year_to": 1619,
+      "date_label": "Documented collection phases: 1535 CE–1619 CE"
+    },
+    {
+      "slug": "british-india",
+      "name": "British colonial administration",
+      "kind": "colonial administration",
+      "region": "Several Indian regions",
+      "summary": "Transport, memorials and colonial institutions",
+      "history": "Railway, civic and penal buildings served different colonial functions. Their designers, patrons and users should be studied separately rather than flattened into one architectural style. In the collection: The memorial belongs to the early twentieth century and now functions as a museum. Its monumental composition combines European Classical and Renaissance references with Indian architectural elements; it broadens the archive beyond ancient and medieval monuments.",
+      "architectural_notes": "Victoria Memorial: A central dome organizes a symmetrical memorial building. Subsidiary domed forms, colonnaded approaches and formal gardens create the larger civic composition. Chhatrapati Shivaji Maharaj Terminus: The central dome anchors a symmetrical façade articulated by towers, gables and pointed openings. Gateway of India: A tall central opening faces the harbour, framed by projecting towers and a central dome.",
+      "sources": [
+        {
+          "title": "Victoria Memorial — historical and architectural reference",
+          "publisher": "Official heritage, tourism or monument-management authority",
+          "url": "https://victoriamemorial-cal.org/history/",
+          "topic": "History and architectural context",
+          "locator": "Monument description and historical context"
+        },
+        {
+          "title": "Chhatrapati Shivaji Maharaj Terminus",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/945/",
+          "topic": "History and architectural context",
+          "locator": "Description and Outstanding Universal Value"
+        },
+        {
+          "title": "Gateway of India",
+          "publisher": "Mumbai City District",
+          "url": "https://mumbaicity.gov.in/tourist-place/gateway-of-india/",
+          "topic": "History and architectural context",
+          "locator": "History, completion and ceremonial use"
+        },
+        {
+          "title": "India Gate",
+          "publisher": "Delhi Tourism",
+          "url": "https://www.delhitourism.gov.in/tourist_place/india_gate.html",
+          "topic": "History and architectural context",
+          "locator": "Description and foundation stone"
+        },
+        {
+          "title": "Cellular Jail",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/tentativelists/5888/",
+          "topic": "History and architectural context",
+          "locator": "Description, radial plan and National Memorial"
+        }
+      ],
+      "year_from": 1878,
+      "year_to": 1931,
+      "date_label": "Documented collection phases: 1878 CE–1931 CE"
+    },
+    {
+      "slug": "indus-civilisation",
+      "name": "Indus / Harappan civilisation",
+      "kind": "civilisation",
+      "region": "Gujarat and the wider Indus world",
+      "summary": "Urban infrastructure and archaeological remains",
+      "history": "Lothal and Dholavira support comparison of urban planning, water systems and archaeological interpretation. This is a civilisation, not a securely identified imperial dynasty. In the collection: Dholavira preserves a long sequence of Harappan occupation. The mapped ruins include multiple divisions of the settlement and its engineered system for water storage.",
+      "architectural_notes": "Dholavira Harappan City: The fortified sectors and reservoirs reflect the site's response to seasonal water supply in an arid landscape. Lothal Archaeological Site: Excavated brick platforms, drains, domestic areas and a large basin reveal aspects of settlement planning.",
+      "sources": [
+        {
+          "title": "Dholavira Harappan City",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/1645/",
+          "topic": "History and architectural context",
+          "locator": "Description and Outstanding Universal Value"
+        },
+        {
+          "title": "Lothal Archaeological Site — history and architecture",
+          "publisher": "whc.unesco.org",
+          "url": "https://whc.unesco.org/en/tentativelists/5918/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": -3000,
+      "year_to": -1500,
+      "date_label": "Documented collection phases: 3000 BCE–1500 BCE"
+    },
+    {
+      "slug": "bundela",
+      "name": "Bundela rulers",
+      "kind": "dynasty",
+      "region": "Bundelkhand",
+      "summary": "Palaces and multi-storeyed courts",
+      "history": "Orchha and Datia connect palace architecture to Bundela patrons. Differing reported dates remain visible rather than being reduced to false precision. In the collection: Jahangir Mahal is associated with the Bundela ruler Bir Singh Deo. It forms part of the palace ensemble in Orchha's fortified river setting.",
+      "architectural_notes": "Jahangir Mahal, Orchha: Ranges enclose a central courtyard, with domed pavilions marking the corners and upper silhouette. Datia Palace: A compact, multi-storeyed mass of rooms, courts and roof pavilions rises above a rocky foundation.",
+      "sources": [
+        {
+          "title": "Jahangir Mahal, Orchha",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/tentativelists/6404/",
+          "topic": "History and architectural context",
+          "locator": "Description of palace plans and fort complex"
+        },
+        {
+          "title": "Datia Palace — history and architecture",
+          "publisher": "datia.nic.in",
+          "url": "https://datia.nic.in/en/culture-heritage/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1601,
+      "year_to": 1627,
+      "date_label": "Documented collection phases: 1601 CE–1627 CE"
+    },
+    {
+      "slug": "kullu",
+      "name": "Kullu kingdom",
+      "kind": "kingdom",
+      "region": "Himachal Pradesh",
+      "summary": "Himalayan timber shrine patronage",
+      "history": "Hadimba's surviving shrine is associated with Bahadur Singh. Local sacred tradition and the date of the surviving building are recorded separately. In the collection: Bahadur Singh commissioned the surviving shrine in 1553. The sanctuary encloses a natural rock associated with local worship; epic traditions are not treated as construction dates.",
+      "architectural_notes": "Hadimba Devi Temple: A timber superstructure rises above a stone base, with tiers of pitched roofs and carved entrance members.",
+      "sources": [
+        {
+          "title": "Hadimba Devi Temple — history and architecture",
+          "publisher": "himachaltourism.gov.in",
+          "url": "https://himachaltourism.gov.in/destination/temples/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1553,
+      "year_to": 1553,
+      "date_label": "Documented collection phases: 1553 CE"
+    },
+    {
+      "slug": "guge",
+      "name": "Guge kingdom",
+      "kind": "kingdom",
+      "region": "Western Tibet and Spiti",
+      "summary": "Buddhist monastic patronage",
+      "history": "Tabo's foundation is associated with western Tibetan royal patronage. The monastic compound also contains later phases. In the collection: The monastery was founded in 996 under western Tibetan royal patronage. Its painted interiors and later buildings represent several phases, rather than one unchanged tenth-century structure.",
+      "architectural_notes": "Tabo Monastery: Low earthen buildings enclose temple rooms and monastic spaces. Murals and modelled figures form important parts of the interiors.",
+      "sources": [
+        {
+          "title": "Tabo Monastery — history and architecture",
+          "publisher": "himachaltourism.gov.in",
+          "url": "https://himachaltourism.gov.in/destination/spiti-valley/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 996,
+      "year_to": 996,
+      "date_label": "Documented collection phases: 996 CE"
+    },
+    {
+      "slug": "sikh-empire",
+      "name": "Sikh Empire",
+      "kind": "empire",
+      "region": "Punjab",
+      "summary": "Sacred and defensive patronage",
+      "history": "The collection includes sacred architecture and additions to an earlier fort. Ranjit Singh's period of patronage does not establish the first foundation of every site. In the collection: The fort passed from the Bhangi Misl to Maharaja Ranjit Singh and later British control. Sikh-period strengthening is recorded as an addition, not as the first construction of every wall.",
+      "architectural_notes": "Gobindgarh Fort: Defensive walls, bastions, gateways and interior courts organize a lowland military enclosure.",
+      "sources": [
+        {
+          "title": "Gobindgarh Fort — history and architecture",
+          "publisher": "amritsar.nic.in",
+          "url": "https://amritsar.nic.in/tourist-place/gobindgarh-fort/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1809,
+      "year_to": 1839,
+      "date_label": "Documented collection phases: 1809 CE–1839 CE"
+    },
+    {
+      "slug": "utpala",
+      "name": "Utpala dynasty",
+      "kind": "dynasty",
+      "region": "Kashmir",
+      "summary": "Stone temple patronage",
+      "history": "Avantivarman's Avantiswami precinct survives as a ruined temple ensemble. Its colonnaded setting and carved fragments retain evidence of a specific ninth-century commission. In the collection: Avantivarman of the Utpala dynasty commissioned the ninth-century shrine. The record concentrates on the Avantiswami precinct rather than treating nearby temples as one building.",
+      "architectural_notes": "Avantiswami Temple: A central sanctuary platform stands within a rectangular, colonnaded enclosure. Carved architectural fragments survive around the ruined court.",
+      "sources": [
+        {
+          "title": "Avantiswami Temple — history and architecture",
+          "publisher": "en.wikipedia.org",
+          "url": "https://en.wikipedia.org/wiki/Avantiswami_Temple",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 855,
+      "year_to": 883,
+      "date_label": "Documented collection phases: 855 CE–883 CE"
+    },
+    {
+      "slug": "koch",
+      "name": "Koch kingdom",
+      "kind": "kingdom",
+      "region": "Assam and adjoining regions",
+      "summary": "Rebuilding of sacred sites",
+      "history": "Kamakhya's major sixteenth-century rebuilding is linked to Naranarayan. Earlier sacred origins and later additions are separate phases. In the collection: The shrine has earlier origins and repeated rebuilding. Koch ruler Naranarayan is associated with the major sixteenth-century reconstruction; later additions form part of its layered history.",
+      "architectural_notes": "Kamakhya Temple: The sanctuary and adjoining halls combine a rounded roof profile with carved external surfaces on Nilachal Hill.",
+      "sources": [
+        {
+          "title": "Kamakhya Temple — history and architecture",
+          "publisher": "assamtourism.gov.in",
+          "url": "https://assamtourism.gov.in/blog-4.php",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1565,
+      "year_to": 1565,
+      "date_label": "Documented collection phases: 1565 CE"
+    },
+    {
+      "slug": "jaintia",
+      "name": "Jaintia kingdom",
+      "kind": "kingdom",
+      "region": "Meghalaya",
+      "summary": "Sacred landscapes and local traditions",
+      "history": "Nartiang's shrine is associated with Jaintia religious history. A precise building date or a named commissioner for every current part has not been established here. In the collection: The Durga shrine is associated with Jaintia religious history. Sources describe centuries of worship, but a precise date for the photographed structure is not established here.",
+      "architectural_notes": "Nartiang Durga Temple: A roofed shrine and covered worship spaces retain a distinct hill-region setting. Timber members and the pitched roof are prominent visible elements.",
+      "sources": [
+        {
+          "title": "Nartiang Durga Temple — history and architecture",
+          "publisher": "icharchive.intach.org",
+          "url": "https://icharchive.intach.org/Detail/collections/224",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": null,
+      "year_to": null,
+      "date_label": "Dates vary by documented monument phase"
+    },
+    {
+      "slug": "manipur",
+      "name": "Kingdom of Manipur",
+      "kind": "kingdom",
+      "region": "Manipur",
+      "summary": "The Kangla royal precinct",
+      "history": "Kangla functioned as a seat of Manipuri rulers until 1891. Its changing sacred and royal structures represent more than one construction phase. In the collection: Kangla was the seat of Manipuri rulers until 1891. The palace precinct contains remains and renewed sacred structures; its traditional foundation chronology is not used as the date of every building.",
+      "architectural_notes": "Kangla Fort: Moats, gateways, temples and open grounds define a large fortified royal landscape in the centre of Imphal.",
+      "sources": [
+        {
+          "title": "Kangla Fort — history and architecture",
+          "publisher": "imphalwest.nic.in",
+          "url": "https://imphalwest.nic.in/tourist-place/kangla/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": null,
+      "year_to": null,
+      "date_label": "Dates vary by documented monument phase"
+    },
+    {
+      "slug": "manikya",
+      "name": "Manikya rulers of Tripura",
+      "kind": "dynasty",
+      "region": "Tripura",
+      "summary": "Princely palaces and water settings",
+      "history": "Ujjayanta and Neermahal represent different modern princely commissions. Unakoti's much earlier reliefs are not assigned to these rulers. In the collection: Maharaja Radha Kishore Manikya commissioned the palace in 1899–1901. It later accommodated the state legislature and now serves as a museum.",
+      "architectural_notes": "Ujjayanta Palace: A domed central block and wings face formal gardens and pools. Ornamental rooms include crafted wooden ceilings. Neermahal: The palace occupies an island in Rudrasagar Lake, with arcaded elevations and pavilion-like roof elements facing the water.",
+      "sources": [
+        {
+          "title": "Ujjayanta Palace — history and architecture",
+          "publisher": "westtripura.nic.in",
+          "url": "https://westtripura.nic.in/tourist-place/ujayanta-palace/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        },
+        {
+          "title": "Neermahal — history and architecture",
+          "publisher": "sepahijala.nic.in",
+          "url": "https://sepahijala.nic.in/tourist-place/neermahal/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1899,
+      "year_to": 1938,
+      "date_label": "Documented collection phases: 1899 CE–1938 CE"
+    },
+    {
+      "slug": "dimasa",
+      "name": "Dimasa Kachari kingdom",
+      "kind": "kingdom",
+      "region": "Nagaland and Assam",
+      "summary": "The former royal landscape of Dimapur",
+      "history": "Dimapur's carved pillars are connected to the Kachari landscape. Their exact dates and functions remain uncertain. In the collection: The site is associated with the Dimasa Kachari kingdom. Official and secondary summaries differ on dates, and the original purpose of the sculpted pillars is uncertain.",
+      "architectural_notes": "Kachari Rajbari Ruins: Rows of freestanding carved stone pillars survive within a former royal enclosure; a brick gateway belongs to the wider remains.",
+      "sources": [
+        {
+          "title": "Kachari Rajbari Ruins — history and architecture",
+          "publisher": "dimapur.nic.in",
+          "url": "https://dimapur.nic.in/tourist-place/kachari-ruins/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": null,
+      "year_to": null,
+      "date_label": "Dates vary by documented monument phase"
+    },
+    {
+      "slug": "namgyal-sikkim",
+      "name": "Namgyal kingdom of Sikkim",
+      "kind": "kingdom",
+      "region": "Sikkim",
+      "summary": "Royal capitals and Buddhist institutions",
+      "history": "Rabdentse's period as a capital and the expansion of Pemayangtse represent different relationships between royalty and buildings. In the collection: Founded as an early religious establishment, the monastery was enlarged under Sikkim's Chogyal rulers. Sources distinguish its seventeenth-century beginnings from eighteenth-century expansion.",
+      "architectural_notes": "Pemayangtse Monastery: A principal temple and associated monastic buildings contain painted and carved interiors above a hillside court. Rabdentse Palace Ruins: Ruined palace walls, platforms, courts and chortens occupy a ridge near Pemayangtse monastery.",
+      "sources": [
+        {
+          "title": "Pemayangtse Monastery — history and architecture",
+          "publisher": "gyalshing.nic.in",
+          "url": "https://gyalshing.nic.in/culture-heritage/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1670,
+      "year_to": 1814,
+      "date_label": "Documented collection phases: 1670 CE–1814 CE"
+    },
+    {
+      "slug": "chutiya",
+      "name": "Chutiya kingdom",
+      "kind": "kingdom",
+      "region": "Arunachal Pradesh and upper Assam",
+      "summary": "Medieval temple remains",
+      "history": "The tourism account associates Malinithan's medieval phase with Chutiya rulers. This remains a qualified attribution rather than an independently verified named commission. In the collection: The archaeological site preserves a medieval temple and sculptural remains. Arunachal Tourism associates the phase with Chutiya rulers; this is a qualified historical attribution.",
+      "architectural_notes": "Malinithan Temple Ruins: Carved stone fragments, column members and a raised temple platform survive within the archaeological precinct.",
+      "sources": [
+        {
+          "title": "Malinithan Temple Ruins — history and architecture",
+          "publisher": "arunachaltourism.com",
+          "url": "https://arunachaltourism.com/spiritual-2/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1200,
+      "year_to": 1399,
+      "date_label": "Documented collection phases: 1200 CE–1399 CE"
+    },
+    {
+      "slug": "palian",
+      "name": "Palian chiefs",
+      "kind": "chiefdom",
+      "region": "Mizoram",
+      "summary": "Commemorative megaliths",
+      "history": "Sibuta Lung is associated with the chief Sibuta and local oral traditions. It is a memorial stone, not an imperial palace or an enclosed building. In the collection: The memorial is associated with the Palian chief Sibuta at Tachhip. Accounts of its erection belong partly to oral tradition, and no precise construction year is imposed here.",
+      "architectural_notes": "Sibuta Lung: A tall upright stone forms the commemorative focus. It is recorded as a memorial monument rather than a building with enclosed rooms.",
+      "sources": [
+        {
+          "title": "Sibuta Lung — history and architecture",
+          "publisher": "ignca.gov.in",
+          "url": "https://ignca.gov.in/online-digital-resources/archaeological-sites/mizoram/hindi-sibuta-lung-at-tachhip-aizwal/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": null,
+      "year_to": null,
+      "date_label": "Dates vary by documented monument phase"
+    },
+    {
+      "slug": "nagavanshi-kawardha",
+      "name": "Nagavanshi rulers of Kawardha",
+      "kind": "dynasty",
+      "region": "Chhattisgarh",
+      "summary": "Medieval carved stone shrines",
+      "history": "Bhoramdeo provides the collection's regional example. These rulers are not conflated with the Nagvanshi house of Chotanagpur. In the collection: The main stone Shiva shrine forms part of a group that also includes earlier and later monuments. Its medieval architecture is associated with the region's Nagavanshi rulers.",
+      "architectural_notes": "Bhoramdeo Temple: A raised sanctuary and hall carry richly carved external surfaces beneath a rising shrine tower.",
+      "sources": [
+        {
+          "title": "Bhoramdeo Temple — history and architecture",
+          "publisher": "kawardha.gov.in",
+          "url": "https://kawardha.gov.in/en/tourist-place/bhoramdev-templekawardha/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1000,
+      "year_to": 1099,
+      "date_label": "Documented collection phases: 1000 CE–1099 CE"
+    },
+    {
+      "slug": "panduvamshi",
+      "name": "Panduvamshis of Dakshina Kosala",
+      "kind": "dynasty",
+      "region": "Chhattisgarh",
+      "summary": "Brick temple patronage at Sirpur",
+      "history": "Queen Vasata's Lakshmana temple provides a documented example within Sirpur's wider religious landscape. In the collection: Queen Vasata commissioned the Vishnu shrine in memory of Harshagupta in the Panduvamshi period. It belongs to Sirpur's wider, multi-religious archaeological landscape.",
+      "architectural_notes": "Lakshmana Temple, Sirpur: A brick sanctuary tower rises above the temple platform. Decorated brick surfaces and a carved stone doorway distinguish the surviving structure.",
+      "sources": [
+        {
+          "title": "Lakshmana Temple, Sirpur — history and architecture",
+          "publisher": "whc.unesco.org",
+          "url": "https://whc.unesco.org/en/tentativelists/7054/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 600,
+      "year_to": 699,
+      "date_label": "Documented collection phases: 600 CE–699 CE"
+    },
+    {
+      "slug": "baj-basanta",
+      "name": "Baj Basanta patron family",
+      "kind": "patron family",
+      "region": "Maluti, Jharkhand",
+      "summary": "Successive village temple commissions",
+      "history": "Maluti's small temples represent successive family patronage. A shared village setting does not turn them into one construction campaign. In the collection: The village's patron families sponsored successive temples rather than one unified royal palace. Sources associate the temple-building tradition with the Baj Basanta family.",
+      "architectural_notes": "Maluti Temples: Clusters of small brick temples carry terracotta reliefs and different roof profiles, with narrow spaces between individual shrines.",
+      "sources": [
+        {
+          "title": "Maluti Temples — history and architecture",
+          "publisher": "tourism.jharkhand.gov.in",
+          "url": "https://tourism.jharkhand.gov.in/how-to-reach/84/4",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1600,
+      "year_to": 1899,
+      "date_label": "Documented collection phases: 1600 CE–1899 CE"
+    },
+    {
+      "slug": "nagvanshi-chotanagpur",
+      "name": "Nagvanshis of Chotanagpur",
+      "kind": "dynasty",
+      "region": "Jharkhand",
+      "summary": "Regional temple patronage",
+      "history": "Ranchi's Jagannath temple records a seventeenth-century foundation. Its later reconstruction is distinct from the original commission. In the collection: The original hilltop shrine was founded in the seventeenth century under local Nagvanshi patronage. Parts of the present building reflect reconstruction after a twentieth-century collapse.",
+      "architectural_notes": "Jagannath Temple, Ranchi: A raised approach leads to the temple and its prominent curving tower, with halls and associated spaces around the sanctuary.",
+      "sources": [
+        {
+          "title": "Jagannath Temple, Ranchi — history and architecture",
+          "publisher": "tourism.jharkhand.gov.in",
+          "url": "https://tourism.jharkhand.gov.in/how-to-reach/94/4",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1691,
+      "year_to": 1691,
+      "date_label": "Documented collection phases: 1691 CE"
+    },
+    {
+      "slug": "sur",
+      "name": "Sur dynasty",
+      "kind": "dynasty",
+      "region": "Northern India and Bihar",
+      "summary": "Royal commemorative architecture",
+      "history": "Sher Shah's tomb combines an octagonal plan, lake setting and causeway. The dated funerary commission is separate from the ruler's wider political career. In the collection: Sher Shah Suri's mausoleum was completed in 1545 during the Sur dynasty. Its commemorative function and completion are distinguished from the emperor's earlier political career.",
+      "architectural_notes": "Tomb of Sher Shah Suri: An octagonal domed tomb stands on a platform in an artificial lake, connected to land by a stone causeway.",
+      "sources": [
+        {
+          "title": "Tomb of Sher Shah Suri — history and architecture",
+          "publisher": "rohtas.nic.in",
+          "url": "https://rohtas.nic.in/tourist-place/sher-shah-suri-tomb/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1540,
+      "year_to": 1545,
+      "date_label": "Documented collection phases: 1540 CE–1545 CE"
+    },
+    {
+      "slug": "nawabs-bengal",
+      "name": "Nawabs of Bengal",
+      "kind": "dynasty",
+      "region": "Murshidabad, West Bengal",
+      "summary": "Nawabi palace patronage",
+      "history": "Hazarduari was commissioned by Humayun Jah and designed by Duncan MacLeod. European architectural vocabulary does not make the British state its patron. In the collection: Nawab Humayun Jah commissioned the palace, designed by Duncan MacLeod. Its European architectural vocabulary does not erase the agency of its Nawabi patron.",
+      "architectural_notes": "Hazarduari Palace: A long classical facade, prominent entrance steps and repeated columns face the Nizamat precinct. Interior rooms now accommodate museum collections.",
+      "sources": [
+        {
+          "title": "Hazarduari Palace — history and architecture",
+          "publisher": "en.wikipedia.org",
+          "url": "https://en.wikipedia.org/wiki/Hazarduari_Palace",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1829,
+      "year_to": 1837,
+      "date_label": "Documented collection phases: 1829 CE–1837 CE"
+    },
+    {
+      "slug": "somavamshi",
+      "name": "Somavamshi period",
+      "kind": "dynasty",
+      "region": "Odisha",
+      "summary": "Kalinga temple development",
+      "history": "Mukteshwar is associated with the architectural context of tenth-century Odisha. A dynastic-period label is not evidence for a named royal commissioner. In the collection: The tenth-century Shiva shrine occupies an important place in the development of Odisha temple architecture. A dynastic-period association is not treated as proof of a named commissioner.",
+      "architectural_notes": "Mukteshwar Temple: A decorated arched torana introduces the shrine enclosure, while the sanctuary tower and hall display carved stone ornament.",
+      "sources": [
+        {
+          "title": "Mukteshwar Temple — history and architecture",
+          "publisher": "en.wikipedia.org",
+          "url": "https://en.wikipedia.org/wiki/Mukteshvara_Temple,_Bhubaneswar",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 950,
+      "year_to": 975,
+      "date_label": "Documented collection phases: 950 CE–975 CE"
+    },
+    {
+      "slug": "paramara",
+      "name": "Paramara dynasty",
+      "kind": "dynasty",
+      "region": "Malwa, Madhya Pradesh",
+      "summary": "Temple building and unfinished works",
+      "history": "Bhojeshwar is associated with Bhoja. Its unfinished fabric and adjacent architectural traces make construction process part of the heritage story. In the collection: The unfinished Shiva temple is associated with Paramara ruler Bhoja. Nearby quarry marks and architectural drawings are important evidence of its construction process.",
+      "architectural_notes": "Bhojeshwar Temple: An enormous sanctuary chamber and massive pillars stand on a raised platform; unfinished work remains visible.",
+      "sources": [
+        {
+          "title": "Bhojeshwar Temple — history and architecture",
+          "publisher": "whc.unesco.org",
+          "url": "https://whc.unesco.org/en/tentativelists/6733/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1000,
+      "year_to": 1099,
+      "date_label": "Documented collection phases: 1000 CE–1099 CE"
+    },
+    {
+      "slug": "gupta",
+      "name": "Gupta period",
+      "kind": "dynasty",
+      "region": "Northern India",
+      "summary": "Early structural temple traditions",
+      "history": "Deogarh's Vishnu temple is a period association. The record does not identify a securely documented named royal commissioner. In the collection: The Vishnu shrine belongs to the Gupta-period architectural tradition. Its surviving reliefs and platform are early evidence of a developed structural temple plan.",
+      "architectural_notes": "Dashavatara Temple, Deogarh: A square sanctuary stands on a raised platform, with sculptural panels on its outer walls and remains of subsidiary shrines.",
+      "sources": [
+        {
+          "title": "Dashavatara Temple, Deogarh — history and architecture",
+          "publisher": "lalitpur.nic.in",
+          "url": "https://lalitpur.nic.in/en/tourist-place/devgarh/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 500,
+      "year_to": 599,
+      "date_label": "Documented collection phases: 500 CE–599 CE"
+    },
+    {
+      "slug": "seuna",
+      "name": "Seuna Yadavas of Devagiri",
+      "kind": "dynasty",
+      "region": "Northern Deccan",
+      "summary": "Fortified capital landscapes",
+      "history": "Devagiri's early fortified phase precedes later sultanate control and the name Daulatabad. Later political use is recorded as a separate relationship. In the collection: The Yadava stronghold became the Delhi Sultanate's capital during Muhammad bin Tughluq's fourteenth-century transfer. Later Deccan rulers adapted the extensive defences.",
+      "architectural_notes": "Daulatabad Fort: Successive fortified enclosures, gateways, a moat and a steep citadel exploit the isolated hill's terrain.",
+      "sources": [
+        {
+          "title": "Daulatabad Fort — history and architecture",
+          "publisher": "maharashtratourism.gov.in",
+          "url": "https://maharashtratourism.gov.in/fort/devgiri-daulatabad/",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1100,
+      "year_to": 1199,
+      "date_label": "Documented collection phases: 1100 CE–1199 CE"
+    },
+    {
+      "slug": "keladi",
+      "name": "Keladi / Ikkeri Nayakas",
+      "kind": "dynasty",
+      "region": "Coastal Karnataka and Kerala",
+      "summary": "Coastal defensive construction",
+      "history": "Kerala Tourism associates Bekal's principal phase with Shivappa Nayaka of Ikkeri. The connection is restricted to this documented phase. In the collection: Kerala Tourism associates the fort's principal construction with Shivappa Nayaka of Ikkeri. Later control by Mysore belongs to a separate historical phase.",
+      "architectural_notes": "Bekal Fort: Coastal ramparts, bastions and an observation position occupy a headland above the Arabian Sea.",
+      "sources": [
+        {
+          "title": "Bekal Fort — history and architecture",
+          "publisher": "keralatourism.org",
+          "url": "https://www.keralatourism.org/bekal/history-kasaragod.php",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1650,
+      "year_to": 1650,
+      "date_label": "Documented collection phases: 1650 CE"
+    },
+    {
+      "slug": "bikaner-rathore",
+      "name": "Rathore rulers of Bikaner",
+      "kind": "dynasty",
+      "region": "Rajasthan",
+      "summary": "Lowland forts and successive palace interiors",
+      "history": "Rai Singh's Junagarh fort became the core of a palace ensemble enlarged by later rulers. Initial walls and later decorated rooms need separate dates. In the collection: Raja Rai Singh's fort became the core of a palace ensemble enlarged by later Bikaner rulers. The dates describe the initial fort phase, not every decorated room.",
+      "architectural_notes": "Junagarh Fort: Defensive walls enclose successive courts, palaces and projecting windows on a lowland site.",
+      "sources": [
+        {
+          "title": "Junagarh Fort — history and architecture",
+          "publisher": "tourism.rajasthan.gov.in",
+          "url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/forts.html",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1588,
+      "year_to": 1594,
+      "date_label": "Documented collection phases: 1588 CE–1594 CE"
+    },
+    {
+      "slug": "french-india",
+      "name": "French administration in India",
+      "kind": "colonial administration",
+      "region": "Puducherry",
+      "summary": "Colonial-period religious settings",
+      "history": "The Sacred Heart church was built in French-administered Pondicherry. This is political context, not a claim that the French state commissioned it. In the collection: The Catholic church developed in the early twentieth century in French-administered Pondicherry. Its religious patronage is distinguished from a claim that the French state commissioned the building.",
+      "architectural_notes": "Basilica of the Sacred Heart of Jesus: A strongly articulated facade and pointed openings introduce the church, whose stained-glass panels form a notable part of its interior.",
+      "sources": [
+        {
+          "title": "Basilica of the Sacred Heart of Jesus — history and architecture",
+          "publisher": "en.wikipedia.org",
+          "url": "https://en.wikipedia.org/wiki/Basilica_of_the_Sacred_Heart_of_Jesus,_Pondicherry",
+          "topic": "History and architectural context",
+          "locator": "History and chronology"
+        }
+      ],
+      "year_from": 1902,
+      "year_to": 1908,
+      "date_label": "Documented collection phases: 1902 CE–1908 CE"
+    },
+    {
+      "slug": "chandella",
+      "name": "Chandella dynasty",
+      "kind": "dynasty",
+      "region": "Bundelkhand",
+      "summary": "Regional patronage, craftsmanship and changing monumental settings",
+      "history": "Kandariya Mahadeva Temple: The temple belongs to the Chandella architectural flowering at Khajuraho. Its sculptural program is integral to the architecture, while the clustered sanctuary towers create a rising composition rather than a single isolated vertical mass.",
+      "architectural_notes": "Kandariya Mahadeva Temple: An elevated platform supports a sequence of halls leading toward the sanctuary. Curved towers and smaller associated spires emphasize the inner sacred space.",
+      "sources": [
+        {
+          "key": "india-kandariya-mahadeva-khajuraho",
+          "title": "Kandariya Mahadeva Temple — historical and architectural reference",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/240/",
+          "accessedOn": "2026-10-31",
+          "topic": "Regional patronage and architectural history",
+          "locator": "Monument description and historical context"
+        }
+      ],
+      "year_from": 1000,
+      "year_to": 1050,
+      "date_label": "Documented collection phases: 1000 CE–1050 CE"
+    },
+    {
+      "slug": "eastern-ganga",
+      "name": "Eastern Ganga dynasty",
+      "kind": "dynasty",
+      "region": "Odisha",
+      "summary": "Regional patronage, craftsmanship and changing monumental settings",
+      "history": "Sun Temple, Konark: The temple expresses the solar deity Surya’s chariot through architectural scale, carved wheels and sculptural programs. The thirteenth-century ensemble survives incompletely, so remaining halls and sculptures should not be mistaken for the original complete temple. Jagannath Temple, Puri: The present principal shrine is associated with the Eastern Ganga dynasty. Its construction belongs to the twelfth century and the complex remains in ritual use.",
+      "architectural_notes": "Sun Temple, Konark: Carved chariot wheels articulate the raised base. Monumental surviving masses, subsidiary remains and sculptural bands reveal the original ceremonial composition. Jagannath Temple, Puri: An elevated platform carries the main curving tower and the sequence of halls on its ceremonial axis.",
+      "sources": [
+        {
+          "key": "india-sun-temple-konark",
+          "title": "Sun Temple, Konark — historical and architectural reference",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/246/",
+          "accessedOn": "2026-10-31",
+          "topic": "Regional patronage and architectural history",
+          "locator": "Monument description and historical context"
+        },
+        {
+          "key": "india100-jagannath-temple-puri",
+          "title": "Jagannath Temple, Puri",
+          "publisher": "Puri District",
+          "url": "https://puri.odisha.gov.in/en/tourism/tourist-places/shree-jagannath-temple",
+          "accessedOn": "2026-11-11",
+          "topic": "Regional patronage and architectural history",
+          "locator": "History and architectural description"
+        }
+      ],
+      "year_from": 1101,
+      "year_to": 1264,
+      "date_label": "Documented collection phases: 1101 CE–1264 CE"
+    },
+    {
+      "slug": "solanki",
+      "name": "Chaulukya / Solanki dynasty",
+      "kind": "dynasty",
+      "region": "Gujarat",
+      "summary": "Regional patronage, craftsmanship and changing monumental settings",
+      "history": "Sun Temple, Modhera: Gujarat Tourism, citing ASI, places construction in 1026–1027 under Bhima I. The ensemble combines solar devotion with a highly articulated reservoir and halls, rather than presenting only an isolated sanctuary. Rani-ki-Vav: The eleventh-century stepwell was conceived as a memorial and as a carefully designed water structure. UNESCO interprets it as an inverted temple, with multiple descending levels and extensive religious, mythological and secular sculpture.",
+      "architectural_notes": "Sun Temple, Modhera: The Suryakund reservoir precedes the Sabha Mandap. Steps and subsidiary shrines frame the water, while carved pillars mediate the approach toward the main shrine. Rani-ki-Vav: Stair flights descend through pillared levels toward the well. Sculptural panels line the walls, connecting structural rhythm, water access and ceremonial movement.",
+      "sources": [
+        {
+          "key": "india-sun-temple-modhera",
+          "title": "Sun Temple, Modhera — historical and architectural reference",
+          "publisher": "Official heritage, tourism or monument-management authority",
+          "url": "https://gujarattourism.com/north-zone/mehsana/sun-temple-modhera.html",
+          "accessedOn": "2026-10-31",
+          "topic": "Regional patronage and architectural history",
+          "locator": "Monument description and historical context"
+        },
+        {
+          "key": "india-rani-ki-vav-patan",
+          "title": "Rani-ki-Vav — historical and architectural reference",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/922/",
+          "accessedOn": "2026-10-31",
+          "topic": "Regional patronage and architectural history",
+          "locator": "Monument description and historical context"
+        }
+      ],
+      "year_from": 1000,
+      "year_to": 1100,
+      "date_label": "Documented collection phases: 1000 CE–1100 CE"
+    },
+    {
+      "slug": "madurai-nayaka",
+      "name": "Nayakas of Madurai",
+      "kind": "dynasty",
+      "region": "Tamil Nadu",
+      "summary": "Regional patronage, craftsmanship and changing monumental settings",
+      "history": "Meenakshi Sundareswarar Temple: The Madurai complex developed around the shrines of Meenakshi and Sundareswarar and preserves important Nayak-period work. The district account emphasizes its sculptured pillars, paintings and musical stone supports; the building history cannot be reduced to one founding year.",
+      "architectural_notes": "Meenakshi Sundareswarar Temple: Nested precincts and gateway towers surround the twin shrines. The Thousand Pillar Hall and processional corridors provide distinct architectural experiences within the living temple.",
+      "sources": [
+        {
+          "key": "india-meenakshi-temple-madurai",
+          "title": "Meenakshi Sundareswarar Temple — historical and architectural reference",
+          "publisher": "Official heritage, tourism or monument-management authority",
+          "url": "https://madurai.nic.in/tourist-place/sri-meenakshi-sundareswarar-temple/",
+          "accessedOn": "2026-10-31",
+          "topic": "Regional patronage and architectural history",
+          "locator": "Monument description and historical context"
+        }
+      ],
+      "year_from": 1500,
+      "year_to": 1700,
+      "date_label": "Documented collection phases: 1500 CE–1700 CE"
+    },
+    {
+      "slug": "malla",
+      "name": "Malla rulers of Bishnupur",
+      "kind": "dynasty",
+      "region": "West Bengal",
+      "summary": "Regional patronage, craftsmanship and changing monumental settings",
+      "history": "Rasmancha, Bishnupur: The Malla ruler Bir Hambir is credited with building the Rasmancha. It served as a ceremonial gathering place for images during the Ras festival.",
+      "architectural_notes": "Rasmancha, Bishnupur: Repeated arches surround the central chamber on a raised platform beneath a pyramidal roof.",
+      "sources": [
+        {
+          "key": "india100-rasmancha-bishnupur",
+          "title": "Rasmancha, Bishnupur",
+          "publisher": "Bankura District",
+          "url": "https://bankura.gov.in/tourist-place/bishnupur/",
+          "accessedOn": "2026-11-11",
+          "topic": "Regional patronage and architectural history",
+          "locator": "Rasmancha entry"
+        }
+      ],
+      "year_from": 1600,
+      "year_to": 1600,
+      "date_label": "Documented collection phases: 1600 CE"
+    },
+    {
+      "slug": "karkota",
+      "name": "Karkota dynasty",
+      "kind": "dynasty",
+      "region": "Kashmir",
+      "summary": "Regional patronage, craftsmanship and changing monumental settings",
+      "history": "Martand Sun Temple: The ruined temple is attributed to Lalitaditya Muktapida in the eighth century in the institutional archaeological record. Its surviving architecture should be read as evidence of an incomplete structure rather than an intact reconstructed temple.",
+      "architectural_notes": "Martand Sun Temple: A monumental central shrine stands within a large colonnaded enclosure. Gateways, court space and framed mountain views organize the elevated site.",
+      "sources": [
+        {
+          "key": "india-martand-sun-temple",
+          "title": "Martand Sun Temple — historical and architectural reference",
+          "publisher": "Official heritage, tourism or monument-management authority",
+          "url": "https://anantnag.nic.in/tourist-place/martand-sun-temple/",
+          "accessedOn": "2026-10-31",
+          "topic": "Regional patronage and architectural history",
+          "locator": "Monument description and historical context"
+        }
+      ],
+      "year_from": 700,
+      "year_to": 800,
+      "date_label": "Documented collection phases: 700 CE–800 CE"
+    },
+    {
+      "slug": "namgyal-ladakh",
+      "name": "Namgyal rulers of Ladakh",
+      "kind": "dynasty",
+      "region": "Ladakh",
+      "summary": "Regional patronage, craftsmanship and changing monumental settings",
+      "history": "Leh Palace: The nine-storey palace was built in the seventeenth century under Sengge Namgyal. The National Culture Fund documents its masonry, sun-dried bricks and timber.",
+      "architectural_notes": "Leh Palace: The stacked volumes rise in terraces against the ridge. Windows and projecting timber details break up the long elevations.",
+      "sources": [
+        {
+          "key": "india100-leh-palace",
+          "title": "Leh Palace",
+          "publisher": "National Culture Fund",
+          "url": "https://ncf.nic.in/assets/images/Leh%20Ladakh.pdf",
+          "accessedOn": "2026-11-11",
+          "topic": "Regional patronage and architectural history",
+          "locator": "Brief history and materials of the monument"
+        }
+      ],
+      "year_from": 1601,
+      "year_to": 1700,
+      "date_label": "Documented collection phases: 1601 CE–1700 CE"
+    },
+    {
+      "slug": "wadiyar",
+      "name": "Wadiyar rulers of Mysore",
+      "kind": "dynasty",
+      "region": "Karnataka",
+      "summary": "Regional patronage, craftsmanship and changing monumental settings",
+      "history": "Mysore Palace: The Wadiyar palace was rebuilt after a fire in 1897. Henry Irwin designed the present palace, completed in 1912.",
+      "architectural_notes": "Mysore Palace: Domed towers and arcades organize the main façade. The interior includes ceremonial halls and courtly spaces.",
+      "sources": [
+        {
+          "key": "india100-mysore-palace",
+          "title": "Mysore Palace",
+          "publisher": "Mysuru District",
+          "url": "https://mysore.nic.in/en/tourist-place/mysuru-palace/",
+          "accessedOn": "2026-11-11",
+          "topic": "Regional patronage and architectural history",
+          "locator": "Description of palace and domed towers"
+        }
+      ],
+      "year_from": 1897,
+      "year_to": 1912,
+      "date_label": "Documented collection phases: 1897 CE–1912 CE"
+    },
+    {
+      "slug": "holkar",
+      "name": "Holkar rulers",
+      "kind": "dynasty",
+      "region": "Malwa and Varanasi",
+      "summary": "Regional patronage, craftsmanship and changing monumental settings",
+      "history": "Kashi Vishwanath Temple: The official Kashi portal credits Ahilyabai Holkar with rebuilding the present temple in 1780. The date describes the principal shrine within a larger living sacred precinct.",
+      "architectural_notes": "Kashi Vishwanath Temple: The spired shrine sits within the dense historic setting of Varanasi and is linked to the ghats by the modern precinct route.",
+      "sources": [
+        {
+          "key": "india100-kashi-vishwanath-varanasi",
+          "title": "Kashi Vishwanath Temple",
+          "publisher": "Kashi Official Web Portal",
+          "url": "https://kashi.gov.in/listing-details/shri-kashi-vishwanath",
+          "accessedOn": "2026-11-11",
+          "topic": "Regional patronage and architectural history",
+          "locator": "History of the present temple and its management"
+        }
+      ],
+      "year_from": 1780,
+      "year_to": 1780,
+      "date_label": "Documented collection phases: 1780 CE"
+    },
+    {
+      "slug": "nawabs-awadh",
+      "name": "Nawabs of Awadh",
+      "kind": "dynasty",
+      "region": "Uttar Pradesh",
+      "summary": "Regional patronage, craftsmanship and changing monumental settings",
+      "history": "Bara Imambara: Asaf-ud-Daula commissioned the imambara in 1784. Lucknow district records the building campaign in the context of famine relief.",
+      "architectural_notes": "Bara Imambara: A central vaulted hall is framed by subsidiary spaces, with passages above forming the Bhul Bhulaiya.",
+      "sources": [
+        {
+          "key": "india100-bara-imambara-lucknow",
+          "title": "Bara Imambara",
+          "publisher": "Lucknow District",
+          "url": "https://lucknow.nic.in/tourist-place/bada-imambara/",
+          "accessedOn": "2026-11-11",
+          "topic": "Regional patronage and architectural history",
+          "locator": "Construction and central hall"
+        }
+      ],
+      "year_from": 1784,
+      "year_to": 1791,
+      "date_label": "Documented collection phases: 1784 CE–1791 CE"
+    },
+    {
+      "slug": "kachwaha",
+      "name": "Kachwaha rulers of Amber and Jaipur",
+      "kind": "dynasty",
+      "region": "Rajasthan",
+      "summary": "Regional patronage, craftsmanship and changing monumental settings",
+      "history": "Amber Fort: The palace-fort developed through successive Kachwaha building campaigns, beginning under Man Singh I in 1592. Its external defensive character contrasts with decorated interiors and ceremonial halls in sandstone and marble. Hawa Mahal: Sawai Pratap Singh commissioned the palace façade in 1799. Its characteristic screened windows form part of Jaipur’s historic urban architecture and allowed views of street activity from within the palace. Jantar Mantar, Jaipur: Sawai Jai Singh II commissioned the observatory in the early eighteenth century. Its architectural instruments were built to observe celestial positions.",
+      "architectural_notes": "Amber Fort: Monumental gates enter the Jaleb Chowk and subsequent palace courts. Public and private halls, mirrored spaces and views toward Maota Lake structure the visitor’s movement. Hawa Mahal: A vertically layered street elevation is articulated by many small projecting windows. The façade’s light and air-filtering openings are its primary architectural focus. Jantar Mantar, Jaipur: Fixed structures align to the sky. The Samrat Yantra uses a sloping gnomon and graduated quadrants to measure local solar time.",
+      "sources": [
+        {
+          "key": "india-amber-fort-jaipur",
+          "title": "Amber Fort — historical and architectural reference",
+          "publisher": "Official heritage, tourism or monument-management authority",
+          "url": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/amber-palace.html",
+          "accessedOn": "2026-10-31",
+          "topic": "Regional patronage and architectural history",
+          "locator": "Monument description and historical context"
+        },
+        {
+          "key": "india-hawa-mahal-jaipur",
+          "title": "Hawa Mahal — historical and architectural reference",
+          "publisher": "Official heritage, tourism or monument-management authority",
+          "url": "https://www.tourism.rajasthan.gov.in/jaipur.html",
+          "accessedOn": "2026-10-31",
+          "topic": "Regional patronage and architectural history",
+          "locator": "Monument description and historical context"
+        },
+        {
+          "key": "india100-jantar-mantar-jaipur-detail",
+          "title": "Jantar Mantar, Jaipur",
+          "publisher": "Rajasthan Tourism",
+          "url": "https://www.tourism.rajasthan.gov.in/jantar-mantar.html",
+          "accessedOn": "2026-11-11",
+          "topic": "Regional patronage and architectural history",
+          "locator": "Construction and completion"
+        }
+      ],
+      "year_from": 1592,
+      "year_to": 1799,
+      "date_label": "Documented collection phases: 1592 CE–1799 CE"
+    },
+    {
+      "slug": "mewar",
+      "name": "Rulers of Mewar",
+      "kind": "kingdom",
+      "region": "Rajasthan",
+      "summary": "Regional patronage, craftsmanship and changing monumental settings",
+      "history": "Chittorgarh Fort: Chittorgarh is part of the serial Hill Forts of Rajasthan inscription. Its long history includes successive phases of occupation and major Rajput building campaigns. Kumbhalgarh Fort: Rana Kumbha is associated with the fifteenth-century fortifications at Kumbhalgarh. Later buildings within the walls belong to other phases.",
+      "architectural_notes": "Chittorgarh Fort: Ramparts follow the hilltop and enclose reservoirs, palaces, temples and commemorative towers. Kumbhalgarh Fort: Long ramparts follow the Aravalli ridges, with gates controlling approaches to the fortified interior.",
+      "sources": [
+        {
+          "key": "india100-chittorgarh-fort",
+          "title": "Hill Forts of Rajasthan",
+          "publisher": "UNESCO World Heritage Centre",
+          "url": "https://whc.unesco.org/en/list/247/",
+          "accessedOn": "2026-11-11",
+          "topic": "Regional patronage and architectural history",
+          "locator": "Outstanding Universal Value, Chittorgarh component"
+        }
+      ],
+      "year_from": 701,
+      "year_to": 1600,
+      "date_label": "Documented collection phases: 701 CE–1600 CE"
+    },
+    {
+      "slug": "marwar-rathore",
+      "name": "Rathore rulers of Marwar",
+      "kind": "dynasty",
+      "region": "Rajasthan",
+      "summary": "Regional patronage, craftsmanship and changing monumental settings",
+      "history": "Mehrangarh Fort: Rao Jodha laid the foundation in 1459. The museum trust records major later phases under Rao Maldeo and Maharaja Ajit Singh.",
+      "architectural_notes": "Mehrangarh Fort: Walls crown a steep rock. The ascent leads through gates to palatial rooms and carved courtyard façades.",
+      "sources": [
+        {
+          "key": "india100-mehrangarh-fort-jodhpur",
+          "title": "Mehrangarh Fort",
+          "publisher": "Mehrangarh Museum Trust",
+          "url": "https://www.mehrangarh.org/mehrangarh-2/architecture/",
+          "accessedOn": "2026-11-11",
+          "topic": "Regional patronage and architectural history",
+          "locator": "Early building phases and palace expansion"
+        }
+      ],
+      "year_from": 1459,
+      "year_to": 1459,
+      "date_label": "Documented collection phases: 1459 CE"
+    }
+  ],
+  "associations": [
+    {
+      "building": "vitthala-temple-hampi",
+      "empire": "vijayanagara",
+      "relationship": "historical_context",
+      "evidence": "Developed under Vijayanagara patronage, the complex forms part of Hampi's sacred landscape. Its buildings reflect successive phases rather than a single construction event. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "hampi-unesco",
+      "locator": "Brief synthesis; Vijayanagara context",
+      "year_from": 1400,
+      "year_to": 1599
+    },
+    {
+      "building": "chennakeshava-temple-belur",
+      "empire": "hoysala",
+      "relationship": "historical_context",
+      "evidence": "Worship at the Belur temple is documented from 1117 CE. It belongs to the UNESCO-listed Sacred Ensembles of the Hoysalas and remains an active religious place. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "hoysala",
+      "locator": "Integrity and Authenticity",
+      "year_from": 1117,
+      "year_to": 1117
+    },
+    {
+      "building": "virupaksha-temple-pattadakal",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "The temple commemorates the military success of Lokamahadevi's husband. Its location within the Pattadakal ensemble makes it a useful point of comparison with neighbouring temple forms. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "pattadakal",
+      "locator": "Property description",
+      "year_from": 740,
+      "year_to": 740
+    },
+    {
+      "building": "badami-cave-3",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "An inscription records the creation of the shrine by Mangalesha in 578 CE. The cave is part of Badami's group of four principal cave temples. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "badami",
+      "locator": "Cave III",
+      "year_from": 578,
+      "year_to": 578
+    },
+    {
+      "building": "durga-temple-aihole",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "ASI assigns the monument broadly to the seventh–eighth centuries CE. Its name should not be used by itself to infer the temple's original religious dedication. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "durga",
+      "locator": "Architectural description",
+      "year_from": 600,
+      "year_to": 799
+    },
+    {
+      "building": "virupaksha-temple-hampi",
+      "empire": "vijayanagara",
+      "relationship": "historical_context",
+      "evidence": "The Pampapati shrine predates many surviving additions. Vijayanagara rulers enlarged a temple with a longer religious history. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "virupaksha-hampi",
+      "locator": "Virupaksha Temple",
+      "year_from": 1400,
+      "year_to": 1599
+    },
+    {
+      "building": "achyutaraya-temple-hampi",
+      "empire": "vijayanagara",
+      "relationship": "historical_context",
+      "evidence": "An inscription associates the Tiruvengalanatha shrine with Achyutadevaraya’s reign. The extensive enclosure system gives it a distinctive approach. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "hampi-asi",
+      "locator": "Achyutaraya Temple",
+      "year_from": 1530,
+      "year_to": 1542
+    },
+    {
+      "building": "krishna-temple-hampi",
+      "empire": "vijayanagara",
+      "relationship": "historical_context",
+      "evidence": "The complex is associated with Krishnadevaraya’s patronage. The surviving architecture belongs to a larger historic precinct at Krishnapura. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "krishna-hampi",
+      "locator": "Krishna Temple",
+      "year_from": 1500,
+      "year_to": 1599
+    },
+    {
+      "building": "hazara-rama-temple-hampi",
+      "empire": "vijayanagara",
+      "relationship": "historical_context",
+      "evidence": "Also called the Ramachandra temple, it formed part of the royal architectural setting. Its surviving fabric records more than one phase. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "royal-hampi",
+      "locator": "Hazara Rama Temple",
+      "year_from": 1400,
+      "year_to": 1599
+    },
+    {
+      "building": "lotus-mahal-hampi",
+      "empire": "vijayanagara",
+      "relationship": "historical_context",
+      "evidence": "Lotus Mahal survives within Hampi’s courtly landscape. Its precise original function should be treated cautiously rather than inferred from its modern name. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "lotus-hampi",
+      "locator": "Lotus Mahal",
+      "year_from": 1400,
+      "year_to": 1599
+    },
+    {
+      "building": "elephant-stables-hampi",
+      "empire": "vijayanagara",
+      "relationship": "historical_context",
+      "evidence": "The structure is associated with the royal elephants of Vijayanagara. It broadens the archive beyond religious architecture. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "stables-hampi",
+      "locator": "Elephant Stables",
+      "year_from": 1400,
+      "year_to": 1599
+    },
+    {
+      "building": "queens-bath-hampi",
+      "empire": "vijayanagara",
+      "relationship": "historical_context",
+      "evidence": "The conventional name does not establish exclusive use by a queen. The government account discusses possible courtly patronage and use. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "bath-hampi",
+      "locator": "Queen’s Bath",
+      "year_from": 1500,
+      "year_to": 1599
+    },
+    {
+      "building": "mallikarjuna-temple-pattadakal",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "The monument is associated with Queen Trailokyamahadevi and is also known as Trailokeshwara. Its scale differs from the adjoining royal commission. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "mallikarjuna",
+      "locator": "Mallikarjuna Temple",
+      "year_from": 700,
+      "year_to": 799
+    },
+    {
+      "building": "sangameshvara-temple-pattadakal",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "King Vijayaditya commissioned the shrine, originally called Vijayeshvara. ASI notes unfinished sculpture and evidence for contributions to its hall. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "sangameshvara",
+      "locator": "Sangameshvara Temple",
+      "year_from": 700,
+      "year_to": 733
+    },
+    {
+      "building": "papanatha-temple-pattadakal",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "Descriptions differ in the proposed construction date and terminology for its architectural synthesis. The record retains a broad period. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "pattadakal-district",
+      "locator": "Papanatha Temple",
+      "year_from": 600,
+      "year_to": 799
+    },
+    {
+      "building": "galaganatha-temple-pattadakal",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "ASI assigns the monument to around 750 CE. It provides an important northern-form counterpart to Pattadakal’s Dravida temples. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "galaganatha",
+      "locator": "Galaganatha Temple",
+      "year_from": 750,
+      "year_to": 750
+    },
+    {
+      "building": "kadasiddheshvara-temple-pattadakal",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "The monument belongs to the early Chalukyan ensemble. Its smaller scale makes it useful for comparing essentials of temple composition. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "pattadakal-district",
+      "locator": "Kadasiddheshvara Temple",
+      "year_from": 600,
+      "year_to": 799
+    },
+    {
+      "building": "jambulinga-temple-pattadakal",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "ASI’s two descriptions assign different centuries. A broad date range preserves that uncertainty rather than selecting an unsupported exact year. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "jambulinga",
+      "locator": "Jambulinga Temple",
+      "year_from": 600,
+      "year_to": 799
+    },
+    {
+      "building": "badami-cave-1",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "The first cave forms part of Badami’s four principal cave temples. Its Shaiva imagery makes it a useful comparison with Cave 2. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "badami",
+      "locator": "Badami Cave 1",
+      "year_from": 500,
+      "year_to": 699
+    },
+    {
+      "building": "badami-cave-2",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "The second cave is identified in the district account by its Vaishnava subjects. Its carvings can be compared directly with Cave 1 and Cave 3. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "badami",
+      "locator": "Badami Cave 2",
+      "year_from": 500,
+      "year_to": 699
+    },
+    {
+      "building": "badami-cave-4",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "The fourth cave stands east of Cave 3. Its images of Jain teachers distinguish it from the other three principal caves. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "badami",
+      "locator": "Badami Cave 4",
+      "year_from": 500,
+      "year_to": 699
+    },
+    {
+      "building": "bhutanatha-temple-badami",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "ASI describes an early shrine and enclosed hall enlarged by a later open porch. The record concerns the main temple, not all eight shrines in the group. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "bhutanatha",
+      "locator": "Bhutanatha Temple",
+      "year_from": 800,
+      "year_to": 999
+    },
+    {
+      "building": "malegitti-shivalaya-badami",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "ASI assigns the temple to the eighth century. The present name and linga should be read alongside evidence for an earlier Vaishnava association. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "malegitti",
+      "locator": "Malegitti Shivalaya",
+      "year_from": 700,
+      "year_to": 799
+    },
+    {
+      "building": "lad-khan-temple-aihole",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "Often called the Chalukya Shiva Temple, the monument belongs to Aihole’s experimental architectural setting. Published chronologies vary, so no single year is assigned. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "aihole-district",
+      "locator": "Lad Khan Temple",
+      "year_from": null,
+      "year_to": null
+    },
+    {
+      "building": "meguti-jain-temple-aihole",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "The eastern-wall inscription associates the monument with Ravikirti and Pulakeshin II. ASI places its completion around 634 CE. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "meguti",
+      "locator": "Meguti Jain Temple",
+      "year_from": 634,
+      "year_to": 634
+    },
+    {
+      "building": "ravana-phadi-cave-aihole",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "Ravana Phadi belongs to the early cave-building tradition represented across the Malaprabha valley. The alternative name Ravalphadi is widely used. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "aihole-district",
+      "locator": "Ravana Phadi Cave",
+      "year_from": 500,
+      "year_to": 599
+    },
+    {
+      "building": "hucchimalli-temple-aihole",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "Hucchimalli appears in the documented Aihole heritage ensemble. Spelling variants occur across official and photographic records. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "aihole-heritage",
+      "locator": "Hucchimalli Temple",
+      "year_from": 600,
+      "year_to": 799
+    },
+    {
+      "building": "huchappayya-matha-aihole",
+      "empire": "early-chalukya",
+      "relationship": "historical_context",
+      "evidence": "This record refers to Huchappayya Matha, distinct from the nearby Huchappayya Gudi. The identification must be checked when choosing photographs. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "aihole-study",
+      "locator": "Huchappayya Matha",
+      "year_from": null,
+      "year_to": null
+    },
+    {
+      "building": "hoysaleswara-temple-halebidu",
+      "empire": "hoysala",
+      "relationship": "historical_context",
+      "evidence": "The Halebidu monument belongs to UNESCO’s Sacred Ensembles of the Hoysalas. Its surviving exterior preserves an extensive sculptural programme. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "hoysala",
+      "locator": "Hoysaleswara Temple",
+      "year_from": 1100,
+      "year_to": 1199
+    },
+    {
+      "building": "keshava-temple-somanathapura",
+      "empire": "hoysala",
+      "relationship": "historical_context",
+      "evidence": "The monument is associated with Somanatha Dandanayaka under Narasimha III. Government documentation places its establishment in 1268 CE. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "somanathapura",
+      "locator": "Keshava Temple",
+      "year_from": 1268,
+      "year_to": 1268
+    },
+    {
+      "building": "taj-mahal-agra",
+      "empire": "mughal",
+      "relationship": "historical_context",
+      "evidence": "Shah Jahan commissioned the mausoleum for Mumtaz Mahal beside the Yamuna. UNESCO distinguishes the main tomb’s completion in 1648 from later ancillary works completed in 1653; its descriptions also use different starting years, so this record retains that uncertainty. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india-taj-mahal-agra",
+      "locator": "Monument description and historical context",
+      "year_from": 1631,
+      "year_to": 1648
+    },
+    {
+      "building": "agra-fort",
+      "empire": "mughal",
+      "relationship": "historical_context",
+      "evidence": "The Mughal imperial fortress preserves buildings from several reigns rather than one construction campaign. Its sandstone enclosure contains palace buildings, audience halls and mosques, illustrating changes in courtly requirements and architectural treatment. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india-agra-fort",
+      "locator": "Monument description and historical context",
+      "year_from": 1565,
+      "year_to": 1700
+    },
+    {
+      "building": "fatehpur-sikri",
+      "empire": "mughal",
+      "relationship": "historical_context",
+      "evidence": "Akbar established a planned imperial capital here in the 1570s. Administrative, residential and religious buildings were arranged around courts; the court moved to Lahore in 1585, but the surviving city retains its ceremonial organization. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india-fatehpur-sikri",
+      "locator": "Monument description and historical context",
+      "year_from": 1571,
+      "year_to": 1585
+    },
+    {
+      "building": "qutb-minar-delhi",
+      "empire": "delhi-sultanate",
+      "relationship": "historical_context",
+      "evidence": "The minaret forms part of a larger early Sultanate ensemble at Mehrauli. Successive construction and repair phases shaped the tower now visible; nearby mosques, tombs and gateways belong to the complex but are not interchangeable with the minaret itself. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india-qutb-minar-delhi",
+      "locator": "Monument description and historical context",
+      "year_from": 1199,
+      "year_to": 1368
+    },
+    {
+      "building": "humayuns-tomb-delhi",
+      "empire": "mughal",
+      "relationship": "historical_context",
+      "evidence": "The monument is a major early Mughal garden tomb, dated by UNESCO to 1570. Its raised composition, symmetrical garden and dressed-stone structure clad in sandstone and marble form a carefully integrated funerary landscape. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india-humayuns-tomb-delhi",
+      "locator": "Monument description and historical context",
+      "year_from": 1565,
+      "year_to": 1572
+    },
+    {
+      "building": "red-fort-delhi",
+      "empire": "mughal",
+      "relationship": "historical_context",
+      "evidence": "Shah Jahan built the palace-fort for his new capital, Shahjahanabad. Its private pavilions were connected by the Nahr-i-Behisht water channel; later interventions mean the surviving complex should not be treated as an unchanged seventeenth-century plan. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india-red-fort-delhi",
+      "locator": "Monument description and historical context",
+      "year_from": 1639,
+      "year_to": 1648
+    },
+    {
+      "building": "kailasa-temple-ellora",
+      "empire": "rashtrakuta",
+      "relationship": "historical_context",
+      "evidence": "Kailasa is the major monolithic Hindu temple within Ellora’s multi-religious cave complex. Excavation removed surrounding basalt to create courts, built-looking forms and sculptural surfaces from the parent rock. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india-kailasa-temple-ellora",
+      "locator": "Monument description and historical context",
+      "year_from": 750,
+      "year_to": 800
+    },
+    {
+      "building": "brihadisvara-temple-thanjavur",
+      "empire": "chola",
+      "relationship": "historical_context",
+      "evidence": "The temple is associated with Rajaraja I and the early eleventh-century Chola state. It remains part of a living religious tradition; painting, sculpture and stone construction complement the monumental sanctuary tower. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india-brihadisvara-temple-thanjavur",
+      "locator": "Monument description and historical context",
+      "year_from": 1003,
+      "year_to": 1010
+    },
+    {
+      "building": "airavatesvara-temple-darasuram",
+      "empire": "chola",
+      "relationship": "historical_context",
+      "evidence": "Built under Rajaraja II, the twelfth-century temple is one of UNESCO’s Great Living Chola Temples. Its smaller scale compared with Thanjavur allows attention to the refinement of its sculpture and hall architecture. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india-airavatesvara-temple-darasuram",
+      "locator": "Monument description and historical context",
+      "year_from": 1100,
+      "year_to": 1200
+    },
+    {
+      "building": "shore-temple-mahabalipuram",
+      "empire": "pallava",
+      "relationship": "historical_context",
+      "evidence": "The Shore Temple belongs to the Pallava architectural landscape at Mahabalipuram. Unlike the group’s rock-cut caves and monolithic rathas, it represents structural temple building beside the sea. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india-shore-temple-mahabalipuram",
+      "locator": "Monument description and historical context",
+      "year_from": 700,
+      "year_to": 728
+    },
+    {
+      "building": "charminar-hyderabad",
+      "empire": "qutb-shahi",
+      "relationship": "historical_context",
+      "evidence": "The Hyderabad district account dates the monument to 1591 under Muhammad Quli Qutb Shah. Several explanations for its commemoration survive; the record does not turn an uncertain founding story into an established fact. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india-charminar-hyderabad",
+      "locator": "Monument description and historical context",
+      "year_from": 1591,
+      "year_to": 1591
+    },
+    {
+      "building": "basilica-bom-jesus-goa",
+      "empire": "portuguese-india",
+      "relationship": "historical_context",
+      "evidence": "The basilica is a component of Goa’s World Heritage churches and convents and houses the tomb associated with Francis Xavier. Its early modern architecture belongs to the wider exchange of European religious forms in Portuguese Asia. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india-basilica-bom-jesus-goa",
+      "locator": "Monument description and historical context",
+      "year_from": 1594,
+      "year_to": 1605
+    },
+    {
+      "building": "victoria-memorial-kolkata",
+      "empire": "british-india",
+      "relationship": "historical_context",
+      "evidence": "The memorial belongs to the early twentieth century and now functions as a museum. Its monumental composition combines European Classical and Renaissance references with Indian architectural elements; it broadens the archive beyond ancient and medieval monuments. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india-victoria-memorial-kolkata",
+      "locator": "Monument description and historical context",
+      "year_from": 1906,
+      "year_to": 1921
+    },
+    {
+      "building": "shiva-dol-sivasagar",
+      "empire": "ahom",
+      "relationship": "historical_context",
+      "evidence": "The Assam district account places the Shivadol, Vishnudol and Devidol beside the tank in 1734 under Queen Madambika. This record concerns the Shiva temple, not every structure at the larger water precinct. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india-shiva-dol-sivasagar",
+      "locator": "Monument description and historical context",
+      "year_from": 1734,
+      "year_to": 1734
+    },
+    {
+      "building": "csm-terminus-mumbai",
+      "empire": "british-india",
+      "relationship": "historical_context",
+      "evidence": "Frederick William Stevens designed the terminus for the railway era. UNESCO describes a synthesis of Victorian Gothic Revival and Indian building traditions. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india100-csm-terminus-mumbai",
+      "locator": "Description and Outstanding Universal Value",
+      "year_from": 1878,
+      "year_to": 1888
+    },
+    {
+      "building": "gateway-of-india-mumbai",
+      "empire": "british-india",
+      "relationship": "historical_context",
+      "evidence": "The gateway commemorated the 1911 visit of George V and Queen Mary. The Mumbai district account dates its completion to 1924. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india100-gateway-of-india-mumbai",
+      "locator": "History, completion and ceremonial use",
+      "year_from": 1924,
+      "year_to": 1924
+    },
+    {
+      "building": "jama-masjid-delhi",
+      "empire": "mughal",
+      "relationship": "historical_context",
+      "evidence": "Shah Jahan commissioned the congregational mosque as part of his imperial city. Delhi Tourism places its completion in 1656. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india100-jama-masjid-delhi",
+      "locator": "Architectural description and history",
+      "year_from": 1650,
+      "year_to": 1656
+    },
+    {
+      "building": "india-gate-delhi",
+      "empire": "british-india",
+      "relationship": "historical_context",
+      "evidence": "Edwin Lutyens designed the memorial to commemorate soldiers of the Indian Army. Its foundation stone was laid in 1921 and it was inaugurated in 1931. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india100-india-gate-delhi",
+      "locator": "Description and foundation stone",
+      "year_from": 1921,
+      "year_to": 1931
+    },
+    {
+      "building": "dholavira-harappan-city",
+      "empire": "indus-civilisation",
+      "relationship": "historical_context",
+      "evidence": "Dholavira preserves a long sequence of Harappan occupation. The mapped ruins include multiple divisions of the settlement and its engineered system for water storage. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india100-dholavira-harappan-city",
+      "locator": "Description and Outstanding Universal Value",
+      "year_from": -3000,
+      "year_to": -1500
+    },
+    {
+      "building": "jama-masjid-champaner",
+      "empire": "gujarat-sultanate",
+      "relationship": "historical_context",
+      "evidence": "The congregational mosque belongs to the Gujarat Sultanate phase of Champaner. The park preserves the mosque alongside the fortified capital and earlier remains. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india100-jama-masjid-champaner",
+      "locator": "Outstanding Universal Value, Great Mosque",
+      "year_from": 1501,
+      "year_to": 1525
+    },
+    {
+      "building": "sidi-saiyyed-mosque",
+      "empire": "gujarat-sultanate",
+      "relationship": "historical_context",
+      "evidence": "Sidi Saiyyed's mosque was built near the close of Gujarat Sultanate rule. The municipal heritage account records its completion in 1573. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india100-sidi-saiyyed-mosque",
+      "locator": "Sidi Saiyyed Mosque, architecture and jalis",
+      "year_from": 1572,
+      "year_to": 1573
+    },
+    {
+      "building": "ramappa-temple",
+      "empire": "kakatiya",
+      "relationship": "historical_context",
+      "evidence": "The Rudreshwara temple at Palampet was commissioned in the Kakatiya period. UNESCO dates the beginning of its construction to 1213. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india100-ramappa-temple",
+      "locator": "Outstanding Universal Value, construction and materials",
+      "year_from": 1213,
+      "year_to": 1213
+    },
+    {
+      "building": "golconda-fort",
+      "empire": "qutb-shahi",
+      "relationship": "historical_context",
+      "evidence": "Golconda's origins precede Qutb Shahi rule. The dynasty enlarged the fortified capital over the sixteenth and seventeenth centuries. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india100-golconda-fort",
+      "locator": "Description, Golconda Fort",
+      "year_from": 1518,
+      "year_to": 1687
+    },
+    {
+      "building": "qutb-shahi-tombs",
+      "empire": "qutb-shahi",
+      "relationship": "historical_context",
+      "evidence": "The funerary complex contains the tombs of the Qutb Shahi dynasty and associated structures. Conservation has worked across the ensemble, including landscape and water features. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india100-qutb-shahi-tombs",
+      "locator": "Description, Qutb Shahi Tombs",
+      "year_from": 1543,
+      "year_to": 1687
+    },
+    {
+      "building": "brihadisvara-gangaikonda-cholapuram",
+      "empire": "chola",
+      "relationship": "historical_context",
+      "evidence": "Rajendra I commissioned the temple for his new Chola capital. It is the Gangaikonda Cholapuram component of the Great Living Chola Temples. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india100-brihadisvara-gangaikonda-cholapuram",
+      "locator": "Gangaikondacholapuram component",
+      "year_from": 1035,
+      "year_to": 1035
+    },
+    {
+      "building": "kailasanatha-kanchipuram",
+      "empire": "pallava",
+      "relationship": "historical_context",
+      "evidence": "The temple is associated with the Pallava ruler Narasimhavarman II, also called Rajasimha, and later work under Mahendravarman III. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india100-kailasanatha-kanchipuram",
+      "locator": "Rajasimhesvaram (Kailasanatha temple)",
+      "year_from": 700,
+      "year_to": 728
+    },
+    {
+      "building": "veerabhadra-temple-lepakshi",
+      "empire": "vijayanagara",
+      "relationship": "historical_context",
+      "evidence": "The Veerabhadra Temple is a Vijayanagara complex linked to the patronage of Virupanna and Viranna. Painted ceilings and sculpted granite are documented features. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india100-veerabhadra-temple-lepakshi",
+      "locator": "Description, temple architecture and patronage",
+      "year_from": 1501,
+      "year_to": 1600
+    },
+    {
+      "building": "jahaz-mahal-mandu",
+      "empire": "malwa-sultanate",
+      "relationship": "historical_context",
+      "evidence": "The Dhar district account attributes the palace to Ghiyasuddin Khalji. An architectural survey proposes the earlier reign of Mahmud Khalji I. The date range reflects both attributions. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india100-jahaz-mahal-mandu",
+      "locator": "Description of the Ship Palace",
+      "year_from": 1436,
+      "year_to": 1500
+    },
+    {
+      "building": "jahangir-mahal-orchha",
+      "empire": "bundela",
+      "relationship": "historical_context",
+      "evidence": "Jahangir Mahal is associated with the Bundela ruler Bir Singh Deo. It forms part of the palace ensemble in Orchha's fortified river setting. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india100-jahangir-mahal-orchha",
+      "locator": "Description of palace plans and fort complex",
+      "year_from": 1601,
+      "year_to": 1627
+    },
+    {
+      "building": "gol-gumbaz-vijayapura",
+      "empire": "adil-shahi",
+      "relationship": "historical_context",
+      "evidence": "Gol Gumbaz is the mausoleum of Muhammad Adil Shah of Bijapur. The domed chamber contains the Whispering Gallery around its interior. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india100-gol-gumbaz-vijayapura",
+      "locator": "Description of mausoleum and gallery",
+      "year_from": 1626,
+      "year_to": 1656
+    },
+    {
+      "building": "cellular-jail-port-blair",
+      "empire": "british-india",
+      "relationship": "historical_context",
+      "evidence": "The colonial prison was built for cellular confinement and held political prisoners. Only part of its original seven-wing plan survives. This association records the historical or architectural context of the documented phase; it does not assign every part to a single royal builder.",
+      "source": "india100-cellular-jail-port-blair",
+      "locator": "Description, radial plan and National Memorial",
+      "year_from": 1896,
+      "year_to": 1906
+    },
+    {
+      "building": "hadimba-temple",
+      "empire": "kullu",
+      "relationship": "construction",
+      "evidence": "Bahadur Singh commissioned the surviving shrine in 1553. The sanctuary encloses a natural rock associated with local worship; epic traditions are not treated as construction dates.",
+      "source": "india150-hadimba-temple",
+      "locator": "History and chronology",
+      "year_from": 1553,
+      "year_to": 1553
+    },
+    {
+      "building": "tabo-monastery",
+      "empire": "guge",
+      "relationship": "patronage",
+      "evidence": "The monastery was founded in 996 under western Tibetan royal patronage. Its painted interiors and later buildings represent several phases, rather than one unchanged tenth-century structure.",
+      "source": "india150-tabo-monastery",
+      "locator": "History and chronology",
+      "year_from": 996,
+      "year_to": 996
+    },
+    {
+      "building": "sheikh-chilli-tomb",
+      "empire": "mughal",
+      "relationship": "historical_context",
+      "evidence": "The funerary ensemble includes two tombs, a madrasa and gardens. Its seventeenth-century Mughal context is recorded separately from uncertain biographical identifications of the saint.",
+      "source": "india150-sheikh-chilli-tomb",
+      "locator": "History and chronology",
+      "year_from": 1600,
+      "year_to": 1699
+    },
+    {
+      "building": "gobindgarh-fort",
+      "empire": "sikh-empire",
+      "relationship": "addition",
+      "evidence": "The fort passed from the Bhangi Misl to Maharaja Ranjit Singh and later British control. Sikh-period strengthening is recorded as an addition, not as the first construction of every wall.",
+      "source": "india150-gobindgarh-fort",
+      "locator": "History and chronology",
+      "year_from": 1809,
+      "year_to": 1839
+    },
+    {
+      "building": "pari-mahal",
+      "empire": "mughal",
+      "relationship": "patronage",
+      "evidence": "Prince Dara Shukoh developed the terraced garden around 1650 during Shah Jahan's reign. Its documented Mughal patronage does not establish the date of every surviving repair.",
+      "source": "india150-pari-mahal",
+      "locator": "History and chronology",
+      "year_from": 1650,
+      "year_to": 1650
+    },
+    {
+      "building": "avantipur-temples",
+      "empire": "utpala",
+      "relationship": "construction",
+      "evidence": "Avantivarman of the Utpala dynasty commissioned the ninth-century shrine. The record concentrates on the Avantiswami precinct rather than treating nearby temples as one building.",
+      "source": "india150-avantipur-temples",
+      "locator": "History and chronology",
+      "year_from": 855,
+      "year_to": 883
+    },
+    {
+      "building": "kamakhya-temple",
+      "empire": "koch",
+      "relationship": "addition",
+      "evidence": "The shrine has earlier origins and repeated rebuilding. Koch ruler Naranarayan is associated with the major sixteenth-century reconstruction; later additions form part of its layered history.",
+      "source": "india150-kamakhya-temple",
+      "locator": "History and chronology",
+      "year_from": 1565,
+      "year_to": 1565
+    },
+    {
+      "building": "rang-ghar",
+      "empire": "ahom",
+      "relationship": "construction",
+      "evidence": "The Ahom royal pavilion served as a viewing place for games and gatherings near the former Rangpur capital. Its masonry phase belongs to the eighteenth century.",
+      "source": "india150-rang-ghar",
+      "locator": "History and chronology",
+      "year_from": 1744,
+      "year_to": 1751
+    },
+    {
+      "building": "charaideo-moidams",
+      "empire": "ahom",
+      "relationship": "patronage",
+      "evidence": "The Ahom royal necropolis developed over centuries. UNESCO inscribed the property in 2024; that recognition date is separate from the construction and use of the burial mounds.",
+      "source": "india150-charaideo-moidams",
+      "locator": "History and chronology",
+      "year_from": 1200,
+      "year_to": 1899
+    },
+    {
+      "building": "nartiang-durga-temple",
+      "empire": "jaintia",
+      "relationship": "historical_context",
+      "evidence": "The Durga shrine is associated with Jaintia religious history. Sources describe centuries of worship, but a precise date for the photographed structure is not established here.",
+      "source": "india150-nartiang-durga-temple",
+      "locator": "History and chronology",
+      "year_from": null,
+      "year_to": null
+    },
+    {
+      "building": "kangla-fort",
+      "empire": "manipur",
+      "relationship": "historical_context",
+      "evidence": "Kangla was the seat of Manipuri rulers until 1891. The palace precinct contains remains and renewed sacred structures; its traditional foundation chronology is not used as the date of every building.",
+      "source": "india150-kangla-fort",
+      "locator": "History and chronology",
+      "year_from": null,
+      "year_to": null
+    },
+    {
+      "building": "ujjayanta-palace",
+      "empire": "manikya",
+      "relationship": "construction",
+      "evidence": "Maharaja Radha Kishore Manikya commissioned the palace in 1899–1901. It later accommodated the state legislature and now serves as a museum.",
+      "source": "india150-ujjayanta-palace",
+      "locator": "History and chronology",
+      "year_from": 1899,
+      "year_to": 1901
+    },
+    {
+      "building": "neermahal",
+      "empire": "manikya",
+      "relationship": "construction",
+      "evidence": "Bir Bikram Kishore Manikya built the lake palace as a summer residence during 1930–1938. Its princely patronage is distinct from an attribution to Mughal imperial rule.",
+      "source": "india150-neermahal",
+      "locator": "History and chronology",
+      "year_from": 1930,
+      "year_to": 1938
+    },
+    {
+      "building": "kachari-ruins-dimapur",
+      "empire": "dimasa",
+      "relationship": "historical_context",
+      "evidence": "The site is associated with the Dimasa Kachari kingdom. Official and secondary summaries differ on dates, and the original purpose of the sculpted pillars is uncertain.",
+      "source": "india150-kachari-ruins-dimapur",
+      "locator": "History and chronology",
+      "year_from": null,
+      "year_to": null
+    },
+    {
+      "building": "pemayangtse-monastery",
+      "empire": "namgyal-sikkim",
+      "relationship": "addition",
+      "evidence": "Founded as an early religious establishment, the monastery was enlarged under Sikkim's Chogyal rulers. Sources distinguish its seventeenth-century beginnings from eighteenth-century expansion.",
+      "source": "india150-pemayangtse-monastery",
+      "locator": "History and chronology",
+      "year_from": 1705,
+      "year_to": 1710
+    },
+    {
+      "building": "rabdentse-ruins",
+      "empire": "namgyal-sikkim",
+      "relationship": "historical_context",
+      "evidence": "Rabdentse served as a capital of the Namgyal kingdom of Sikkim. The date range describes the capital's period of use, not a continuous construction campaign.",
+      "source": "india150-rabdentse-ruins",
+      "locator": "History and chronology",
+      "year_from": 1670,
+      "year_to": 1814
+    },
+    {
+      "building": "malinithan",
+      "empire": "chutiya",
+      "relationship": "historical_context",
+      "evidence": "The archaeological site preserves a medieval temple and sculptural remains. Arunachal Tourism associates the phase with Chutiya rulers; this is a qualified historical attribution.",
+      "source": "india150-malinithan",
+      "locator": "History and chronology",
+      "year_from": 1200,
+      "year_to": 1399
+    },
+    {
+      "building": "sibuta-lung",
+      "empire": "palian",
+      "relationship": "historical_context",
+      "evidence": "The memorial is associated with the Palian chief Sibuta at Tachhip. Accounts of its erection belong partly to oral tradition, and no precise construction year is imposed here.",
+      "source": "india150-sibuta-lung",
+      "locator": "History and chronology",
+      "year_from": null,
+      "year_to": null
+    },
+    {
+      "building": "bhoramdeo-temple",
+      "empire": "nagavanshi-kawardha",
+      "relationship": "historical_context",
+      "evidence": "The main stone Shiva shrine forms part of a group that also includes earlier and later monuments. Its medieval architecture is associated with the region's Nagavanshi rulers.",
+      "source": "india150-bhoramdeo-temple",
+      "locator": "History and chronology",
+      "year_from": 1000,
+      "year_to": 1099
+    },
+    {
+      "building": "lakshmana-temple-sirpur",
+      "empire": "panduvamshi",
+      "relationship": "patronage",
+      "evidence": "Queen Vasata commissioned the Vishnu shrine in memory of Harshagupta in the Panduvamshi period. It belongs to Sirpur's wider, multi-religious archaeological landscape.",
+      "source": "india150-lakshmana-temple-sirpur",
+      "locator": "History and chronology",
+      "year_from": 600,
+      "year_to": 699
+    },
+    {
+      "building": "maluti-temples",
+      "empire": "baj-basanta",
+      "relationship": "patronage",
+      "evidence": "The village's patron families sponsored successive temples rather than one unified royal palace. Sources associate the temple-building tradition with the Baj Basanta family.",
+      "source": "india150-maluti-temples",
+      "locator": "History and chronology",
+      "year_from": 1600,
+      "year_to": 1899
+    },
+    {
+      "building": "jagannath-temple-ranchi",
+      "empire": "nagvanshi-chotanagpur",
+      "relationship": "patronage",
+      "evidence": "The original hilltop shrine was founded in the seventeenth century under local Nagvanshi patronage. Parts of the present building reflect reconstruction after a twentieth-century collapse.",
+      "source": "india150-jagannath-temple-ranchi",
+      "locator": "History and chronology",
+      "year_from": 1691,
+      "year_to": 1691
+    },
+    {
+      "building": "sher-shah-suri-tomb",
+      "empire": "sur",
+      "relationship": "construction",
+      "evidence": "Sher Shah Suri's mausoleum was completed in 1545 during the Sur dynasty. Its commemorative function and completion are distinguished from the emperor's earlier political career.",
+      "source": "india150-sher-shah-suri-tomb",
+      "locator": "History and chronology",
+      "year_from": 1540,
+      "year_to": 1545
+    },
+    {
+      "building": "hazarduari-palace",
+      "empire": "nawabs-bengal",
+      "relationship": "patronage",
+      "evidence": "Nawab Humayun Jah commissioned the palace, designed by Duncan MacLeod. Its European architectural vocabulary does not erase the agency of its Nawabi patron.",
+      "source": "india150-hazarduari-palace",
+      "locator": "History and chronology",
+      "year_from": 1829,
+      "year_to": 1837
+    },
+    {
+      "building": "mukteshwar-temple-bhubaneswar",
+      "empire": "somavamshi",
+      "relationship": "historical_context",
+      "evidence": "The tenth-century Shiva shrine occupies an important place in the development of Odisha temple architecture. A dynastic-period association is not treated as proof of a named commissioner.",
+      "source": "india150-mukteshwar-temple-bhubaneswar",
+      "locator": "History and chronology",
+      "year_from": 950,
+      "year_to": 975
+    },
+    {
+      "building": "bhojeshwar-temple",
+      "empire": "paramara",
+      "relationship": "patronage",
+      "evidence": "The unfinished Shiva temple is associated with Paramara ruler Bhoja. Nearby quarry marks and architectural drawings are important evidence of its construction process.",
+      "source": "india150-bhojeshwar-temple",
+      "locator": "History and chronology",
+      "year_from": 1000,
+      "year_to": 1099
+    },
+    {
+      "building": "datia-palace",
+      "empire": "bundela",
+      "relationship": "patronage",
+      "evidence": "Bir Singh Deo commissioned the palace. Official accounts give differing early-seventeenth-century dates, retained here as an uncertainty range rather than one exact construction year.",
+      "source": "india150-datia-palace",
+      "locator": "History and chronology",
+      "year_from": 1614,
+      "year_to": 1620
+    },
+    {
+      "building": "dashavatara-temple-deogarh",
+      "empire": "gupta",
+      "relationship": "historical_context",
+      "evidence": "The Vishnu shrine belongs to the Gupta-period architectural tradition. Its surviving reliefs and platform are early evidence of a developed structural temple plan.",
+      "source": "india150-dashavatara-temple-deogarh",
+      "locator": "History and chronology",
+      "year_from": 500,
+      "year_to": 599
+    },
+    {
+      "building": "adalaj-stepwell",
+      "empire": "gujarat-sultanate",
+      "relationship": "historical_context",
+      "evidence": "Queen Rudabai's patronage is associated with the late-fifteenth-century stepwell. The monument belongs to a regional setting shaped by both local rulers and the Gujarat Sultanate.",
+      "source": "india150-adalaj-stepwell",
+      "locator": "History and chronology",
+      "year_from": 1498,
+      "year_to": 1502
+    },
+    {
+      "building": "lothal",
+      "empire": "indus-civilisation",
+      "relationship": "historical_context",
+      "evidence": "Lothal formed part of the Indus civilisation's settlement and trade network. The function of the large basin is discussed in archaeological interpretation; it is not presented here as an undisputed dock.",
+      "source": "india150-lothal",
+      "locator": "History and chronology",
+      "year_from": -2400,
+      "year_to": -1600
+    },
+    {
+      "building": "raigad-fort",
+      "empire": "maratha",
+      "relationship": "addition",
+      "evidence": "Shivaji adapted the earlier hill fort as a Maratha capital and held his coronation there in 1674. Its history includes earlier occupation and later military events.",
+      "source": "india150-raigad-fort",
+      "locator": "History and chronology",
+      "year_from": 1656,
+      "year_to": 1680
+    },
+    {
+      "building": "daulatabad-fort",
+      "empire": "seuna",
+      "relationship": "historical_context",
+      "evidence": "The Yadava stronghold became the Delhi Sultanate's capital during Muhammad bin Tughluq's fourteenth-century transfer. Later Deccan rulers adapted the extensive defences.",
+      "source": "india150-daulatabad-fort",
+      "locator": "History and chronology",
+      "year_from": 1100,
+      "year_to": 1199
+    },
+    {
+      "building": "daulatabad-fort",
+      "empire": "delhi-sultanate",
+      "relationship": "historical_context",
+      "evidence": "The Yadava stronghold became the Delhi Sultanate's capital during Muhammad bin Tughluq's fourteenth-century transfer. Later Deccan rulers adapted the extensive defences.",
+      "source": "india150-daulatabad-fort",
+      "locator": "History and chronology",
+      "year_from": 1327,
+      "year_to": 1334
+    },
+    {
+      "building": "sindhudurg-fort",
+      "empire": "maratha",
+      "relationship": "construction",
+      "evidence": "Shivaji commissioned the island fort in the seventeenth century as part of Maratha coastal defence. The fort forms part of the Maratha Military Landscapes property inscribed in 2025.",
+      "source": "india150-sindhudurg-fort",
+      "locator": "History and chronology",
+      "year_from": 1664,
+      "year_to": 1667
+    },
+    {
+      "building": "gingee-fort",
+      "empire": "maratha",
+      "relationship": "historical_context",
+      "evidence": "Gingee passed through Nayaka, Maratha, Mughal and other phases. It is not attributed wholesale to one emperor; Maratha adaptation is one documented layer.",
+      "source": "india150-gingee-fort",
+      "locator": "History and chronology",
+      "year_from": 1500,
+      "year_to": 1799
+    },
+    {
+      "building": "bekal-fort",
+      "empire": "keladi",
+      "relationship": "construction",
+      "evidence": "Kerala Tourism associates the fort's principal construction with Shivappa Nayaka of Ikkeri. Later control by Mysore belongs to a separate historical phase.",
+      "source": "india150-bekal-fort",
+      "locator": "History and chronology",
+      "year_from": 1650,
+      "year_to": 1650
+    },
+    {
+      "building": "thousand-pillar-temple",
+      "empire": "kakatiya",
+      "relationship": "construction",
+      "evidence": "Rudra Deva commissioned the twelfth-century Kakatiya shrine. Its familiar name is not used as an independently verified count of every surviving pillar.",
+      "source": "india150-thousand-pillar-temple",
+      "locator": "History and chronology",
+      "year_from": 1163,
+      "year_to": 1163
+    },
+    {
+      "building": "se-cathedral-goa",
+      "empire": "portuguese-india",
+      "relationship": "historical_context",
+      "evidence": "The cathedral developed under Portuguese rule in Goa. Construction, consecration and later alterations are separate stages rather than a single date.",
+      "source": "india150-se-cathedral-goa",
+      "locator": "History and chronology",
+      "year_from": 1562,
+      "year_to": 1619
+    },
+    {
+      "building": "junagarh-fort",
+      "empire": "bikaner-rathore",
+      "relationship": "construction",
+      "evidence": "Raja Rai Singh's fort became the core of a palace ensemble enlarged by later Bikaner rulers. The dates describe the initial fort phase, not every decorated room.",
+      "source": "india150-junagarh-fort",
+      "locator": "History and chronology",
+      "year_from": 1588,
+      "year_to": 1594
+    },
+    {
+      "building": "diu-fort",
+      "empire": "portuguese-india",
+      "relationship": "construction",
+      "evidence": "The Portuguese developed the fort following an agreement with Gujarat's Sultan Bahadur Shah. Subsequent strengthening belongs to the wider sixteenth-century military history of Diu.",
+      "source": "india150-diu-fort",
+      "locator": "History and chronology",
+      "year_from": 1535,
+      "year_to": 1546
+    },
+    {
+      "building": "sacred-heart-basilica-puducherry",
+      "empire": "french-india",
+      "relationship": "historical_context",
+      "evidence": "The Catholic church developed in the early twentieth century in French-administered Pondicherry. Its religious patronage is distinguished from a claim that the French state commissioned the building.",
+      "source": "india150-sacred-heart-basilica-puducherry",
+      "locator": "History and chronology",
+      "year_from": 1902,
+      "year_to": 1908
+    },
+    {
+      "building": "kandariya-mahadeva-khajuraho",
+      "empire": "chandella",
+      "relationship": "historical_context",
+      "evidence": "The temple belongs to the Chandella architectural flowering at Khajuraho. Its sculptural program is integral to the architecture, while the clustered sanctuary towers create a rising composition rather than a single isolated vertical mass. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india-kandariya-mahadeva-khajuraho",
+      "locator": "Monument description and historical context",
+      "year_from": 1000,
+      "year_to": 1050
+    },
+    {
+      "building": "sun-temple-konark",
+      "empire": "eastern-ganga",
+      "relationship": "historical_context",
+      "evidence": "The temple expresses the solar deity Surya’s chariot through architectural scale, carved wheels and sculptural programs. The thirteenth-century ensemble survives incompletely, so remaining halls and sculptures should not be mistaken for the original complete temple. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india-sun-temple-konark",
+      "locator": "Monument description and historical context",
+      "year_from": 1238,
+      "year_to": 1264
+    },
+    {
+      "building": "jagannath-temple-puri",
+      "empire": "eastern-ganga",
+      "relationship": "historical_context",
+      "evidence": "The present principal shrine is associated with the Eastern Ganga dynasty. Its construction belongs to the twelfth century and the complex remains in ritual use. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india100-jagannath-temple-puri",
+      "locator": "History and architectural description",
+      "year_from": 1101,
+      "year_to": 1200
+    },
+    {
+      "building": "sun-temple-modhera",
+      "empire": "solanki",
+      "relationship": "historical_context",
+      "evidence": "Gujarat Tourism, citing ASI, places construction in 1026–1027 under Bhima I. The ensemble combines solar devotion with a highly articulated reservoir and halls, rather than presenting only an isolated sanctuary. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india-sun-temple-modhera",
+      "locator": "Monument description and historical context",
+      "year_from": 1026,
+      "year_to": 1027
+    },
+    {
+      "building": "rani-ki-vav-patan",
+      "empire": "solanki",
+      "relationship": "historical_context",
+      "evidence": "The eleventh-century stepwell was conceived as a memorial and as a carefully designed water structure. UNESCO interprets it as an inverted temple, with multiple descending levels and extensive religious, mythological and secular sculpture. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india-rani-ki-vav-patan",
+      "locator": "Monument description and historical context",
+      "year_from": 1000,
+      "year_to": 1100
+    },
+    {
+      "building": "meenakshi-temple-madurai",
+      "empire": "madurai-nayaka",
+      "relationship": "historical_context",
+      "evidence": "The Madurai complex developed around the shrines of Meenakshi and Sundareswarar and preserves important Nayak-period work. The district account emphasizes its sculptured pillars, paintings and musical stone supports; the building history cannot be reduced to one founding year. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india-meenakshi-temple-madurai",
+      "locator": "Monument description and historical context",
+      "year_from": 1500,
+      "year_to": 1700
+    },
+    {
+      "building": "rasmancha-bishnupur",
+      "empire": "malla",
+      "relationship": "historical_context",
+      "evidence": "The Malla ruler Bir Hambir is credited with building the Rasmancha. It served as a ceremonial gathering place for images during the Ras festival. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india100-rasmancha-bishnupur",
+      "locator": "Rasmancha entry",
+      "year_from": 1600,
+      "year_to": 1600
+    },
+    {
+      "building": "martand-sun-temple",
+      "empire": "karkota",
+      "relationship": "historical_context",
+      "evidence": "The ruined temple is attributed to Lalitaditya Muktapida in the eighth century in the institutional archaeological record. Its surviving architecture should be read as evidence of an incomplete structure rather than an intact reconstructed temple. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india-martand-sun-temple",
+      "locator": "Monument description and historical context",
+      "year_from": 700,
+      "year_to": 800
+    },
+    {
+      "building": "leh-palace",
+      "empire": "namgyal-ladakh",
+      "relationship": "historical_context",
+      "evidence": "The nine-storey palace was built in the seventeenth century under Sengge Namgyal. The National Culture Fund documents its masonry, sun-dried bricks and timber. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india100-leh-palace",
+      "locator": "Brief history and materials of the monument",
+      "year_from": 1601,
+      "year_to": 1700
+    },
+    {
+      "building": "mysore-palace",
+      "empire": "wadiyar",
+      "relationship": "historical_context",
+      "evidence": "The Wadiyar palace was rebuilt after a fire in 1897. Henry Irwin designed the present palace, completed in 1912. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india100-mysore-palace",
+      "locator": "Description of palace and domed towers",
+      "year_from": 1897,
+      "year_to": 1912
+    },
+    {
+      "building": "kashi-vishwanath-varanasi",
+      "empire": "holkar",
+      "relationship": "historical_context",
+      "evidence": "The official Kashi portal credits Ahilyabai Holkar with rebuilding the present temple in 1780. The date describes the principal shrine within a larger living sacred precinct. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india100-kashi-vishwanath-varanasi",
+      "locator": "History of the present temple and its management",
+      "year_from": 1780,
+      "year_to": 1780
+    },
+    {
+      "building": "bara-imambara-lucknow",
+      "empire": "nawabs-awadh",
+      "relationship": "historical_context",
+      "evidence": "Asaf-ud-Daula commissioned the imambara in 1784. Lucknow district records the building campaign in the context of famine relief. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india100-bara-imambara-lucknow",
+      "locator": "Construction and central hall",
+      "year_from": 1784,
+      "year_to": 1791
+    },
+    {
+      "building": "amber-fort-jaipur",
+      "empire": "kachwaha",
+      "relationship": "historical_context",
+      "evidence": "The palace-fort developed through successive Kachwaha building campaigns, beginning under Man Singh I in 1592. Its external defensive character contrasts with decorated interiors and ceremonial halls in sandstone and marble. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india-amber-fort-jaipur",
+      "locator": "Monument description and historical context",
+      "year_from": 1592,
+      "year_to": 1700
+    },
+    {
+      "building": "hawa-mahal-jaipur",
+      "empire": "kachwaha",
+      "relationship": "historical_context",
+      "evidence": "Sawai Pratap Singh commissioned the palace façade in 1799. Its characteristic screened windows form part of Jaipur’s historic urban architecture and allowed views of street activity from within the palace. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india-hawa-mahal-jaipur",
+      "locator": "Monument description and historical context",
+      "year_from": 1799,
+      "year_to": 1799
+    },
+    {
+      "building": "jantar-mantar-jaipur",
+      "empire": "kachwaha",
+      "relationship": "historical_context",
+      "evidence": "Sawai Jai Singh II commissioned the observatory in the early eighteenth century. Its architectural instruments were built to observe celestial positions. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india100-jantar-mantar-jaipur-detail",
+      "locator": "Construction and completion",
+      "year_from": 1734,
+      "year_to": 1734
+    },
+    {
+      "building": "chittorgarh-fort",
+      "empire": "mewar",
+      "relationship": "historical_context",
+      "evidence": "Chittorgarh is part of the serial Hill Forts of Rajasthan inscription. Its long history includes successive phases of occupation and major Rajput building campaigns. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india100-chittorgarh-fort",
+      "locator": "Outstanding Universal Value, Chittorgarh component",
+      "year_from": 701,
+      "year_to": 1600
+    },
+    {
+      "building": "kumbhalgarh-fort",
+      "empire": "mewar",
+      "relationship": "historical_context",
+      "evidence": "Rana Kumbha is associated with the fifteenth-century fortifications at Kumbhalgarh. Later buildings within the walls belong to other phases. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india100-kumbhalgarh-fort",
+      "locator": "Outstanding Universal Value, Kumbhalgarh component",
+      "year_from": 1401,
+      "year_to": 1500
+    },
+    {
+      "building": "mehrangarh-fort-jodhpur",
+      "empire": "marwar-rathore",
+      "relationship": "historical_context",
+      "evidence": "Rao Jodha laid the foundation in 1459. The museum trust records major later phases under Rao Maldeo and Maharaja Ajit Singh. The connection identifies the documented historical setting; it does not date every surviving part or establish a single royal builder.",
+      "source": "india100-mehrangarh-fort-jodhpur",
+      "locator": "Early building phases and palace expansion",
+      "year_from": 1459,
+      "year_to": 1459
+    }
+  ]
+}

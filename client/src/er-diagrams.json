@@ -3,10 +3,11 @@
     {
       "id": "01-overview",
       "title": "The complete heritage model",
-      "subtitle": "All 16 persistent content entities and all 22 declared foreign keys. Detailed attributes follow on the detailed diagrams.",
+      "subtitle": "All persistent heritage entities and declared foreign keys. Choose a focused diagram to read the attributes.",
       "names": [
         "building_aliases",
         "building_elements",
+        "building_empires",
         "building_events",
         "building_materials",
         "building_styles",
@@ -14,6 +15,8 @@
         "buildings",
         "citations",
         "elements",
+        "empire_sources",
+        "empires",
         "hotspots",
         "images",
         "materials",
@@ -22,9 +25,12 @@
         "states",
         "styles"
       ],
+      "options": {
+        "compact": true
+      },
       "notes": [
-        "Each R-number identifies a physical foreign key; the complete register appears on the relationship register below.",
-        "The four operational tables are separate from this content model and are shown on the operations diagram."
+        "Each R-number identifies a physical foreign key; the complete register appears on the relationship register.",
+        "The four operational tables are separate from this content model and are shown on page 7."
       ],
       "relationships": [
         "R01",
@@ -48,7 +54,12 @@
         "R19",
         "R20",
         "R21",
-        "R22"
+        "R22",
+        "R23",
+        "R24",
+        "R25",
+        "R26",
+        "R27"
       ]
     },
     {
@@ -69,9 +80,9 @@
       ],
       "relationships": [
         "R01",
-        "R10",
-        "R11",
-        "R22"
+        "R13",
+        "R14",
+        "R27"
       ]
     },
     {
@@ -87,18 +98,26 @@
         "building_elements",
         "elements"
       ],
+      "options": {
+        "selected": {
+          "buildings": [
+            "id",
+            "name"
+          ]
+        }
+      },
       "notes": [
-        "buildings is abbreviated here; its complete definition is on the catalogue diagram. All category and junction fields are shown.",
+        "buildings is abbreviated here; its complete definition is on page 2. All category and junction fields are shown.",
         "UNIQUE(building_id, material_id), UNIQUE(building_id, style_id), UNIQUE(building_id, element_id).",
         "Local usage_notes / descriptions belong to the monument-category pair, not to the shared category definition."
       ],
       "relationships": [
         "R02",
         "R03",
-        "R06",
-        "R07",
-        "R08",
-        "R09"
+        "R09",
+        "R10",
+        "R11",
+        "R12"
       ]
     },
     {
@@ -113,6 +132,29 @@
         "building_materials",
         "building_elements"
       ],
+      "options": {
+        "selected": {
+          "buildings": [
+            "id",
+            "name"
+          ],
+          "building_styles": [
+            "id",
+            "building_id",
+            "style_id"
+          ],
+          "building_materials": [
+            "id",
+            "building_id",
+            "material_id"
+          ],
+          "building_elements": [
+            "id",
+            "building_id",
+            "element_id"
+          ]
+        }
+      },
       "notes": [
         "Sources and citations show all columns. Repeated monument/junction cards show only relevant keys.",
         "CHECK(num_nonnulls(building_style_id, building_material_id, building_element_id) <= 1).",
@@ -120,13 +162,13 @@
       ],
       "relationships": [
         "R02",
-        "R06",
-        "R08",
-        "R12",
-        "R13",
-        "R14",
+        "R09",
+        "R11",
         "R15",
-        "R16"
+        "R16",
+        "R17",
+        "R18",
+        "R19"
       ]
     },
     {
@@ -139,19 +181,27 @@
         "building_elements",
         "hotspots"
       ],
+      "options": {
+        "selected": {
+          "buildings": [
+            "id",
+            "name"
+          ]
+        }
+      },
       "notes": [
-        "Images, hotspots and building_elements show all columns. buildings is abbreviated; see the catalogue diagram.",
+        "Images, hotspots and building_elements show all columns. buildings is abbreviated; see page 2.",
         "Hotspot -> image uses (building_id, storage_key); hotspot -> occurrence uses (building_id, element_id).",
         "UNIQUE(building_id, storage_key, element_id); x/y are 0-100 percentages. Element-specific citation checks are application-level.",
         "A partial unique index allows at most one cover image per building; publication prerequisites are application-level."
       ],
       "relationships": [
         "R02",
-        "R17",
-        "R18",
-        "R19",
-        "R20",
-        "R21"
+        "R22",
+        "R23",
+        "R24",
+        "R25",
+        "R26"
       ]
     },
     {
@@ -163,14 +213,25 @@
         "sources",
         "building_events"
       ],
+      "options": {
+        "selected": {
+          "buildings": [
+            "id",
+            "name",
+            "year_from",
+            "year_to",
+            "date_precision"
+          ]
+        }
+      },
       "notes": [
         "Sources and building_events show all columns. buildings repeats only identification and construction-period fields.",
         "Event years are -4000..2100, excluding zero; year_from <= year_to. Negative years represent BCE.",
         "Building year zero is also rejected. NULL construction dates remain unknown; no historical influence relationship is implied."
       ],
       "relationships": [
-        "R04",
-        "R05"
+        "R07",
+        "R08"
       ]
     },
     {
@@ -183,6 +244,9 @@
         "schema_migrations",
         "seed_tasks"
       ],
+      "options": {
+        "extra": "{rank=same; \"admins\"; \"sessions\";} {rank=same; \"schema_migrations\"; \"seed_tasks\";} \"admins\" -> \"schema_migrations\" [style=invis]; \"sessions\" -> \"seed_tasks\" [style=invis];"
+      },
       "notes": [
         "Only column definitions are shown: no account, password-hash or session values are included.",
         "The application stores administrator session identity inside sessions.sess JSON; this is not a declared relational FK.",
@@ -190,6 +254,39 @@
         "published_building_summary is a SQL view over buildings, sites and building_types, not another stored table."
       ],
       "relationships": []
+    },
+    {
+      "id": "09-empires",
+      "title": "Empires, patronage and historical evidence",
+      "subtitle": "A historical profile connects to monuments through sourced, typed relationships. Profiles have reusable references of their own.",
+      "names": [
+        "empires",
+        "empire_sources",
+        "building_empires",
+        "buildings",
+        "sources"
+      ],
+      "options": {
+        "selected": {
+          "buildings": [
+            "id",
+            "name"
+          ]
+        }
+      },
+      "notes": [
+        "empires, empire_sources and building_empires show every column. buildings is abbreviated.",
+        "UNIQUE(building_id, empire_id, relationship) prevents duplicate claims of the same type. One monument can connect to several historical groupings.",
+        "The source_id on building_empires supports that specific claim. empire_sources documents the profile, not every associated monument.",
+        "Dates may be NULL; ordered ranges exclude year zero. Profile dates describe collection coverage, not territorial control."
+      ],
+      "relationships": [
+        "R04",
+        "R05",
+        "R06",
+        "R20",
+        "R21"
+      ]
     },
     {
       "id": "08-lab-temporary",
@@ -247,6 +344,48 @@
       "number": "R03"
     },
     {
+      "table_name": "building_empires",
+      "name": "building_empires_building_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (building_id) REFERENCES buildings(id) ON DELETE CASCADE",
+      "referenced_table": "buildings",
+      "columns": [
+        "building_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R04"
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_empire_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (empire_id) REFERENCES empires(id) ON DELETE CASCADE",
+      "referenced_table": "empires",
+      "columns": [
+        "empire_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R05"
+    },
+    {
+      "table_name": "building_empires",
+      "name": "building_empires_source_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (source_id) REFERENCES sources(id) ON DELETE RESTRICT",
+      "referenced_table": "sources",
+      "columns": [
+        "source_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R06"
+    },
+    {
       "table_name": "building_events",
       "name": "building_events_building_id_fkey",
       "kind": "f",
@@ -258,7 +397,7 @@
       "referenced_columns": [
         "id"
       ],
-      "number": "R04"
+      "number": "R07"
     },
     {
       "table_name": "building_events",
@@ -272,7 +411,7 @@
       "referenced_columns": [
         "id"
       ],
-      "number": "R05"
+      "number": "R08"
     },
     {
       "table_name": "building_materials",
@@ -286,7 +425,7 @@
       "referenced_columns": [
         "id"
       ],
-      "number": "R06"
+      "number": "R09"
     },
     {
       "table_name": "building_materials",
@@ -300,7 +439,7 @@
       "referenced_columns": [
         "id"
       ],
-      "number": "R07"
+      "number": "R10"
     },
     {
       "table_name": "building_styles",
@@ -314,7 +453,7 @@
       "referenced_columns": [
         "id"
       ],
-      "number": "R08"
+      "number": "R11"
     },
     {
       "table_name": "building_styles",
@@ -328,7 +467,7 @@
       "referenced_columns": [
         "id"
       ],
-      "number": "R09"
+      "number": "R12"
     },
     {
       "table_name": "buildings",
@@ -342,7 +481,7 @@
       "referenced_columns": [
         "id"
       ],
-      "number": "R10"
+      "number": "R13"
     },
     {
       "table_name": "buildings",
@@ -356,7 +495,7 @@
       "referenced_columns": [
         "id"
       ],
-      "number": "R11"
+      "number": "R14"
     },
     {
       "table_name": "citations",
@@ -372,7 +511,7 @@
         "id",
         "building_id"
       ],
-      "number": "R12"
+      "number": "R15"
     },
     {
       "table_name": "citations",
@@ -386,7 +525,7 @@
       "referenced_columns": [
         "id"
       ],
-      "number": "R13"
+      "number": "R16"
     },
     {
       "table_name": "citations",
@@ -402,7 +541,7 @@
         "id",
         "building_id"
       ],
-      "number": "R14"
+      "number": "R17"
     },
     {
       "table_name": "citations",
@@ -418,7 +557,7 @@
         "id",
         "building_id"
       ],
-      "number": "R15"
+      "number": "R18"
     },
     {
       "table_name": "citations",
@@ -432,7 +571,35 @@
       "referenced_columns": [
         "id"
       ],
-      "number": "R16"
+      "number": "R19"
+    },
+    {
+      "table_name": "empire_sources",
+      "name": "empire_sources_empire_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (empire_id) REFERENCES empires(id) ON DELETE CASCADE",
+      "referenced_table": "empires",
+      "columns": [
+        "empire_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R20"
+    },
+    {
+      "table_name": "empire_sources",
+      "name": "empire_sources_source_id_fkey",
+      "kind": "f",
+      "definition": "FOREIGN KEY (source_id) REFERENCES sources(id) ON DELETE RESTRICT",
+      "referenced_table": "sources",
+      "columns": [
+        "source_id"
+      ],
+      "referenced_columns": [
+        "id"
+      ],
+      "number": "R21"
     },
     {
       "table_name": "hotspots",
@@ -448,7 +615,7 @@
         "building_id",
         "element_id"
       ],
-      "number": "R17"
+      "number": "R22"
     },
     {
       "table_name": "hotspots",
@@ -462,7 +629,7 @@
       "referenced_columns": [
         "id"
       ],
-      "number": "R18"
+      "number": "R23"
     },
     {
       "table_name": "hotspots",
@@ -478,7 +645,7 @@
         "building_id",
         "storage_key"
       ],
-      "number": "R19"
+      "number": "R24"
     },
     {
       "table_name": "images",
@@ -494,7 +661,7 @@
         "id",
         "building_id"
       ],
-      "number": "R20"
+      "number": "R25"
     },
     {
       "table_name": "images",
@@ -508,7 +675,7 @@
       "referenced_columns": [
         "id"
       ],
-      "number": "R21"
+      "number": "R26"
     },
     {
       "table_name": "sites",
@@ -522,13 +689,14 @@
       "referenced_columns": [
         "name"
       ],
-      "number": "R22"
+      "number": "R27"
     }
   ],
   "tables": [
     "admins",
     "building_aliases",
     "building_elements",
+    "building_empires",
     "building_events",
     "building_materials",
     "building_styles",
@@ -536,6 +704,8 @@
     "buildings",
     "citations",
     "elements",
+    "empire_sources",
+    "empires",
     "hotspots",
     "images",
     "materials",
@@ -547,6 +717,6 @@
     "states",
     "styles"
   ],
-  "tableCount": 20,
-  "columnCount": 119
+  "tableCount": 23,
+  "columnCount": 143
 }

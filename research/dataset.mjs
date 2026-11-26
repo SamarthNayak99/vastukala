@@ -6,12 +6,13 @@ async function readDataset(file) {
 }
 
 export async function loadDataset() {
- const [pilot, india, india100] = await Promise.all([
+ const [pilot, india, india100, india150] = await Promise.all([
   readDataset('./pilot.json'),
   readDataset('./india.json'),
-  readDataset('./india-100.json')
+  readDataset('./india-100.json'),
+  readDataset('./india-150.json')
  ]);
- const batches = [pilot, expansion, india, india100];
+ const batches = [pilot, expansion, india, india100, india150];
  return {
   sources: batches.flatMap(batch => batch.sources.map(source => ({
    ...source,

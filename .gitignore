@@ -4,6 +4,7 @@ client/dist/
 .env.*
 !.env.example
 .local/
+.vercel/
 media/originals/
 media/display/
 *.log
@@ -13,3 +14,8 @@ coverage/
 /output/docx/*Synopsis*.docx
 /output/pdf/*Synopsis*.pdf
 /docs/synopsis.md
+/output/pdf/Vastukala ER Diagrams Updated.pdf
+/output/pdf/Vastukala Requirements Specification.pdf
+/output/xlsx/
+
+/tmp/

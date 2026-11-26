@@ -7,8 +7,8 @@ digraph ER {graph [rankdir=LR,bgcolor="transparent",pad=.25,nodesep=.45,ranksep=
 "elements" [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7" COLOR="#c6bca9" BGCOLOR="#fffcf6"><TR><TD ALIGN="LEFT" BGCOLOR="#234537"><FONT FACE="Helvetica" COLOR="#fffaf0" POINT-SIZE="17"><B>elements</B></FONT></TD></TR><TR><TD PORT="id" ALIGN="LEFT"><FONT FACE="Helvetica" POINT-SIZE="13" COLOR="#984930">PK     id : int</FONT></TD></TR><TR><TD PORT="name" ALIGN="LEFT"><FONT FACE="Helvetica" POINT-SIZE="13" COLOR="#302c25">UQ     name : text</FONT></TD></TR><TR><TD PORT="description" ALIGN="LEFT"><FONT FACE="Helvetica" POINT-SIZE="13" COLOR="#302c25">       description : text</FONT></TD></TR><TR><TD PORT="function" ALIGN="LEFT"><FONT FACE="Helvetica" POINT-SIZE="13" COLOR="#302c25">       function : text</FONT></TD></TR></TABLE>>];
 "buildings":id -> "building_elements":building_id [dir=both,arrowtail=teetee,arrowhead=ocrow,taillabel="1",headlabel="0..*",label="R02",style=solid,color="#547265"];
 "elements":id -> "building_elements":element_id [dir=both,arrowtail=teetee,arrowhead=ocrow,taillabel="1",headlabel="0..*",label="R03",style=solid,color="#547265"];
-"buildings":id -> "building_materials":building_id [dir=both,arrowtail=teetee,arrowhead=ocrow,taillabel="1",headlabel="0..*",label="R06",style=solid,color="#547265"];
-"materials":id -> "building_materials":material_id [dir=both,arrowtail=teetee,arrowhead=ocrow,taillabel="1",headlabel="0..*",label="R07",style=solid,color="#547265"];
-"buildings":id -> "building_styles":building_id [dir=both,arrowtail=teetee,arrowhead=ocrow,taillabel="1",headlabel="0..*",label="R08",style=solid,color="#547265"];
-"styles":id -> "building_styles":style_id [dir=both,arrowtail=teetee,arrowhead=ocrow,taillabel="1",headlabel="0..*",label="R09",style=solid,color="#547265"];
+"buildings":id -> "building_materials":building_id [dir=both,arrowtail=teetee,arrowhead=ocrow,taillabel="1",headlabel="0..*",label="R09",style=solid,color="#547265"];
+"materials":id -> "building_materials":material_id [dir=both,arrowtail=teetee,arrowhead=ocrow,taillabel="1",headlabel="0..*",label="R10",style=solid,color="#547265"];
+"buildings":id -> "building_styles":building_id [dir=both,arrowtail=teetee,arrowhead=ocrow,taillabel="1",headlabel="0..*",label="R11",style=solid,color="#547265"];
+"styles":id -> "building_styles":style_id [dir=both,arrowtail=teetee,arrowhead=ocrow,taillabel="1",headlabel="0..*",label="R12",style=solid,color="#547265"];
 }

@@ -1,0 +1,11 @@
+.git
+.local
+.vercel
+.env*
+node_modules
+client/dist
+media/originals
+output
+docs
+tests
+tmp

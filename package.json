@@ -15,6 +15,7 @@
     "media:fetch": "node scripts/media.mjs",
     "db:backup": "node scripts/backup.mjs",
     "build": "vite build --config client/vite.config.js",
+    "build:vercel": "npm run build && node scripts/build-vercel.mjs",
     "start": "node --env-file-if-exists=.env server/index.mjs",
     "test": "node --env-file-if-exists=.env --test tests/*.test.mjs"
   },

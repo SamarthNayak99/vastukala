@@ -1312,5 +1312,663 @@
     "file": "Votive Stupas - Mahabodhi Temple Complex - Bodh Gaya (13).jpg",
     "caption": "A carved detail on a votive stupa in the Mahabodhi Temple complex",
     "cover": false
+  },
+  {
+    "key": "india150-hadimba-temple-overview",
+    "building": "hadimba-temple",
+    "file": "Hadimba Devi Temple, Manali.jpg",
+    "caption": "Hadimba Devi Temple — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-hadimba-temple-alternate",
+    "building": "hadimba-temple",
+    "file": "People Visiting \"Hadimba Temple\" Manali.jpg",
+    "caption": "Hadimba Devi Temple — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-masrur-temples-overview",
+    "building": "masrur-temples",
+    "file": "Masrur_rockcut_temple.jpg",
+    "caption": "Masrur Rock-cut Temples — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-masrur-temples-alternate",
+    "building": "masrur-temples",
+    "file": "Masrur Rock Cut Temple 2.jpg",
+    "caption": "Masrur Rock-cut Temples — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-alchi-monastery-overview",
+    "building": "alchi-monastery",
+    "file": "Alchi.jpg",
+    "caption": "Alchi Monastery — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "india150-thiksey-monastery-overview",
+    "building": "thiksey-monastery",
+    "file": "Thikse_Monastery_.jpg",
+    "caption": "Thiksey Monastery — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-alchi-monastery-alternate",
+    "building": "alchi-monastery",
+    "file": "Alchi Gompa.JPG",
+    "caption": "Alchi Monastery — carved timber entrance detail",
+    "cover": false
+  },
+  {
+    "key": "india150-kedarnath-temple-overview",
+    "building": "kedarnath-temple",
+    "file": "Kedarnath_Temple_in_Rainy_season.jpg",
+    "caption": "Kedarnath Temple — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-thiksey-monastery-alternate",
+    "building": "thiksey-monastery",
+    "file": "Close up of Maitreya Buddha at Thiksey Monastery DSCN6617 1.jpg",
+    "caption": "Thiksey Monastery — interior Maitreya sculpture",
+    "cover": false
+  },
+  {
+    "key": "gallery-india150-kedarnath-temple-alternate",
+    "building": "kedarnath-temple",
+    "file": "Kedarnath Temple.jpg",
+    "caption": "Kedarnath Temple — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-tabo-monastery-overview",
+    "building": "tabo-monastery",
+    "file": "Tabo_Monjastery_Entrance.jpg",
+    "caption": "Tabo Monastery — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "india150-badrinath-temple-overview",
+    "building": "badrinath-temple",
+    "file": "Badrinath_Temple_,_Uttarakhand.jpg",
+    "caption": "Badrinath Temple — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-tabo-monastery-alternate",
+    "building": "tabo-monastery",
+    "file": "Tabo monastery and surroundings 2.jpg",
+    "caption": "Tabo Monastery — additional view",
+    "cover": false
+  },
+  {
+    "key": "gallery-india150-badrinath-temple-alternate",
+    "building": "badrinath-temple",
+    "file": "Badrinath temple in early morning.JPG",
+    "caption": "Badrinath Temple — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-sheikh-chilli-tomb-overview",
+    "building": "sheikh-chilli-tomb",
+    "file": "Sheikh-chili_ka_makhbara.jpg",
+    "caption": "Sheikh Chilli's Tomb — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "india150-gobindgarh-fort-overview",
+    "building": "gobindgarh-fort",
+    "file": "Gobindgarh_fort,_Amritsar,_Punjab,_India.jpg",
+    "caption": "Gobindgarh Fort — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-sheikh-chilli-tomb-alternate",
+    "building": "sheikh-chilli-tomb",
+    "file": "Sheikh Chilli's Tomb HR.JPG",
+    "caption": "Sheikh Chilli's Tomb — additional view",
+    "cover": false
+  },
+  {
+    "key": "gallery-india150-gobindgarh-fort-alternate",
+    "building": "gobindgarh-fort",
+    "file": "Entrance of Gobindgarh fort, Amritsar,Punjab.jpg",
+    "caption": "Gobindgarh Fort — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-katarmal-sun-temple-overview",
+    "building": "katarmal-sun-temple",
+    "file": "Sun_temple_-_Katarmal.jpg",
+    "caption": "Katarmal Sun Temple — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "india150-chandigarh-capitol-complex-overview",
+    "building": "chandigarh-capitol-complex",
+    "file": "Palace_of_Assembly_Chandigarh_2006.jpg",
+    "caption": "Chandigarh Capitol Complex — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-katarmal-sun-temple-alternate",
+    "building": "katarmal-sun-temple",
+    "file": "Temple in India.jpg",
+    "caption": "Katarmal Sun Temple — additional view",
+    "cover": false
+  },
+  {
+    "key": "gallery-india150-chandigarh-capitol-complex-alternate",
+    "building": "chandigarh-capitol-complex",
+    "file": "Capitol complex Monument 1 Chandigarh.jpg",
+    "caption": "Chandigarh Capitol Complex — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-avantipur-temples-overview",
+    "building": "avantipur-temples",
+    "file": "Ruins_of_Avantiswami_Temple_,_Awantipora,_J&K,India_._05.jpg",
+    "caption": "Avantiswami Temple — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-avantipur-temples-alternate",
+    "building": "avantipur-temples",
+    "file": "Avantiswami Temple ASI Information Board.jpg",
+    "caption": "Avantiswami Temple — ASI site interpretation board",
+    "cover": false
+  },
+  {
+    "key": "india150-kamakhya-temple-overview",
+    "building": "kamakhya-temple",
+    "file": "Kamakhya_Temple_-_DEV_8829.jpg",
+    "caption": "Kamakhya Temple — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-kamakhya-temple-alternate",
+    "building": "kamakhya-temple",
+    "file": "Kamakhya Temple, Guwahati.jpg",
+    "caption": "Kamakhya Temple — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-rang-ghar-overview",
+    "building": "rang-ghar",
+    "file": "Ranghar_-_Assam.jpg",
+    "caption": "Rang Ghar — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-rang-ghar-alternate",
+    "building": "rang-ghar",
+    "file": "Rang Ghar at Sibsagar Town, Assam.jpg",
+    "caption": "Rang Ghar — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-charaideo-moidams-overview",
+    "building": "charaideo-moidams",
+    "file": "Charaideo Moidam, Charaideo district of eastern Assam.jpg",
+    "caption": "Charaideo Moidams — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "india150-nartiang-durga-temple-overview",
+    "building": "nartiang-durga-temple",
+    "file": "Nartiang Durga Temple.jpg",
+    "caption": "Nartiang Durga Temple — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-charaideo-moidams-alternate",
+    "building": "charaideo-moidams",
+    "file": "Charaideo Moidams ,Assam.jpg",
+    "caption": "Charaideo Moidams — World Heritage interpretation marker",
+    "cover": false
+  },
+  {
+    "key": "india150-ujjayanta-palace-overview",
+    "building": "ujjayanta-palace",
+    "file": "Ujjayanta_palace_Tripura_State_Museum_Agartala_India.jpg",
+    "caption": "Ujjayanta Palace — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-nartiang-durga-temple-alternate",
+    "building": "nartiang-durga-temple",
+    "file": "Nartiang Durga Temple1.jpg",
+    "caption": "Nartiang Durga Temple — additional view",
+    "cover": false
+  },
+  {
+    "key": "gallery-india150-ujjayanta-palace-alternate",
+    "building": "ujjayanta-palace",
+    "file": "Ujjayanta Palace as seen from the Rajbari Lakes.jpg",
+    "caption": "Ujjayanta Palace — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-neermahal-overview",
+    "building": "neermahal",
+    "file": "Neer_Mahal,_the_water_palace_of_Tripura_02.jpg",
+    "caption": "Neermahal — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "india150-kachari-ruins-dimapur-overview",
+    "building": "kachari-ruins-dimapur",
+    "file": "Kachari_Ruins_(a_piece_of_history_waiting_to_be_explored).jpg",
+    "caption": "Kachari Rajbari Ruins — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-neermahal-alternate",
+    "building": "neermahal",
+    "file": "Neermahal, Tripura Agartala, India.jpg",
+    "caption": "Neermahal — additional view",
+    "cover": false
+  },
+  {
+    "key": "gallery-india150-kachari-ruins-dimapur-alternate",
+    "building": "kachari-ruins-dimapur",
+    "file": "Kachari Ruins.jpg",
+    "caption": "Kachari Rajbari Ruins — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-rabdentse-ruins-overview",
+    "building": "rabdentse-ruins",
+    "file": "Rabdantse_6.jpg",
+    "caption": "Rabdentse Palace Ruins — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-rabdentse-ruins-alternate",
+    "building": "rabdentse-ruins",
+    "file": "Rabdentse Palace Ruins 03.jpg",
+    "caption": "Rabdentse Palace Ruins — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-pemayangtse-monastery-overview",
+    "building": "pemayangtse-monastery",
+    "file": "Main_Shrine_of_Pemangytse_Gompa_with_prayer_flags.jpg",
+    "caption": "Pemayangtse Monastery — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-pemayangtse-monastery-alternate",
+    "building": "pemayangtse-monastery",
+    "file": "Front view of Pemayangtse monastery.jpg",
+    "caption": "Pemayangtse Monastery — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-malinithan-overview",
+    "building": "malinithan",
+    "file": "Malini Than.jpg",
+    "caption": "Malinithan Temple Ruins — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "india150-bhoramdeo-temple-overview",
+    "building": "bhoramdeo-temple",
+    "file": "Bhoramdeo_Temple,_Kawardha.jpg",
+    "caption": "Bhoramdeo Temple — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "india150-sibuta-lung-overview",
+    "building": "sibuta-lung",
+    "file": "Sibuta_Lung.jpg",
+    "caption": "Sibuta Lung — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "india150-maluti-temples-overview",
+    "building": "maluti-temples",
+    "file": "Some_clusters_of_temples_in_the_village_of_Maluti_at_Dumka_district_in_Jharkhand_State.jpg",
+    "caption": "Maluti Temples — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-maluti-temples-alternate",
+    "building": "maluti-temples",
+    "file": "Maluti Village Temple.jpg",
+    "caption": "Maluti Temples — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-jagannath-temple-ranchi-overview",
+    "building": "jagannath-temple-ranchi",
+    "file": "17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg",
+    "caption": "Jagannath Temple, Ranchi — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-jagannath-temple-ranchi-alternate",
+    "building": "jagannath-temple-ranchi",
+    "file": "IMGJagannathpur Temple.jpg",
+    "caption": "Jagannath Temple, Ranchi — additional view",
+    "cover": false
+  },
+  {
+    "key": "gallery-india150-hazarduari-palace-alternate",
+    "building": "hazarduari-palace",
+    "file": "Hazarduari Palace West Bengal.JPG",
+    "caption": "Hazarduari Palace — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-hazarduari-palace-overview",
+    "building": "hazarduari-palace",
+    "file": "Hazarduari_Palace,_Murshidabad_illuminated_at_night.jpg",
+    "caption": "Hazarduari Palace — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "india150-mukteshwar-temple-bhubaneswar-overview",
+    "building": "mukteshwar-temple-bhubaneswar",
+    "file": "Muktesvar_Temple.jpg",
+    "caption": "Mukteshwar Temple — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-mukteshwar-temple-bhubaneswar-alternate",
+    "building": "mukteshwar-temple-bhubaneswar",
+    "file": "Mukteshwar temple.jpg",
+    "caption": "Mukteshwar Temple — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-sher-shah-suri-tomb-overview",
+    "building": "sher-shah-suri-tomb",
+    "file": "Sher_Shah_Suri_Tomb.jpg",
+    "caption": "Tomb of Sher Shah Suri — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-sher-shah-suri-tomb-alternate",
+    "building": "sher-shah-suri-tomb",
+    "file": "\" Tomb of Sher Shah Suri \".jpg",
+    "caption": "Tomb of Sher Shah Suri — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-datia-palace-overview",
+    "building": "datia-palace",
+    "file": "Palace_in_Datia,_Madhya_Pradesh.jpg",
+    "caption": "Datia Palace — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "india150-adalaj-stepwell-overview",
+    "building": "adalaj-stepwell",
+    "file": "Adalaj_ki_Vav_Gujarat_240A1370_72.jpg",
+    "caption": "Adalaj Stepwell — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-datia-palace-alternate",
+    "building": "datia-palace",
+    "file": "20111028 - 045 - Bir Singh Deo Palace.jpg",
+    "caption": "Datia Palace — additional view",
+    "cover": false
+  },
+  {
+    "key": "gallery-india150-adalaj-stepwell-alternate",
+    "building": "adalaj-stepwell",
+    "file": "Adalaj Vav Ahmedabad.JPG",
+    "caption": "Adalaj Stepwell — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-lothal-overview",
+    "building": "lothal",
+    "file": "The_drainage_system_at_Lothal_2.JPG",
+    "caption": "Lothal Archaeological Site — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-lothal-alternate",
+    "building": "lothal",
+    "file": "Lothal - Gujarat, India (5933635477).jpg",
+    "caption": "Lothal Archaeological Site — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-dashavatara-temple-deogarh-overview",
+    "building": "dashavatara-temple-deogarh",
+    "file": "Entrance of the worship in Dashavatara Temple in Deogarh-2.jpg",
+    "caption": "Dashavatara Temple, Deogarh — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "india150-raigad-fort-overview",
+    "building": "raigad-fort",
+    "file": "Nagarkhana,_Raigad_Fort,_India.jpg",
+    "caption": "Raigad Fort — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-dashavatara-temple-deogarh-alternate",
+    "building": "dashavatara-temple-deogarh",
+    "file": "Remains of the Dashavatara Temple in Deogarh, Lalitpur.jpg",
+    "caption": "Dashavatara Temple, Deogarh — additional view",
+    "cover": false
+  },
+  {
+    "key": "gallery-india150-raigad-fort-alternate",
+    "building": "raigad-fort",
+    "file": "Raigad fort towers.jpg",
+    "caption": "Raigad Fort — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-bhojeshwar-temple-overview",
+    "building": "bhojeshwar-temple",
+    "file": "Shiva_Temple,_Bhojpur_01.jpg",
+    "caption": "Bhojeshwar Temple — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-bhojeshwar-temple-alternate",
+    "building": "bhojeshwar-temple",
+    "file": "Temple of Bhojpur, MP.jpg",
+    "caption": "Bhojeshwar Temple — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-daulatabad-fort-overview",
+    "building": "daulatabad-fort",
+    "file": "Daulatabad_Fort_a_view.JPG",
+    "caption": "Daulatabad Fort — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "india150-sindhudurg-fort-overview",
+    "building": "sindhudurg-fort",
+    "file": "Sindhudurg Fort, Back Wall.jpg",
+    "caption": "Sindhudurg Fort — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-daulatabad-fort-alternate",
+    "building": "daulatabad-fort",
+    "file": "Daulatabad Fort vrvbajel0924 (231).jpg",
+    "caption": "Daulatabad Fort — additional view",
+    "cover": false
+  },
+  {
+    "key": "gallery-india150-sindhudurg-fort-alternate",
+    "building": "sindhudurg-fort",
+    "file": "Sindhudurg fort , sindhudurg.jpg",
+    "caption": "Sindhudurg Fort — additional view",
+    "cover": false
+  },
+  {
+    "key": "gallery-india150-gingee-fort-alternate",
+    "building": "gingee-fort",
+    "file": "Gingee Fort panorama.jpg",
+    "caption": "Gingee Fort — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-gingee-fort-overview",
+    "building": "gingee-fort",
+    "file": "Gingee_Fort_Hill_view_from_road.jpg",
+    "caption": "Gingee Fort — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "india150-bekal-fort-overview",
+    "building": "bekal-fort",
+    "file": "Bakel_Fort_Beach_Kasaragod7.jpg",
+    "caption": "Bekal Fort — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-bekal-fort-alternate",
+    "building": "bekal-fort",
+    "file": "Back side view of Bekal Fort..JPG",
+    "caption": "Bekal Fort — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-undavalli-caves-overview",
+    "building": "undavalli-caves",
+    "file": "Undavalli_Caves,_Vijayawada,_Guntur,_Andhra_Pradesh,_India_(2018)_1.jpg",
+    "caption": "Undavalli Caves — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-undavalli-caves-alternate",
+    "building": "undavalli-caves",
+    "file": "Undavalli Caves..JPG",
+    "caption": "Undavalli Caves — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-thousand-pillar-temple-overview",
+    "building": "thousand-pillar-temple",
+    "file": "1000pillar_temple_warangal.jpg",
+    "caption": "Thousand Pillar Temple — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-thousand-pillar-temple-alternate",
+    "building": "thousand-pillar-temple",
+    "file": "Thousand Pillar Temple-Warangal.jpg",
+    "caption": "Thousand Pillar Temple — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-se-cathedral-goa-overview",
+    "building": "se-cathedral-goa",
+    "file": "Se_Cathedral_from_Rua_Direita.jpg",
+    "caption": "Se Cathedral — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "india150-junagarh-fort-overview",
+    "building": "junagarh-fort",
+    "file": "India_Bikaner_Junagarh_Fort.jpg",
+    "caption": "Junagarh Fort — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "india150-diu-fort-overview",
+    "building": "diu-fort",
+    "file": "Diu fort Diu india.jpg",
+    "caption": "Diu Fort — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-junagarh-fort-alternate",
+    "building": "junagarh-fort",
+    "file": "20191211 Junagarh Fort, Bikaner, India 1547 8077 DxO.jpg",
+    "caption": "Junagarh Fort — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-sacred-heart-basilica-puducherry-overview",
+    "building": "sacred-heart-basilica-puducherry",
+    "file": "Puducherry_Sacred_Heart_Cathedral_2.JPG",
+    "caption": "Basilica of the Sacred Heart of Jesus — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-diu-fort-alternate",
+    "building": "diu-fort",
+    "file": "Diu Fortress, Jan. 2010.jpg",
+    "caption": "Diu Fort — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-pari-mahal-overview",
+    "building": "pari-mahal",
+    "file": "Stone Arches of the Pari Mahal.jpg",
+    "caption": "Pari Mahal — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-pari-mahal-alternate",
+    "building": "pari-mahal",
+    "file": "Pari Mahal, Srinagar.jpg",
+    "caption": "Pari Mahal — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-kangla-fort-overview",
+    "building": "kangla-fort",
+    "file": "Kangla Fort, imphal.JPG",
+    "caption": "Kangla Fort — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "india150-lakshmana-temple-sirpur-overview",
+    "building": "lakshmana-temple-sirpur",
+    "file": "7th century Lakshmana Hindu temple, Sirpur Chhattisgarh India 1.jpg",
+    "caption": "Lakshmana Temple, Sirpur — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-lakshmana-temple-sirpur-alternate",
+    "building": "lakshmana-temple-sirpur",
+    "file": "7th century reliefs on brick walls, Lakshmana Hindu temple, Sirpur Chhattisgarh India 1.jpg",
+    "caption": "Lakshmana Temple, Sirpur — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-gagron-fort-overview",
+    "building": "gagron-fort",
+    "file": "Gagron Fort Jhalawar Rajasthan DSC 2153.jpg",
+    "caption": "Gagron Fort — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-gagron-fort-alternate",
+    "building": "gagron-fort",
+    "file": "Gagron fort.JPG",
+    "caption": "Gagron Fort — additional view",
+    "cover": false
+  },
+  {
+    "key": "india150-unakoti-reliefs-overview",
+    "building": "unakoti-reliefs",
+    "file": "Unakoti (Scorpian ad).JPG",
+    "caption": "Unakoti Rock-cut Reliefs — architectural overview",
+    "cover": true
+  },
+  {
+    "key": "gallery-india150-unakoti-reliefs-alternate",
+    "building": "unakoti-reliefs",
+    "file": "Unakoti-3.jpg",
+    "caption": "Unakoti Rock-cut Reliefs — additional view",
+    "cover": false
   }
 ]

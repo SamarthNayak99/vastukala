@@ -1,0 +1,452 @@
+[
+  {
+    "building": "adalaj-stepwell",
+    "storage_key": "india150-adalaj-stepwell-overview",
+    "element": "Carved pillar",
+    "x": 36,
+    "y": 45,
+    "label": "Carved supporting column",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "alchi-monastery",
+    "storage_key": "gallery-india150-alchi-monastery-alternate",
+    "element": "Carved pillar",
+    "x": 19,
+    "y": 54,
+    "label": "Carved timber entrance member",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "avantipur-temples",
+    "storage_key": "india150-avantipur-temples-overview",
+    "element": "Colonnade",
+    "x": 21,
+    "y": 53,
+    "label": "Surviving column of the ruined enclosure",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "badrinath-temple",
+    "storage_key": "india150-badrinath-temple-overview",
+    "element": "Arch",
+    "x": 51,
+    "y": 66,
+    "label": "Arched entrance opening",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "bekal-fort",
+    "storage_key": "india150-bekal-fort-overview",
+    "element": "Fortification wall",
+    "x": 38,
+    "y": 28,
+    "label": "Coastal rampart",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "bhojeshwar-temple",
+    "storage_key": "india150-bhojeshwar-temple-overview",
+    "element": "Sanctuary",
+    "x": 65,
+    "y": 45,
+    "label": "Entrance to the sanctuary chamber",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "bhoramdeo-temple",
+    "storage_key": "india150-bhoramdeo-temple-overview",
+    "element": "Curvilinear shikhara",
+    "x": 54,
+    "y": 28,
+    "label": "Shrine tower above the hall",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "chandigarh-capitol-complex",
+    "storage_key": "india150-chandigarh-capitol-complex-overview",
+    "element": "Colonnade",
+    "x": 39,
+    "y": 60,
+    "label": "Assembly building columns",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "charaideo-moidams",
+    "storage_key": "india150-charaideo-moidams-overview",
+    "element": "Burial mound",
+    "x": 36,
+    "y": 58,
+    "label": "Earthen mound behind the entrance structure",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "dashavatara-temple-deogarh",
+    "storage_key": "india150-dashavatara-temple-deogarh-overview",
+    "element": "Sculptural relief",
+    "x": 29,
+    "y": 48,
+    "label": "Carved doorway surround",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "datia-palace",
+    "storage_key": "india150-datia-palace-overview",
+    "element": "Chhatri",
+    "x": 49,
+    "y": 43,
+    "label": "Domed roof pavilion",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "daulatabad-fort",
+    "storage_key": "india150-daulatabad-fort-overview",
+    "element": "Fortification wall",
+    "x": 49,
+    "y": 39,
+    "label": "Rampart on the fortified hill",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "diu-fort",
+    "storage_key": "india150-diu-fort-overview",
+    "element": "Bastion",
+    "x": 64,
+    "y": 65,
+    "label": "Projecting coastal defence",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "gagron-fort",
+    "storage_key": "india150-gagron-fort-overview",
+    "element": "Fortification wall",
+    "x": 51,
+    "y": 59,
+    "label": "River-facing fort wall",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "gingee-fort",
+    "storage_key": "india150-gingee-fort-overview",
+    "element": "Fortification wall",
+    "x": 45,
+    "y": 45,
+    "label": "Defensive work on the rocky hill",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "gobindgarh-fort",
+    "storage_key": "india150-gobindgarh-fort-overview",
+    "element": "Bastion",
+    "x": 50,
+    "y": 56,
+    "label": "Rounded defensive projection",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "hadimba-temple",
+    "storage_key": "india150-hadimba-temple-overview",
+    "element": "Pitched roof",
+    "x": 50,
+    "y": 62,
+    "label": "Sloping timber roof tier",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "hazarduari-palace",
+    "storage_key": "india150-hazarduari-palace-overview",
+    "element": "Colonnade",
+    "x": 49,
+    "y": 62,
+    "label": "Columns along the palace facade",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "jagannath-temple-ranchi",
+    "storage_key": "india150-jagannath-temple-ranchi-overview",
+    "element": "Curvilinear shikhara",
+    "x": 54,
+    "y": 48,
+    "label": "Curving sanctuary tower",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "junagarh-fort",
+    "storage_key": "india150-junagarh-fort-overview",
+    "element": "Jharokha",
+    "x": 46,
+    "y": 48,
+    "label": "Projecting palace window",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "kachari-ruins-dimapur",
+    "storage_key": "india150-kachari-ruins-dimapur-overview",
+    "element": "Pillar",
+    "x": 63,
+    "y": 52,
+    "label": "Carved freestanding stone pillar",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "kamakhya-temple",
+    "storage_key": "india150-kamakhya-temple-overview",
+    "element": "Dome",
+    "x": 50,
+    "y": 36,
+    "label": "Rounded shrine roof",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "kangla-fort",
+    "storage_key": "india150-kangla-fort-overview",
+    "element": "Gateway",
+    "x": 53,
+    "y": 61,
+    "label": "Opening in the royal precinct",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "katarmal-sun-temple",
+    "storage_key": "india150-katarmal-sun-temple-overview",
+    "element": "Curvilinear shikhara",
+    "x": 42,
+    "y": 40,
+    "label": "Tower of the principal shrine",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "kedarnath-temple",
+    "storage_key": "india150-kedarnath-temple-overview",
+    "element": "Curvilinear shikhara",
+    "x": 39,
+    "y": 48,
+    "label": "Stone sanctuary tower",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "lakshmana-temple-sirpur",
+    "storage_key": "india150-lakshmana-temple-sirpur-overview",
+    "element": "Curvilinear shikhara",
+    "x": 49,
+    "y": 48,
+    "label": "Brick shrine tower",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "lothal",
+    "storage_key": "india150-lothal-overview",
+    "element": "Drain",
+    "x": 54,
+    "y": 59,
+    "label": "Surviving brick drainage channel",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "malinithan",
+    "storage_key": "india150-malinithan-overview",
+    "element": "Plinth",
+    "x": 41,
+    "y": 67,
+    "label": "Raised circular masonry base",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "maluti-temples",
+    "storage_key": "india150-maluti-temples-overview",
+    "element": "Sculptural relief",
+    "x": 64,
+    "y": 63,
+    "label": "Terracotta ornament around the entrance",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "masrur-temples",
+    "storage_key": "india150-masrur-temples-overview",
+    "element": "Curvilinear shikhara",
+    "x": 46,
+    "y": 39,
+    "label": "Rock-cut central tower",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "mukteshwar-temple-bhubaneswar",
+    "storage_key": "india150-mukteshwar-temple-bhubaneswar-overview",
+    "element": "Torana",
+    "x": 43,
+    "y": 51,
+    "label": "Decorated entrance torana",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "nartiang-durga-temple",
+    "storage_key": "india150-nartiang-durga-temple-overview",
+    "element": "Pitched roof",
+    "x": 43,
+    "y": 47,
+    "label": "Sloping roof of the entrance structure",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "neermahal",
+    "storage_key": "india150-neermahal-overview",
+    "element": "Pavilion",
+    "x": 55,
+    "y": 38,
+    "label": "Roof pavilion facing the lake",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "pari-mahal",
+    "storage_key": "india150-pari-mahal-overview",
+    "element": "Arch",
+    "x": 50,
+    "y": 45,
+    "label": "Surviving masonry arch",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "pemayangtse-monastery",
+    "storage_key": "india150-pemayangtse-monastery-overview",
+    "element": "Pitched roof",
+    "x": 56,
+    "y": 25,
+    "label": "Temple roof above the entrance",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "rabdentse-ruins",
+    "storage_key": "india150-rabdentse-ruins-overview",
+    "element": "Plinth",
+    "x": 41,
+    "y": 64,
+    "label": "Raised palace platform",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "raigad-fort",
+    "storage_key": "india150-raigad-fort-overview",
+    "element": "Gateway",
+    "x": 55,
+    "y": 62,
+    "label": "Nagarkhana gateway",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "rang-ghar",
+    "storage_key": "india150-rang-ghar-overview",
+    "element": "Arch",
+    "x": 31,
+    "y": 56,
+    "label": "Arched opening in the pavilion",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "sacred-heart-basilica-puducherry",
+    "storage_key": "india150-sacred-heart-basilica-puducherry-overview",
+    "element": "Pointed arch",
+    "x": 55,
+    "y": 62,
+    "label": "Pointed facade opening",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "se-cathedral-goa",
+    "storage_key": "india150-se-cathedral-goa-overview",
+    "element": "Pediment",
+    "x": 50,
+    "y": 29,
+    "label": "Gabled central facade",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "sheikh-chilli-tomb",
+    "storage_key": "india150-sheikh-chilli-tomb-overview",
+    "element": "Dome",
+    "x": 54,
+    "y": 29,
+    "label": "Dome of the raised tomb",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "sher-shah-suri-tomb",
+    "storage_key": "india150-sher-shah-suri-tomb-overview",
+    "element": "Dome",
+    "x": 53,
+    "y": 28,
+    "label": "Central dome",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "sibuta-lung",
+    "storage_key": "india150-sibuta-lung-overview",
+    "element": "Monolith",
+    "x": 55,
+    "y": 52,
+    "label": "Upright memorial stone",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "sindhudurg-fort",
+    "storage_key": "india150-sindhudurg-fort-overview",
+    "element": "Fortification wall",
+    "x": 63,
+    "y": 45,
+    "label": "Coastal defensive wall",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "tabo-monastery",
+    "storage_key": "india150-tabo-monastery-overview",
+    "element": "Gateway",
+    "x": 30,
+    "y": 57,
+    "label": "Entrance to the monastic precinct",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "thiksey-monastery",
+    "storage_key": "india150-thiksey-monastery-overview",
+    "element": "Terrace",
+    "x": 49,
+    "y": 58,
+    "label": "Stepped hillside buildings",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "thousand-pillar-temple",
+    "storage_key": "india150-thousand-pillar-temple-overview",
+    "element": "Plinth",
+    "x": 49,
+    "y": 72,
+    "label": "Raised temple platform",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "ujjayanta-palace",
+    "storage_key": "india150-ujjayanta-palace-overview",
+    "element": "Dome",
+    "x": 35,
+    "y": 28,
+    "label": "Central palace dome",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "unakoti-reliefs",
+    "storage_key": "india150-unakoti-reliefs-overview",
+    "element": "Sculptural relief",
+    "x": 51,
+    "y": 52,
+    "label": "Relief carved into the cliff",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  },
+  {
+    "building": "undavalli-caves",
+    "storage_key": "india150-undavalli-caves-overview",
+    "element": "Colonnade",
+    "x": 48,
+    "y": 55,
+    "label": "Pillared rock-cut facade",
+    "note": "Visible feature on a reviewed photograph. The marker identifies this feature, not a date or a royal attribution."
+  }
+]

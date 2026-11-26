@@ -12,7 +12,7 @@ function Intro({number,kicker,title,children}){return <header className="explore
 export function ExploreInvitation(){return <section className="connected-invitation"><div><p className="eyebrow">THREE WAYS TO LOOK CLOSER</p><h2>Beyond the building.</h2><p>Follow the evidence, find the detail, and put a familiar form in time.</p></div><div className="connected-cards">{[['01','/compare','Why do they look alike?','Put two monuments beside each other. Trace their shared features to the evidence.'],['02','/anatomy','Read the stone.','Click a photograph to discover the architectural details within it.'],['03','/across-time','Forms through time.','Explore recorded features across approximate building-date ranges.']].map(([n,url,title,text])=><Link key={n} to={url}><span>{n} ↗</span><h3>{title}</h3><p>{text}</p></Link>)}</div></section>;}
 
 export function CompareExperience(){
- const[params,setParams]=useSearchParams();const list=useResource('/buildings?limit=120');
+ const[params,setParams]=useSearchParams();const list=useResource('/buildings?limit=200');
  const raw=params.get('ids')||'';const ids=raw.split(',');const [left,setLeft]=useState(ids[0]||''),[right,setRight]=useState(ids[1]||'');
  useEffect(()=>{if(!raw)return;const values=raw.split(',');setLeft(values[0]||'');setRight(values[1]||'');},[raw]);
  const result=useResource(raw?`/compare?ids=${encodeURIComponent(raw)}`:'/health');const data=raw?result.data:null;
